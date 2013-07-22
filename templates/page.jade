@@ -1,0 +1,14 @@
+extends layout
+
+
+block append content
+  article.intro
+    header
+      h2
+        a(href=page.url)= page.title
+      h3.byline
+        !{page.metadata.byline}
+    section
+      !{page.html}
+    footer
+      h3.date= 'reviewed ' + moment(page.metadata.date).format('YYYY-MM-DD')

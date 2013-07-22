@@ -1,0 +1,9 @@
+
+
+block prepend navi
+  nav
+    ul
+      each location, location_name in locals.nav
+        li
+          a(href=location)= location_name
+

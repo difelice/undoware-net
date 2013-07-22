@@ -1,0 +1,19 @@
+application: undoware-cdn
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /raster
+  static_dir: raster
+
+- url: /vector
+  static_dir: vector
+
+- url: /style
+  static_dir: style
+
+- url: /stack
+  static_dir: stack
+

@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "moment": "2.x",
+    "underscore": "1.4.x",
+    "typogr": "0.5.x",
+    "LiveScript": "1.1.x",
+    "prelude-ls": "1.0.x",
+    "jade": "0.7.x",
+    "stylus": "0.33.x",
+    "nib": "0.9.x",
+    "wintersmith": "2.0.x",
+    "wintersmith-perian": "0.0.3",
+    "bower": "0.9.x"
+  },
+  "repository": "none"
+}

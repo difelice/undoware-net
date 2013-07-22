@@ -1,0 +1,35 @@
+{
+  "locals": {
+    "url": "https://undoware.ca",
+    "name": "Undoware.ca",
+    "owner": "Elizabeth Marston",
+    "description": "UX",
+    "nav": {
+      "Who": "/who/",
+      "Timeline": "/timeline/",
+      "Connect": "/connect/"
+    }
+  },
+  "plugins": [
+    "./plugins/livescript.coffee",
+    "./plugins/paginator.coffee",
+    "./plugins/stylus.coffee"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 3
+  }
+}
+
+
