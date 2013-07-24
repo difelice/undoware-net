@@ -7,6 +7,8 @@
     "nav": {
       "Who": "/who/",
       "Timeline": "/timeline/",
+      "Donate": "/donate/",
+      "Purchase": "/purchase/",
       "Connect": "/connect/"
     }
   },
