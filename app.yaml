@@ -17,3 +17,5 @@ handlers:
 - url: /stack
   static_dir: stack
 
+- url: /font
+  static_dir: font

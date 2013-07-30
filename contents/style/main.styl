@@ -25,8 +25,22 @@ box-shadow()
   -ms-box-shadow: arguments
   -o-box-shadow: arguments
 
+@import(vcard)
 
 @media screen
+  #bra
+  #panties
+    display: block
+    background-size: 96px auto
+    background-repeat: no-repeat
+    background-position: 64px 0px
+  #bra
+    padding-top: 48px
+    background-image:  url(https://undoware-cdn.appspot.com/vector/bra.svg)
+  #panties
+    padding-top: 32px
+    background-image: url(https://undoware-cdn.appspot.com/vector/panties.svg)
+
   body
     background-color thc-background-color
   #page
@@ -80,16 +94,17 @@ box-shadow()
         background-position: 64px 0px
       .logo
         text-shadow: 0px 0px 3px thc-action-color
-        padding-top: 48px
-        background-image:  url(https://undoware-cdn.appspot.com/vector/bra.svg)
+        /*padding-top: 48px
+        ackground-image:  url(https://undoware-cdn.appspot.com/vector/bra.svg)*/
         a
           &:hover
           &:active
           &:focus
             text-shadow: 0px 0px 5px thc-action-color
       .slogan
-        padding-top: 32px
-        background-image: url(https://undoware-cdn.appspot.com/vector/panties.svg)
+        /*padding-top: 32px
+        background-image: url(https://undoware-cdn.appspot.com/vector/panties.svg)*/
+        font-size: 10pt
       nav > ul
          font-size: 13pt
          .twitter-follow-button
@@ -222,6 +237,7 @@ box-shadow()
   menu.nav
     text-align center
     font-size: 2em
+
 
 
 @media screen and (max-width: 800px)

@@ -1,19 +1,17 @@
 ---
-title: Purchase
+title: Consulting Services
 template: page.jade
 ---
 
 
-Consulting Services
--------------------
 
-I am happy to provide a variety of services, including copywriting, graphic design, usability testing, interface design (UX), network administration, and software development. Rates vary depending on the service and the amount of work, so please email me at [beth@undoware.ca](mailto:beth@undoware.ca) and we'll talk. Generally, I charge between $20/h (for writing, and/or for FOSS projects) to $90/h (for software development, especially in a lower-level language like C.)
+I am happy to provide a variety of services, including research, copywriting, graphic design, usability testing, interface design (UX), network administration, and software development. Rates vary depending on the service and the amount of work, so please email me at [beth@undoware.ca](mailto:beth@undoware.ca) and we'll talk. Generally, I charge between $20/h (for writing, and/or for FOSS projects) to $90/h (for software development, especially in a lower-level language like C.)
 
 Just to make it explicit: there *is* a sliding scale, and it factors in the going rate for that type of service, how fun it is to do that kind of work, and (most importantly) the social utility and benefit to the commonweal persuant to the intended result. I think rather highly of Creative Commons and Open Source, hint hint.
 
 
-Buy my Backtalk
----------------
+New! Buy my Backtalk
+--------------------------------
 
 One of my favourite things is critiquing software or websites. But it takes time to do right, and I don't work for free.
 

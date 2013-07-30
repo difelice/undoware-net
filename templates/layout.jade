@@ -2,13 +2,13 @@
 block vars
   - var bodyclass = null;
 //if lt IE 7
-    html(lang='en',class='heirloom ie ie6')
+    html(lang='en',class='heirloom ie ie6',itemscope,itemtype="http://schema.org/Article")
 //if IE 7
-    html(lang='en',class='heirloom ie ie7')
+    html(lang='en',class='heirloom ie ie7',itemscope,itemtype="http://schema.org/Article")
 //if IE 8
-    html(lang='en',class='heirloom ie ie8')
+    html(lang='en',class='heirloom ie ie8',itemscope,itemtype="http://schema.org/Article")
 // [if gt IE 8] <!
-html(lang='en',class='modern-browser')
+html(lang='en',class='modern-browser',itemscope,itemtype="http://schema.org/Article")
   // <![endif]
   head
     block head
@@ -25,6 +25,7 @@ html(lang='en',class='modern-browser')
       include meta
       link(rel='stylesheet',href='https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro:300,300italic',charset='utf-8')
       link(rel='stylesheet',href='/style/main.css',charset="utf-8")
+      link(rel='stylesheet',href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css', charset='utf-8')
       link(rel="icon",type="image/png",sizes="12x12",href="https://undoware-cdn.appspot.com/raster/icon-12.png")
       link(rel="icon",type="image/png",sizes="16x16",href="https://undoware-cdn.appspot.com/raster/icon-16.png")
       link(rel="shortcut icon",type="image/png",sizes="16x16",href="https://undoware-cdn.appspot.com/raster/icon-16.png")
@@ -39,6 +40,7 @@ html(lang='en',class='modern-browser')
       link(rel="image_src",href="https://undoware-cdn.appspot.com/vector/icon.svg")
       link(rel="icon",href="https://undoware-cdn.appspot.com/raster/icon.png")
       link(rel="favicon",href="https://undoware-cdn.appspot.com/raster/icon.png")
+      link(rel="profile",href="http://microformats.org/profile/hcard")
       link(rel="sitemap",href="https://undoware.ca/sitemap.xml")
       <!-- The strategy is to load as few things as possible synchronously, but syncload what is needed to stop FOUC. -->
       script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js",type="text/javascript",charset="utf-8")
@@ -50,9 +52,9 @@ html(lang='en',class='modern-browser')
     div#page
       header.area.topbar#topbar(role='banner')
           block header
-            h1.logo Undoware
+            h1.logo  UN⌘↺WARE
             em.slogan
-              a(href='/what/') Undo-what?!
+              a(href='/what/') Perusing the Noosphere, Pursuing UX
             include nav
             block navi
 
@@ -67,4 +69,5 @@ html(lang='en',class='modern-browser')
     div#zebra
     footer.area.footer(role='complementary')
       block footer
+        include vcard
     include track.html

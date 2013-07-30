@@ -11,6 +11,14 @@ But you can't eat virtue, or I'd be fat.
 Help me Get Fat
 ===============
 
+There are two ways.
+
+The first is [Flattr](http://flattr.com), an awesome service for giving money to worthy causes. You set up an account and fill up your online wallet, and configure how much to give every time you 'flattr' someone. It even integrates with your various social media 'likes' and stars and favourites and +1&rsquo; or what-have-you. Quick, painless, virtuous. Click the button below.
+
+<script id='flattrbtn'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='//api.flattr.com/button/view/?uid=undoware&url='+encodeURIComponent(document.URL);f.title='Flattr';f.height=62;f.width=55;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('flattrbtn');</script>
+
+If Flattr is too fashionable for you, and you think old school is best, PayPal it is!
+
 You can send me $5 (that is five U.S. dollars) by clicking the big yellow PayPal 'donate' button right below this sentence.
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">

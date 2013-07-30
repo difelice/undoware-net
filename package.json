@@ -10,7 +10,15 @@
     "nib": "0.9.x",
     "wintersmith": "2.0.x",
     "wintersmith-perian": "0.0.3",
-    "bower": "0.9.x"
+    "bower": "0.9.x",
+    "commander": "2.0.x",
+    "googleapis": "0.2.x",
+    "rsyncwrapper": "0.0.x",
+    "tumblr": "0.2.x",
+    "twitter": "0.2.x"
   },
-  "repository": "none"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/undoware/www-undoware-ca"
+  }
 }

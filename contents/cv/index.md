@@ -6,7 +6,6 @@ title: Elizabeth Marston
 ---
 ####+1&nbsp;(778)&nbsp;374-3355&nbsp;·&nbsp;beth@undoware.ca &nbsp;·&nbsp;Vancouver, Canada
 
- - Programmer with ongoing full-stack experience making [data-on-the-wire](http://lanyrd.com/2012/djangocon-us/sxbzb) Javascript mobile apps and web apps
  - Programmer with full-stack experience designing and developing [data-on-the-wire](http://lanyrd.com/2012/djangocon-us/sxbzb) Javascript mobile apps and web apps
  - PhD-track postgraduate '[ABD](http://en.wikipedia.org/wiki/All_but_dissertation)' background in [higher-order logic](http://plato.stanford.edu/entries/logic-higher-order/), [metaethics](http://plato.stanford.edu/entries/metaethics/), and [game theory](http://plato.stanford.edu/entries/game-ethics/).
  - [Postgraduate education in cryptography](http://crypto.cs.mcgill.ca).
@@ -78,9 +77,9 @@ Bragging Rights
 Take-home Message
 -----------------
 
-I&rsquo;d like to dev for you. I have a few years of experience in front-end web development, which is my current passion. Backing me up are over ten years of experience in Linux/UNIX server-side development, network & database administration, and deployment. I have demonstrated leadership in project management, public speaking, and community-building. Finally, I'm a published writer, and to top it off, I was recently a PhD-track postgraduate student and lecturer at a major U.S. university (teaching logic).
+I&rsquo;d like to work for you. I have a few years of experience in front-end web development, which is my current passion. Backing me up are over ten years of experience in Linux/UNIX server-side development, network & database administration, and deployment. I have demonstrated leadership in project management, public speaking, and community-building. Finally, I'm a published writer, and to top it off, I was recently a PhD-track postgraduate student and lecturer at a major U.S. university (teaching logic).
 
-And unlike some candidates with that kind of experience, I still have an open mind. And I also don't expect to start at the top.
+Unlike some candidates with that kind of experience, I still have an open mind (the closing of open minds being the primary market externality of academe)
 
 
 Points of Presence

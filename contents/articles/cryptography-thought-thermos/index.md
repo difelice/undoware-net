@@ -4,6 +4,7 @@ author: elizabeth-marston
 date: 2013-07-05
 template: article.jade
 dept: whoa
+blurb: A novel way of understanding crypto.
  ---
 
 I wrote the following while explaining DRM to a friend on Google Plus.

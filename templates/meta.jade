@@ -1,16 +1,59 @@
-meta(name="description",content="undoware.ca")
-meta(name="name",content="undoware.ca")
 meta(name="robots",content="all")
-meta(name="copyright",content="undoware")
+
 meta(name="web_author",content="Elizabeth Marston")
+
 meta(name="generator",content="http://wintersmith.io")
 meta(name="language",content="English")
 meta(name="dc.language",content="en-CA")
-meta(name="dc.source",content="https://undoware.ca/")
-meta(name="dc.relation",content="https://undoware.ca/")
-meta(name="dc.title",content="undoware")
+
+meta(name="reply-to",content="beth@undoware.ca")
+
+meta(property="og:type",content="blog")
+meta(name="dc.keywords",content="Usability, UX")
 meta(name="dc.subject",content="Usability")
-meta(name="dc.description",content="")
-meta(name="dc.keywords",content="")
-meta(name="news_keywords",content="")
-meta(name="reply-to",contents="info@undoware.ca")
+
+-var n=locals.name + ": " + locals.description
+meta(property="og:site_name",content=sn)
+meta(name="copyright",content=sn)
+
+-var t = " (⌘↺)"
+-if (page && 'title' in page)
+  t = page.title + t
+-else
+  t = sn
+meta(property="og:title",content=t)
+meta(name="name",content=t)
+meta(name="dc.title",content=t)
+meta(itemprop="name",content=t)
+title= t
+-var u
+-if (page && 'url' in page)
+  -u = locals.url + page.url
+-else
+  -u = locals.url
+meta(property="og:url",content=u)
+meta(name="dc.source",content=u)
+
+
+-var i = 'https://undoware-cdn.appspot.com/raster/'
+-if (page && 'image' in page.metadata)
+  -i = i + page.url + page.metadata.image
+-else
+  -i = i + 'icon-256.png'
+
+meta(property="og:image",content=i)
+meta(itemprop="image",content=i)
+
+
+- var d = locals.description
+- if (page && 'tweet' in page.metadata)
+  d = page.metadata.tweet
+- if (page && 'blurb' in page.metadata)
+  d = page.metadata.blurb
+
+meta(property="og:description",content=d)
+meta(name="description",content=d)
+meta(itemprop="description",content=d)
+
+
+
