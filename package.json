@@ -3,7 +3,7 @@
     "moment": "2.x",
     "underscore": "1.4.x",
     "typogr": "0.5.x",
-    "LiveScript": "1.1.x",
+    "LiveScript": "1.2.x",
     "prelude-ls": "1.0.x",
     "jade": "0.7.x",
     "stylus": "0.33.x",

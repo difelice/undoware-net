@@ -3,12 +3,10 @@
     "url": "https://undoware.ca",
     "name": "Undoware.ca",
     "owner": "Elizabeth Marston",
-    "description": "Towards UX ≥ ⌘↺",
+    "description": "UX blog",
     "nav": {
       "Who": "/who/",
-      "Timeline": "/timeline/",
-      "Donate": "/donate/",
-      "Purchase": "/purchase/"
+      "Timeline": "/timeline/"
     }
   },
   "plugins": [

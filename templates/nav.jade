@@ -7,17 +7,18 @@ block prepend navi
         li
           a(href=location)= location_name
       li
-        <!-- don't forget title attributes, or icon fonts are accessibility nightmare -->
+        <!-- don't forget title attributes, or icon fonts are accessibility nightmare.
+        Also these non-breaking spaces were handy for prototyping but are kludgey for production, TODO FIXME -->
         a(href='https://twitter.com/undoware',title='on Twitter')
-         i.icon-twitter &nbsp;&nbsp;&nbsp;
+         i.icon-twitter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         a(href='https://www.github.com/undoware/',title='on GitHub')
-         i.icon-github-alt &nbsp;&nbsp;&nbsp;
+         i.icon-github-alt &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         a(href='https://plus.google.com/u/0/101667909136924896677/posts/p/pub',title='on Google Plus')
-         i.icon-google-plus &nbsp;&nbsp;&nbsp;
+         i.icon-google-plus &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         a(href='/feed.xml',title='RSS Feed')
-         i.icon-rss &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         i.icon-rss &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         a(href='tel:+17783743355',title='Call me')
-         i.icon-phone &nbsp;&nbsp;&nbsp;
+         i.icon-phone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         a(href='mailto:beth@undoware.ca',title='Email me')
          i.icon-envelope &nbsp;
 
