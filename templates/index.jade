@@ -8,13 +8,14 @@ block append head
 block append content
   include author
   each article in articles
-    article.intro
+    - var articleClass = ('class' in article.metadata) ? article.metadata.class : 'story'
+    article.intro(class=articleClass)
       header
         h2
           a(href=article.url)= article.title
         h4.date= moment(article.date).format('dddd YYYY-MM-DD HH:mm Z')
         h4 from the #{article.metadata.dept} dept.
-      section
+      section(class=articleClass)
         !{ typogr(article.intro).typogrify() }
       footer
         if article.hasMore

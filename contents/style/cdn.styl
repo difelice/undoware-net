@@ -1,0 +1,15 @@
+/* MIT License, Elizabeth Marston 2013 (c) */
+
+cdnHost = 'undoware-cdn.appspot.com'
+vectorPath = '/vector/'
+rasterPath = '/raster/'
+cdner(x,path,suffix)
+  full = 'https://' + cdnHost + path + x + '.' + suffix
+  url(full)
+
+svg(x)
+  cdner(x,vectorPath,'svg')
+png(x)
+  cdner(x,vectorPath,'png')
+jpg(x)
+  cdner(x,vectorPath,'jpg')

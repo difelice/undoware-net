@@ -1,0 +1,57 @@
+/* MIT License, (c) 2013 Elizabeth Marston */
+
+/* General fine-tweakings, with one notable exception:
+   The nav is moved to the
+   bottom of the screen and fixed to the window frame
+   (and is made blue)
+*/
+
+@media screen and (max-width: 800px)
+  #page
+    width: 100%
+    max-width: 100%
+    padding: 1em
+    min-width: 0
+    margin: 0
+    .area
+      max-width: 100%
+    .area.topbar
+      min-width:0
+      .slogan
+        visibility: hidden
+        display: none
+      nav
+        position: fixed
+        width: 100%
+        bottom: 0
+        right: 0
+        z-index: 1
+        overflow: hidden
+        text-align: right
+        background-color: thc-action-color
+        background-image: svg('logo-black')
+        background-size: 24px 24px
+        background-repeat: no-repeat
+        background-position: 24px center
+    .area.main
+      position: inherit
+      width: (amw=70%)
+      min-width: 0
+      max-width:amw
+      padding: 1em
+    .area.topbar li
+      padding-left: 0
+      padding-right: 1em
+  main footer.area
+    display: block
+    width: 100%
+    margin: 0
+    padding:0
+    text-align center
+    menu
+      display inline-block
+      padding: 0
+      text-indent none
+      a
+        margin-right: 1em
+        font-size: 24pt

@@ -1,22 +1,38 @@
+// /* MIT License. (c) 2013 Elizabeth Marston */
+
+//# /* TODO modularize this file, it's getting spaghettiish. The consequences of ship, ship, ship.... */
+
+include cdn
+
+//# /* Preliminaries */
+meta(charset='utf-8')
+meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+meta(name="apple-mobile-web-app-capable",content="yes")
+meta(name="apple-mobile-web-app-status-bar-style",content="black")
+meta(name="viewport",content="initial-scale=0.8, maximum-scale=0.8, user-scalable=0")
+meta(name="web_author",content="<beth@undoware.ca>")
+meta(name="generator",content="http://wintersmith.io/")
+meta(name="language",content="English")
+meta(name="dc.language",content="en-CA")
 meta(name="robots",content="all")
-
 meta(name="web_author",content="Elizabeth Marston")
-
 meta(name="generator",content="http://wintersmith.io")
 meta(name="language",content="English")
 meta(name="dc.language",content="en-CA")
-
 meta(name="reply-to",content="beth@undoware.ca")
-
 meta(property="og:type",content="blog")
 meta(name="dc.keywords",content="Usability, UX")
 meta(name="dc.subject",content="Usability")
 
+
+//# /* Ways of saying the site name, and other things that need it */
 -var n=locals.name + ": " + locals.description
 meta(property="og:site_name",content=sn)
 meta(name="copyright",content=sn)
 
--var t = " (⌘↺)"
+//# /* Generate page title, and put it *everywhere* it needs to be */
+-var t = " (↺)"
 -if (page && 'title' in page)
   t = page.title + t
 -else
@@ -26,6 +42,9 @@ meta(name="name",content=t)
 meta(name="dc.title",content=t)
 meta(itemprop="name",content=t)
 title= t
+
+
+//# /* Generate permalink URL for this page. Easy. */
 -var u
 -if (page && 'url' in page)
   -u = locals.url + page.url
@@ -35,22 +54,23 @@ meta(property="og:url",content=u)
 meta(name="dc.source",content=u)
 
 
--var i = 'https://undoware-cdn.appspot.com/raster/'
+//# /* Generate the social media image for this page. If one isn't found, use a default. */
+-var i
 -if (page && 'image' in page.metadata)
-  -i = i + page.url + page.metadata.image
+  -i = cdn(page.url + page.metadata.image)
 -else
-  -i = i + 'icon-256.png'
+  -i = cdn('/raster/icon-256.png')
 
 meta(property="og:image",content=i)
 meta(itemprop="image",content=i)
 
 
-- var d = locals.description
-- if (page && 'tweet' in page.metadata)
-  d = page.metadata.tweet
-- if (page && 'blurb' in page.metadata)
-  d = page.metadata.blurb
-
+//# /* Put a desc of this page everywhere it needs to be */
+- var d = locals.description /* default */
+- if (page && 'status' in page.metadata)
+  d = page.metadata.status /* if there's a status, use it in preference to site description */
+- if (page && 'excerpt' in page.metadata)
+  d = page.metadata.blurb /* if there's an excerpt, definitely use that */
 meta(property="og:description",content=d)
 meta(name="description",content=d)
 meta(itemprop="description",content=d)

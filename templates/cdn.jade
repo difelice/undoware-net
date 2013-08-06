@@ -1,0 +1,28 @@
+// Helper functions to handle CDN media URLs
+// MIT License (c) 2013 Elizabeth Marston
+
+// helper func, just returns a CDN URL
+
+-function cdn(x) {
+-return 'https://undoware-cdn.appspot.com' + x;
+-}
+
+-function raster(x) {
+-return cdn('/raster/' + x);
+-}
+
+-function vector(x) {
+-return cdn('/vector/' + x);
+-}
+
+-function png(x) {
+-return raster(x + '.png');
+-}
+
+-function jpg(x) {
+-return raster(x + '.jpg');
+-}
+
+-function svg(x) {
+-return cdn(x + '.svg');
+-}
