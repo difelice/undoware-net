@@ -1,0 +1,12 @@
+doctype xml
+- var current_date = new Date();
+- var current_date_str = current_date
+urlset(xmlns="http://sitemaps.org/schemas/sitemap/0.9")
+   url
+      loc= locals.base
+      changefreq daily
+      priority 0.8
+   for n in locals.sitemap
+     url
+        loc= locals.base + n.href
+        changefreq weekly

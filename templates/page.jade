@@ -1,0 +1,26 @@
+// page.jade -- last stop before rendering.
+
+include(util)
+
+
+append head
+  title= page.metadata.title
+
+append style
+  - if (page.metadata.style) { css(page.metadata.style) }
+
+
+append logic
+  - if (page.metadata.logic) { js(page.metadata.logic) }
+
+
+append content
+    header.vspace
+      h1.logo=locals.title
+      include navigation
+
+    main.vspace
+      | !{page.html}
+
+
+extends site

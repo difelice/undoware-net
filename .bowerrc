@@ -1,0 +1,7 @@
+{
+  "directory"			: "stack/",
+  "json"                : "bower.json",
+  "endpoint"            : "https://bower.herokuapp.com",
+  "shorthand_resolver"  : "git://github.com/{{{ endpoint }}}.git"
+}
+

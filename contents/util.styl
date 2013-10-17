@@ -1,0 +1,31 @@
+// util.styl
+
+//No CDN atm so passthru
+cdn(f)
+  'url(' + f + ')'
+
+//require.js takes stripped suffixes, so passthru here too
+js(fr)
+  cdn(fr)
+
+//we do need to attach suffix for CSS
+css(fr)
+  cdn(fr + '.css')
+
+jpg(fr)
+  cdn(fr + '.jpg')
+
+png(fr)
+  cdn(fr + '.png')
+
+
+woff(fr)
+  cdn('font/' + fr + '.woff')
+
+ttf(fr)
+  cdn('font/' + fr + '.ttf')
+
+svg(fr)
+  cdn(fr + '.svg')
+
+
