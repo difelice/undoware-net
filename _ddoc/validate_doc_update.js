@@ -30,12 +30,14 @@ function validate (newDoc, oldDoc, userCtx, secObj) {
     if (userCtx.name !== null) {
         IS_LOGGED_IN_USER = true;
     }
-    /* lifted from guide.couchdb.org/draft/validation.html */
+    /* lifted with mods from guide.couchdb.org/draft/validation.html */
     function require(beTrue, message) {
       if (!beTrue) throw({forbidden: message});
     }
+    function unchanged(field) {
+      return (oldDoc && toJSON(oldDoc[field]) != toJSON(newDoc[field])) ? false: true;
+    }
 
-    var now = new Date();
-    newDoc.date = [ now.getYear(), now.getMonth(), now.getDay() ];
+    require(unchanged('when'));
 
 }
