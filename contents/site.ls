@@ -17,7 +17,7 @@ define <[ ng jq logo modernizr ink site ]> ->
     w = v[1] || 'home' /* This is ugly and inflexible; TODO FIXME */
     angular.element('nav ul li.' ++ w).addClass('active')
     $scope.search = ->
-      angular.element('#target').load('_db/_design/lookup/list/by-sender/by-sender?sender=' ++ $scope.sender)
+      angular.element('#target').load('_db/_design/lookup/_list/by-sender/by-sender?sender=' ++ $scope.sender)
     $scope
 
 
