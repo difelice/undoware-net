@@ -1,6 +1,10 @@
 function(doc,req) {
   var attachment = false;
   var html = '<html><body><ul>';
+  var mk_a = function(root) {
+    return '<a href="/_db/design/lookup/_show/message/' + root +  '/attachment">download</a>';
+  }
+
   if ('attachment' in req.query) { attachment = true; }
 
 
@@ -9,7 +13,7 @@ function(doc,req) {
   html += '<li><strong>text</strong>: ' + doc.text + '</li>';
 
   if (attachment) {
-    html += '<li><strong>attachment</strong>: <a href=#notyetimpl>download</a></li>';
+    html += '<li><strong>attachment</strong>:' +  mk_a(doc._id)  + '</li>';
   }
 
 
