@@ -5,7 +5,7 @@ function(doc,req) {
     var mk_a = function(id) {
       var tip = '<a href="';
       var out = '/_db/' + id;
-      var tail = '/attachment"><i class="icon-file icon-3x"></i></a>';
+      var tail = '/attachment"><i class="icon-file icon-2x"></i></a>';
       return tip + out + tail;
     };
 
