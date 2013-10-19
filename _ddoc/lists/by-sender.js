@@ -10,17 +10,16 @@ function(doc,req) {
     };
 
     var dater = function(v) {
-      var out = '';
+      var out = '0-0-0';
       if ('when' in v) {
-        out = v.when[0] + '/' + v.when[1] + '/' + v.when[2];
+        out = v.when[0] + '-' + v.when[1] + '-' + v.when[2];
       }
       return out;
     };
 
     while (row = getRow()) {
-      if ( (!req.query['sender']                    ||
-             req.query.sender === row.value.sender) &&
-            'when' in row.value
+      if ( !req.query['sender']                  ||
+           req.query.sender === row.value.sender
          ) {
         html += '<tr><td>' + dater(row.value)
         html += '</td><td>' + mk_a(row.value._id) + row.value.text + '</a></td><td>' +  row.key + '</td></tr>';
