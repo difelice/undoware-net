@@ -9,10 +9,11 @@ function(doc,req) {
     };
 
     var dater = function(w) {
+      var out = '';
       try {
-        return w.join(' / ');
+        out = w.join(' / ');
       }
-      return '';
+      return out;
     };
 
     while (row = getRow()) {
