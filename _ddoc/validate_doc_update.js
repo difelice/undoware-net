@@ -32,8 +32,8 @@ function validate (newDoc, oldDoc, userCtx, secObj) {
     }
 
 
-    if(IS_DB_ADMIN || IS_LOGGED_IN_USER)
+//    if(IS_DB_ADMIN || IS_LOGGED_IN_USER)
         log('User : ' + userCtx.name + ' changing document: ' +  newDoc._id);
-    else
-        throw {'forbidden':'Only admins and users can alter documents'};
+ //   else
+  //      throw {'forbidden':'Only admins and users can alter documents'};
 }

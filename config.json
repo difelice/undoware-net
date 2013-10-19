@@ -1,9 +1,9 @@
- {
+{
   "locals": {
-    "base":     "http://127.0.0.1:8080/",
+    "base":     "http://lookup.app/",
     "cdn":      false,
-    "name":     "Stock",
-    "owner":    "Elizabeth Marston",
+    "name":     "Lookup.app",
+    "owner":    "MedExtra",
     "color": {
       "class": {
         "menu": {
@@ -16,14 +16,14 @@
       {
         "href": "/",
         "menu": {
-          "name" : "Home",
-          "class": "home"
+          "name" : "Uploads",
+          "class": "uploads"
         }
       }, {
-        "href": "#_______nowhere",
+        "href": "/eligibility.html",
         "menu": {
-          "name" : "Example",
-          "class": "example"
+          "name" : "Eligibility",
+          "class": "eligibility"
         }
       }
     ],
@@ -61,7 +61,8 @@
   "markdown": {
     "smartLists": true,
     "smartypants": true
-  }
+  },
+  "output": "build/lookup/",
   "plugins": [ "wintersmith-ls",
                "wintersmith-stylus" ]
 }

@@ -1,5 +1,5 @@
 {
-  "name": "stock",
+  "name": "eligibility-lookup",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
@@ -7,7 +7,7 @@
     "LiveScript": "1.2.x",
     "wintersmith": "2.0.x",
     "wintersmith-stylus": "0.4.x",
-    "wintersmith-ls": ">=0.0.2",
+    "wintersmith-ls": ">=0.0.5",
     "cheerio": "0.12.x",
     "bower": "0.9.x",
     "superagent": "0.15.x"

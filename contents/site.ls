@@ -10,5 +10,17 @@
 */
 
 
-define <[ ng logo modernizr ink autoload site ]> ->
-  angular.module \site <[ logo ]>
+define <[ ng jq logo modernizr ink site ]> ->
+  uploads = ($scope,$) ->
+    p = window.location.pathname
+    v = p / \/
+    w = v[1] || 'home' /* This is ugly and inflexible; TODO FIXME */
+    angular.element('nav ul li.' ++ w).addClass('active')
+    $scope.search = ->
+      val = JSON.stringify($scope.sender)
+      console.log('searching uploads')
+      angular.element('#target').load('_db/design/lookup/_view/by-sender?key=' ++ val)
+    $scope
+
+
+  angular.module(\site <[ logo ]>).controller('uploads', ['$scope', uploads])

@@ -3,21 +3,17 @@
 include(util)
 
 
+
 append head
-  title= page.metadata.title
-
-append style
-  - if (page.metadata.style) { css(page.metadata.style) }
-
-
-append logic
-  - if (page.metadata.logic) { js(page.metadata.logic) }
+  +css(page.metadata.style)
+  +js(page.metadata.logic + '.js')
 
 
 append content
     header.vspace
-      h1.logo=locals.title
+      h1.logo.vspace=locals.name
       include navigation
+      h2.title.vspace= page.title
 
     main.vspace
       | !{page.html}

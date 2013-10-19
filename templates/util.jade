@@ -12,7 +12,8 @@
 - }
 
 mixin js(fr)
-  script(src=js(fr),type="text/javascript",charset="utf-8")
+  if (fr && fr != 'undefined.js')
+    script(src=js(fr),type="text/javascript",charset="utf-8")
 
 
 - function css(fr) {
@@ -22,7 +23,8 @@ mixin js(fr)
 
 
 mixin css(fr)
-  link(href=css(fr),rel='stylesheet',type='text/css',charset="utf-8")
+  if (fr && fr != '.css')
+    link(href=css(fr),rel='stylesheet',type='text/css',charset="utf-8")
 
 
 - function jpg(fr) {
