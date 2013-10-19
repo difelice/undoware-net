@@ -2,7 +2,7 @@ function(doc,req) {
   var attachment = false;
   var html = '<html><body><ul>';
   var mk_a = function(root) {
-    return '<a href="/_db/design/lookup/_show/message/' + root +  '/attachment">download</a>';
+    return '<a href="/_db/' + root +  '/attachment">download</a>';
   }
 
   if ('attachment' in req.query) { attachment = true; }
