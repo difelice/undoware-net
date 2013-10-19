@@ -10,7 +10,9 @@ function(doc,req) {
 
     var dater = function(v) {
       var out = '';
-
+      if ('when' in v) {
+        out = v.when[0] + '/' + v.when[1] + '/' + v.when[2];
+      }
       return out;
     };
 
