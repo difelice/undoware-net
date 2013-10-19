@@ -5,7 +5,7 @@ function(doc,req) {
 
     var mk_a = function(v) {
       var icon = '<i class="icon-file icon-2x"></i>';
-      if (true) {
+      if (!!v._attachments) {
         var tip =  '<a href="' +  '/_db/' + v._id + '/attachment">';
         var tail = '</a>';
         return tip + icon + tail;
