@@ -7,10 +7,17 @@ function(doc,req) {
       var tail = '?attachment=1">';
       return tip + out + tail;
     };
+
+    var dater = function(w) {
+      try {
+        return w.join(' / ');
+      }
+      return '';
+    }
     while (row = getRow()) {
       if ( !req.query['sender']  || req.query.sender === row.value.sender) {
         html += '<tr><td>' + row.key;
-        html += '</td><td>' + mk_a(row.value._id) + row.value.text + ' ' +  row.value.when  + '</a></td></tr>';
+        html += '</td><td>' + mk_a(row.value._id) + row.value.text + ' ' +  dater(row.value.when) + '</a></td></tr>';
       }
     }
     html += "</table></body></html>";
