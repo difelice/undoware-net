@@ -18,8 +18,8 @@ function(doc,req) {
 
     while (row = getRow()) {
       if ( !req.query['sender']  || req.query.sender === row.value.sender) {
-        html += '<tr><td>' + row.key;
-        html += '</td><td>' + mk_a(row.value._id) + row.value.text + '</a></td><td>' +  dater(row.value) + '</td></tr>';
+        html += '<tr><td>' + dater(row.value)
+        html += '</td><td>' + mk_a(row.value._id) + row.value.text + '</a></td><td>' +  row.key + '</td></tr>';
       }
     }
     html += "</table></body></html>";
