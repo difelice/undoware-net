@@ -20,5 +20,6 @@ template: page.jade
 
     </div>
 </form>
-
-
+<script>
+var table = new Ink.UI.Table('.ink-table');
+</script>
