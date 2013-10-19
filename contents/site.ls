@@ -10,11 +10,12 @@
 */
 
 
-define <[ ng jq logo modernizr ink site ]> ->
+define <[ ng jq logo modernizr ink ink-ui site ]> ->
   uploads = ($scope,$) ->
     p = window.location.pathname
     v = p / \/
     w = v[1] || 'home' /* This is ugly and inflexible; TODO FIXME */
+    table = new Ink.UI.Table '.ink-table'
     angular.element('nav ul li.' ++ w).addClass('active')
     $scope.search = ->
       angular.element('#target').load('_db/_design/lookup/_list/by-sender/by-sender?sender=' ++ $scope.sender)
