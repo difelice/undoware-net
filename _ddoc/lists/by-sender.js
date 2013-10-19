@@ -4,7 +4,7 @@ function(doc,req) {
     var mk_a = function(id) {
       var tip = '<a href="';
       var out = '/_db/_design/lookup/_show/message/' + id;
-      var tail = '">';
+      var tail = '?attachment=1">';
       return tip + out + tail;
     };
     while (row = getRow()) {
