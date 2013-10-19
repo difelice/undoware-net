@@ -18,7 +18,10 @@ function(doc,req) {
     };
 
     while (row = getRow()) {
-      if ( !req.query['sender']  || req.query.sender === row.value.sender) {
+      if ( (!req.query['sender']                    ||
+             req.query.sender === row.value.sender) &&
+            'when' in row.value
+         ) {
         html += '<tr><td>' + dater(row.value)
         html += '</td><td>' + mk_a(row.value._id) + row.value.text + '</a></td><td>' +  row.key + '</td></tr>';
       }
