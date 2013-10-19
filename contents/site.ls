@@ -19,7 +19,7 @@ define <[ ng jq logo modernizr ink site ]> ->
     $scope.search = ->
       val = '"' ++ $scope.sender ++ '"'
       console.log(val)
-      angular.element('#target').load('_db/_design/lookup/_view/by-sender?key=' ++ val)
+      angular.element('#target').load('_db/_design/lookup/list/by-sender/by-sender?key=' ++ val)
     $scope
 
 
