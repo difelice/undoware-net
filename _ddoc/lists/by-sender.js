@@ -21,11 +21,11 @@ function(doc,req) {
       if ( !req.query['sender']                  ||
            req.query.sender === row.value.sender
          ) {
-        html += '<tr><td>'  + dater(row.value) /* first column: date */
-        html += '</td><td>' + row.value.text      + '</td><td>'; /* 2nd: message */
-        html += '</td><td>' + mk_a(row.value._id) + '</td><td>'; /* 3rd; attachment */
-        html += '</td><td>' + row.value.sender /* Fourth: sender */
-        html += '</td></tr>'; /* done row */
+        html += '<tr><td>' + dater(row.value)    + '</td>';     /* first column: date */
+        html +=     '<td>' + row.value.text      + '</td>';     /* 2nd: message */
+        html +=     '<td>' + mk_a(row.value._id) + '</td>';     /* 3rd; attachment */
+        html +=     '<td>' + row.value.sender    + '</td>';     /* Fourth: sender */
+        html += '</tr>'; /* done row */
       }
     }
     html += "</table></body></html>";
