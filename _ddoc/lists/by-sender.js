@@ -9,7 +9,7 @@ function(doc,req) {
     };
     while (row = getRow()) {
       if ( !req.query['sender']  || req.query.sender === row.value.sender) {
-        html += '<tr><td>' + ('when' in row.value) ? row.value.when.join(' / ') : '';
+        html += '<tr><td>' + row.key;
         html += '</td><td>' + mk_a(row.value._id) + row.value.text + '</a></td></tr>';
       }
     }
