@@ -7,7 +7,7 @@ function(doc,req) {
       return tip + href + tail;
     };
     while (row = getRow()) {
-      if (!!req.query.sender && req.query.sender === row.value.sender) {
+      if (! ('sender' in req.query) || req.query.sender === row.value.sender) {
         html += '<tr><td>' + row.key + '</td><td>' + mk_a(row.value) + row.value.text + '</a></td></tr>';
       }
     }
