@@ -10,7 +10,7 @@ function(doc,req) {
         var tail = '</a>';
         return tip + icon + tail;
       } else {
-        return icon;
+        return '-';
       }
     };
 
