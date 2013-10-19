@@ -1,6 +1,7 @@
 function(doc,req) {
   provides("html", function() {
     var html = "<html><body><table class='ink-table alternating'>";
+        html+= "<thead><tr><th data-sortable='true'>Date</th><th>Message</th><th>Sender</th></tr></thead>";
     var mk_a = function(id) {
       var tip = '<a href="';
       var out = '/_db/_design/lookup/_show/message/' + id;
