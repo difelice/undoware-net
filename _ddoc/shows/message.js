@@ -1,7 +1,7 @@
 function(doc,req) {
   var attachment = false;
   var html = '<html><body><ul>';
-  if ('attachment' in req) { attachment = true; }
+  if ('attachment' in req.query) { attachment = true; }
 
 
   html += '<li><strong>id</strong>: ' + doc._id + '</li>';
