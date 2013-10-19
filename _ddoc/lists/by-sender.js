@@ -12,7 +12,7 @@ function(doc,req) {
       var out = '';
       try {
         out = w.join(' / ');
-      }
+      } catch {}
       return out;
     };
 
