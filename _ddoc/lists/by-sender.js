@@ -3,7 +3,7 @@ function(doc,req) {
     var html = "<html><body><table class='ink-table alternating'>";
     var mk_a = function(id) {
       var tip = '<a href="';
-      var out = '/_db/_design/lookup/_show/message' + id;
+      var out = '/_db/_design/lookup/_show/message/' + id;
       var tail = '">';
       return tip + out + tail;
     };
