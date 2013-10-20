@@ -31,7 +31,7 @@ define <[ ng jq logo modernizr ink ink-ui site ]> ->
         restrict: 'A'
         compile: (tElement, tAttrs, transclude) ->
           { post: (scope, iElement, iAttrs, controller) ->
-             iElement.insertBefore 'foo'
+             iElement.html 'foo'
           }
       }
 });
