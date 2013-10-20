@@ -1,6 +1,6 @@
 function(doc,req) {
   provides("html", function() {
-    var html = "<html><body><table class='ink-table alternating'>";
+    var html = "<html><body><table id='uploads' class='ink-table alternating'>";
         html+= "<thead><tr><th data-sortable='true'>Date</th><th>Message</th><th data-sortable='true'>Upload</th><th data-sortable='true'>Sender</th></tr></thead><tbody>";
 
     var mk_a = function(v) {
