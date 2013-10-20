@@ -26,7 +26,8 @@ define <[ ng jq logo modernizr ink ink-ui site ]> ->
     .module(\site <[ logo ]>)
     .controller('uploads', ['$scope', uploads])
     .directive 'stub', (injectables) ->
-      { replace: false
+      {
+        replace: false
         transclude: false
         restrict: 'A'
         compile: (tElement, tAttrs, transclude) ->
