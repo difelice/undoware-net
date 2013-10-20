@@ -22,4 +22,17 @@ define <[ ng jq logo modernizr ink ink-ui site ]> ->
     $scope
 
 
-  angular.module(\site <[ logo ]>).controller('uploads', ['$scope', uploads])
+  angular
+    .module(\site <[ logo ]>)
+    .controller('uploads', ['$scope', uploads])
+    .directive 'stub', (injectables) ->
+      { replace: false
+        transclude: false
+        restrict: 'A'
+        compile: (tElement, tAttrs, transclude) ->
+          { post: (scope, iElement, iAttrs, controller) ->
+             iElement.insertBefore 'foo'
+          }
+      }
+});
+

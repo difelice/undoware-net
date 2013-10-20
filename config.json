@@ -3,6 +3,7 @@
     "base":     "http://lookup.app/",
     "cdn":      false,
     "name":     "Lookup.app",
+    "icon":     "stethoscope",
     "owner":    "MedExtra",
     "color": {
       "class": {
