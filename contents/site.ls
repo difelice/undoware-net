@@ -34,5 +34,3 @@ define <[ ng jq logo modernizr ink ink-ui site ]> ->
              iElement.html 'foo'
           }
       }
-});
-
