@@ -31,5 +31,5 @@ define <[ ng jq logo modernizr ink ink-ui site ]> ->
         transclude: false
         restrict: 'A'
         link:  (scope, iElement, iAttrs, controller) ->
-          console.log foo
+          console.log \foo
       }
