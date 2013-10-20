@@ -1,5 +1,5 @@
 ---
-title: Search Eligibility Information
+title: Help
 template: page.jade
 ---
 
