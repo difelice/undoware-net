@@ -20,10 +20,10 @@
           "class": "uploads"
         }
       }, {
-        "href": "/eligibility.html",
+        "href": "/help.html",
         "menu": {
-          "name" : "Eligibility",
-          "class": "eligibility"
+          "name" : "Help",
+          "class": "help"
         }
       }
     ],
