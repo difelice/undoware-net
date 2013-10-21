@@ -25,17 +25,17 @@ append content
               i(class=iconClass)
               | &nbsp;
             | !{locals.name}
+          span.title
+            if (page.metadata.icon)
+              - var i = 'icon-' + page.metadata.icon;
+              i(class=i)
+              | &nbsp;
+            | !{page.title}
           a.push-right(href='/help.html')
             i.icon-question-sign
           span.beta.push-right.small
             | BETA &nbsp;
       include navigation
-      h4.title.push-centre
-        if (page.metadata.icon)
-          - var i = 'icon-' + page.metadata.icon;
-          i(class=i)
-          | &nbsp;
-        | !{page.title}
 
 
     main.white
