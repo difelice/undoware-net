@@ -14,7 +14,7 @@ append content
       a.push-right(href='/help.html')
         i.icon-question-sign.icon-2x
       if (locals.owner)
-        h1.vspace.push-center
+        h1.vspace
           span
             if (locals.ownurl)
               a(href=locals.ownurl)=locals.owner
@@ -27,6 +27,8 @@ append content
               i(class=iconClass)
               | &nbsp;
             | !{locals.name}
+          span.beta
+            BETA
       include navigation
       h2.title= page.title
 
