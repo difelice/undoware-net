@@ -8,14 +8,15 @@ body
 
 
 
-body > *
-  max-width 800px
-  margin 0 auto
-  padding 1em
+body
   &:first-child
     border-radius: top 4px
   &:last-child
     border-radius: bottom 4px
+  & > *
+    max-width 800px
+    margin 0 auto
+    padding 1em
 
 
 
