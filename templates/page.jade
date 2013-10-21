@@ -14,8 +14,8 @@ append content
       a.push-right(href='/help.html')
         i.icon-question-sign.icon-2x
       if (locals.owner)
-        h1.vspace
-          span.push-center
+        h1.vspace.push-center
+          span
             if (locals.ownurl)
               a(href=locals.ownurl)=locals.owner
             else
