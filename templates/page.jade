@@ -10,7 +10,7 @@ append head
 
 
 append content
-    header.vspace
+    header.vspace.black
     if (locals.owner)
       h1.vspace
         span
@@ -28,7 +28,7 @@ append content
       include navigation
       h2.title.vspace= page.title
 
-    main.vspace
+    main.vspace.white
       | !{page.html}
 
     footer.footer
