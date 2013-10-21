@@ -1,5 +1,5 @@
 ---
-title: Search Contact Form Uploads
+title: Uploads
 template: page.jade
 ---
 
