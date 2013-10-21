@@ -11,7 +11,11 @@ append head
 
 append content
     header.vspace
-      h1.logo.vspace=locals.name
+      h1.logo.vspace
+        if (locals.icon)
+          - var iconClass = 'icon-2x icon-' + locals.icon;
+          i(class=iconClass)
+        | !{locals.name}
       include navigation
       h2.title.vspace= page.title
 
