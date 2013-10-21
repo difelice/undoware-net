@@ -4,7 +4,7 @@
     "cdn":      false,
     "name":     "Lookup.app",
     "icon":     "stethoscope",
-    "owner-url": "https://www.medextra.com/"
+    "ownerUrl": "https://www.medextra.com/"
     "owner":    "MedExtra",
     "color": {
       "class": {
