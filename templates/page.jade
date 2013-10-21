@@ -12,7 +12,7 @@ append head
 append content
     header.white
       if (locals.owner)
-        h1.quarter-top-space
+        h3.quarter-top-space
           span.quarter-left-space
             if (locals.ownurl)
               a(href=locals.ownurl)=locals.owner
@@ -30,7 +30,7 @@ append content
           span.beta.push-right.small
             | BETA &nbsp;
       include navigation
-      h2.title= page.title
+      h3.title= page.title
 
     main.white
       | !{page.html}
