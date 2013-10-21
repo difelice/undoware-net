@@ -10,7 +10,7 @@ append head
 
 
 append content
-    header.vspace.white
+    header.white
       if (locals.owner)
         h1.vspace
           span
@@ -26,12 +26,12 @@ append content
               | &nbsp;
             | !{locals.name}
       include navigation
-      h2.title.vspace= page.title
+      h2.title= page.title
 
-    main.vspace.white
+    main.white
       | !{page.html}
 
-    footer.footer.white
+    footer.footer.black
       h6 © MedExtra 2013 All Rights Reserved.
       h6 Questions? Problems? <a href="mailto:emarston@medextra.com">Email.</a>
 
