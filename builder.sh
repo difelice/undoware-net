@@ -17,7 +17,13 @@
 #      REVISION:  ---
 #===============================================================================
 
+INK_HOME=stack/Ink/
+
 set -o nounset                              # Treat unset variables as an error
+
+cd $INK_HOME
+make
+cd -
 dest=http://beth:Rut3shae@10.8.0.1:5984/incoming/
 us=`pwd`
 b=$us/build/lookup
