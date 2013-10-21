@@ -9,7 +9,6 @@ template: page.jade
     <fieldset>
         <div class="control-group">
             <div class="control large-80 append-button push-center">
-                <label for="text-input">Enter email address of sender, leave blank for all</label>
                 <span><input id="text-input" type="email" placeholder="someone@somewhere.com" ng-model="sender"></span>
                 <button class="ink-button" ng-click="search()"><i class="icon-search"></i> Search</button>
             </div>
