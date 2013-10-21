@@ -21,12 +21,6 @@
           "name" : "Uploads",
           "class": "uploads"
         }
-      }, {
-        "href": "/help.html",
-        "menu": {
-          "name" : "Help",
-          "class": "help"
-        }
       }
     ],
     "loader": {
