@@ -18,8 +18,8 @@
       {
         "href": "/",
         "menu": {
-          "name" : "Uploads",
-          "class": "uploads"
+          "name" : "Inbox",
+          "class": "inbox"
         }
       }
     ],

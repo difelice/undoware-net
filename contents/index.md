@@ -1,5 +1,5 @@
 ---
-title: MedExtra.com Contact Form Uploads and Messages
+title: MedExtra.com Contact Form Inbox
 template: page.jade
 ---
 
