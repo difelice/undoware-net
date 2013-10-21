@@ -22,7 +22,15 @@
           "class": "inbox",
           "icon": "inbox"
         }
+      },      {
+        "href": "/eligibility.html",
+        "menu": {
+          "name" : "Eligibility",
+          "class": "eligibility",
+          "icon": "certificate"
+        }
       }
+
     ],
     "loader": {
       "src":  "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js",
