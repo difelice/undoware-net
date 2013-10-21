@@ -19,7 +19,8 @@
         "href": "/",
         "menu": {
           "name" : "Inbox",
-          "class": "inbox"
+          "class": "inbox",
+          "icon": "inbox"
         }
       }
     ],
