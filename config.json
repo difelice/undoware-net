@@ -29,6 +29,13 @@
           "class": "eligibility",
           "icon": "certificate"
         }
+      },      {
+        "href": "/transactions.html",
+        "menu": {
+          "name" : "Transactions",
+          "class": "transactions",
+          "icon": "dollar"
+        }
       }
 
     ],
