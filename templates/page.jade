@@ -14,8 +14,8 @@ append content
       h1.logo.vspace
         if (locals.owner)
           h1
-            if (locals.owner-url)
-              a(href=locals.owner-url)=locals.owner
+            if (locals.ownurl)
+              a(href=locals.ownurl)=locals.owner
             else
               | !{locals.owner}
         if (locals.icon)
