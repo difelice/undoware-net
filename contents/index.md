@@ -1,5 +1,5 @@
 ---
-title: MedExtra.com Inbox
+title: Inbox
 template: page.jade
 icon: inbox
 ---
