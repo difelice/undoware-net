@@ -1,6 +1,7 @@
 ---
-title: MedExtra.com Contact Form Inbox
+title: MedExtra.com Inbox
 template: page.jade
+icon: inbox
 ---
 
 

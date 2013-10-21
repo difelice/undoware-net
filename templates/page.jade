@@ -30,7 +30,12 @@ append content
           span.beta.push-right.small
             | BETA &nbsp;
       include navigation
-      h4.title= page.title
+      h4.title
+        if (page.metadata.icon)
+          - var i = 'icon-2x icon-' + page.metadata.icon;
+          i(class=i)
+        | !{page.title}
+
 
     main.white
       | !{page.html}
