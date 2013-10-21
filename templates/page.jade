@@ -11,8 +11,6 @@ append head
 
 append content
     header.white
-      a.push-right(href='/help.html')
-        i.icon-question-sign.icon-2x
       if (locals.owner)
         h1.vspace
           span
@@ -29,6 +27,8 @@ append content
             | !{locals.name}
           span.beta.push-right.small
             | &nbsp; BETA
+          a.push-right(href='/help.html')
+            i.icon-question-sign.icon-2x
       include navigation
       h2.title= page.title
 
