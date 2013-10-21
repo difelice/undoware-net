@@ -21,7 +21,9 @@ append content
         span.logo
           if (locals.icon)
             - var iconClass = 'icon-' + locals.icon;
+            | &nbsp;
             i(class=iconClass)
+            | &nbsp;
           | !{locals.name}
       include navigation
       h2.title.vspace= page.title
