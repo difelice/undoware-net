@@ -11,13 +11,13 @@ append head
 
 append content
     header.vspace
+    if (locals.owner)
+      h1
+        if (locals.ownurl)
+          a(href=locals.ownurl)=locals.owner
+        else
+          | !{locals.owner}
       h1.logo.vspace
-        if (locals.owner)
-          h1
-            if (locals.ownurl)
-              a(href=locals.ownurl)=locals.owner
-            else
-              | !{locals.owner}
         if (locals.icon)
           - var iconClass = 'icon-' + locals.icon;
           i(class=iconClass)
