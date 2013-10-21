@@ -12,7 +12,7 @@ append head
 append content
     header.vspace
       h1.logo.vspace
-        if (locals.brand)
+        if (locals.owner-url)
           h1
             a(href=locals.owner-url)=locals.owner
         if (locals.icon)
