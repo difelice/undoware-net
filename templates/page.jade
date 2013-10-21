@@ -13,7 +13,7 @@ append content
     header.vspace
       h1.logo.vspace
         if (locals.icon)
-          - var iconClass = 'icon-2x icon-' + locals.icon;
+          - var iconClass = 'icon-' + locals.icon;
           i(class=iconClass)
         | !{locals.name}
       include navigation
