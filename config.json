@@ -34,7 +34,7 @@
         "menu": {
           "name" : "Transactions",
           "class": "transactions",
-          "icon": "dollar"
+          "icon": "money"
         }
       }
 
