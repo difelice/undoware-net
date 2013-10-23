@@ -36,6 +36,13 @@
           "class": "transactions",
           "icon": "money"
         }
+      }, {
+        "href": "/people.html",
+        "menu": {
+          "name" : "People",
+          "class": "people",
+          "icon": "group"
+        }
       }
 
     ],
