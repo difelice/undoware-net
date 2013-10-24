@@ -4,9 +4,17 @@
 @import 'nib'
 @import(util)
 
+@media screen and (min-width: 961px)
+  body
+    background-image: url(/stethoscope.jpg)
+
+@media screen and (max-width: 960px)
+  body
+    background-image: url(/greyzz.jpg)
+
+
 
 body
-  background-image: url(/stethoscope.jpg)
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment:  fixed
@@ -42,3 +50,4 @@ li.help
 
 footer.footer
   opacity: 0.90
+
