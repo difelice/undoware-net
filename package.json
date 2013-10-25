@@ -1,11 +1,10 @@
 {
   "name": "stock",
-  "version": "0.0.2",
-  "private": true,
+  "version": "0.0.3",
   "dependencies": {
-    "typogr": "0.5.x",
-    "LiveScript": "1.2.x",
-    "wintersmith": "2.0.x",
+    "typogr":       "0.5.x",
+    "LiveScript":   "1.2.x",
+    "wintersmith":  "2.0.x",
     "wintersmith-stylus": "0.4.x",
     "wintersmith-ls": ">=0.0.5",
     "cheerio": "0.12.x",

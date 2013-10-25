@@ -1,11 +1,11 @@
 {
   "locals": {
-    "base":     "http://lookup.app/",
+    "base":     "http://localhost/",
     "cdn":      false,
-    "name":     "Lookup.app",
-    "icon":     "stethoscope",
-    "ownurl": "https://www.medextra.com/",
-    "owner":    "MedExtra",
+    "name":     "Stock",
+    "icon":     "youtube",
+    "ownurl": "https://undoware.ca/",
+    "owner":    "Undoware",
     "color": {
       "class": {
         "menu": {
@@ -18,33 +18,11 @@
       {
         "href": "/",
         "menu": {
-          "name" : "Inbox",
-          "class": "inbox",
-          "icon": "inbox"
-        }
-      },      {
-        "href": "/eligibility.html",
-        "menu": {
-          "name" : "Eligibility",
-          "class": "eligibility",
-          "icon": "certificate"
-        }
-      },      {
-        "href": "/transactions.html",
-        "menu": {
-          "name" : "Transactions",
-          "class": "transactions",
-          "icon": "money"
-        }
-      }, {
-        "href": "/people.html",
-        "menu": {
-          "name" : "People",
-          "class": "people",
-          "icon": "group"
+          "name" : "Hello",
+          "class": "hello",
+          "icon": "youtube"
         }
       }
-
     ],
     "loader": {
       "src":  "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js",

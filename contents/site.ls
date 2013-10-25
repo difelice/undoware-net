@@ -11,25 +11,4 @@
 
 
 define <[ ng jq logo modernizr ink ink-ui site ]> ->
-  uploads = ($scope,$) ->
-    p = window.location.pathname
-    v = p / \/
-    w = v[1] || 'home' /* This is ugly and inflexible; TODO FIXME */
-    angular.element('nav ul li.' ++ w).addClass('active')
-    $scope.search = ->
-      <- angular.element('#target').load('_db/_design/lookup/_list/by-sender/by-sender?sender=' ++ $scope.sender)
-      table = new Ink.UI.Table ('.ink-table')
-    $scope
-
-
-  angular
-    .module(\site <[ logo ]>)
-    .controller('uploads', ['$scope', uploads])
-    .directive 'stub' ->
-      {
-        replace: false
-        transclude: false
-        restrict: 'A'
-        link:  (scope, iElement, iAttrs, controller) ->
-          console.log \foo
-      }
+  angular.module(\site <[ logo ]>)
