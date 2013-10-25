@@ -30,10 +30,14 @@ function validate (newDoc, oldDoc, userCtx, secObj) {
     if (userCtx.name !== null) {
         IS_LOGGED_IN_USER = true;
     }
+    /* lifted with mods from guide.couchdb.org/draft/validation.html */
+    function require(beTrue, message) {
+      if (!beTrue) throw({forbidden: message});
+    }
+    function unchanged(field) {
+      return (oldDoc && toJSON(oldDoc[field]) != toJSON(newDoc[field])) ? false: true;
+    }
 
+    require(unchanged('when'));
 
-    if(IS_DB_ADMIN || IS_LOGGED_IN_USER)
-        log('User : ' + userCtx.name + ' changing document: ' +  newDoc._id);
-    else
-        throw {'forbidden':'Only admins and users can alter documents'};
 }

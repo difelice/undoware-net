@@ -3,24 +3,46 @@
 include(util)
 
 
+
 append head
-  title= page.metadata.title
-
-append style
-  - if (page.metadata.style) { css(page.metadata.style) }
-
-
-append logic
-  - if (page.metadata.logic) { js(page.metadata.logic) }
+  +css(page.metadata.style)
+  +js(page.metadata.logic + '.js')
 
 
 append content
-    header.vspace
-      h1.logo=locals.title
+    header.white
+      if (locals.owner)
+        h4.quarter-top-space
+          span.quarter-left-space
+            if (locals.ownurl)
+              a(href=locals.ownurl)=locals.owner
+            else
+              | !{locals.owner}
+          span.logo
+            if (locals.icon)
+              - var iconClass = 'icon-' + locals.icon;
+              | &nbsp;
+              i(class=iconClass)
+              | &nbsp;
+            | !{locals.name}
+          | : &nbsp;
+          span.title
+            if (page.metadata.icon)
+              - var i = 'icon-' + page.metadata.icon;
+              i(class=i)
+              | &nbsp;
+            | !{page.title}
+          span.beta.push-right.small
       include navigation
 
-    main.vspace
+
+    main.white
       | !{page.html}
 
+    footer.footer
+      span.small.push-right
+        | Unauthorized use of this system is strictly forbidden by BAD MEN with GUNS.
+      span.small.push-left
+        | © 2013 !{locals.owner}. All Rights Reserved.
 
 extends site
