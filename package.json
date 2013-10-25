@@ -1,6 +1,6 @@
 {
   "name": "stock",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "dependencies": {
     "typogr":       "0.5.x",
     "LiveScript":   "1.2.x",
