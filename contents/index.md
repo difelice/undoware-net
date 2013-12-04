@@ -11,7 +11,7 @@ icon: coffee
         <div class="control-group">
             <div class="control-group large-80 push-center">
                 <span class="control large-40">
-                  <input id="message-sender" type="email" placeholder="jsmith" ng-model="message.sender"j required>
+                  <input id="message-sender" type="text" placeholder="jsmith" ng-model="message.sender"j required>
                 </span>
                 <span class="large-40">@medextra.com</span>
             </div>
