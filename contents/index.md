@@ -1,7 +1,7 @@
 ---
-title: Inbox
+title: Quick Send
 template: page.jade
-icon: inbox
+icon: coffee
 ---
 
 
