@@ -14,7 +14,7 @@ icon: coffee
             </span>
             <span class="large-40 push-center">
                 @medextra.com
-            </spn>
+            </span>
             <div class="control large-80 push-center">
                 <input id="text-input" type="email" placeholder="someone@somewhere.com" ng-model="sender">
             </div>
