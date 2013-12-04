@@ -15,13 +15,13 @@ icon: coffee
                 </span>
                 <span class="large-40">@medextra.com</span>
             </div>
-            <div class="control large-80 push-center vertical-space">
+            <div class="control large-80 push-center">
               <input id="recipient-address" type="email" placeholder="someone@somewhere.com" ng-model="recipient">
             </div>
             <div class="control large-80 push-center vertical-space">
                 <input id="message-attachment" type="file" accept="*" ng-model="message.attachment" />
             </div>
-            <div class="control large-80 push-center vertical-space">
+            <div class="control large-80 push-center">
               <textarea id="message-text" ng-model="message.text"></textarea>
             </div>
             <div class="control large-80 push-center vertical-space">
