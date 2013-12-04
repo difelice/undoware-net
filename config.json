@@ -41,7 +41,7 @@
           "modernizr":    "https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min",
           "jq":           "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min",
           "ng":           "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min",
-          "ng-cookies":   "//ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular-cookies.js"
+          "ng-cookies":   "//ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular-cookies.min"
         },
         "deps": [
           "jq",
