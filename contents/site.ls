@@ -16,7 +16,7 @@ define <[ ng jq logo modernizr ink ink-ui site ]> ->
     v = p / \/
     w = v[1] || 'home' /* This is ugly and inflexible; TODO FIXME */
     angular.element('nav ul li.' ++ w).addClass('active')
-    $scope =
+    $scope <<<
       message:
         text: ''
         attachment: null
