@@ -10,7 +10,7 @@ icon: coffee
     <fieldset>
         <div class="control-group">
             <div class="control large-80 push-center">
-                {{user}}@medextra.com</span>
+                <p>{{user}}@medextra.com</p>
             </div>
             <div class="control large-80 push-center">
               <input id="message-recipient" type="email" placeholder="someone@somewhere.com" ng-model="message.recipient" required>
