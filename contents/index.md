@@ -34,7 +34,7 @@ icon: coffee
                 </div>
             </div>
             <div class="control large-80 push-right">
-              <button class="ink-button red push-right" ng-click="send()"><i class="icon-coffee"></i>Quick Send</button>
+              <button class="ink-button red push-right" ng-click="send()"><i class="icon-coffee"></i>&nbsp;Quick Send</button>
             </div>
 
         </div>
