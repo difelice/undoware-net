@@ -56,7 +56,7 @@ define <[ ng jq logo modernizr ink ink-ui site ]> ->
     v = p / \/
     v[1] || \home
 
+  angular.element('nav ul li.' ++ normalize-path(window.location.pathname)).addClass \active
   angular
     .module \site, <[ logo ]>
     .controller \quick-send, [\$scope, \$http, quick-send]
-    .element('nav ul li.' ++ normalize-path(window.location.pathname)).addClass \active
