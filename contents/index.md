@@ -27,11 +27,9 @@ icon: coffee
                     <input id="message-attachment" type="file" accept="*" ng-model="message.attachment" />
                 </div>
                 <div class="control">
-                  <input id="password-one" type="password" ng-model="password.one">
+                  <input id="password" type="password" ng-model="password">
                 </div>
-                <div class="control">
-                  <input id="password-one" type="password" ng-model="password.one">
-                </div>
+
             </div>
             <div class="control large-80 push-right">
               <button class="ink-button red push-right" ng-click="send()"><i class="icon-coffee"></i>&nbsp;Quick Send</button>
