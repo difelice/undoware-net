@@ -1,5 +1,5 @@
 
-define <[ ng jq logo modernizr ink ink-ui site ]> ->
+define <[ ng ng-cookies jq logo modernizr ink ink-ui site ]> ->
   quick-send = ($scope, $http) ->
     $http.defaults.headers.post = { Content-Type: 'application/json,charset=UTF-8' }
     $scope <<<
@@ -58,5 +58,5 @@ define <[ ng jq logo modernizr ink ink-ui site ]> ->
 
   angular.element('nav ul li.' ++ normalize-path(window.location.pathname)).addClass \active
   angular
-    .module \site, <[ logo ]>
-    .controller \quick-send, [\$scope, \$http, quick-send]
+    .module \site, <[ logo ngCookies ]>
+    .controller \quick-send, [\$scope, \$http, $cookies, quick-send]
