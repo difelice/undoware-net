@@ -7,7 +7,7 @@ define <[ ng jq logo modernizr ink ink-ui site ]> ->
       message:
         sender: ''
         recipient: ''
-        text: ''
+        text: 'testing'
         has-attachment: false
       file:
         data: null
