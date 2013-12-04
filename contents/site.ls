@@ -30,7 +30,7 @@ define <[ ng jq logo modernizr ink ink-ui site ]> ->
 
   angular
     .module(\site <[ logo ]>)
-    .controller('quick-send', ['$scope', quick-send])
+    .controller(\quick-send, ['$scope', quick-send])
     .directive 'stub' ->
       {
         replace: false
