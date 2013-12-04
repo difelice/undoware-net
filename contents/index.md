@@ -28,6 +28,7 @@ icon: coffee
                 <div class="control large-40">
                   <input id="password-one" type="password" ng-model="password.one">
                 </div>
+                <br/>
                 <div class="control large-40">
                   <input id="password-two" type="password" ng-model="password.two">
                 </div>
