@@ -22,15 +22,12 @@ icon: coffee
               <textarea id="message-text" ng-model="message.text"></textarea>
             </div>
             <div class="control-group large-80 push-center">
-                <div class="control large-40 push-center">
+              <div class="control-group large-40 push-left">
+                <div class="control">
                     <input id="message-attachment" type="file" accept="*" ng-model="message.attachment" />
                 </div>
-                <div class="control large-40">
+                <div class="control">
                   <input id="password-one" type="password" ng-model="password.one">
-                </div>
-                <br/>
-                <div class="control large-40">
-                  <input id="password-two" type="password" ng-model="password.two">
                 </div>
             </div>
             <div class="control large-80 push-center">
