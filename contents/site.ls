@@ -4,7 +4,7 @@ define <[ ng jq logo modernizr ink ink-ui site ]> ->
     $http.defaults.headers.post = { Content-Type: \application/json;charset=UTF-8 }
     $scope.user = \foo
     $scope <<<
-        message:
+      message:
         sender: ''
         recipient: ''
         text: 'testing'
