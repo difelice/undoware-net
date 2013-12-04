@@ -21,14 +21,14 @@ icon: coffee
             <div class="control large-80 push-center vertical-space">
               <textarea id="message-text" ng-model="message.text"></textarea>
             </div>
-            <div class="control large-80 push-center">
-                <input id="message-attachment" type="file" accept="*" ng-model="message.attachment" />
-            </div>
             <div class="control-group large-80 push-center">
-                <span class="control large-40">
+                <div class="control large-40 push-center">
+                    <input id="message-attachment" type="file" accept="*" ng-model="message.attachment" />
+                </div>
+                <div class="control large-40">
                   <input id="password-one" type="password" ng-model="password.one">
                 </span>
-                <span class="control large-40">
+                <div class="control large-40">
                   <input id="password-two" type="password" ng-model="password.two">
                 </span>
             </div>
