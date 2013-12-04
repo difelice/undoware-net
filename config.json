@@ -40,8 +40,8 @@
           "ink-ui":       "ink-ui.min",
           "modernizr":    "https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min",
           "jq":           "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min",
-          "ng":           "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.min",
-          "ng-cookies":   "//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular-cookies.js"
+          "ng":           "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min",
+          "ng-cookies":   "//ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular-cookies.js"
         },
         "deps": [
           "jq",
