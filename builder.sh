@@ -1,18 +1,18 @@
-#!/bin/bash - 
+#!/bin/bash -
 #===============================================================================
 #
 #          FILE: builder.sh
-# 
-#         USAGE: ./builder.sh 
-# 
-#   DESCRIPTION: 
-# 
+#
+#         USAGE: ./builder.sh
+#
+#   DESCRIPTION:
+#
 #       OPTIONS: ---
 #  REQUIREMENTS: ---
 #          BUGS: ---
 #         NOTES: ---
-#        AUTHOR: YOUR NAME (), 
-#  ORGANIZATION: 
+#        AUTHOR: YOUR NAME (),
+#  ORGANIZATION:
 #       CREATED: 18/10/13 17:29:31 PDT
 #      REVISION:  ---
 #===============================================================================
@@ -24,7 +24,7 @@ set -o nounset                              # Treat unset variables as an error
 cd $INK_HOME
 make
 cd -
-dest=http://beth:cafebabe@localhost:5984/incoming/
+dest=http://localhost:5984/outgoing/
 us=`pwd`
 b=$us/build/lookup
 pushd $us
