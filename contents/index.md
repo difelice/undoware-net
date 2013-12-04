@@ -27,10 +27,10 @@ icon: coffee
                 </div>
                 <div class="control large-40">
                   <input id="password-one" type="password" ng-model="password.one">
-                </span>
+                </div>
                 <div class="control large-40">
                   <input id="password-two" type="password" ng-model="password.two">
-                </span>
+                </div>
             </div>
             <div class="control large-80 push-center">
               <button class="ink-button red push-right" ng-click="send()"><i class="icon-coffee"></i>Quick Send</button>
