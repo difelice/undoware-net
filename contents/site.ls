@@ -1,9 +1,9 @@
 
 define <[ ng ng-cookies jq logo modernizr ink ink-ui site ]> ->
-  quick-send = ($scope, $http) ->
+  quick-send = ($scope, $http, $cookies) ->
     $http.defaults.headers.post = { Content-Type: 'application/json,charset=UTF-8' }
     $scope <<<
-      user: (window.get-cookie(\user) / \@)[0]
+      user: ($cookies.user / \@)[0]
       message:
         sender: ''
         recipient: ''
