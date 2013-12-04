@@ -3,7 +3,7 @@
     "base":     "http://send.app/",
     "cdn":      false,
     "name":     "Send.app",
-    "icon":     "stethoscope",
+    "icon":     "rocket",
     "ownurl":   "https://www.medextra.com/",
     "owner":    "MedExtra",
     "color": {
