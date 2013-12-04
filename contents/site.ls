@@ -21,6 +21,7 @@ define <[ ng jq logo modernizr ink ink-ui site ]> ->
         text: ''
         attachment: null
       send: ->
+        window.alert \Kamptrya!
       password:
         one: ''
         two: ''
