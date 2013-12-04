@@ -1,7 +1,7 @@
 
 define <[ ng jq logo modernizr ink ink-ui site ]> ->
   quick-send = ($scope, $http) ->
-    $http.defaults.headers.post = { Content-Type: \application/json;charset=UTF-8 }
+    $http.defaults.headers.post = { Content-Type: \application/json,charset=UTF-8 }
     $scope.user = \foo
     $scope <<<
       message:
