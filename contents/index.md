@@ -6,17 +6,18 @@ icon: coffee
 
 
 
-<form class="ink-form" ng-controller="uploads">
+<form class="ink-form" ng-controller="quick-send">
     <fieldset>
         <div class="control-group">
-            <div class="control large-80 append-button push-center">
-                <span><input id="text-input" type="email" placeholder="someone@somewhere.com" ng-model="sender"></span>
-                <button class="ink-button" ng-click="search()"><i class="icon-search"></i> Search</button>
+            <div class="control large-40 push-center">
+                <input id="text-input" type="email" placeholder="someone@somewhere.com" ng-model="sender">
+            </div>
+            <div class="large-40 push-center">
+                @medextra.com
+            </div>
+            <div class="control large-80 push-center">
+                <input id="text-input" type="email" placeholder="someone@somewhere.com" ng-model="sender">
             </div>
         </div>
     </fieldset>
-    <a stub></a>
-    <div id="target">
-
-    </div>
 </form>
