@@ -26,7 +26,7 @@ make
 cd -
 dest=http://localhost:5984/outgoing/
 us=`pwd`
-b=$us/build/lookup
+b=$us/build/send
 pushd $us
 git commit -am 'autocommit'
 wintersmith build
