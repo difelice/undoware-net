@@ -59,4 +59,4 @@ define <[ ng ng-cookies jq logo modernizr ink ink-ui site ]> ->
   angular.element('nav ul li.' ++ normalize-path(window.location.pathname)).addClass \active
   angular
     .module \site, <[ logo ngCookies ]>
-    .controller \quick-send, [\$scope, \$http, $cookies, quick-send]
+    .controller \quick-send, [\$scope, \$http, \$cookies, quick-send]
