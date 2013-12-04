@@ -25,7 +25,7 @@ icon: coffee
               <textarea id="message-text" ng-model="message.text"></textarea>
             </div>
             <div class="control large-80 push-right">
-              <button class="ink-button red" ng-click="send()"><i class="icon-rocket"></i> Send</button>
+              <button class="ink-button red" ng-click="send()"><i class="icon-coffee"></i>Quick Send</button>
             </div>
 
         </div>
