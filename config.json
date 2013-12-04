@@ -23,7 +23,7 @@
           "icon": "coffee"
         }
       },      {
-        "href": "/share.html",
+        "href": "/share/",
         "menu": {
           "name" : "Share",
           "class": "share",

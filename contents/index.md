@@ -11,12 +11,12 @@ icon: coffee
         <div class="control-group">
             <div class="control-group large-80 push-center">
                 <span class="control large-40">
-                  <input id="sender-username" type="email" placeholder="jsmith" ng-model="sender">
+                  <input id="message-sender" type="email" placeholder="jsmith" ng-model="message.sender"j required>
                 </span>
                 <span class="large-40">@medextra.com</span>
             </div>
             <div class="control large-80 push-center">
-              <input id="recipient-address" type="email" placeholder="someone@somewhere.com" ng-model="recipient">
+              <input id="message-recipient" type="email" placeholder="someone@somewhere.com" ng-model="message.recipient" required>
             </div>
             <div class="control large-80 push-center vertical-space">
               <textarea id="message-text" ng-model="message.text"></textarea>
@@ -24,14 +24,14 @@ icon: coffee
             <div class="control-group large-80 push-center">
               <div class="control-group large-40 push-left">
                 <div class="control">
-                    <input id="message-attachment" type="file" accept="*" ng-model="message.attachment" />
+                    <input id="file-data" type="file" accept="*" ng-model="file.data" />
                 </div>
                 <div class="control">
-                  <input id="password" type="password" ng-model="password">
+                  <input id="file-password" type="password" ng-model="file.password" >
                 </div>
               </div>
               <div class="control large-40 push-right vertical-space">
-                <button class="ink-button red push-right" ng-click="send()"><i class="icon-coffee"></i>&nbsp;Quick Send</button>
+                <button id="send" class="ink-button red push-right" ng-click="send()"><i class="icon-coffee"></i>&nbsp;Quick Send</button>
               </div>
             </div>
         </div>
