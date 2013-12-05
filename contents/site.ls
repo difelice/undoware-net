@@ -47,7 +47,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
 
       pwgen: ->
         angular.element(\#file-password).val(generate-password(7))
-        change!
+        $scope.change!
         false
       premature: true
       change: ->
@@ -58,7 +58,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
           $scope.message.has-attachment = true
         else
           window.alert 'Your browser does not support the FileReader API, which is required for file uploads. It is probable that you are using IE9 or older. Please upgrade.'
-        $scope.change(...)
+        $scope.change!
 
 
 
