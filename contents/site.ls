@@ -1,6 +1,6 @@
 
 define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
-  quick-send = ($scope, $http, $cookies) ->
+  quick-send = ($scope, $http, $location, $cookies) ->
     $http.defaults.headers.post = { \Content-Type : 'application/json;charset=utf-8' }
     $scope <<<
       user: ($cookies.user / \@)[0]
@@ -46,7 +46,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
           senda $scope.message
 
       pwgen: ->
-        $scope.password = generate-password 7
+        $scope.password = generate-password 7 #miller's magic number
         $scope.change!
         false
       premature: true
@@ -70,5 +70,5 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
   angular.element('nav ul li.' ++ normalize-path(window.location.pathname)).add-class \active
   angular
     .module \site, <[ logo ngCookies ]>
-    .controller \quick-send, [\$scope, \$http, \$cookies, quick-send]
+    .controller \quick-send, [\$scope, \$http, \$location, \$cookies, quick-send]
 
