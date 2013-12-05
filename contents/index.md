@@ -10,13 +10,13 @@ icon: coffee
     <fieldset>
         <div class="control-group">
             <div class="control-group large-80 push-center">
-            <div class="control large-35">
+            <div class="control large-35 push-left">
                 <p>{{user}}@medextra.com</p>
             </div>
-            <div class="large-10">
+            <div class="large-10 push-center">
             <span class="icon-long-arrow-right">
             </div>
-            <div class="control large-35">
+            <div class="control large-35 push-right">
               <input id="message-recipient" type="email" placeholder="someone@somewhere.com" ng-model="message.recipient" required>
             </div>
             </div>
