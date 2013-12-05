@@ -44,7 +44,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
         if $scope.has-attachment
           filesenda m, $scope.file, senda
         else
-          senda $scope.message
+          senda m
 
       pwgen: ->
         $scope.password = generate-password 7 #miller's magic number
