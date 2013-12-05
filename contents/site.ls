@@ -1,5 +1,5 @@
 
-define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
+define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site b64 ]> ->
   quick-send = ($scope, $http, $location, $cookies) ->
     $http.defaults.headers.post = { \Content-Type : 'application/json;charset=utf-8' }
     $scope <<<
