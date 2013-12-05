@@ -9,14 +9,16 @@ icon: coffee
 <form class="ink-form" ng-controller="quick-send">
     <fieldset>
         <div class="control-group">
+            <div class="control-group large-80">
             <div class="control large-35">
                 <p>{{user}}@medextra.com</p>
             </div>
-            <div class="large-5">
+            <div class="large-10">
             <span class="icon-long-arrow-right">
             </div>
-            <div class="control large-40 vertical-space">
+            <div class="control large-35">
               <input id="message-recipient" type="email" placeholder="someone@somewhere.com" ng-model="message.recipient" required>
+            </div>
             </div>
             <div class="control large-80 push-center vertical-space">
               <textarea id="message-text" ng-model="message.text"></textarea>
