@@ -1,5 +1,5 @@
 
-define <[ ng ng-cookies jq logo modernizr ink ink-ui site ]> ->
+define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
   quick-send = ($scope, $http, $cookies) ->
     $http.defaults.headers.post = { Content-Type: 'application/json,charset=UTF-8' }
     $scope <<<
@@ -41,6 +41,9 @@ define <[ ng ng-cookies jq logo modernizr ink ink-ui site ]> ->
           filesenda $scope.message, $scope.file, senda
         else
           senda $scope.message
+
+      pwgen: ->
+        angular.element(\#file-password).set-value(generate-password(7))
 
     filer = angular.element(\#file-data).get 0
     filer.add-event-listener \change, (evt) ->

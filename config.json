@@ -42,6 +42,7 @@
           "jq":           "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min",
           "ng":           "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min",
           "ng-cookies":   "//ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular-cookies.min"
+          "pwgen":        "https://raw.github.com/bermi/password-generator/master/dist/password-generator.min"
         },
         "deps": [
           "jq",
