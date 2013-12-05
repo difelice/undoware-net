@@ -19,7 +19,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
              angular.element(\#send).remove-class \sending
           sss = ->
              dun!
-             window.alert "Thank you! Your message has been sent."
+             window.alert "Thank you! Your message has been sent. After closing this dialog box, call or text the recipient, giving them the password. Do NOT send the password by email."
           err = ->
              window.alert "Could not send message. Please call x213."
              dun!
