@@ -21,7 +21,6 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
              window.alert "Could not send message. Please call x213."
              dun!
           $http.post(\/_db,JSON.stringify(m)).success(sss).error(err)
-          $location.url 'mailto:beth@undoware.ca'
 
         filesenda = (m,f,sendr) ->
           reader = new FileReader
