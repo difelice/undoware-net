@@ -45,7 +45,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
 
       pwgen: ->
         angular.element(\#file-password).val(generate-password(7))
-      disable-send: true
+      premature: -> true
 
     filer = angular.element(\#file-data).get 0
     filer.add-event-listener \change, (evt) ->
