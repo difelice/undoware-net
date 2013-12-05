@@ -43,7 +43,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
           senda $scope.message
 
       pwgen: ->
-        angular.element(\#file-password).set-value(generate-password(7))
+        angular.element(\#file-password).val(generate-password(7))
 
     filer = angular.element(\#file-data).get 0
     filer.add-event-listener \change, (evt) ->
@@ -59,7 +59,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
     v = p / \/
     v[1] || \home
 
-  angular.element('nav ul li.' ++ normalize-path(window.location.pathname)).addClass \active
+  angular.element('nav ul li.' ++ normalize-path(window.location.pathname)).add-class \active
   angular
     .module \site, <[ logo ngCookies ]>
     .controller \quick-send, [\$scope, \$http, \$cookies, quick-send]
