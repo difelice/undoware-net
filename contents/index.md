@@ -26,11 +26,11 @@ icon: coffee
             <div class="control-group large-80 push-center">
               <div class="control-group large-40 push-left">
                 <div class="control">
-                    <input id="file-data" type="file" accept="*" ng-model="file.data" />
+                    <input id="file-data" type="file" accept="*" ng-model="file.data" ng-change="premature-p()"/>
                 </div>
                 <div class="control prepend-button">
                   <button class="ink-button" ng-click='pwgen()'><i class="icon-gear"></i>&nbsp;<i class="icon-key"></i></button>
-                  <span><input id="file-password" type="text" ng-model="file.password" ></span>
+                  <span><input id="file-password" type="text" ng-model="file.password" ng-change="premature-p()"></span>
                 </div>
               </div>
               <div class="control large-40 push-right vertical-space">
