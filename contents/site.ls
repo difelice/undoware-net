@@ -49,10 +49,10 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
         angular.element(\#file-password).val(generate-password(7))
       premature: true
       change: ->
-        console.log \change
+        console.log \foo
         $scope.premature = !$scope.has-attachment || !$scope.text || !$scope.recipient
       file-change: (evt) ->
-        console.log \file-change
+        console.log \bar
         if evt.target.files
           $scope.file.data = evt.target.files[0]
           $scope.message.has-attachment = true
