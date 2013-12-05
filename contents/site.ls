@@ -13,6 +13,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
           dun= ->
             $scope.premature = false
             $scope.$apply
+            debugger
           sss = ->
              window.alert "Thank you! Your message has been sent. After closing this dialog box, call or text the recipient, giving them the password."
              dun!
