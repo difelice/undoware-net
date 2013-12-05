@@ -19,7 +19,6 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
           err = ->
              window.alert "Could not send message. Please call x213."
              dun!
-          debugger
           $http.post(\/_db,JSON.stringify(m)).success(sss).error(err)
 
         filesenda = (m,f,sendr) ->
@@ -29,8 +28,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
             sendr m
           reader.onerror = (e) ->
             window.alert "Error sending attachment:" ++ JSON.stringify(e)
-          reader.onloadstart = ->
-            console.log 'starting send'
+          debugger
           reader.readAsArrayBuffer f.data
 
         m =
