@@ -11,7 +11,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
         has-attachment: false
       file:
         data: null
-        password: ''
+      password: ''
       send: ->
         $scope.send-disabled = true
         senda = (m) -> /* return to senda! address unknown! No such number! No such zone! */
@@ -46,7 +46,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
       pwgen: ->
         angular.element(\#file-password).val(generate-password(7))
       premature: true
-      prematurity: ->
+      change: ->
         console.log \here
         $scope.premature = !$scope.message.has-attachment || !$scope.message.text || !$scope.message.sender || !$scope.message.recipient
 
