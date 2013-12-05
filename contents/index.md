@@ -9,7 +9,7 @@ icon: coffee
 <form class="ink-form" ng-controller="quick-send">
     <fieldset>
         <div class="control-group">
-            <div class="control-group large-80">
+            <div class="control-group large-80 push-center">
             <div class="control large-35">
                 <p>{{user}}@medextra.com</p>
             </div>
