@@ -54,8 +54,8 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
         $scope.premature = !$scope.text || !$scope.recipient || !$scope.password || !$scope.has-attachment
       file-change: (evt) ->
         if evt.target.files
-          $scope.file.data = evt.target.files[0]
-          $scope.message.has-attachment = true
+          $scope.file = evt.target.files[0]
+          $scope.has-attachment = true
         else
           window.alert 'Your browser does not support the FileReader API, which is required for file uploads. It is probable that you are using IE9 or older. Please upgrade.'
         $scope.change!
