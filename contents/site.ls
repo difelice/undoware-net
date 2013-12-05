@@ -5,7 +5,6 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
     $scope <<<
       user: ($cookies.user / \@)[0]
       message:
-        sender: ''
         recipient: ''
         text: 'testing'
         has-attachment: false
@@ -15,11 +14,12 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
       send: ->
         angular.element(\#send).add-class \sending
         senda = (m) -> /* return to senda! address unknown! No such number! No such zone! */
+          m.sender = $scope.user ++ \@medextra.com
           dun = ->
              angular.element(\#send).remove-class \sending
           sss = ->
              dun!
-             window.alert "Thank you! Your message has been sent. After closing this dialog box, call or text the recipient, giving them the password. Do NOT send the password by email."
+             window.alert "Thank you! Your message has been sent. After closing this dialog box, call or text the recipient, giving them the password."
           err = ->
              window.alert "Could not send message. Please call x213."
              dun!
