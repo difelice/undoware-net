@@ -3,6 +3,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
   quick-send = ($scope, $http, $cookies) ->
     $http.defaults.headers.post = { \Content-Type : 'application/json;charset=utf-8' }
     $scope <<<
+      good-to-go: false
       user: ($cookies.user / \@)[0]
       message:
         recipient: ''
@@ -12,11 +13,11 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
         data: null
         password: ''
       send: ->
-        angular.element(\#send).add-class \sending
+        $scope.good-to-go = false
         senda = (m) -> /* return to senda! address unknown! No such number! No such zone! */
           m.sender = $scope.user ++ \@medextra.com
-          dun = ->
-             angular.element(\#send).remove-class \sending
+          dun= ->
+            $scope.good-to-go = true
           sss = ->
              dun!
              window.alert "Thank you! Your message has been sent. After closing this dialog box, call or text the recipient, giving them the password."
@@ -44,6 +45,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
 
       pwgen: ->
         angular.element(\#file-password).val(generate-password(7))
+      all-systems-go: -> $scope.message.recipient && $scope.message.text && $scope.message.has-attachment && $scope.file.password && $scope.good-to-go
 
     filer = angular.element(\#file-data).get 0
     filer.add-event-listener \change, (evt) ->

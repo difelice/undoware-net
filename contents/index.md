@@ -17,7 +17,7 @@ icon: coffee
             <span class="icon-long-arrow-right"></span>
             </span>
             <span class="control large-35 push-right">
-              <input id="message-recipient" type="email" placeholder="someone@somewhere.com" ng-model="message.recipient" required>
+              <input id="message-recipient" type="email" placeholder="someone@somewhere.com" ng-model="message.recipient" >
             </span>
             </div>
             <div class="control large-80 push-center vertical-space">
@@ -34,7 +34,7 @@ icon: coffee
                 </div>
               </div>
               <div class="control large-40 push-right vertical-space">
-                <button id="send" class="ink-button green push-right" ng-click="send()"><i class="icon-coffee"></i>&nbsp;Quick Send</button>
+                <button id="send" class="ink-button green push-right" ng-click="send()" ng-disabled="all-systems-go()"><i class="icon-coffee"></i>&nbsp;Quick Send</button>
               </div>
             </div>
         </div>
