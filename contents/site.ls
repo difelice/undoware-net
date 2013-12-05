@@ -23,7 +23,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
           err = ->
              window.alert "Could not send message. Please call x213."
              dun!
-          $http.post(\/db/outgoing,m).success(sss).error(err)
+          $http.post(\/_db/,m).success(sss).error(err)
 
         filesenda = (m,f,sendr) ->
           reader = new FileReader
