@@ -50,7 +50,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
         change!
       premature: true
       change: ->
-        $scope.premature = !$scope.text || !$scope.recipient
+        $scope.premature = !$scope.text || !$scope.recipient || !$scope.file || !$scope.password
       file-change: (evt) ->
         if evt.target.files
           $scope.file.data = evt.target.files[0]
