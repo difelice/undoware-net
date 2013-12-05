@@ -34,7 +34,7 @@ icon: coffee
                 </div>
               </div>
               <div class="control large-40 push-right vertical-space">
-                <button id="send" class="ink-button green push-right" ng-click="send()" ng-disabled="premature"><i class="icon-coffee"></i>&nbsp;Quick Send</button>
+                <button id="send" class="ink-button green push-right" ng-click="send()" ng-disabled="premature" disabled><i class="icon-coffee"></i>&nbsp;Quick Send</button>
               </div>
             </div>
         </div>
