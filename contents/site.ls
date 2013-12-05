@@ -6,7 +6,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
       user: ($cookies.user / \@)[0]
       message:
         recipient: ''
-        text: 'testing'
+        text: 'You have received a document from MedExtra that has been secured with a password. Please follow the link below and enter this password to retrieve the document. The password will be given to you orally, by telephone, or by text message (SMS).'
         has-attachment: false
       file:
         data: null
