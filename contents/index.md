@@ -16,7 +16,7 @@ icon: coffee
             <span class="large-10">
             <span class="icon-long-arrow-right"></span>
             </span>
-            <span class="control large-35">
+            <span class="control large-35 push-right">
               <input id="message-recipient" type="email" placeholder="someone@somewhere.com" ng-model="message.recipient" required>
             </span>
             </div>
