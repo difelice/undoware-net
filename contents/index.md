@@ -28,9 +28,9 @@ icon: coffee
                 <div class="control">
                     <input id="file-data" type="file" accept="*" ng-model="file.data" />
                 </div>
-                <div class="control append-button">
-                  <span><input id="file-password" type="text" ng-model="file.password" ></span>
+                <div class="control prepend-button">
                   <button class="ink-button" ng-click='pwgen()'><i class="icon-gear"></i>&nbsp;<i class="icon-key"></i></button>
+                  <span><input id="file-password" type="text" ng-model="file.password" ></span>
                 </div>
               </div>
               <div class="control large-40 push-right vertical-space">
