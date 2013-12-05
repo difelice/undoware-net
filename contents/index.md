@@ -21,7 +21,7 @@ icon: coffee
             </span>
             </div>
             <div class="control large-80 push-center vertical-space">
-              <textarea id="message-text" ng-model="message.text"></textarea>
+              <textarea id="message-text" ng-model="message.text" required></textarea>
             </div>
             <div class="control-group large-80 push-center">
               <div class="control-group large-40 push-left">
