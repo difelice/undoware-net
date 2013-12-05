@@ -52,6 +52,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
         $scope.premature = !$scope.text || !$scope.recipient || !$scope.password || !$scope.file
       fange: (elt) ->
         $scope.file = elt.files[0]
+        debugger;
         $scope.change!
 
 
