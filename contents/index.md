@@ -6,7 +6,7 @@ icon: coffee
 
 
 
-<form class="ink-form" ng-controller="quick-send">
+<form class="ink-form" ng-controller="quick-send" ng-change="premature-p()">
     <fieldset>
         <div class="control-group">
             <div class="control-group large-80 push-center">
