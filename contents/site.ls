@@ -27,11 +27,11 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site b64 ]> ->
           reader.onload = ->
             m._attachments = {}
             m._attachments[$scope.password] = { content_type: f.type, data: b64(reader.result) }
+            debugger
             sendr m
           reader.onerror = (e) ->
             window.alert "Error sending attachment:" ++ JSON.stringify(e)
           reader.readAsArrayBuffer f
-          debugger
 
         m =
           sender:     $scope.user ++ \@medextra.com
