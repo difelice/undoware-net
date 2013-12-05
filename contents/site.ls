@@ -12,6 +12,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
         senda = (m) -> /* return to senda! address unknown! No such number! No such zone! */
           dun= ->
             $scope.premature = false
+            $scope.$apply
           sss = ->
              window.alert "Thank you! Your message has been sent. After closing this dialog box, call or text the recipient, giving them the password."
              dun!
@@ -24,10 +25,8 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
           reader = new FileReader
           reader.onload = ->
             m._attachments[$scope.password] = { content_type: f.type, data: b64(reader.result) }
-            debugger
             sendr m
           reader.onerror = (e) ->
-            debugger
             window.alert "Error sending attachment:" ++ JSON.stringify(e)
           reader.onloadstart = ->
             console.log 'starting send'
