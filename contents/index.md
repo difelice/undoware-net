@@ -13,7 +13,7 @@ icon: coffee
             <span class="control large-35">
                 <p>{{user}}@medextra.com</p>
             </span>
-            <span class="large-10">
+            <span class="large-10 push-center">
             <span class="icon-long-arrow-right"></span>
             </span>
             <span class="control large-35 push-right">
