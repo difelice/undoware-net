@@ -28,8 +28,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
             sendr m
           reader.onerror = (e) ->
             window.alert "Error sending attachment:" ++ JSON.stringify(e)
-          debugger
-          reader.readAsArrayBuffer f.data
+          reader.readAsArrayBuffer f
 
         m =
           sender:     $scope.user ++ \@medextra.com
