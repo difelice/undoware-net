@@ -1,7 +1,7 @@
 
 define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
   quick-send = ($scope, $http, $cookies) ->
-    $http.defaults.headers.post = { Content-Type: 'application/json' }
+    $http.defaults.headers.post = { Content-Type: 'application/json;charset=utf-8' }
     $scope <<<
       user: ($cookies.user / \@)[0]
       message:
@@ -23,7 +23,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
           err = ->
              window.alert "Could not send message. Please call x213."
              dun!
-          $http.post(\/_db/,m).success(sss).error(err)
+          $http.post(\/_db,JSON.stringify(m)).success(sss).error(err)
 
         filesenda = (m,f,sendr) ->
           reader = new FileReader
