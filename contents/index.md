@@ -30,7 +30,7 @@ icon: coffee
                 </div>
                 <div class="control append-button">
                   <span><input id="file-password" type="password" ng-model="file.password" ></span>
-                  <button class="ink-button"><i class="icon-cogs"></i><i class="icon-key"></i></button>
+                  <button class="ink-button"><i class="icon-gear"></i>&nbsp;<i class="icon-key"></i></button>
                 </div>
               </div>
               <div class="control large-40 push-right vertical-space">
