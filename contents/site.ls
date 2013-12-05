@@ -46,17 +46,17 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
       pwgen: ->
         angular.element(\#file-password).val(generate-password(7))
       premature: true
-      premature-p: ->
-        window.alert \here
+      prematurity: ->
+        console.log \here
         $scope.premature = !$scope.message.has-attachment || !$scope.message.text || !$scope.message.sender || !$scope.message.recipient
 
-    filer = angular.element(\#file-data).get 0
+ /*   filer = angular.element(\#file-data).get 0
     filer.add-event-listener \change, (evt) ->
         if evt.target.files
           $scope.file.data = evt.target.files[0]
           $scope.message.has-attachment = true
         else
-          window.alert 'Your browser does not support the FileReader API, which is required for file uploads. It is probable that you are using IE9 or older. Please upgrade.'
+          window.alert 'Your browser does not support the FileReader API, which is required for file uploads. It is probable that you are using IE9 or older. Please upgrade.' */
 
 
 
