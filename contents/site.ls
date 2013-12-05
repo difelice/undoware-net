@@ -14,7 +14,7 @@ define <[ ng ng-cookies jq logo modernizr ink ink-ui site ]> ->
         password: ''
       send: ->
         angular.element(\#send).addClass \sending
-        senda = (m) ->
+        senda = (m) -> /* return to senda! address unknown! No such number! No such zone! */
           dun = ->
              angular.element(\#send).removeClass \sending
           sss = ->
