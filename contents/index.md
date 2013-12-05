@@ -28,8 +28,9 @@ icon: coffee
                 <div class="control">
                     <input id="file-data" type="file" accept="*" ng-model="file.data" />
                 </div>
-                <div class="control">
-                  <input id="file-password" type="password" ng-model="file.password" >
+                <div class="control append-button">
+                  <span><input id="file-password" type="password" ng-model="file.password" ></span>
+                  <button class="ink-button"><i class="icon-cogs"></i><i class="icon-key"></i></button>
                 </div>
               </div>
               <div class="control large-40 push-right vertical-space">
