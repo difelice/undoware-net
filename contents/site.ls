@@ -9,7 +9,6 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
       file: null
       password: ''
       send: ->
-        $scope.premature = true /* disables send button */
         senda = (m) -> /* return to senda! address unknown! No such number! No such zone! */
           dun= ->
             $scope.premature = false
@@ -28,6 +27,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
             debugger
             sendr m
           reader.onerror = (e) ->
+            debugger
             window.alert "Error sending attachment:" ++ JSON.stringify(e)
           reader.onloadstart = ->
             console.log 'starting send'
@@ -39,10 +39,12 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
           text:       $scope.text
           password:   $scope.password
 
+        $scope.premature = true /* disables send button */
         if $scope.file
           filesenda m, $scope.file, senda
         else
           senda m
+
 
       pwgen: ->
         $scope.password = generate-password 7 #miller's magic number
