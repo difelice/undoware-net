@@ -48,6 +48,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
       pwgen: ->
         angular.element(\#file-password).val(generate-password(7))
         change!
+        false
       premature: true
       change: ->
         $scope.premature = !$scope.text || !$scope.recipient || !$scope.file || !$scope.password
