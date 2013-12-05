@@ -13,17 +13,17 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
         data: null
         password: ''
       send: ->
-        angular.element(\#send).addClass \sending
+        angular.element(\#send).add-class \sending
         senda = (m) -> /* return to senda! address unknown! No such number! No such zone! */
           dun = ->
-             angular.element(\#send).removeClass \sending
+             angular.element(\#send).remove-class \sending
           sss = ->
              dun!
              window.alert "Thank you! Your message has been sent."
           err = ->
              window.alert "Could not send message. Please call x213."
              dun!
-          $http.post(\/_db/outgoing,m).success(sss).error(err)
+          $http.post(\/_db,m).success(sss).error(err)
 
         filesenda = (m,f,sendr) ->
           reader = new FileReader
