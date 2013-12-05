@@ -13,13 +13,13 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
           dun= ->
             $scope.premature = false
             $scope.$apply
-            debugger
           sss = ->
              window.alert "Thank you! Your message has been sent. After closing this dialog box, call or text the recipient, giving them the password."
              dun!
           err = ->
              window.alert "Could not send message. Please call x213."
              dun!
+          debugger
           $http.post(\/_db,JSON.stringify(m)).success(sss).error(err)
 
         filesenda = (m,f,sendr) ->
@@ -40,7 +40,6 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
           password:   $scope.password
 
         $scope.premature = true /* disables send button */
-        debugger;
         if $scope.file
           filesenda m, $scope.file, senda
         else
