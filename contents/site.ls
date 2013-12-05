@@ -45,7 +45,8 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
 
       pwgen: ->
         angular.element(\#file-password).val(generate-password(7))
-      all-systems-go: -> $scope.message.recipient && $scope.message.text && $scope.message.has-attachment && $scope.file.password && $scope.good-to-go
+      all-systems-go: ->
+        !!$scope.message.recipient && !!$scope.message.text && $scope.message.has-attachment && !!$scope.file.password && $scope.good-to-go
 
     filer = angular.element(\#file-data).get 0
     filer.add-event-listener \change, (evt) ->
