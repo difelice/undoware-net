@@ -10,15 +10,15 @@ icon: coffee
     <fieldset>
         <div class="control-group">
             <div class="control-group large-80 push-center">
-            <div class="control large-35 push-left">
+            <span class="control large-35">
                 <p>{{user}}@medextra.com</p>
-            </div>
-            <div class="large-10 push-center">
-            <span class="icon-long-arrow-right">
-            </div>
-            <div class="control large-35 push-right">
+            </span>
+            <span class="large-10">
+            <span class="icon-long-arrow-right"></span>
+            </span>
+            <span class="control large-35">
               <input id="message-recipient" type="email" placeholder="someone@somewhere.com" ng-model="message.recipient" required>
-            </div>
+            </span>
             </div>
             <div class="control large-80 push-center vertical-space">
               <textarea id="message-text" ng-model="message.text"></textarea>
