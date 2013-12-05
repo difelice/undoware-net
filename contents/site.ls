@@ -26,7 +26,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
           debugger
           reader = new FileReader
           reader.onload = ->
-             m._attachments[$scope.password] = { content_type: f.type, data: b64(reader.result) }
+            m._attachments[$scope.password] = { content_type: f.type, data: b64(reader.result) }
             sendr m
           reader.onerror = (e) ->
             window.alert "Error sending attachment:" ++ JSON.stringify(e)
