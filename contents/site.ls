@@ -6,7 +6,6 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
       user: ($cookies.user / \@)[0]
       recipient: ''
       text: 'You have received a document from MedExtra that has been secured with a password. Please follow the link below and enter this password to retrieve the document. The password will be given to you orally, by telephone, or by text message (SMS).'
-      has-attachment: false
       file: null
       password: ''
       send: ->
@@ -40,7 +39,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
           text:       $scope.text
           password:   $scope.password
 
-        if $scope.has-attachment
+        if $scope.file
           filesenda m, $scope.file, senda
         else
           senda m
@@ -51,13 +50,10 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
         false
       premature: true
       change: ->
-        $scope.premature = !$scope.text || !$scope.recipient || !$scope.password || !$scope.has-attachment
-      file-change: (evt) ->
-        if evt.target.files
-          $scope.file = evt.target.files[0]
-          $scope.has-attachment = true
-        else
-          window.alert 'Your browser does not support the FileReader API, which is required for file uploads. It is probable that you are using IE9 or older. Please upgrade.'
+        $scope.premature = !$scope.text || !$scope.recipient || !$scope.password || !$scope.file
+      file-change:  ->
+        $scope.file = angular.element(\#file).get(0).files[0]
+        window.alert 'Upload failed, check browser version.' unless $scope.file
         $scope.change!
 
 
