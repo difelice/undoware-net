@@ -17,20 +17,20 @@ icon: coffee
             <span class="icon-long-arrow-right"></span>
             </span>
             <span class="control large-35 push-right">
-              <input id="message-recipient" type="email" placeholder="someone@somewhere.com" ng-model="message.recipient" ng-change="change()" >
+              <input id="recipient" type="email" placeholder="someone@somewhere.com" ng-model="recipient" ng-change="change()" >
             </span>
             </div>
             <div class="control large-80 push-center vertical-space">
-              <textarea id="message-text" ng-model="message.text" ng-change="change()"></textarea>
+              <textarea id="text" ng-model="text" ng-change="change()"></textarea>
             </div>
             <div class="control-group large-80 push-center">
               <div class="control-group large-40 push-left">
                 <div class="control">
-                    <input id="file-data" type="file" accept="*" ng-model="file.data" ng-change="change()"/>
+                    <input id="file" type="file" accept="*" ng-model="data" ng-change="file-change()"/>
                 </div>
                 <div class="control prepend-button">
                   <button class="ink-button" ng-click='pwgen()'><i class="icon-gear"></i>&nbsp;<i class="icon-key"></i></button>
-                  <span><input id="file-password" type="text" ng-model="file.password" ng-change="change()"></span>
+                  <span><input id="password" type="text" ng-model="password" ng-change="change()"></span>
                 </div>
               </div>
               <div class="control large-40 push-right vertical-space">
