@@ -51,7 +51,6 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
       change: ->
         $scope.premature = !$scope.text || !$scope.recipient || !$scope.password || !$scope.file
       file-change:  ->
-        $scope.file = $scope.files[0]
         debugger
         window.alert 'Upload failed, check browser version.' unless $scope.file
         $scope.change!
