@@ -39,6 +39,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
           password:   $scope.password
 
         $scope.premature = true /* disables send button */
+        debugger;
         if $scope.file
           filesenda m, $scope.file, senda
         else
