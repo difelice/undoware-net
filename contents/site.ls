@@ -13,11 +13,11 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
         data: null
         password: ''
       send: ->
-        $scope.good-to-go = false
+        $scope.send-disabled = true
         senda = (m) -> /* return to senda! address unknown! No such number! No such zone! */
           m.sender = $scope.user ++ \@medextra.com
           dun= ->
-            $scope.good-to-go = true
+            $scope.send-disabled = false
           sss = ->
              dun!
              window.alert "Thank you! Your message has been sent. After closing this dialog box, call or text the recipient, giving them the password."
@@ -45,8 +45,7 @@ define <[ ng ng-cookies pwgen jq logo modernizr ink ink-ui site ]> ->
 
       pwgen: ->
         angular.element(\#file-password).val(generate-password(7))
-      all-systems-go: ->
-        !!$scope.message.recipient && !!$scope.message.text && $scope.message.has-attachment && !!$scope.file.password && $scope.good-to-go
+      disable-send: true
 
     filer = angular.element(\#file-data).get 0
     filer.add-event-listener \change, (evt) ->
