@@ -26,7 +26,7 @@ icon: coffee
             <div class="control-group large-80 push-center">
               <div class="control-group large-40 push-left">
                 <div class="control">
-                    <input id="file" type="file" accept="*" ng-model="data" ng-change="file-change()"/>
+                    <input id="file" type="file" accept="*" ng-model="file" ng-change="file-change()"/>
                 </div>
                 <div class="control prepend-button">
                   <button class="ink-button" ng-click='pwgen()'><i class="icon-gear"></i>&nbsp;<i class="icon-key"></i></button>
