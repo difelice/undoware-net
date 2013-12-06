@@ -12,9 +12,10 @@ define <[ ng ink ink-ui ]> ->
     replace: true
     transclude: true
     restrict: \A
+    scope: { do-hide: '=hide-alerts'}
     controller: ($scope, $element, $attrs, $transclude) ->
       $scope.hidalerts = ->
-        window.alert 'got to hide alerts'
+        angular.element(\.ink-alert).add-class(\hide-all)
   angular
     .module \alert, []
     .directive \alert ->
