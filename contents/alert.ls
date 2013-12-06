@@ -2,7 +2,7 @@
 define <[ ng ink ink-ui ]> ->
   mk-template = (mode) ->
     beginning = '<div class="ink-alert basic '
-    ending    = '"><button class="ink-dismiss" ng-click="hidalerts()">&times;</button><div ng-transclude></div></div>'
+    ending    = '"><button class="ink-dismiss" >&times;</button><div ng-transclude></div></div>'
     if (mode)
       beginning ++ mode ++ ending
     else
