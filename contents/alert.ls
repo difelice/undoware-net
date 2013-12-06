@@ -20,15 +20,19 @@ define <[ ng ]> ->
       out = (msg,mode) ->
         angular.element('#alertbox').html "<div alert>" ++ msg ++ "</div>"
     .directive \alert ->
+      out = {}
       out <<< basic-factory
       out.template =  mk-template!
     .directive \info ->
+      out = {}
       out <<< basic-factory
       out.template =  mk-template \info
     .directive \error ->
+      out = {}
       out <<< basic-factory
       out.template =  mk-template \error
     .directive \success ->
+      out = {}
       out <<< basic-factory
       out.template =  mk-template \success
 
