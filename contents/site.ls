@@ -14,10 +14,8 @@ define <[ ng ng-cookies pwgen jq logo alert modernizr ink ink-ui site b64 ]> ->
             $scope.premature = false
             $scope.$apply
           sss = ->
-             alert "Thank you! Your message has been sent. After closing this dialog box, call or text the recipient, giving them the password."
              dun!
           err = ->
-             alert "Could not send message. Please call x213."
              dun!
           $http.post(\/_db,JSON.stringify(m)).success(sss).error(err)
 
