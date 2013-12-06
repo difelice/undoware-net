@@ -6,7 +6,7 @@ icon: coffee
 
 <div id="alertbox">
 </div>
-<div alert>
+<div success>
 <p>Test</p>
 </div>
 
