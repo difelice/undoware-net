@@ -4,7 +4,11 @@ template: page.jade
 icon: coffee
 ---
 
-<div id="alertbox"></div>
+<div id="alertbox">
+<div alert>
+Test
+</div>
+</div>
 
 <form class="ink-form" ng-controller="quick-send" method="post" >
     <fieldset>

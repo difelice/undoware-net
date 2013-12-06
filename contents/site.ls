@@ -19,7 +19,6 @@ define <[ ng ng-cookies pwgen jq logo alert modernizr ink ink-ui site b64 ]> ->
           err = ->
              alert "Could not send message. Please call x213."
              dun!
-          debugger
           $http.post(\/_db,JSON.stringify(m)).success(sss).error(err)
 
         filesenda = (m,f,sendr) ->
