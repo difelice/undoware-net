@@ -4,10 +4,8 @@ define <[ ng ]> ->
     .module \alert, []
     .factory \alert, ->
       out = (msg,mode) ->
-        debugger
         angular.element('#alertbox').html "<div alert>" ++ msg ++ "</div>"
     .directive \alert ->
-      debugger
       out =
         replace: true
         transclude: true
