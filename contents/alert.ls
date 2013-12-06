@@ -12,6 +12,9 @@ define <[ ng ink ink-ui ]> ->
     replace: true
     transclude: true
     restrict: \A
+    controller: ($scope, $element, $attrs, $transclude) ->
+      $scope.hidalerts = ->
+        window.alert 'got to hide alerts'
   angular
     .module \alert, []
     .directive \alert ->
