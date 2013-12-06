@@ -1,6 +1,5 @@
 
 define <[ ng ]> ->
-  foo =
   angular
     .module \alert, []
     .factory \alert, ->
