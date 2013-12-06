@@ -4,6 +4,7 @@ template: page.jade
 icon: coffee
 ---
 
+<div class="alerts">
 
 <div success id="send-success">
 Message sent. Don't forget, you still have to manually give them the password.
@@ -12,6 +13,7 @@ Message sent. Don't forget, you still have to manually give them the password.
 Error sending message. Please call x213.
 </div>
 
+</div>
 
 <form class="ink-form" ng-controller="quick-send" method="post" >
     <fieldset>
