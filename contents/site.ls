@@ -1,6 +1,6 @@
 
 define <[ ng ng-cookies pwgen jq logo alert modernizr ink ink-ui site b64 ]> ->
-  quick-send = ($scope, $http, $location, $cookies, alert) ->
+  quick-send = ($scope, $http, $location, $cookies) ->
     $http.defaults.headers.post = { \Content-Type : 'application/json;charset=utf-8' }
     $scope <<<
       user: ($cookies.user / \@)[0]
@@ -64,5 +64,5 @@ define <[ ng ng-cookies pwgen jq logo alert modernizr ink ink-ui site b64 ]> ->
   angular.element('nav ul li.' ++ normalize-path(window.location.pathname)).add-class \active
   angular
     .module \site, <[ logo ngCookies alert ]>
-    .controller \quick-send, [\$scope, \$http, \$location, \$cookies, \alert, quick-send]
+    .controller \quick-send, [\$scope, \$http, \$location, \$cookies, quick-send]
 
