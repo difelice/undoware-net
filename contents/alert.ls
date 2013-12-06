@@ -13,6 +13,6 @@ define <[ ng ]> ->
         transclude: true
         restrict: \A
         scope: { @mode }
-        template: '<div ng-class="mode" class="ink-alert basic"><button class="ink-dismiss">&times;</div><div ng-transclude></div></div>'
+        template: '<div ng-class="mode" class="ink-alert basic"><button class="ink-dismiss">&times;</button><div ng-transclude></div></div>'
 
 
