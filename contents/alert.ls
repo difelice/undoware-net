@@ -1,6 +1,5 @@
 
 define <[ ng ]> ->
-  debugger
   angular
     .module \alert, []
     .factory \alert, ->
