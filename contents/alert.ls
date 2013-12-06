@@ -1,5 +1,5 @@
 
-define <[ ng ]> ->
+define <[ ng ink ink-ui ]> ->
   mk-template = (mode) ->
     beginning = '<div class="ink-alert basic '
     ending    = '"><button class="ink-dismiss">&times;</button><div ng-transclude></div></div>'
@@ -18,8 +18,6 @@ define <[ ng ]> ->
     .factory \alert, ->
       out = (msg,mode) ->
         angular.element('#alertbox').html "<div alert>" ++ msg ++ "</div>"
-      out.warn = (msg) ~>
-        this msg
       out.error = (msg) ~>
         this msg,\error
       out.info  = (msg) ~>
