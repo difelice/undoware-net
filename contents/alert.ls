@@ -16,8 +16,17 @@ define <[ ng ]> ->
   angular
     .module \alert, []
     .factory \alert, ->
-      (msg,mode) ->
+      out = (msg,mode) ->
         angular.element('#alertbox').html "<div alert>" ++ msg ++ "</div>"
+      out.warn = (msg) ~>
+        this msg
+      out.error = (msg) ~>
+        this msg,\error
+      out.info  = (msg) ~>
+        this msg,\info
+      out.success = (msg) ~>
+        this msg,\success
+
     .directive \alert ->
       out =
         template: mk-template!
