@@ -2,7 +2,7 @@
 define <[ ng ink ink-ui ]> ->
   mk-template = (mode) ->
     beginning = '<div class="ink-alert basic '
-    ending    = '"><button class="ink-dismiss" ng-click="hide-ink-alerts()">&times;</button><div ng-transclude></div></div>'
+    ending    = '"><button class="ink-dismiss" ng-hide="hide-alerts">&times;</button><div ng-transclude></div></div>'
     if (mode)
       beginning ++ mode ++ ending
     else
@@ -12,10 +12,8 @@ define <[ ng ink ink-ui ]> ->
     replace: true
     transclude: true
     restrict: \A
-    scope:
-      hide-ink-alerts: ->
-        window.alert \foo
-
+    controller: ($scope, $element, $attrs, $transclude) ->
+      $scope.hide-alerts = true
   angular
     .module \alert, []
     .directive \alert ->
