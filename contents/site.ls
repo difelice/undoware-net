@@ -3,7 +3,6 @@ define <[ ng ng-cookies pwgen jq logo alert modernizr ink ink-ui site b64 ]> ->
   quick-send = ($scope, $http, $location, $cookies) ->
     $http.defaults.headers.post = { \Content-Type : 'application/json;charset=utf-8' }
     $scope <<<
-      hide-alerts: true
       user: ($cookies.user / \@)[0]
       recipient: ''
       text: 'You have received a document from MedExtra that has been secured with a password. Please follow the link below and enter this password to retrieve the document. The password will be given to you orally, by telephone, or by text message (SMS).'
