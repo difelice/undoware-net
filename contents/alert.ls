@@ -4,7 +4,7 @@ define <[ ng ]> ->
     beginning = '<div class="ink-alert basic '
     ending    = '"><button class="ink-dismiss">&times;</button><div ng-transclude></div></div>'
     if (mode)
-       beginning ++ mode ++ ending
+      beginning ++ mode ++ ending
     else
       beginning ++ ending
 
@@ -16,23 +16,22 @@ define <[ ng ]> ->
   angular
     .module \alert, []
     .factory \alert, ->
-      debugger
-      out = (msg,mode) ->
+      (msg,mode) ->
         angular.element('#alertbox').html "<div alert>" ++ msg ++ "</div>"
     .directive \alert ->
-      out = {}
+      out =
+        template: mk-template!
       out <<< basic-factory
-      out.template =  mk-template!
     .directive \info ->
-      out = {}
+      out =
+        template:  mk-template \info
       out <<< basic-factory
-      out.template =  mk-template \info
     .directive \error ->
-      out = {}
+      out =
+        template:  mk-template \error
       out <<< basic-factory
-      out.template =  mk-template \error
     .directive \success ->
-      out = {}
+      out =
+        template:  mk-template \success
       out <<< basic-factory
-      out.template =  mk-template \success
 
