@@ -17,7 +17,7 @@ define <[ ng ink ink-ui ]> ->
         window.alert \foo
 
   angular
-    .module \alert, ][
+    .module \alert, []
     .directive \alert ->
       out =
         template: mk-template!
