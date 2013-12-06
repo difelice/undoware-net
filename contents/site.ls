@@ -14,8 +14,10 @@ define <[ ng ng-cookies pwgen jq logo alert modernizr ink ink-ui site b64 ]> ->
             $scope.premature = false
             $scope.$apply
           sss = ->
+             angular.element(\#send-success).add-class(\show-all)
              dun!
           err = ->
+             angular.element(\#send-error).add-class(\show-all)
              dun!
           $http.post(\/_db,JSON.stringify(m)).success(sss).error(err)
 
