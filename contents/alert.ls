@@ -5,13 +5,13 @@ define <[ ng ]> ->
     .factory \alert, ->
       out = (msg,mode) ->
         debugger
-        angular.element('#alertbox').html "<alert>" ++ msg ++ "</alert>"
+        angular.element('#alertbox').html "<div alert>" ++ msg ++ "</div>"
     .directive \alert ->
       debugger
       out =
         replace: true
         transclude: true
-        restrict: E
+        restrict: \A
         scope: { @mode }
         template: '<div ng-class="mode" class="ink-alert basic"><button class="ink-dismiss">&times;</div><p ng-transclude></p></div>'
 
