@@ -14,7 +14,7 @@ define <[ ng ink ink-ui ]> ->
     restrict: \A
     controller: ($scope, $element, $attrs, $transclude) ->
       $scope.hidalerts = ->
-        angular.element(\.ink-alert).add-class(\hide-all)
+        angular.element('.ink-alert').add-class('.hide-all')
   angular
     .module \alert, []
     .directive \alert ->
