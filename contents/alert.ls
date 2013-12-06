@@ -1,16 +1,18 @@
 
 define <[ ng ]> ->
-  angular
-    .module \alert, []
-    .factory \alert, ->
+  foo = ($compile)->
+      debugger
       out = (msg,mode) ->
         angular.element('#alertbox').html "<div alert>" ++ msg ++ "</div>"
+  angular
+    .module \alert, []
+    .factory \alert, [ \$compile, foo ]
     .directive \alert ->
       out =
         replace: true
         transclude: true
         restrict: \A
         scope: { @mode }
-        template: '<div ng-class="mode" class="ink-alert basic"><button class="ink-dismiss">&times;</div><p ng-transclude></p></div>'
+        template: '<div ng-class="mode" class="ink-alert basic"><button class="ink-dismiss">&times;</div><div ng-transclude></div></div>'
 
 
