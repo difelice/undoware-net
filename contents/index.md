@@ -4,8 +4,7 @@ template: page.jade
 icon: coffee
 ---
 
-<div id="alertbox">
-</div>
+
 <div success>
 <p>Test</p>
 </div>
