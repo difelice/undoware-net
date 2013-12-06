@@ -5,9 +5,13 @@ icon: coffee
 ---
 
 
-<div success>
-<p>Test</p>
+<div success id="send-success">
+Message sent. Don't forget, you still have to manually give them the password.
 </div>
+<div error id="send-error">
+Error sending message. Please call x213.
+</div>
+
 
 <form class="ink-form" ng-controller="quick-send" method="post" >
     <fieldset>
