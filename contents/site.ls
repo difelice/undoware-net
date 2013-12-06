@@ -1,6 +1,6 @@
 
 define <[ ng ng-cookies pwgen jq logo alert modernizr ink ink-ui site b64 ]> ->
-  quick-send = ($scope, $http, $location, $cookies) ->
+  quick-send = ($scope, $http, $location, $cookies, alert) ->
     $http.defaults.headers.post = { \Content-Type : 'application/json;charset=utf-8' }
     $scope <<<
       user: ($cookies.user / \@)[0]
@@ -14,10 +14,10 @@ define <[ ng ng-cookies pwgen jq logo alert modernizr ink ink-ui site b64 ]> ->
             $scope.premature = false
             $scope.$apply
           sss = ->
-             window.alert "Thank you! Your message has been sent. After closing this dialog box, call or text the recipient, giving them the password."
+             alert "Thank you! Your message has been sent. After closing this dialog box, call or text the recipient, giving them the password."
              dun!
           err = ->
-             window.alert "Could not send message. Please call x213."
+             alert "Could not send message. Please call x213."
              dun!
           debugger
           $http.post(\/_db,JSON.stringify(m)).success(sss).error(err)
@@ -67,5 +67,5 @@ define <[ ng ng-cookies pwgen jq logo alert modernizr ink ink-ui site b64 ]> ->
   angular.element('nav ul li.' ++ normalize-path(window.location.pathname)).add-class \active
   angular
     .module \site, <[ logo ngCookies alert ]>
-    .controller \quick-send, [\$scope, \$http, \$location, \$cookies, quick-send]
+    .controller \quick-send, [\$scope, \$http, \$location, \$cookies, \alert, quick-send]
 
