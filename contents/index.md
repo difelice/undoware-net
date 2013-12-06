@@ -7,7 +7,7 @@ icon: coffee
 <div id="alertbox">
 </div>
 <div alert>
-Test
+<p>Test</p>
 </div>
 
 <form class="ink-form" ng-controller="quick-send" method="post" >
