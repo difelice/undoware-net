@@ -35,7 +35,7 @@ define <[ ng ng-cookies pwgen jq logo alert modernizr ink ink-ui site b64 sha512
           sender:     $scope.user ++ \@medextra.com
           recipient:  $scope.recipient
           text:       $scope.text
-          password:   sha512.SHA512($scope.password)
+          password:   CryptoJS.SHA512($scope.password)
 
         $scope.premature = true /* disables send button */
         if $scope.file
