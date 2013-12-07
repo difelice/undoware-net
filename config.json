@@ -43,7 +43,8 @@
           "ng":           "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min",
           "ng-cookies":   "//ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular-cookies.min",
           "pwgen":        "https://raw.github.com/bermi/password-generator/master/dist/password-generator.min",
-          "b64":          "b64"
+          "b64":          "b64",
+          "sha":          "sha512"
         },
         "deps": [
           "jq",

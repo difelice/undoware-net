@@ -1,5 +1,5 @@
 
-define <[ ng ng-cookies pwgen jq logo alert modernizr ink ink-ui site b64 ]> ->
+define <[ ng ng-cookies pwgen jq logo alert modernizr ink ink-ui site b64 sha512 ]> ->
   quick-send = ($scope, $http, $location, $cookies) ->
     $http.defaults.headers.post = { \Content-Type : 'application/json;charset=utf-8' }
     $scope <<<
@@ -35,7 +35,7 @@ define <[ ng ng-cookies pwgen jq logo alert modernizr ink ink-ui site b64 ]> ->
           sender:     $scope.user ++ \@medextra.com
           recipient:  $scope.recipient
           text:       $scope.text
-          password:   $scope.password
+          password:   sha512.SHA512($scope.password)
 
         $scope.premature = true /* disables send button */
         if $scope.file
