@@ -1,12 +1,12 @@
-#!/bin/bash -
+#!/bin/bash - 
 #===============================================================================
 #
 #          FILE: builder.sh
-#
-#         USAGE: ./builder.sh
-#
-#   DESCRIPTION:
-#
+# 
+#         USAGE: ./builder.sh 
+# 
+#   DESCRIPTION: 
+# 
 #       OPTIONS: ---
 #  REQUIREMENTS: ---
 #          BUGS: ---
@@ -17,16 +17,26 @@
 #      REVISION:  ---
 #===============================================================================
 
-INK_HOME=stack/Ink/
-
 set -o nounset                              # Treat unset variables as an error
 
-cd $INK_HOME
+
+us=`pwd`
+user=
+password=
+server=localhost
+protocol=http
+port=5984
+database=
+document=
+dest=$protocol://$user:$password@$server:$port/$database/
+ink=$us/stack/Ink/
+
+
+cd $ink
 make
 cd -
-dest=http://localhost:5984/outgoing/
 us=`pwd`
-b=$us/build/send
+b=$us/build/$document
 pushd $us
 git commit -am 'autocommit'
 wintersmith build

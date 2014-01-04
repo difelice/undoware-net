@@ -1,11 +1,11 @@
 {
   "locals": {
-    "base":     "http://send.app/",
+    "base":     "http://localhost/",
     "cdn":      false,
-    "name":     "Send.app",
-    "icon":     "rocket",
-    "ownurl":   "https://www.medextra.com/",
-    "owner":    "MedExtra",
+    "name":     "Stock",
+    "icon":     "youtube",
+    "ownurl":   "https://undoware.ca/",
+    "owner":    "Undoware",
     "color": {
       "class": {
         "menu": {
@@ -18,23 +18,16 @@
       {
         "href": "/",
         "menu": {
-          "name" : "Quick Send",
-          "class": "file",
-          "icon": "coffee"
-        }
-      },      {
-        "href": "/share/",
-        "menu": {
-          "name" : "Share",
-          "class": "share",
-          "icon": "cloud-upload"
+          "name" : "Hello",
+          "class": "hello",
+          "icon": "youtube"
         }
       }
     ],
     "loader": {
       "src":  "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js",
       "config": {
-        "baseUrl": "/",
+        "baseUrl":        "/",
         "paths": {
           "ink":          "ink.min",
           "ink-ui":       "ink-ui.min",
@@ -56,9 +49,9 @@
       }
     },
     "scale": {
-      "initial": "1.0",
-      "max": "1.0",
-      "user": 0
+      "initial":  "1.0",
+      "max":      "1.0",
+      "user":      0
     }
   },
   "require": {
@@ -71,7 +64,7 @@
     "smartLists": true,
     "smartypants": true
   },
-  "output": "build/send/",
+  "output": "build/stock/",
   "plugins": [ "wintersmith-ls",
                "wintersmith-stylus" ]
 }
