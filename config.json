@@ -4,7 +4,7 @@
     "cdn":      false,
     "name":     "Stock",
     "icon":     "youtube",
-    "ownurl": "https://undoware.ca/",
+    "ownurl":   "https://undoware.ca/",
     "owner":    "Undoware",
     "color": {
       "class": {
@@ -27,7 +27,7 @@
     "loader": {
       "src":  "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js",
       "config": {
-        "baseUrl": "/",
+        "baseUrl":        "/",
         "paths": {
           "ink":          "ink.min",
           "ink-ui":       "ink-ui.min",
@@ -44,9 +44,9 @@
       }
     },
     "scale": {
-      "initial": "1.0",
-      "max": "1.0",
-      "user": 0
+      "initial":  "1.0",
+      "max":      "1.0",
+      "user":      0
     }
   },
   "require": {
