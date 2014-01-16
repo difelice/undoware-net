@@ -3,16 +3,10 @@ doctype xml
 - var current_date_str = current_date
 urlset(xmlns="http://sitemaps.org/schemas/sitemap/0.9")
    url
-      loc= locals.url
+      loc= locals.base
       changefreq daily
       priority 0.8
-   for location in locals.nav
+   for n in locals.sitemap
      url
-        loc= locals.url + location
+        loc= locals.base + n.href
         changefreq weekly
-   - var articles = env.helpers.getArticles(contents);
-   for article in articles
-    - var permalink = locals.url + article.url
-    url
-      loc= permalink
-      changefreq monthly

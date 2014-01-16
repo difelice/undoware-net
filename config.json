@@ -1,5 +1,6 @@
 {
   "locals": {
+<<<<<<< HEAD
     "url": "https://undoware.ca",
     "name": "Undoware.ca",
     "owner": "Elizabeth Marston",
@@ -18,6 +19,64 @@
     "moment": "moment",
     "_": "underscore",
     "typogr": "typogr"
+=======
+    "base":     "http://localhost/",
+    "cdn":      false,
+    "name":     "Stock",
+    "icon":     "youtube",
+    "ownurl":   "https://undoware.ca/",
+    "owner":    "Undoware",
+    "color": {
+      "class": {
+        "menu": {
+          "bar": "blue"
+        }
+      }
+    },
+    "language": { "code": "en-CA", "name": "English" },
+    "sitemap": [
+      {
+        "href": "/",
+        "menu": {
+          "name" : "Hello",
+          "class": "hello",
+          "icon": "youtube"
+        }
+      }
+    ],
+    "loader": {
+      "src":  "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js",
+      "config": {
+        "baseUrl":        "/",
+        "paths": {
+          "ink":          "ink.min",
+          "ink-ui":       "ink-ui.min",
+          "modernizr":    "https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min",
+          "jq":           "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min",
+          "ng":           "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min",
+          "ng-cookies":   "//ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular-cookies.min",
+          "pwgen":        "https://raw.github.com/bermi/password-generator/master/dist/password-generator.min",
+          "b64":          "b64",
+          "sha":          "sha512",
+          "enc-b64":      "enc-base64-min"
+        },
+        "deps": [
+          "jq",
+          "ng",
+          "ink",
+          "stock"
+        ]
+      }
+    },
+    "scale": {
+      "initial":  "1.0",
+      "max":      "1.0",
+      "user":      0
+    }
+  },
+  "require": {
+    "cheerio": "cheerio"
+>>>>>>> db4a2c4fa315f164c284bd1a294d12c9a605f9a6
   },
   "jade": {
     "pretty": true
@@ -26,9 +85,16 @@
     "smartLists": true,
     "smartypants": true
   },
+<<<<<<< HEAD
   "paginator": {
     "perPage": 3
   }
 }
 
 
+=======
+  "output": "build/stock/",
+  "plugins": [ "wintersmith-ls",
+               "wintersmith-stylus" ]
+}
+>>>>>>> db4a2c4fa315f164c284bd1a294d12c9a605f9a6

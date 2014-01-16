@@ -1,0 +1,12 @@
+// navigation.jade
+
+nav.ink-navigation.vspace
+   ul.horizontal.menu.rounded.shadowed.vspace(class=locals.color.class.menu.bar)
+     each n in locals.sitemap
+        li(class=n.menu.class)
+          a(href=n.href)
+            if (n.menu.icon)
+              - var i = 'icon-2x icon-' + n.menu.icon;
+              i(class=i,style="vertical-align:middle")
+              | &nbsp;
+            | !{n.menu.name}

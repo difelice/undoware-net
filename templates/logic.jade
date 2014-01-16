@@ -1,0 +1,8 @@
+// logic.jade
+
+include util
+
+// global vars: ugly, yet effective
+- var conf = JSON.stringify(locals.loader.config)
+|<script> require = !{conf};</script>
++js(locals.loader.src)
