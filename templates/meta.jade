@@ -25,12 +25,7 @@ block meta
     -var sn=locals.name + ": " + locals.description
     meta(property="og:site_name",content=sn)
     meta(name="copyright",content=sn)
-    -var t = " (↺)";
-    -if (!page['title']) {
-    -   t = sn;
-    -} else { 
-    -   t = page['title'] + t;
-    -}
+    -var t = sn + " (↺)";
     meta(property="og:title",content=t)
     meta(name="name",content=t)
     meta(name="dc.title",content=t)
