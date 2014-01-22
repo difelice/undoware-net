@@ -26,8 +26,8 @@ password=xai0chiK
 server=localhost
 protocol=http
 port=5984
-database=
-document=
+database=undoware
+document=undoware
 dest=$protocol://$user:$password@$server:$port/$database/
 ink=$us/stack/Ink/
 
