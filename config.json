@@ -1,82 +1,53 @@
 {
+  "output": "build/undoware/",
   "locals": {
-<<<<<<< HEAD
-    "url": "https://undoware.ca",
-    "name": "Undoware.ca",
-    "owner": "Elizabeth Marston",
-    "description": "UX blog",
-    "nav": {
-      "Who": "/who/",
-      "Timeline": "/timeline/"
-    }
-  },
-  "plugins": [
-    "./plugins/livescript.coffee",
-    "./plugins/paginator.coffee",
-    "./plugins/stylus.coffee"
-  ],
-  "require": {
-    "moment": "moment",
-    "_": "underscore",
-    "typogr": "typogr"
-=======
-    "base":     "http://localhost/",
-    "cdn":      false,
-    "name":     "Stock",
-    "icon":     "youtube",
-    "ownurl":   "https://undoware.ca/",
+    "base":     "https://undoware.ca/",
+    "ownurl":   "https://undoware.ca/", /*NOT redundant, this is URL of website owner */
     "owner":    "Undoware",
-    "color": {
-      "class": {
-        "menu": {
-          "bar": "blue"
-        }
-      }
-    },
+    "name":     "Undoware.ca",
+    "cdn":      "https://undoware-cdn.appspot.com",
+    "description": "tech blog",
     "language": { "code": "en-CA", "name": "English" },
     "sitemap": [
       {
-        "href": "/",
+        "href": "/who/",
         "menu": {
-          "name" : "Hello",
-          "class": "hello",
-          "icon": "youtube"
+          "name" : "Who",
+          "class": "who"
+        }
+      },{
+        "href": "/timeline/",
+        "menu": {
+          "name" : "Timeline",
+          "class": "timeline"
         }
       }
     ],
-    "loader": {
+  },
+  "plugins": [ "./plugins/paginator.coffee" ],
+  "require": {
+    "moment": "moment",
+    "cheerio": "cheerio",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "loader": {
       "src":  "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js",
       "config": {
         "baseUrl":        "/",
         "paths": {
-          "ink":          "ink.min",
-          "ink-ui":       "ink-ui.min",
-          "modernizr":    "https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min",
-          "jq":           "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min",
           "ng":           "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min",
-          "ng-cookies":   "//ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular-cookies.min",
-          "pwgen":        "https://raw.github.com/bermi/password-generator/master/dist/password-generator.min",
-          "b64":          "b64",
-          "sha":          "sha512",
-          "enc-b64":      "enc-base64-min"
         },
         "deps": [
-          "jq",
           "ng",
-          "ink",
           "stock"
         ]
       }
-    },
-    "scale": {
-      "initial":  "1.0",
-      "max":      "1.0",
-      "user":      0
-    }
   },
-  "require": {
-    "cheerio": "cheerio"
->>>>>>> db4a2c4fa315f164c284bd1a294d12c9a605f9a6
+  "scale": {
+    "initial":  "0.8",
+    "max":      "1.1",
+    "user":     true
   },
   "jade": {
     "pretty": true
@@ -85,16 +56,7 @@
     "smartLists": true,
     "smartypants": true
   },
-<<<<<<< HEAD
   "paginator": {
     "perPage": 3
   }
 }
-
-
-=======
-  "output": "build/stock/",
-  "plugins": [ "wintersmith-ls",
-               "wintersmith-stylus" ]
-}
->>>>>>> db4a2c4fa315f164c284bd1a294d12c9a605f9a6

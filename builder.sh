@@ -21,8 +21,8 @@ set -o nounset                              # Treat unset variables as an error
 
 
 us=`pwd`
-user=
-password=
+user=befi
+password=xai0chiK
 server=localhost
 protocol=http
 port=5984

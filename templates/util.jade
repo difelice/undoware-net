@@ -26,23 +26,6 @@ mixin css(fr)
   if (fr && fr != '.css')
     link(href=css(fr),rel='stylesheet',type='text/css',charset="utf-8")
 
-
-- function jpg(fr) {
--  var fn = fr + '.jpg';
-- return cdn(fn);
-- }
-
-- function png(fr) {
--  var fn = fr + '.png';
-- return cdn(fn);
-- }
-
-- function svg(fr) {
--  var fn = fr + '.svg';
-- return cdn(fn);
-- }
-
-
 - function viewport(a) {
 - return  ' initial-scale=' + a.initial
 -         ',maximum-scale=' + a.max
@@ -59,3 +42,24 @@ mixin css(fr)
 -  var fn = '/font/' +  fr + '.ttf';
 - return cdn(fn);
 - }
+
+
+-function raster(x) {
+-return cdn('/raster/' + x);
+-}
+
+-function vector(x) {
+-return cdn('/vector/' + x);
+-}
+
+-function png(x) {
+-return raster(x + '.png');
+-}
+
+-function jpg(x) {
+-return raster(x + '.jpg');
+-}
+
+-function svg(x) {
+-return cdn(x + '.svg');
+-}

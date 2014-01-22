@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "dependencies": {
     "moment": "2.x",
     "underscore": "1.4.x",
@@ -16,28 +15,20 @@
     "googleapis": "0.2.x",
     "rsyncwrapper": "0.0.x",
     "tumblr": "0.2.x",
-    "twitter": "0.2.x"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/undoware/www-undoware-ca"
-  }
-=======
-  "name": "stock",
-  "version": "0.0.7",
-  "dependencies": {
-    "LiveScript":         "1.2.x",
-    "wintersmith":        "2.0.x",
+    "twitter": "0.2.x",
     "wintersmith-stylus": "0.4.x",
     "wintersmith-ls":   ">=0.0.5",
     "cheerio":            "0.12.x",
-    "bower":              "0.9.x",
     "superagent":         "0.15.x",
     "socket.io":          "0.9.x",
     "async":              "0.2.x",
     "q":                  "0.9.x",
     "optimist":           "0.6.x",
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/undoware/www-undoware-ca"
+  }
   "devDependencies":      {
     "debug":                  "0.7.2",
     "grunt":                  "0.4.x",
@@ -51,5 +42,4 @@
     "jasmine-sinon":          "0.6.x",
     "jasmine-node":           "1.11.x"
     }
->>>>>>> db4a2c4fa315f164c284bd1a294d12c9a605f9a6
 }
