@@ -26,10 +26,10 @@ block meta
     meta(property="og:site_name",content=sn)
     meta(name="copyright",content=sn)
     -var t = " (↺)";
-    -if (!!page['title']) {
-    -   t = page['title'];
-    -} else { 
+    -if (!page['title']) {
     -   t = sn;
+    -} else { 
+    -   t = page['title'] + t;
     -}
     meta(property="og:title",content=t)
     meta(name="name",content=t)
