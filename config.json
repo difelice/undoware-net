@@ -2,7 +2,7 @@
   "output": "build/undoware/",
   "locals": {
     "base":     "https://undoware.ca/",
-    "ownurl":   "https://undoware.ca/", /*NOT redundant, this is URL of website owner */
+    "ownurl":   "https://undoware.ca/",
     "owner":    "Undoware",
     "name":     "Undoware.ca",
     "cdn":      "https://undoware-cdn.appspot.com",
@@ -22,7 +22,7 @@
           "class": "timeline"
         }
       }
-    ],
+    ]
   },
   "plugins": [ "./plugins/paginator.coffee" ],
   "require": {
@@ -35,9 +35,7 @@
       "src":  "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js",
       "config": {
         "baseUrl":        "/",
-        "paths": {
-          "ng":           "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min",
-        },
+        "paths": { "ng":           "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min" },
         "deps": [
           "ng",
           "stock"

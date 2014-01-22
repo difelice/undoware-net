@@ -23,23 +23,23 @@
     "socket.io":          "0.9.x",
     "async":              "0.2.x",
     "q":                  "0.9.x",
-    "optimist":           "0.6.x",
+    "optimist":           "0.6.x"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/undoware/www-undoware-ca"
-  }
+  },
   "devDependencies":      {
     "debug":                  "0.7.2",
     "grunt":                  "0.4.x",
     "grunt-contrib-watch":    "0.5.x",
     "grunt-wintersmith":    ">=0.0.2",
-    "grunt-jasmine-node"      "0.4.x",
-    "grunt-jasmine-imagediff" "0.1.x",
+    "grunt-jasmine-node":      "0.4.x",
+    "grunt-jasmine-imagediff": "0.1.x",
     "karma":                  "0.10.x",
     "karma-jasmine":          "0.1.x",
     "sinon":                  "1.7.x",
     "jasmine-sinon":          "0.6.x",
     "jasmine-node":           "1.11.x"
-    }
+  }
 }
