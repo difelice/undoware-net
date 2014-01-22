@@ -22,12 +22,11 @@ block meta
   meta(property="og:type",content="blog")
   meta(name="dc.keywords",content="Usability, UX, Technology, Politics")
   meta(name="dc.subject",content="Usability")
-  - var sn=locals.name + ": " + locals.description
-  meta(property="og:site_name",content=sn)
-  meta(name="copyright",content=sn)
-  meta(property="og:title",content=sn)
-  meta(name="name",content=sn)
-  title= sn
+  meta(property="og:site_name",content=locals.name)
+  meta(name="copyright",content=locals.name)
+  meta(property="og:title",content=locals.name)
+  meta(name="name",content=locals.name)
+  title= locals.name
   //# /* Generate permalink URL for this page. Easy. */
   -var u
   -if (page && 'url' in page)
