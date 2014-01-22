@@ -3,9 +3,9 @@
 block prepend navi
   nav
     ul
-      each location, location_name in locals.nav
+      each location in locals.sitemap
         li
-          a(href=location)= location_name
+          a(href=location.href)= location.menu.name
       li
         <!-- don't forget title attributes, or icon fonts are accessibility nightmare.
         Also these non-breaking spaces were handy for prototyping but are kludgey for production, TODO FIXME -->

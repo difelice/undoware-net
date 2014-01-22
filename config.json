@@ -22,7 +22,23 @@
           "class": "timeline"
         }
       }
-    ]
+    ],
+    "loader": {
+        "src":  "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js",
+        "config": {
+          "baseUrl":        "/",
+          "paths": { "ng":           "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min" },
+          "deps": [
+            "ng",
+            "stock"
+          ]
+        }
+    },
+    "scale": {
+      "initial":  "0.8",
+      "max":      "1.1",
+      "user":     true
+    }
   },
   "plugins": [ "./plugins/paginator.coffee" ],
   "require": {
@@ -30,22 +46,6 @@
     "cheerio": "cheerio",
     "_": "underscore",
     "typogr": "typogr"
-  },
-  "loader": {
-      "src":  "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js",
-      "config": {
-        "baseUrl":        "/",
-        "paths": { "ng":           "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min" },
-        "deps": [
-          "ng",
-          "stock"
-        ]
-      }
-  },
-  "scale": {
-    "initial":  "0.8",
-    "max":      "1.1",
-    "user":     true
   },
   "jade": {
     "pretty": true
