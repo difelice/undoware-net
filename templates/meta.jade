@@ -22,15 +22,15 @@ block meta
     meta(property="og:type",content="blog")
     meta(name="dc.keywords",content="Usability, UX, Technology, Politics")
     meta(name="dc.subject",content="Usability")
-    //# /* Ways of saying the site name, and other things that need it */
     -var sn=locals.name + ": " + locals.description
     meta(property="og:site_name",content=sn)
     meta(name="copyright",content=sn)
     -var t = " (↺)"
-    -if (page && 'title' in page)
-      t = page.title + t
-    -else
-      t = sn
+    -try {
+    -   t = page.title + t;
+    -} catch (Exception e) { 
+    -   t = sn;
+    -}
     meta(property="og:title",content=t)
     meta(name="name",content=t)
     meta(name="dc.title",content=t)
