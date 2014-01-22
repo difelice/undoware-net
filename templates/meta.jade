@@ -26,9 +26,9 @@ block meta
     meta(property="og:site_name",content=sn)
     meta(name="copyright",content=sn)
     -var t = " (↺)";
-    -try {
+    -if (!!page['title']) {
     -   t = page.title + t;
-    -} catch (Exception) { 
+    -} else { 
     -   t = sn;
     -}
     meta(property="og:title",content=t)
