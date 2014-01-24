@@ -4,5 +4,4 @@
     { "description": "Access to this design document" , "from": "_ddoc" , "to"  : "" },
     { "from": "_ddoc/*" , "to"  : "*"},
     { "from": "*/", "to": "*/index.html"},
-    { "from": "/*", "to": "*"}
 ]
