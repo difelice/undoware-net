@@ -3,6 +3,6 @@
     { "from": "_db/*" , "to"  : "../../*" },
     { "description": "Access to this design document" , "from": "_ddoc" , "to"  : "" },
     { "from": "_ddoc/*" , "to"  : "*"},
-    { "from": "*/", "to": "index.html"},
+    { "from": "*/", "to": "*/index.html"},
     { "from": "/*", "to": "*"}
 ]
