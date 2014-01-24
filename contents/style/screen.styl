@@ -31,6 +31,10 @@
     background-size 86px 160px
   .area
     margin 30px
+    a
+      text-decoration: none
+      transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out,
+
     &.header
       overflow: hidden
       thc-headline-font()
@@ -80,6 +84,7 @@
         background-size: 1em 1em
       nav
         a
+        a
           color: thc-action-color
           &:link
           &:visited
@@ -104,8 +109,6 @@
     &.main
       a
         color: thc-accent-color
-        text-decoration: none
-        transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out
         &:hover
         &:active
         &:focus
