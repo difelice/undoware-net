@@ -1,12 +1,24 @@
 {
   "output": "build/undoware/",
   "locals": {
+    "path": {
+      "css" : "/style",
+      "js"  : "/logic",
+      "png" : "/raster",
+      "jpg" : "/raster",
+      "png" : "/raster",
+      "svg" : "/vector",
+      "pdf" : "/vector",
+      "woff": "/font",
+      "eot" : "/font",
+      "ttf" : "/font"
+    },
     "base":     "https://undoware.ca/",
     "ownurl":   "https://undoware.ca/",
     "owner":    "Undoware",
     "name":     "Undoware.ca",
     "cdn":      "https://undoware-cdn.appspot.com",
-    "description": "tech blog",
+    "description": "Tech Blog",
     "language": { "code": "en-CA", "name": "English" },
     "sitemap": [
       {
@@ -24,14 +36,10 @@
       }
     ],
     "loader": {
-        "src":  "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js",
+        "src":  "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min",
         "config": {
-          "baseUrl":        "/",
-          "paths": { "ng":           "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min" },
-          "deps": [
-            "ng",
-            "stock"
-          ]
+          "paths"  : { "ng": "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min" },
+          "deps"   : [ "ng", "site", "logo" ]
         }
     },
     "scale": {
@@ -40,7 +48,11 @@
       "user":     true
     }
   },
-  "plugins": [ "./plugins/paginator.coffee" ],
+  "plugins": [
+      "./plugins/paginator.coffee",
+      "wintersmith-ls",
+      "wintersmith-stylus"
+  ],
   "require": {
     "moment": "moment",
     "cheerio": "cheerio",

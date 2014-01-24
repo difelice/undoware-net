@@ -1,14 +1,17 @@
 doctype html
-
-
-html(lang=locals.language.code)
+html(lang=locals.language.code,itemscope,itemtype="http://schema.org/Article")
   head
+    block head
     include logic
     include meta
     include icon
     include style
-    block head
 
   body.ink-grid#body
-    block content
-
+    div#page
+      header.area.header(role='heading')
+        block header
+      main.area.main(role='main')
+        block content
+      footer.area.footer(role='complementary')
+        block footer

@@ -1,6 +1,6 @@
 ---
 title: Whose Undoware?
-template: page.jade
+template: single.jade
 ---
 
 Mine.

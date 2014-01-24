@@ -1,6 +1,12 @@
 /* MIT License, (c) 2013 Elizabeth Marston */
 
+
 @media screen
+  #page
+    position absolute
+    top 10vh
+    left 5vw
+
   #bra
   #panties
     display: block
@@ -23,167 +29,174 @@
     background-image: svg('zebra')
     background-repeat: no-repeat;
     background-size 86px 160px
-  #page
-    position absolute
-    top 10vh
-    left 5vw
-    min-height: 256px;
-    min-width: (nw=600px) + (ns=256px)
-    max-width: ((xw=800px) + ns)
-    background-color: transparent
-    thc-font()
-    a
-      color: thc-accent-color
-      text-decoration: none
-      transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out
-      &:hover
-      &:active
-      &:focus
-        text-decoration: none;
-        text-shadow 0px 0px 4px thc-action-color
-        color: white
-    margin 0 auto
   .area
     margin 30px
-  .area.topbar
-    overflow: hidden
-    thc-headline-font()
-    font-size: 16pt;
-    margin: 0;
-    width: 100%
-    em  { margin: 0; display: block; font-size: 12pt; padding: 0; }
-    h1, h2, h3, h4, h5
+    &.header
+      overflow: hidden
       thc-headline-font()
-      padding: 0;
-      margin: 0;
-      display: inline-block;
-    h1  { font-size:21pt; text-transform: uppercase}
-    h2  { font-size:16pt; }
-    h3  { font-size:14pt; }
-    h4  { font-size:12pt; }
-    h5  { font-size:10pt; }
-    h5  { font-size:9pt; }
-  .logo
-  .slogan
-    display: block
-    background-size: 48px auto
-    background-repeat: no-repeat
-    background-position: 64px 0px
-  .logo
-    text-shadow: 0px 0px 3px thc-action-color
-    a
-      &:hover
-      &:active
-      &:focus
-        text-shadow: 0px 0px 5px thc-action-color
-  .slogan
-    font-size: 8pt
-  .zcommand
-    min-height: 1em
-    min-width: 1em
-    background-image: svg('logo-blue')
-    background-repeat: no-repeat
-    background-size: 1em 1em
-  .area.topbar nav
-    text-align: right
-    font-size: 12pt
-    text-indent: 0;
-    li
-      padding: 1em;
-      display: inline-block
-      &.nav-selected
-        font-weight: 700;
-        li
-          font-weight: 500;
-  .area.main
-    img
-      border-radius thc-corner-radius
-      box-shadow 1px 1px 1px #AAA, -1px -1px 3px #000
-    hr
-      width: 10%
-      border-width: 1px
-      border-style: solid
-      border-color thc-action-color
-    p a:after, li a:after
-      color: #777
-      content: '*'
-    article footer
-      color thc-action-color !important
-      text-align right
-    ul
-      li
-        margin-bottom: 0.7em
-      padding-left: 1em
-      list-style: none
-      li:before
-        content: ''
-        padding-right: 0.2em
-    margin: 2em 0 0 0;
-    text-align: justify
-    min-width: nw;
-    max-width: xw;
-    line-height: 1.4em
-    word-wrap break-word
-    padding-left: 4em;
-    h1, h2, h3
-      thc-headline-font()
-    h1 { font-size: 21pt; }
-    h2 { font-size: 18pt; font-weight: 300; margin: 1em auto; }
-    h3 { font-size: 14pt; margin: 0.5em auto; }
-    h4 { font-size: 14pt; font-style: italic; font-weight: 300; margin: 0.5em auto; color: #A0A0A0}
-    h5 { font-size: 14pt; font-weight: 300; margin: 1em auto; }
-    h6 { font-size: 14pt; font-weight: 300; margin: 1em auto; }
-    p
       font-size: 16pt;
-      text-indent: 0.5em;
-      padding: 5px 10px 0 0 ;
-      margin: 0.5em;
-      text-align: justify;
-    article.story > section > p:first-child
-      text-indent: 0;
-      &:first-letter
-          float: left;
-          font-size:2.8em;
-          color: thc-action-color;
-          text-shadow: 1px 1px 1px #77A, -1px -1px 1px #000
-          margin: 0.05em 0 0 -0.1em;
-          padding: 0.1em;
-          text-transform: uppercase;
-  .area.footer
-    font-size: 8pt;
-    h1 { font-size: 14pt; }
-    h2 { font-size: 12pt; }
-    h3 { font-size: 10pt; }
-    h4 { font-size: 8pt;  }
-    h5 { font-size: 7pt;  }
-    h6 { font-size: 6pt;  }
-    width 100%
-    padding 0
-    margin 0
-    clear both
-  li.archive-entry
-    margin-left: 1em
-  li.year
-    border-left: 1px solid thc-action-color
-  li.archive-entry
-    line-height: 2em
-  section.archive li:before
-    content: '' !important
-  menu.nav
-    text-align center
-    font-size: 2em
-  figure
-    display: block
-    max-width: 728px
-    min-width: 128px
-    margin: 0 auto
-    img
-      display: block
+      margin: 0;
       width: 100%
-  figcaption
-    display: block
-    width: 100%
-    text-align: right
-    font-size: 0.5em
+      em  { margin: 0; display: block; font-size: 12pt; padding: 0; }
+      h1, h2, h3, h4, h5
+        thc-headline-font()
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+      h1  { font-size:21pt; text-transform: uppercase}
+      h2  { font-size:16pt; }
+      h3  { font-size:14pt; }
+      h4  { font-size:12pt; }
+      h5  { font-size:10pt; }
+      h5  { font-size:9pt; }
+      .logo
+      .slogan
+        display: block
+        background-size: 48px auto
+        background-repeat: no-repeat
+        background-position: 64px 0px
+      .logo
+        margin-top: 1em
+        color: white
+        text-shadow: 0px 0px 3px thc-action-color
+        a
+          &:hover
+          &:active
+          &:focus
+            text-shadow: 0px 0px 5px thc-action-color
+      .slogan
+        font-size: 8pt
+      .zcommand
+        min-height: 1em
+        min-width: 1em
+        background-image: svg('logo-blue')
+        background-repeat: no-repeat
+        background-size: 1em 1em
+      nav
+        a
+          color: white;
+        text-align: right
+        font-size: 12pt
+        text-indent: 0;
+        li
+          padding: 1em;
+          display: inline-block
+          &.nav-selected
+            font-weight: 700;
+            li
+              font-weight: 500;
+    &.main
+      min-height: 256px;
+      min-width: (nw=600px) + (ns=256px)
+      max-width: ((xw=800px) + ns)
+      background-color: transparent
+      thc-font()
+      a
+        color: thc-accent-color
+        text-decoration: none
+        transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out
+        &:hover
+        &:active
+        &:focus
+          text-decoration: none;
+          text-shadow 0px 0px 4px thc-action-color
+      margin 0 auto
+
+      img
+        border-radius thc-corner-radius
+        box-shadow 1px 1px 1px #AAA, -1px -1px 3px #000
+      hr
+        width: 10%
+        border-width: 1px
+        border-style: solid
+        border-color thc-action-color
+      p a:after, li a:after
+        color: #777
+        content: '*'
+      article footer
+        color thc-action-color !important
+        text-align right
+      ul
+        li
+          margin-bottom: 0.7em
+        padding-left: 1em
+        list-style: none
+        li:before
+          content: ''
+          padding-right: 0.2em
+      margin: 2em 0 0 0;
+      text-align: justify
+      min-width: nw;
+      max-width: xw;
+      line-height: 1.4em
+      word-wrap break-word
+      padding-left: 4em;
+      h1, h2, h3, h4
+        thc-headline-font()
+        a
+          color: white
+      h1 { font-size: 21pt; }
+      h2 { font-size: 18pt; font-weight: 300 !important; margin: 1em auto; }
+      h3 { font-size: 14pt; margin: 0.5em auto; }
+      h4 { font-size: 11pt; margin: 0.5em auto; color: #A0A0A0}
+      h5 { font-size: 14pt; font-weight: 300; margin: 1em auto; }
+      h6 { font-size: 14pt; font-weight: 300; margin: 1em auto; }
+      p
+        font-size: 16pt;
+        text-indent: 0.5em;
+        padding: 5px 10px 0 0 ;
+        margin: 0.5em;
+        text-align: justify;
+      article.story > section > p:first-child
+        text-indent: 0;
+        &:first-letter
+            float:left
+            font-size:2.8em;
+            color: thc-action-color;
+            text-shadow: 1px 1px 1px #77A, -1px -1px 1px #000
+            margin: -0.5em 0 0 -0.1em;
+            padding: 0.1em;
+            text-transform: uppercase;
+
+      li.archive-entry
+        margin-left: 1em
+      li.year
+        border-left: 1px solid thc-action-color
+      li.archive-entry
+        line-height: 2em
+      section.archive li:before
+        content: '' !important
+      menu.nav
+        text-align center
+        font-size: 2em
+
+      figure
+        display: block
+        max-width: 728px
+        min-width: 128px
+        margin: 0 auto
+        img
+          display: block
+          width: 100%
+      figcaption
+        display: block
+        width: 100%
+        text-align: right
+        font-size: 0.5em
+
+    &.footer
+      font-size: 8pt;
+      h1 { font-size: 14pt; }
+      h2 { font-size: 12pt; }
+      h3 { font-size: 10pt; }
+      h4 { font-size: 8pt;  }
+      h5 { font-size: 7pt;  }
+      h6 { font-size: 6pt;  }
+      width 100%
+      padding 0
+      margin 0
+      clear both
+
+
   body
     background-color thc-background-color

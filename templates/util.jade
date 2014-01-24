@@ -6,25 +6,6 @@
 -   return (path) ? f : cdnr + f;
 - }
 
-- function js(fr) {
--  var fn = fr ;
-- return cdn(fn);
-- }
-
-mixin js(fr)
-  if (fr && fr != 'undefined.js')
-    script(src=js(fr),type="text/javascript",charset="utf-8")
-
-
-- function css(fr) {
--  var fn = fr + '.css';
-- return cdn(fn);
-- }
-
-
-mixin css(fr)
-  if (fr && fr != '.css')
-    link(href=css(fr),rel='stylesheet',type='text/css',charset="utf-8")
 
 - function viewport(a) {
 - return  ' initial-scale=' + a.initial
@@ -32,34 +13,69 @@ mixin css(fr)
 -         ',user-scalable=' + a.user;
 - }
 
-- function woff(fr) {
--  var fn = '/font/' + fr + '.woff';
-- return cdn(fn);
+
+- function js(fr) {
+-  return typath(fr,'js');
+- }
+
+- function requirejs(fr) {
+-  return locals.loader.src + '.js';
 - }
 
 
-- function ttf(fr) {
--  var fn = '/font/' +  fr + '.ttf';
-- return cdn(fn);
+mixin js(fr)
+  if (fr && fr != 'undefined.js')
+    script(src=js(fr),type="text/javascript",charset="utf-8")
+
+mixin requirejs()
+  script(src=requirejs(),type="text/javascript",charset="utf-8")
+
+
+- function css(fr) {
+-  return typath(fr,'css');
 - }
 
+mixin css(fr)
+  if (fr && fr != '.css')
+    link(href=css(fr),rel='stylesheet',type='text/css',charset="utf-8")
 
--function raster(x) {
+
+// deprecated
+-function raster(type) {
 -return cdn('/raster/' + x);
 -}
 
+// deprecated
 -function vector(x) {
 -return cdn('/vector/' + x);
 -}
 
+-function typath(x,typ) {
+-return cdn(locals.path[typ] + '/' + x + '.' + typ);
+-}
+
+
 -function png(x) {
--return raster(x + '.png');
+-return typath(x,'png');
 -}
 
 -function jpg(x) {
--return raster(x + '.jpg');
+-return typath(x,'jpg');
 -}
 
 -function svg(x) {
--return cdn(x + '.svg');
+-return typath(x,'svg');
 -}
+
+-function woff(x) {
+-return typath(x,'woff');
+-}
+
+-function ttf(x) {
+-return typath(x,'ttf');
+-}
+
+-function eot(x) {
+-return typath(x,'eot');
+-}
+

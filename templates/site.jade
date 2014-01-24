@@ -1,6 +1,42 @@
+// /* MIT License, (c) 2013  Elizabeth Marston */
 
-append head
-  title= page.title
+
+block append header
+  include ie.html
+
+  //command zee-bra, get it? Just some decoration
+  div#zebra
+  div.column-group
+    div.large-30.push-left
+      h1.logo  UND↺WARE
+      em.slogan
+        a(href='/what/') (WTF?)
+
+    nav.large-70.push-right
+      ul
+        each location in locals.sitemap
+          li
+            a(href=location.href)= location.menu.name
+        li
+          <!-- don't forget title attributes, or icon fonts are accessibility nightmare.
+          Also these non-breaking spaces were handy for prototyping but are kludgey for production, TODO FIXME -->
+          a(href='https://twitter.com/undoware',title='on Twitter')
+           i.icon-twitter &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          a(href='https://www.github.com/undoware/',title='on GitHub')
+           i.icon-github-alt &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          a(href='/feed.xml',title='RSS Feed')
+           i.icon-rss &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          a(href='tel:+17783743355',title='Call me')
+           i.icon-phone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          a(href='mailto:beth@undoware.ca',title='Email me')
+           i.icon-envelope &nbsp;
+
+block append footer
+  include vcard
+  include track.html
+
+
+block append content
 
 
 extends stock
