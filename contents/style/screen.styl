@@ -30,6 +30,15 @@
     background-repeat: no-repeat;
     background-size 86px 160px
   .area
+    a
+      color: thc-accent-color
+      text-decoration: none
+      transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out
+      &:hover
+      &:active
+      &:focus
+        text-decoration: none;
+        text-shadow 0px 0px 4px thc-action-color
     margin 30px
     &.header
       overflow: hidden
@@ -63,7 +72,6 @@
           &:active
           &:focus
             text-shadow: 0px 0px 5px thc-action-color
-            color:white
       .slogan
         font-size: 8pt
       .zcommand
@@ -91,15 +99,6 @@
       max-width: ((xw=800px) + ns)
       background-color: transparent
       thc-font()
-      a
-        color: thc-accent-color
-        text-decoration: none
-        transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out
-        &:hover
-        &:active
-        &:focus
-          text-decoration: none;
-          text-shadow 0px 0px 4px thc-action-color
       margin 0 auto
 
       img
