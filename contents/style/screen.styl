@@ -65,13 +65,30 @@
         background-size: 48px auto
         background-repeat: no-repeat
         background-position: 64px 0px
-        text-shadow: 0px 0px 3px thc-highlight-color
+        a
+          text-shadow: 0px 0px 3px thc-highlight-color
+          color: thc-action-color
+          &:hover
+          &:active
+          &:focus
+            text-shadow: 0px 0px 3px black
+            color: thc-highlight-color
       .logo
         margin-top: 1em
         color: thc-action-color
+        a:hover
+        a:active
+        a:focus
+          text-shadow: 0px 0px 3px black
+
       .slogan
         font-size: 8pt
-        color: thc-action-color !important
+        a
+          color: thc-action-color
+          &:hover
+          &:active
+          &:focus
+            text-shadow: 0px 0px 3px black
       .zcommand
         min-height: 1em
         min-width: 1em
