@@ -148,9 +148,14 @@
       padding-left: 4em;
       h1, h2, h3, h4
         thc-headline-font()
+        color:thc-accent-color;
         a
-          color: thc-highlight-color
-      h1 { font-size: 21pt; color:thc-highlight-color; }
+          color: thc-accent-color
+          &:hover
+          &:active
+          &:focus
+            thc-highlight-color
+      h1 { font-size: 21pt; color:thc-accent-color; }
       h2 { font-size: 18pt; font-weight: 300 !important; margin: 1em auto; }
       h3 { font-size: 14pt; margin: 0.5em auto; }
       h4 { font-size: 11pt; margin: 0.5em auto; color: #A0A0A0}
