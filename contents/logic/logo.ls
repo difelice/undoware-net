@@ -5,7 +5,7 @@ define <[ ng ]> ->
   angular.module(\logo []).directive \logo ->
     {
       link: (scope,elt,attrs) ->
-        elt.wrap( "<a href='/'/>")
+        elt.wrap-inner( "<a href='/'/>")
       restrict: 'C'
     }
 
