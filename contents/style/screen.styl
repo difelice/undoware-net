@@ -80,8 +80,17 @@
         background-size: 1em 1em
       nav
         a
-          color: thc-action-color;
-          font-weight: 700;
+          color: thc-action-color
+          &:link
+          &:visited
+            color: thc-action-color
+            text-shadow: 0px 0px 3px thc-highlight-color
+          &:hover
+          &:active
+          &:focus
+            text-shadow: 0px 0px 3px black
+            color: thc-highlight-color
+
         text-align: right
         font-size: 12pt
         text-indent: 0;
