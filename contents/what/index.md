@@ -1,6 +1,6 @@
 ---
 title: Undo-what!?
-template: page.jade
+template: single.jade
 ---
 
 *Undo*, familiar from countless interfaces, is a fundamental innovation of computing, temporarily reversing the arrow of time, righting past wrongs. We take it for granted; it fades into the background.

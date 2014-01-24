@@ -84,11 +84,9 @@ Unlike some candidates with that kind of experience, I still have an open mind (
 
 Points of Presence
 -------------------
-- [Undoware.ca](https://undoware.ca/) My usability blog
-- [Disqus](https://disqus.com/undoware/) Me on Disqus. Watch me slug it out with people who are *wrong* on the Internet.
+- [Undoware.ca](https://undoware.ca/) My blog
 - [Hacker News](https://news.ycombinator.com/threads?id=undoware)
 - [github.com/undoware](http://github.com/undoware)
 - [twitter.com/undoware](http://twitter.com/undoware)
-- [plus.google.com](http://plus.google.com/101667909136924896677) (I have almost three hundred followers here for some reason!)
 - [+1 (778) 374-3355](tel:+17733743355) [(Vancouver, Canada)](http://goo.gl/maps/MvjSL)
 - [beth@undoware.ca](mailto:beth@undoware.ca)
