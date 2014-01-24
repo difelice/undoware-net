@@ -50,6 +50,7 @@
       em  { margin: 0; display: block; font-size: 12pt; padding: 0; }
       h1, h2, h3, h4, h5
         thc-headline-font()
+        color: thc-action-color
         padding: 0;
         margin: 0;
         display: inline-block;
@@ -66,16 +67,16 @@
         background-repeat: no-repeat
         background-position: 64px 0px
         a
-          color: thc-action-color !important
+          color: thc-action-color
           &:link
           &:visited
-            color: thc-action-color !important
-            text-shadow: 0px 0px 3px thc-highlight-color !important
+            color: thc-action-color
+            text-shadow: 0px 0px 3px thc-highlight-color
           &:hover
           &:active
           &:focus
-            text-shadow: 0px 0px 3px black !important
-            color: thc-highlight-color !important
+            text-shadow: 0px 0px 3px black
+            color: thc-highlight-color
 
       .logo
         margin-top: 1em
