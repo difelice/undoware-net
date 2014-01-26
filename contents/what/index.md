@@ -9,4 +9,4 @@ We now focus on the *relationship* between *humanity* and computers. Call this '
 
 This is a much more important conversation to have right now than traditional HCI. Who gives a crap how easily I can apply one of twenty-six distinct photographic effects to my Instagram snapshots, when it has just been announced that it is the NSA that is compiling the yearbook? Who wants to be the next [Arar](http://en.wikipedia.org/wiki/Maher_Arar)? We know now that the shenanigans begun by that administration continue uninterrupted. 'Hope' indeed.
 
-Going forward, we have one agenda, one single article of faith: the network must be usable *by humans*. And human beings have human rights. Like privacy. Like personal security. This is the story of how those things relate to usability. You will be surprised at how tightly the knot is tied.
+Going forward, we have one agenda, one single article of faith: the network must be usable *by humans*. And human beings have human rights. Like privacy. Like personal security. This is the story of how those things relate to usability. You will nebe surprised at how tightly the knot is tied.
