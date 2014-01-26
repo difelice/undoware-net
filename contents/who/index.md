@@ -7,7 +7,7 @@ Mine.
 
 <figure>
 <a href="/cv/"> ![Photograph of Liz Mars](https://undoware-cdn.appspot.com/raster/headshot.jpg) </a>
-<figcaption>Slightly overwrought photo of Liz Mars (Elizabeth Marston), taken for a bookflap.</figcaption>
+<figcaption>Slightly overwrought photo of Liz Mars (Elizabeth Marston), taken for a book release.</figcaption>
 </figure>
 
 
