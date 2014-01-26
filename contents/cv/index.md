@@ -84,7 +84,7 @@ Unlike some candidates with that kind of experience, I still have an open mind (
 
 Points of Presence
 -------------------
-- [Undoware.ca](https://undoware.ca/) My blog
+- [Undoware.ca](https://undoware.ca/) Undoware -- a blog about usability, institutional analysis, and technology
 - [Hacker News](https://news.ycombinator.com/threads?id=undoware)
 - [github.com/undoware](http://github.com/undoware)
 - [twitter.com/undoware](http://twitter.com/undoware)
