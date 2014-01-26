@@ -3,10 +3,10 @@ title: Undo-what!?
 template: single.jade
 ---
 
-*Undo*, familiar from countless interfaces, is a fundamental innovation of computing, temporarily reversing the arrow of time, righting past wrongs. We take it for granted; it fades into the background.
+Originally, this blog was concerned with one thing: The interface between humans and computers. But now we will open the spotlight slightly.
 
-But what a background!
+We now focus on the *relationship* between *humanity* and computers. Call this 'HCR' if you like, but it's really just [institutional analysis](http://en.wikipedia.org/wiki/Institutional_analysis) pointed at the most contemporary manifestation of bureaucracy.
 
-So, to answer your question: Undoware is about usability innovations: ideas as powerful and self-effacing as *undo*.
+This is a much more important conversation to have right now than traditional HCI. Who gives a crap how easily I can apply one of twenty-six distinct photographic effects to my Instagram snapshots, when it has just been announced that it is the NSA that is compiling the yearbook? Who wants to be the next [Arar](http://en.wikipedia.org/wiki/Maher_Arar)? We know now that the shenanigans begun by that administration continue uninterrupted. 'Hope' indeed.
 
-Because when you sweat to change the world, changing it back should be no sweat.
+Going forward, we have one agenda, one single article of faith: the network must be usable *by humans*. And human beings have human rights. Like privacy. Like personal security. This is the story of how those things relate to usability. You will be surprised at how tightly the knot is tied.
