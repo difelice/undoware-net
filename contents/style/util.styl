@@ -1,8 +1,7 @@
 // util.styl
 
-//No CDN atm so passthru
 cdn(f)
-  'url(' + f + ')'
+  'url(https://undoware-cdn.appspot.com/' + f + ')'
 
 //require.js takes stripped suffixes, so passthru here too
 js(fr)
@@ -10,13 +9,13 @@ js(fr)
 
 //we do need to attach suffix for CSS
 css(fr)
-  cdn(fr + '.css')
+  cdn('style/' + fr + '.css')
 
 jpg(fr)
-  cdn(fr + '.jpg')
+  cdn('raster/' + fr + '.jpg')
 
 png(fr)
-  cdn(fr + '.png')
+  cdn('raster/' + fr + '.png')
 
 
 woff(fr)
@@ -26,6 +25,6 @@ ttf(fr)
   cdn('font/' + fr + '.ttf')
 
 svg(fr)
-  cdn(fr + '.svg')
+  cdn('vector/' + fr + '.svg')
 
 
