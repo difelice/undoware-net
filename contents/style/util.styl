@@ -1,30 +1,34 @@
 // util.styl
 
+cdnHost    = 'undoware-cdn.appspot.com'
+vectorPath = '/vector/'
+rasterPath = '/raster/'
+stylePath  = '/style/'
+fontPath   = '/font/'
+scriptPath = '/script/'
+
 cdn(f)
-  'url(https://undoware-cdn.appspot.com/' + f + ')'
+  url(cdnHost + f )
 
-//require.js takes stripped suffixes, so passthru here too
 js(fr)
-  cdn(fr)
+  cdn(scriptPath + fr + '.js')
 
-//we do need to attach suffix for CSS
 css(fr)
-  cdn('style/' + fr + '.css')
+  cdn(stylePath + fr + '.css')
 
 jpg(fr)
-  cdn('raster/' + fr + '.jpg')
+  cdn(rasterPath + fr + '.jpg')
 
 png(fr)
-  cdn('raster/' + fr + '.png')
-
+  cdn(rasterPath + fr + '.png')
 
 woff(fr)
-  cdn('font/' + fr + '.woff')
+  cdn(fontPath + fr + '.woff')
 
 ttf(fr)
-  cdn('font/' + fr + '.ttf')
+  cdn(fontPath + fr + '.ttf')
 
 svg(fr)
-  cdn('vector/' + fr + '.svg')
+  cdn(vectorPath + fr + '.svg')
 
 
