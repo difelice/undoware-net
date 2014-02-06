@@ -8,7 +8,8 @@ html(lang=locals.language.code,itemscope,itemtype="http://schema.org/Article")
     include icon
     include style
 
-  body.ink-grid#body
+  - if (!page.metdata.class) { page.metadata.class = ''; }
+  body.ink-grid#body(class=page.metadata.class)
     div#page
       header.area.header(role='heading')
         block header
