@@ -4,5 +4,6 @@
     { "description": "Access to this design document" , "from": "_ddoc" , "to"  : "" },
     { "from": "_ddoc/*" , "to"  : "*"},
     { "from": "/", "to": "index.html"},
+    { "from": "/error/HTTP_NOT_FOUND.html.var", "to": "404.html"},
     { "from": "/*", "to": "*"}
 ]
