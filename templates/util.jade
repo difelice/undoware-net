@@ -41,7 +41,7 @@ mixin css(fr)
 
 
 -function typath(x,typ,use_cdn) {
--var p = locals.path[typ] + '/' + x + '.' + typ;
+-var p = '/' + locals.path[typ] + '/' + x + '.' + typ;
 -return (use_cdn) ? cdn(p) : p ;
 -}
 
