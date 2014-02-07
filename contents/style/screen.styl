@@ -1,13 +1,11 @@
 /* MIT License, (c) 2013 Elizabeth Marston */
 
-@import 'nib'
-@import(util)
+
 
 #page
   position absolute
   top 10vh
   left 5vw
-
 #bra
 #panties
   display: block
@@ -16,10 +14,10 @@
   background-position: 64px 0px
 #bra
   padding-top: 48px
-  background-image:  svg('bra')
+  background-image:  url(https://undoware-cdn.appspot.com/vector/bra.svg)
 #panties
   padding-top: 32px
-  background-image: svg('panties')
+  background-image: url(https://undoware-cdn.appspot.com/vector/panties.svg)
 #zebra
   position: fixed;
   left: -5px;
@@ -27,7 +25,7 @@
   min-width 86px
   min-height 160px
   z-index: -1;
-  background-image: svg('zebra')
+  background-image: 
   background-repeat: no-repeat;
   background-size 86px 160px
 .area
@@ -76,7 +74,7 @@
     .zcommand
       min-height: 1em
       min-width: 1em
-      background-image: svg('logo-blue')
+      background-image: url(https://undoware-cdn.appspot.com/vector/logo-blue.svg)
       background-repeat: no-repeat
       background-size: 1em 1em
     nav
@@ -222,7 +220,6 @@
 
 body
   background-color thc-background-color
-  background-image jpg('background')
   background-size cover
   background-repeat no-repeat
   background-attachment fixed

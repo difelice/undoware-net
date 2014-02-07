@@ -2,22 +2,22 @@
   "output": "build/undoware/",
   "locals": {
     "path": {
-      "css" : "/style",
-      "js"  : "/logic",
-      "png" : "/raster",
-      "jpg" : "/raster",
-      "png" : "/raster",
-      "svg" : "/vector",
-      "pdf" : "/vector",
-      "woff": "/font",
-      "eot" : "/font",
-      "ttf" : "/font"
+      "css" : "style",
+      "js"  : "logic",
+      "png" : "raster",
+      "jpg" : "raster",
+      "png" : "raster",
+      "svg" : "vector",
+      "pdf" : "vector",
+      "woff": "font",
+      "eot" : "font",
+      "ttf" : "font"
     },
     "base":     "https://undoware.ca/",
     "ownurl":   "https://undoware.ca/",
     "owner":    "Undoware",
     "name":     "Undoware.ca",
-    "cdn":      "https://undoware-cdn.appspot.com",
+    "cdn":      "https://undoware-cdn.appspot.com/",
     "description": "Tech Blog",
     "language": { "code": "en-CA", "name": "English" },
     "sitemap": [

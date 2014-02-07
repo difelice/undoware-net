@@ -7,28 +7,13 @@ stylePath  = 'style/'
 fontPath   = 'font/'
 scriptPath = 'script/'
 
-cdn(f)
-  url(cdnHost + f )
+cdner(x,path,suffix)
+  full = 'https://' + cdnHost + path + x + '.' + suffix
+  url(full)
 
-js(fr)
-  cdn(scriptPath + fr + '.js')
-
-css(fr)
-  cdn(stylePath + fr + '.css')
-
-jpg(fr)
-  cdn(rasterPath + fr + '.jpg')
-
-png(fr)
-  cdn(rasterPath + fr + '.png')
-
-woff(fr)
-  cdn(fontPath + fr + '.woff')
-
-ttf(fr)
-  cdn(fontPath + fr + '.ttf')
-
-svg(fr)
-  cdn(vectorPath + fr + '.svg')
-
-
+svg(x)
+  cdner(x,vectorPath,'svg')
+png(x)
+  cdner(x,rasterPath,'png')
+jpg(x)
+  cdner(x,rasterPath,'jpg')
