@@ -13,8 +13,8 @@
       "eot" : "font",
       "ttf" : "font"
     },
-    "base":     "https://undoware.ca/",
-    "ownurl":   "https://undoware.ca/",
+    "base":     "https://undoware.ca",
+    "ownurl":   "https://undoware.ca",
     "owner":    "Undoware",
     "name":     "Undoware.ca",
     "cdn":      "https://undoware-cdn.appspot.com/",
