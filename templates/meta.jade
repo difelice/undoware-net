@@ -16,7 +16,7 @@ block meta
   meta(name="language",content="English")
   meta(name="dc.language",content="en-CA")
   meta(name="robots",content="all")
-  meta(name="reply-to",content="beth@undoware.ca")
+  meta(name="reply-to",content="liz@undoware.ca")
   meta(property="og:type",content="blog")
   meta(name="dc.keywords",content="Usability, UX, Technology, Politics")
   meta(name="dc.subject",content="Usability")
@@ -25,12 +25,12 @@ block meta
   meta(property="og:title",content=locals.name)
   meta(name="name",content=locals.name)
   title= locals.name
-  //# /* Generate permalink URL for this page. Easy. */
+  //# /* Generate permalink URL for this page.  */
   -var u
   -if (page && 'url' in page)
-    -u = locals.url + page.url
+    -u = locals.base + page.url
   -else
-    -u = locals.url
+    -u = locals.base
   meta(property="og:url",content=u)
   meta(name="dc.source",content=u)
 
@@ -55,3 +55,6 @@ block meta
   meta(property="og:description",content=d)
   meta(name="description",content=d)
   meta(itemprop="description",content=d)
+
+
+
