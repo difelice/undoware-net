@@ -1,4 +1,7 @@
 extends site
 
+block append header
+ h2= page.title
+
 block append content
  | !{page.html}
