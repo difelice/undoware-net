@@ -6,20 +6,21 @@ title: Elizabeth Marston
 ---
 ####+1&nbsp;(778)&nbsp;374-3355&nbsp;·&nbsp;beth@undoware.ca &nbsp;·&nbsp;Vancouver, Canada
 
- - Programmer with full-stack experience designing and developing [data-on-the-wire](http://lanyrd.com/2012/djangocon-us/sxbzb) Javascript mobile apps and web apps
+ - Programmer with full-stack experience designing and developing [data-on-the-wire](http://lanyrd.com/2012/djangocon-us/sxbzb) Javascript mobile apps and web apps with Node.js and Angular.Js. 
+ - Startup experience. Professional writing experience. University teaching experience. 
  - PhD-track postgraduate '[ABD](http://en.wikipedia.org/wiki/All_but_dissertation)' background in [higher-order logic](http://plato.stanford.edu/entries/logic-higher-order/), [metaethics](http://plato.stanford.edu/entries/metaethics/), and [game theory](http://plato.stanford.edu/entries/game-ethics/).
  - [Postgraduate education in cryptography](http://crypto.cs.mcgill.ca).
- - Startup experience -- we coded until hell froze over, and then we coded on the ice. We didn't succeed, but we learned hard lessons others have not.
  - Professional project management experience. 2 years at [University of British Columbia](http://www.ubc.ca) as Web Communications Manager for the [Faculty of Arts](http://www.arts.ubc.ca/).
- - [A passion for user interface and interaction design](https://undoware.ca/) (UX), and [recent credentials in the field](http://www.cstudies.ubc.ca/a/Course/User-Interface-Design-for-the-Web/IM331/)
+ - [A passion for user interface and interaction design](https://undoware.ca/) (UX), and [credentials in the field](http://www.cstudies.ubc.ca/a/Course/User-Interface-Design-for-the-Web/IM331/)
+ 
 
 Looking For
 -----------
-- A chance to kick butt in UX, and/or software development more generally. (As much as I love the front-end, I have a countervailing affinity for cryptography, compilers, and databases.)
+- A chance to kick butt in writing, user interface design, security policy design and enforcement, UX, and/or software development more generally. (As much as I love the front-end, I have a countervailing affinity for cryptography, compilers, and databases.)
 
 History
 --------
-- __(`2013-…`)__ on retainer for high-security software development and network administration for a medical services company ([MedExtra](http://medextra.com), Montreal)
+- __(`2013-…`)__ high-security software development and network administration for a medical services company ([MedExtra](http://medextra.com), Montreal). Deployed and currently maintain end-to-end VPN cryptographic solution, as well as website, several intranet web apps (two custom and written by yours truly), a mail server, AD integration, and... gosh, there is just too much to mention. The whole thing is implemented as a flock of cloud- and local-RAID-backed linux instances coupled with a suite of Mikrotik routers and network appliances, along with a legacy Windows Server installation and  XP deployment. Currently moving all in-house services to FOSS solutions for security, reliability, and increased IT ROI. Currently tasked with overseeing the transition away from related platforms (ACT!) and towards e.g. zurmo.  
 - __(`   2012`)__ Built wearable embedded ARM device for exploring [aural AR](http://future.wikia.com/wiki/Augmented_reality#Aural_augmented_reality) and brain-computer HCI (via [NeuroSky](http://neurosky.com/) wearable EEG device.) Technologies: [Pandaboard ES](http://pandaboard.org) (TI OMAP1440: dual-core ARM Cortex A9); [Arch Linux for ARM](http://archlinuxarm.org); [Gluster](http://gluster.org); [LLVM](http://llvm.org)
 ; etc. etc....
 - __(` ~ 2012`)__ Successfully contributed patches to Linux kernel 3.5.x (Telus LTE USB stick support), jQuery 1.7.x (IE7 bugfix), and other Open Source projects
@@ -92,3 +93,150 @@ Points of Presence
 - [plus.google.com](http://plus.google.com/101667909136924896677) (I have almost three hundred followers here for some reason!)
 - [+1 (778) 374-3355](tel:+17733743355) [(Vancouver, Canada)](http://goo.gl/maps/MvjSL)
 - [beth@undoware.ca](mailto:beth@undoware.ca)
+_Canonical URI of this Document: [undoware.ca/emm/cv.html](http://undoware.ca/emm/cv.html)_
+_Updated Sun 28 Oct 2012_
+<link href='http://fonts.googleapis.com/css?family=Scada' rel='stylesheet' type='text/css'>
+<!--style inline for robustness of document in bad situations, e.g. as an email attachment; style not minimized for ease of manual editing (small document = minification unnecessary ) --> 
+<style>
+ body               { background-color: #fdfbfb; } 
+ *                  { font-family: Scada, Helvetica, Verdana, sans-serif; }
+ ul, ul li          { list-style-type: square; } 
+ ul li strong       { font-family: monospace, fixed; white-space: pre; } 
+ #hcard { 
+                      background-color: black; 
+                      color: white; 
+                      float: right; 
+                      text-align: right; 
+                      font-size: 16pt; padding: 10px; 
+                      border-radius: 5px; 
+                      -moz-border-radius: 5px; 
+                      -webkit-border-radius: 5px; 
+                      -ms-border-radius: 5px;
+                    }
+ #hcard A         { color: white; }
+ #hcard A:active  { color: white; }
+ #hcard A:visited { color: white; }
+ #hcard A:hover   { color: white; }
+ #hcard .email    { line-height: 2; }
+ .photo                       { float:right; margin-left:10px;  } 
+</style>
+<div id="hcard" class="vcard">
+  <img src="http://en.gravatar.com/userimage/14817547/86c5f5ef231820b4b05d68143d38974e.jpeg" alt="photo of E.M. Marston" class="photo"/>
+  <a class="email" href="mailto:emm@undoware.ca">emm@undoware.ca</a></br>
+  <a href="tel:+17783473355" class="tel">+1&nbsp;(778)&nbsp;347-3355</a></br>
+</div>
+
+E.M. Marston
+============
+
+What I Bring
+------------
+ - Full-stack developer with recent, ongoing experience designing and developing [data-on-the-wire](http://lanyrd.com/2012/djangocon-us/sxbzb) Javascript mobile apps and web apps
+ - PhD-track postgraduate '[ABD](http://en.wikipedia.org/wiki/All_but_dissertation)' background in higher-order logic and semantics
+ - Startup experience (`>=` 1 year as the 'geek' half of the so-called 'geek/suit partnership' startup model)
+ - Professional project management experience at the University of British Columbia (3 years)
+ - A passion for user interface and interaction design (UX), and recent certification in this field from the University of British Columbia
+
+
+Looking For
+-----------
+ - An opportunity that rewards innovation, self-study, rigor, and calculated risk-taking
+ - A workplace that is outcomes-focused rather than process- or effort-focused
+ - A small team that expects my very best (and gives its very best in return)
+
+
+History
+--------
+ - __(`ongoing`)__ Preparing code from wound-down startup for release as open source on [GitHub](http://github.com/undoware/)
+ - __(`   2012`)__ Built wearable embedded ARM device for exploring [aural AR](http://future.wikia.com/wiki/Augmented_reality#Aural_augmented_reality) and brain-computer HCI (via [NeuroSky](http://neurosky.com/) wearable EEG device.) Technologies: [Pandaboard ES](http://pandaboard.org) (TI OMAP1440: dual-core ARM Cortex A9); [Arch Linux for ARM](http://archlinuxarm.org); [Gluster](http://gluster.org); [LLVM](http://llvm.org)
+; etc. etc....
+ - __(` ~ 2012`)__ Successfully contributed patches to Linux kernel 3.5.x (Telus LTE USB stick support), jQuery 1.7.x (IE7 bugfix), and other Open Source projects 
+ - __(`2011-12`)__ Founder of an unsuccessful (but funded) stealth startup focused on disrupting the online education market. Technologies employed: Sencha Ext4, Sencha Touch, a JDK stack comprising Restlets, Jetty, Rhino, and Clojure; MongoDB, AWS, Fedora Linux, ...
+ - __(`   2010`)__ Recipient of certificate in user interface design (UX) from the University of British Columbia. Course covered IA and UI development techniques and cutting-edge usability testing techniques
+ - __(`2008-11`)__ Web Communications Manager for the Faculty of Arts at University of British Columbia. This position comprised not only project management of all departmental and faculty website development projects, but also strategy planning, UX testing, IA card sorting, and wireframing. I was even in charge of editing and managing work-study writers, photographers, and videographers. Finally, I was also responsible for building out the on-campus developer community, and to this end organized workshops and seminars for the on-campus professional web developer community
+ - __(`   2007`)__ Sessional Lecturer at University of Illinois at Chicago. Designed and taught a survey course on the history of science, mathematics, and ethics
+ - __(`   2006`)__ Bioethics Research Assistant at the Joint Centre for Bioethics at the University of Toronto. Project: Designing online staff training materials for use in the event of an H5N1 influenza pandemic at Mount Sinai Hospital; documenting emergency triage protocol and Tamiflu/Oseltamivir protocol in a manner accessible to HCWs with a broad range of educational backgrounds under high-stress conditions
+ - __(` 2005-8`)__ PhD-track Postgraduate and Teaching Assistant at University of Illinois at Chicago. Topics of study: higher-order logic, set theory, cryptography, and computability; also, intellectual property and ethics. Graduated with Masters degree and returned to Canada before completing dissertation
+ - __(` 2004-5`)__ Technology ESL teacher in Kassel, Germany for BASF group and E.on group executives and IT professionals (2004-5) Two of my students were C-level executives. Class size varied from one-on-one training (for high-level executives) to several dozen, with a focus on language skills necessary to work with English-speaking technology consultants, as well as basic business English
+ - __(`   2004`)__ Graduated with Honours from McGill University with a Bachelors in Analytic Philosophy (=logic, set theory, cognitive science) and Foundations of Computing (=computability, provability, OS design, compiler design, automata, cryptography, and linear programming)
+ - __(` 2001-2`)__ Operations and Network Administrator in Montreal (Wirewerks Ltd.) Uniquely responsible for procurement, installation, and disaster planning for all mission-critical databases and networks. Technologies: Red Had Linux; Debian Linux; Windows 2000 Sever; Active Directory; bind, sendmail, Outlook; scheduled & regularly tested off-site backups; database integration (QuickBooks, Access, SQL); workflow design and monitoring; forensics and network intrusion detection with SE Linux; IP/SEC VPN deployment with OpenBSD) 
+ - __(` 2001-2`)__ Microcontroller engineering intern in Montreal (Wirewerks Ltd.) Contributed to the development of a KVM dongle by building a custom embedded Linux distribution and producing microcode for a set of PIC microcontrollers for the realtime conversion of PS/2 wire protocol into VNC packet payloads
+ - __(`   2000`)__ Admitted to McGill Unversity 
+ - __(`99-2000`)__ Freelance web developer affiliated with a local design house in Peterborough, Ontario 
+ - __(`   1999`)__ Freelance Linux trainer affiliated with a local certification and training facility in Peterborough, Ontario
+ - __(`   1999`)__ Trent University Student Union IT consultant (paid position)
+ - __(`   1998`)__ Admitted to the Computer Science BSc program at Trent University, Peterborough, Ontario 
+
+__Juvenilia and Early Accomplishments__ _(included for completeness)_
+
+ - __(`   1998`)__ Graduated (Honours) from Barrhead Composite High School
+ - __(` 1996-8`)__ Freelance web developer for several local businesses in my hometown of Barrhead, Alberta
+ - __(` 1997-8`)__ Participated on the Linux JDK port development mailing list, and the SGI VRML 2.0 development mailing list
+ - __(`   1997`)__ Wrote a paper responding to ESR's _Cathedral and Bazaar_, which got picked up and published by Slashdot (back when Slashdot still had original content, and still mattered)
+ - __(`   1997`)__ Life-shaping moment: Installed Red Hat Linux 3.0.3 with kernel 1.2.x. Hello, UNIX! 
+ - __(` 1996-7`)__ Web developer and staff trainer for the Barrhead Public Library
+ - __(`   1996`)__ Gold medalist in county science fair for developing secure 'sandboxed' file manager and windowing interface for high school's poorly-secured MacOS installbase (1997)
+ - __(`   1996`)__ Hello World! Bootstrapped myself into coding by buying Think C for Mac and the O'Reilly 'Jersey Cow' C book. Bliss....
+
+
+Developer Strengths Assessment
+---------------------------
+ - Currently most fluent in: data-on-the-wire web and mobile app design in Javascript/ECMAScript 6, Angular.js, Sencha Touch, JQuery \*, and of course HTML5/CSS3; automated AWS EC2 deployment with Fedora, Ubuntu, Arch Linux, Boxgrinder and Ansible
+ - Currently bootstrapping my knowledge of the bleeding-edge and very exciting Meteor framework (v0.5.0), three.js (WebGL), and [Go](http://golang.org)
+ - Strong familiarity with a surprising number of important technology stacks, including Node.js, Python, Ruby, Clojure, and Haskell
+ - Significant previous professional experience with Memcached, PostGreSQL, MySQL, PHP5, Perl, C, Java, Restlets, Apache, Nginx ... 
+ - Knowledgeable about and experienced with development in several CMSes, including Concrete5, WordPress, Typo3, Plone, and Joomla
+ - Very capable in Adobe Photoshop, Illustrator, and InDesign CS6; proficient at Final Cut Pro 7.x; also big fan of OmniGraffle and similar wireframing tools
+ - Handy with a Gantt chart, and several Mac-based MS Project workalikes (Merlin 2, OmniPlan...)
+ - Strong grasp of cryptography and network security; vulnerability assessment; code auditing
+ - Formal training in empirical methodologies for software design and usability assessment, including eye tracking, heat maps, and card sorting
+
+
+Soft Skills Assessment
+----------------------
+ - Extensive on-the-ground project management experience
+ - Good at mentoring and being mentored
+ - International workplace experience with C-level execs
+ - Exceptional analytic capabilities
+ - Excellent communicator, thanks to writing, teaching and public speaking experience 
+ - Good at receiving criticism, dammit!
+ - English is my primary natural language, but I also speak fluent French and limited German. I've also recently begun studying Japanese using [Anki](http://ankisrs.net) and the [spaced repetition method](https://en.wikipedia.org/wiki/Spaced_repetition)
+
+Tradeoffs and Workarounds
+-------------------------
+An attempt at brutal honesty! Here are my warts:
+
+ - I'm not great at time estimates. Fortunately I am aware of this, and my workaround is to solicit estimates from several other developers and average them. This works well 
+ - Selective memory: My mind is like a strongbox for technical details, and a sieve for names, faces, places and appointments. This was a real challenge before I got into the habit of writing absolutely everything down. "Bits or it didn't happen"
+ - Aside from testing code in IE, I have surprisingly little recent experience with Microsoft Windows and Office -- 'What's a SharePoint?' If it's important to you, I'm willing to learn
+ - I also know almost nothing about Adobe Flash. Again, however, I'm always happy to learn
+ - I have an antipathy to long phone calls and voicemails, because they derail my train of thought and hence reduce productivity. It's something I have to work on. In the meantime, go asynchronous -- email, SMS and XMPP all work great. :)
+
+Bragging Rights
+---------------
+ - Contributor of patches to Linux kernel and jQuery projects :)
+ - Planned and executed an Internet media campaign for a minor candidate in the 2011 Vancouver municipal election
+ - Erstwhile standup comedian
+
+Principled Biases 
+-----------------
+When the decision is mine to make, I put:
+
+ - Code readability before cleverness, speed, purity, or completeness. The same goes for documentation. Your team can't help you if they can't understand you
+ - Good-enough/here-now before perfect/someday, although I had to learn to love good-enough the hard way
+
+Take-home Message
+-----------------
+I'd like to develop for you. I have fresh credentials in the UX field and a few years of strong experience in advanced Javascript front-end development. Backing me up are over ten years of experience in Linux/UNIX server-side development, network & database administration, and deployment. I have demonstrated leadership in project management, public speaking, and community-building, especially the Free and Open Source Software community. Finally, I'm a published non-fiction writer, and I was recently a PhD-track postgraduate student and lecturer at a major U.S. university. You could look a long time before finding someone else with equivalent credentials, experience, ingenuity, and raw talent. 
+
+Points of Presence
+------------------
+ - [undoware.ca/blog](http://undoware.ca/blog)
+ - [github.com/undoware](http://github.com/undoware)
+ - [twitter.com/undoware](http://twitter.com/undoware)
+ - [plus.google.com](http://plus.google.com/101667909136924896677)
+
+
+
+_Canonical URI of this Document: [undoware.ca/emm/cv.html](http://undoware.ca/emm/cv)_ 
+_This document generated with [Markdown](http://daringfireball.net/projects/markdown)_
