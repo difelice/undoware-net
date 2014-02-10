@@ -1,7 +1,7 @@
 ---
 author: elizabeth-marston
 date: 2013-07-07
-template: page.jade
+template: single.jade
 title: Elizabeth Marston
 ---
 ####+1&nbsp;(778)&nbsp;374-3355&nbsp;·&nbsp;beth@undoware.ca &nbsp;·&nbsp;Vancouver, Canada

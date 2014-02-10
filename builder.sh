@@ -45,5 +45,5 @@ pushd $b
 erica push -f --is-ddoc $dest
 popd
 popd
-../google_appengine/appcfg.py update build/undoware --oauth2
+#../google_appengine/appcfg.py update build/undoware --oauth2
 
