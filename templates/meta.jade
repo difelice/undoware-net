@@ -24,8 +24,6 @@ block meta
   meta(name="copyright",content=locals.name)
   meta(property="og:title",content=locals.name)
   meta(name="name",content=locals.name)
-  append block title
-    | !{locals.name}
   //# /* Generate permalink URL for this page.  */
   -var u
   -if (page && 'url' in page)
