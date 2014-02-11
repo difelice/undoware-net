@@ -123,13 +123,13 @@ _Updated Sun 28 Oct 2012_
  .photo                       { float:right; margin-left:10px;  } 
 </style>
 <div id="hcard" class="vcard">
-  <img src="http://en.gravatar.com/userimage/14817547/86c5f5ef231820b4b05d68143d38974e.jpeg" alt="photo of E.M. Marston" class="photo"/>
-  <a class="email" href="mailto:emm@undoware.ca">emm@undoware.ca</a></br>
-  <a href="tel:+17783473355" class="tel">+1&nbsp;(778)&nbsp;347-3355</a></br>
+  <img src="http://www.gravatar.com/avatar/7550ce47287f9541338a61cf4f05e728.png" alt="photo of Liz Mars" class="photo"/>
+  <a class="email" href="mailto:liz@undoware.ca">liz@undoware.ca</a></br>
+  <a href="tel:+17787090109" class="tel">+1&nbsp;(778)&nbsp;709-0109</a></br>
 </div>
 
-E.M. Marston
-============
+Liz Mars
+========
 
 What I Bring
 ------------
