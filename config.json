@@ -33,6 +33,12 @@
           "name" : "Timeline",
           "class": "timeline"
         }
+      },{
+        "href": "/cv/",
+        "menu": {
+          "name" : "Curriculum Vitae",
+          "class": "cv"
+        }
       }
     ],
     "loader": {
