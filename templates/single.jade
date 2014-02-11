@@ -8,5 +8,4 @@ block append header
     block title
 
 block content
- | !{page.html}
-
+ section.content= typogr(page.html).typogrify()
