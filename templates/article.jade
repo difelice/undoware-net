@@ -8,11 +8,8 @@ block append vars
 block prepend title
   | #{ page.title + " - "}
 
-  
-//  include facebook-sdk.html
 
-block content-header
-  h2= page.title
+prepend block content
   h4.date= moment(page.metadata.date).format('dddd YYYY-MM-DD HH:mm Z')
   h4 from the #{page.metadata.dept} dept.
 
