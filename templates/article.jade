@@ -3,13 +3,13 @@ extends page
 
 
 block prepend title
-  | #{ page.title }
+  | !{ page.title }
 
 
 block content
   article.article
     h3
-      block title
+      | !{ page.title }  
     h4.date= moment(page.metadata.date).format('dddd YYYY-MM-DD HH:mm Z')
     h4 from the #{page.metadata.dept} dept.
     section.content!= typogr(page.html).typogrify()
