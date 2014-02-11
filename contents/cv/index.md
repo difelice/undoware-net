@@ -201,9 +201,9 @@ Soft Skills Assessment
  - Exceptional analytic capabilities
  - Excellent communicator, thanks to writing, teaching and public speaking experience 
  - Good at receiving criticism, dammit!
- - English is my primary natural language, but I also speak fluent French and limited German.
+ - English is my primary natural language, but I also speak fluent French and limited German. Currently teaching myself Japanese.
  - Currently teaching myself piano.
- - Karate. Pretty good at it. 
+ - Karate. Pretty good at it. Very relaxing.
 
 
 Points of Presence
