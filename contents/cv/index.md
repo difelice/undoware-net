@@ -1,5 +1,5 @@
 ---
-author: elizabeth-marston
+author: liz-mars
 date: 2013-07-07
 template: single.jade
 title: Liz Mars
@@ -211,6 +211,3 @@ Points of Presence
  - [undoware.ca](http://undoware.ca/)
  - [github.com/undoware](http://github.com/undoware)
  - [twitter.com/undoware](http://twitter.com/undoware)
-
-
-_Canonical URI of this Document: [undoware.ca/cv/](http://undoware.ca/cv/index.html)_ 
