@@ -4,7 +4,9 @@ date: 2013-07-07
 template: single.jade
 title: Elizabeth Marston
 ---
-####+1&nbsp;(778)&nbsp;374-3355&nbsp;·&nbsp;beth@undoware.ca &nbsp;·&nbsp;Vancouver, Canada
+####+1&nbsp;(778)&nbsp;709-0109
+####liz@undoware.ca
+####Vancouver, Canada
 
  - Programmer with full-stack experience designing and developing [data-on-the-wire](http://lanyrd.com/2012/djangocon-us/sxbzb) Javascript mobile apps and web apps with Node.js and Angular.Js. 
  - Startup experience. Professional writing experience. University teaching experience. 
