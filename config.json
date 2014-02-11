@@ -36,7 +36,7 @@
       },{
         "href": "/cv/",
         "menu": {
-          "name" : "Curriculum Vitae",
+          "name" : "C.V.",
           "class": "cv"
         }
       }
