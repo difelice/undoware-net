@@ -183,15 +183,14 @@ __Juvenilia and Early Accomplishments__ _(included for completeness)_
 
 Developer Strengths Assessment
 ---------------------------
- - Currently most fluent in: data-on-the-wire web and mobile app design in Javascript/ECMAScript 6, Angular.js, Sencha Touch, JQuery \*, and of course HTML5/CSS3; automated AWS EC2 deployment with Fedora, Ubuntu, Arch Linux, Boxgrinder and Ansible
- - Currently bootstrapping my knowledge of the bleeding-edge and very exciting Meteor framework (v0.5.0), three.js (WebGL), and [Go](http://golang.org)
+ - Currently most fluent in: data-on-the-wire web and mobile app design in Node.js, Angular.js, LiveScript/CoffeeScript, and of course HTML5/CSS3, especially by way of jade and stylus respectively; automated AWS EC2 deployment with Fedora, Ubuntu, ArchLinux,  and Ansible
  - Strong familiarity with a surprising number of important technology stacks, including Node.js, Python, Ruby, Clojure, and Haskell
  - Significant previous professional experience with Memcached, PostGreSQL, MySQL, PHP5, Perl, C, Java, Restlets, Apache, Nginx ... 
  - Knowledgeable about and experienced with development in several CMSes, including Concrete5, WordPress, Typo3, Plone, and Joomla
  - Very capable in Adobe Photoshop, Illustrator, and InDesign CS6; proficient at Final Cut Pro 7.x; also big fan of OmniGraffle and similar wireframing tools
  - Handy with a Gantt chart, and several Mac-based MS Project workalikes (Merlin 2, OmniPlan...)
  - Strong grasp of cryptography and network security; vulnerability assessment; code auditing
- - Formal training in empirical methodologies for software design and usability assessment, including eye tracking, heat maps, and card sorting
+ - Formal training in UX, heat maps, and card sorting
 
 
 Soft Skills Assessment
@@ -202,43 +201,16 @@ Soft Skills Assessment
  - Exceptional analytic capabilities
  - Excellent communicator, thanks to writing, teaching and public speaking experience 
  - Good at receiving criticism, dammit!
- - English is my primary natural language, but I also speak fluent French and limited German. I've also recently begun studying Japanese using [Anki](http://ankisrs.net) and the [spaced repetition method](https://en.wikipedia.org/wiki/Spaced_repetition)
+ - English is my primary natural language, but I also speak fluent French and limited German.
+ - Currently teaching myself piano.
+ - Karate. Pretty good at it. 
 
-Tradeoffs and Workarounds
--------------------------
-An attempt at brutal honesty! Here are my warts:
-
- - I'm not great at time estimates. Fortunately I am aware of this, and my workaround is to solicit estimates from several other developers and average them. This works well 
- - Selective memory: My mind is like a strongbox for technical details, and a sieve for names, faces, places and appointments. This was a real challenge before I got into the habit of writing absolutely everything down. "Bits or it didn't happen"
- - Aside from testing code in IE, I have surprisingly little recent experience with Microsoft Windows and Office -- 'What's a SharePoint?' If it's important to you, I'm willing to learn
- - I also know almost nothing about Adobe Flash. Again, however, I'm always happy to learn
- - I have an antipathy to long phone calls and voicemails, because they derail my train of thought and hence reduce productivity. It's something I have to work on. In the meantime, go asynchronous -- email, SMS and XMPP all work great. :)
-
-Bragging Rights
----------------
- - Contributor of patches to Linux kernel and jQuery projects :)
- - Planned and executed an Internet media campaign for a minor candidate in the 2011 Vancouver municipal election
- - Erstwhile standup comedian
-
-Principled Biases 
------------------
-When the decision is mine to make, I put:
-
- - Code readability before cleverness, speed, purity, or completeness. The same goes for documentation. Your team can't help you if they can't understand you
- - Good-enough/here-now before perfect/someday, although I had to learn to love good-enough the hard way
-
-Take-home Message
------------------
-I'd like to develop for you. I have fresh credentials in the UX field and a few years of strong experience in advanced Javascript front-end development. Backing me up are over ten years of experience in Linux/UNIX server-side development, network & database administration, and deployment. I have demonstrated leadership in project management, public speaking, and community-building, especially the Free and Open Source Software community. Finally, I'm a published non-fiction writer, and I was recently a PhD-track postgraduate student and lecturer at a major U.S. university. You could look a long time before finding someone else with equivalent credentials, experience, ingenuity, and raw talent. 
 
 Points of Presence
 ------------------
- - [undoware.ca/blog](http://undoware.ca/blog)
+ - [undoware.ca](http://undoware.ca/)
  - [github.com/undoware](http://github.com/undoware)
  - [twitter.com/undoware](http://twitter.com/undoware)
- - [plus.google.com](http://plus.google.com/101667909136924896677)
 
 
-
-_Canonical URI of this Document: [undoware.ca/emm/cv.html](http://undoware.ca/emm/cv)_ 
-_This document generated with [Markdown](http://daringfireball.net/projects/markdown)_
+_Canonical URI of this Document: [undoware.ca/cv/](http://undoware.ca/cv/index.html)_ 
