@@ -1,6 +1,13 @@
 
 extends page
 
+block title
+  Timeline
+
+append block header
+  h2
+    block title
+
 //- this logic should be moved to a view at some point
 
 block content
@@ -9,7 +16,6 @@ block content
   - }).value()
   - var map = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
   section.archive
-    h1 Timeline
     ul
       - var years = _.chain(archive).keys().reverse().value()
       each year, i in years
