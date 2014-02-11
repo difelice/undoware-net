@@ -73,14 +73,12 @@ Soft Skills Strengths Assessment
 
 Points of Presence
 -------------------
-- [Undoware.ca](https://undoware.ca/) My usability blog
-- [Disqus](https://disqus.com/undoware/) Me on Disqus. Watch me slug it out with people who are *wrong* on the Internet.
+- [Undoware.ca](https://undoware.ca/) My blog
 - [Hacker News](https://news.ycombinator.com/threads?id=undoware)
 - [github.com/undoware](http://github.com/undoware)
 - [twitter.com/undoware](http://twitter.com/undoware)
-- [plus.google.com](http://plus.google.com/101667909136924896677) (I have almost three hundred followers here for some reason!)
-- [+1 (778) 374-3355](tel:+17733743355) [(Vancouver, Canada)](http://goo.gl/maps/MvjSL)
-- [beth@undoware.ca](mailto:beth@undoware.ca)
+- [+1 (778) 709-0109](tel:+17787090109) [(Vancouver, Canada)](http://goo.gl/maps/MvjSL)
+- [liz@undoware.ca](mailto:liz@undoware.ca)
 _Canonical URI of this Document: [undoware.ca/emm/cv.html](http://undoware.ca/emm/cv.html)_
 _Updated Sun 28 Oct 2012_
 <link href='http://fonts.googleapis.com/css?family=Scada' rel='stylesheet' type='text/css'>
