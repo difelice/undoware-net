@@ -49,9 +49,9 @@
         }
     },
     "scale": {
-      "initial":  "0.8",
-      "max":      "1.1",
-      "user":     true
+      "initial":  "0.6",
+      "max":      "0.6",
+      "user":     false
     }
   },
   "plugins": [
