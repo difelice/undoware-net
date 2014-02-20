@@ -28,10 +28,10 @@
           "class": "who"
         }
       },{
-        "href": "/timeline/",
+        "href": "/archive/",
         "menu": {
-          "name" : "Timeline",
-          "class": "timeline"
+          "name" : "Archive",
+          "class": "archive"
         }
       },{
         "href": "/cv/",
