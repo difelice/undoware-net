@@ -10,7 +10,6 @@ You can check out my [résumé](/cv/) and my [GitHub](https://www.github.com/und
 
 ##Recent-ish work
 
-<iframe src='//cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AnvJGGaJiDYUdE16X3ItNTRHeVhCcGo4Zmh6NlZ6a3c&maptype=watercolor&lang=en&height=650' width='100%' height='650' frameborder='0'></iframe>
-
+<iframe src='/logic/timeline?source=0AnvJGGaJiDYUdE16X3ItNTRHeVhCcGo4Zmh6NlZ6a3c&maptype=watercolor&lang=en&height=650' width='100%' height='650' frameborder='0'></iframe>
 <img src="//undoware-cdn.appspot.com/raster/signature.png" alt="Liz Mars (signed)" class="plain">
 
