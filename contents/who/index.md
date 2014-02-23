@@ -11,6 +11,6 @@ You can check out my [résumé](/cv/) and my [GitHub](https://www.github.com/und
 ##Recent-ish work
 Here's a pretty timeline in an ugly iframe. It will have to do until I have a chance to integrate timeline.js properly. (circa Feb 21 2014)
 
-<iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AnvJGGaJiDYUdE16X3ItNTRHeVhCcGo4Zmh6NlZ6a3c&maptype=watercolor&lang=en&height=650' width='100%' height='650' frameborder='0'></iframe>
+<iframe src='https://s3.amazonaws.com/cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0AnvJGGaJiDYUdE16X3ItNTRHeVhCcGo4Zmh6NlZ6a3c&maptype=watercolor&lang=en&height=650' width='100%' height='650' frameborder='0'></iframe>
 <img src="//undoware-cdn.appspot.com/raster/signature.png" alt="Liz Mars (signed)" class="plain">
 
