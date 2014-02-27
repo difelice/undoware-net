@@ -2,11 +2,10 @@
 title: For the Net is Dark and Full of Errors
 template: single.jade
 ---
-#For the Net is Dark and Full of Errors
 
-'Undoware' is the blog of me, Liz Mars, aka Uncanny Valley Girl.
+_Undoware_ is the blog of me, Liz Mars, aka Uncanny Valley Girl.
 
-Originally, 'undoware' was concerned with one thing: The interface between humans and computers, or HCI (aka UX, usability theory, interaction design, and a hundred other solecistic mouthfuls.) But we have since opened the spotlight.
+Originally, Undoware was concerned with one thing: The interface between humans and computers, or HCI (aka UX, usability theory, interaction design, and a hundred other solecistic mouthfuls.) But we have since opened the spotlight.
 
 We now focus on the *relationship* between *humanity* and computers. Call this 'HCR' if you like, but it's really just [institutional analysis](http://en.wikipedia.org/wiki/Institutional_analysis) pointed at the most contemporary manifestation of bureaucracy.
 
