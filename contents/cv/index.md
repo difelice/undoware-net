@@ -86,7 +86,6 @@ _Updated Sun 28 Oct 2012_
 <link href='http://fonts.googleapis.com/css?family=Scada' rel='stylesheet' type='text/css'>
 <!--style inline for robustness of document in bad situations, e.g. as an email attachment; style not minimized for ease of manual editing (small document = minification unnecessary ) --> 
 <style>
- body               { background-color: #fdfbfb; } 
  *                  { font-family: Scada, Helvetica, Verdana, sans-serif; }
  ul, ul li          { list-style-type: square; } 
  ul li strong       { font-family: monospace, fixed; white-space: pre; } 
