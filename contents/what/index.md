@@ -1,9 +1,10 @@
 ---
-title: Undo-what!?
+title: For the Net is Dark and Full of Errors
 template: single.jade
 ---
+#For the Net is Dark and Full of Errors
 
-'Undoware' is the blog of me, Liz Mars.
+'Undoware' is the blog of me, Liz Mars, aka Uncanny Valley Girl.
 
 Originally, 'undoware' was concerned with one thing: The interface between humans and computers, or HCI (aka UX, usability theory, interaction design, and a hundred other solecistic mouthfuls.) But we have since opened the spotlight.
 
