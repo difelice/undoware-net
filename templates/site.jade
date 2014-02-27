@@ -13,12 +13,11 @@ block append header
         a(href='/what/')=locals.description
 
     nav.large-75.push-right
-      span
-        ul
-          each location in locals.sitemap
-            li
+      ul
+        each location in locals.sitemap
+          li
             a(href=location.href)= location.menu.name
-      span
+        li
           <!-- don't forget title attributes, or icon fonts are accessibility nightmare.
           Also these non-breaking spaces were handy for prototyping but are kludgey for production, TODO FIXME -->
           a(href='https://twitter.com/undoware',title='on Twitter')
