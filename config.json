@@ -18,7 +18,7 @@
     "owner":    "Undoware",
     "name":     "Undoware.ca",
     "cdn":      "https://undoware-cdn.appspot.com",
-    "description": "For the net is dark and full of errors."
+    "description": "For the net is dark and full of errors.",
     "language": { "code": "en-CA", "name": "English" },
     "sitemap": [
       {
