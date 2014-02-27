@@ -3,7 +3,7 @@ title: For the Net is Dark and Full of Errors
 template: single.jade
 ---
 
-<img src="https://undoware-cdn.appspot.com/vector/icon.svg" style="width: 256px; height: 256px; float: left; margin: 1em">
+<img src="https://undoware-cdn.appspot.com/vector/logo.svg" style="width: 256px; height: 256px; float: left; margin: 1em">
 _Undoware_ is the blog of me, Liz Mars, aka Uncanny Valley Girl.
 
 Originally, Undoware was concerned with one thing: The interface between humans and computers, or HCI (aka UX, usability theory, interaction design, and a hundred other solecistic mouthfuls.) But we have since opened the spotlight.
