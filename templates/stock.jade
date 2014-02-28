@@ -10,7 +10,7 @@ html(lang=locals.language.code,itemscope,itemtype="http://schema.org/Article")
     title
       block title
       | - !{locals.name}
-  - var bodyClass = ('class' in page.metadata) ? page.metadata.class : 'page';
+  - var bodyClass = (page && 'class' in page.metadata) ? page.metadata.class : 'body';
   body.ink-grid#body(class=bodyClass)
     div#page
       header.area.header(role='heading')
