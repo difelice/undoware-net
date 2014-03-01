@@ -33,21 +33,7 @@
           "name" : "Archive",
           "class": "archive"
         }
-      },{
-        "href": "/cv/",
-        "menu": {
-          "name" : "C.V.",
-          "class": "cv"
-        }
-      },
-      {
-        "href": "/portfolio/",
-        "menu": {
-          "name" : "Portfolio",
-          "class": "portfolio"
-        }
       }
-
     ],
     "loader": {
         "src":  "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min",
