@@ -3,6 +3,8 @@ extends page
 block append content
   include author
   h2 Portfolio Index
+  p This is a portfolio my previous work: writing, websites, code, mostly. Read the description to find out what roles I played on the relevant teams.
+   
   div.thumbnails
     each piece in page.metadata.gallery
       - var jmp = '#' + piece.anchor
