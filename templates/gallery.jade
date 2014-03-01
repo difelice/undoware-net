@@ -13,19 +13,21 @@ block append content
   h2 Portfolio
   each piece in page.metadata.gallery
     article.gallery(class=piece.anchor)
-      header.column-group.gutters
-        div.large-20
-         a(id=piece.anchor)
-           img(src=piece.thumbnail,alt=piece.credit)
-        div.large-80
-          h2
-            if 'url' in piece
-               a(href=piece.url)= piece.headline
-            else
-               | !{piece.headline}
-          h4.date= moment(piece['start-date']).format('YYYY-MM-DD')
-      section.gallery.text
-        | !{ typogr(piece.text).typogrify() }
+      header
+        a(id=piece.anchor)
+          img(src=piece.thumbnail,alt=piece.credit)
+        h2
+          if 'url' in piece
+             a(href=piece.url)= piece.headline
+          else
+             | !{piece.headline}
+        h4.date= moment(piece['start-date']).format('YYYY-MM-DD')
+      section.gallery.text.column-group.gutters
+        div.large-50
+          img(src=piece.media,alt=piece.caption)
+        div.large-50
+          p
+            | !{ typogr(piece.text).typogrify() }
       footer
         if 'url' in piece
           a(href=piece.url)= view
