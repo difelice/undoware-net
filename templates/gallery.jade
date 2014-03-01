@@ -15,7 +15,7 @@ block append content
     article.gallery(class=piece.anchor)
       header
         a(id=piece.anchor)
-          img(src=piece.thumbnail,alt=piece.credit)
+          | &nbsp;
         h2
           if 'url' in piece
              a(href=piece.url)= piece.headline
