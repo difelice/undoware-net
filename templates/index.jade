@@ -15,7 +15,7 @@ block append content
         h4.date= moment(article.date).format('dddd YYYY-MM-DD HH:mm Z')
         h4 from the #{article.metadata.dept} dept.
       if (article.metadata.cover)
-        section(class=articleClass)
+        section.column-group(class=articleClass)
             figure.push-rght
               a(href=article.url)
                 if (article.metadata.alt)
@@ -32,7 +32,7 @@ block append content
                         a(href=article.metadata.credit-url)=article.metadata.credit
                       else
                         | !{article.metadata.credit}
-            section
+            section.push-left
               | !{ typogr(article.intro).typogrify() }
       else 
         section(class=articleClass)
