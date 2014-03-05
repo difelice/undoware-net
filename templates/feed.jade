@@ -13,8 +13,7 @@ rss(version='2.0',
       width=128
       height=128
       description=locals.description
-    atom:link(href=locals.url + '/feed.xml', rel='self', type='application/rss+xml')
-    link= locals.url
+    link= locals.base
     description= locals.description
     pubDate= articles[0].rfc822date
     generator Wintersmith - https://github.com/jnordberg/wintersmith
@@ -26,7 +25,7 @@ rss(version='2.0',
         link= permalink
         pubDate= article.rfc822date
         guid(isPermaLink='true')= permalink
-        author= locals.owner
+        author= locals.ownemail
         //- passing locals.url resolves all relative urls to absolute
         description= article.getHtml(locals.url)
         media:thumbnail(url=article.metadata.thumbnail)
