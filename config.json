@@ -2,7 +2,7 @@
   "output": "build/undoware/",
   "locals": {
     "gplus": "https://plus.google.com/u/1/117975080165825944609",
-    "author": "https://undoware.ca/who/"
+    "author": "https://undoware.ca/who/",
     "path": {
       "css" : "style",
       "js"  : "logic",
