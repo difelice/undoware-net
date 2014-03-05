@@ -36,8 +36,8 @@ block meta
 
   //# /* Generate the social media image for this page. If one isn't found, use a default. */
   -var i
-  -if (page && 'image' in page.metadata)
-    -i = cdn(page.url + page.metadata.image)
+  -if (page && 'thumbnail' in page.metadata)
+    -i = cdn(page.url + page.metadata.thumbnail)
   -else
     -i = cdn('/raster/icon-256.png')
 

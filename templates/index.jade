@@ -14,7 +14,28 @@ block append content
           a(href=article.url)= article.title
         h4.date= moment(article.date).format('dddd YYYY-MM-DD HH:mm Z')
         h4 from the #{article.metadata.dept} dept.
-      section(class=articleClass)
+      if (article.metadata.cover)
+        section.column-group(class=articleClass)
+            section.large-50
+              | !{ typogr(article.intro).typogrify() }
+            figure.large-50
+              a(href=article.url)
+                if (article.metadata.alt)
+                  img(src=article.metadata.cover,alt=article.metadata.alt)
+                else
+                  img(src=article.metadata.cover)
+              if (article.metadata.caption || article.metadata.credit)
+                figcaption
+                  if (article.metadata.caption)
+                    h5.caption !{article.metadata.caption}
+                  if (article.metadata.credit)
+                    h6.credit
+                      if(article.metadata.credit-url)
+                        a(href=article.metadata.credit-url)=article.metadata.credit
+                      else
+                        | !{article.metadata.credit}
+      else 
+        section(class=articleClass)
         | !{ typogr(article.intro).typogrify() }
       footer
         if article.hasMore
