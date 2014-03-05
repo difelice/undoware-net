@@ -23,3 +23,10 @@ rss(version='2.0',
         author= article.author
         //- passing locals.url resolves all relative urls to absolute
         description= article.getHtml(locals.url)
+        image
+          url= article.metadata.thumbnail
+          link= permalink
+          if (article.metadata.alt)
+            title= article.metadata.alt
+          else 
+            title= article.title
