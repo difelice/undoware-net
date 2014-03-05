@@ -9,7 +9,8 @@ rss(version='2.0',
     - var articles = env.helpers.getArticles(contents);
     title= locals.name
     image
-      url=locals.cdn + '/raster/icon-128.png';
+      -var imgurl = locals.cdn + '/raster/icon-128.png';
+      url=imgurl
       width=128
       height=128
       description=locals.description
