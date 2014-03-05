@@ -18,16 +18,16 @@ block content
           img(src=page.metadata.poster,alt=page.metadata.alt)
         else
           img(src=page.metadata.poster)
-        if (article.metadata.caption || article.metadata.credit)
+        if (page.metadata.caption || page.metadata.credit)
           figcaption
-            if (article.metadata.caption)
-              h5.caption !{article.metadata.caption}
-            if (article.metadata.credit)
+            if (page.metadata.caption)
+              h5.caption !{page.metadata.caption}
+            if (page.metadata.credit)
               h6.credit
-                if(article.metadata.credit-url)
-                  a(href=article.metadata.credit-url)=article.metadata.credit
+                if(page.metadata.credit-url)
+                  a(href=page.metadata.credit-url)=page.metadata.credit
                 else
-                  | !{article.metadata.credit}
+                  | !{page.metadata.credit}
 
     section.content!= typogr(page.html).typogrify()
     footer
