@@ -6,6 +6,7 @@ rss(version='2.0',
     xmlns:dc='http://purl.org/dc/elements/1.1/'
     xmlns:atom='http://www.w3.org/2005/Atom')
   channel
+    atom:link(href="https://undoware.ca/feed.xml",rel="self",type="application/rss+xml" )
     - var articles = env.helpers.getArticles(contents);
     title= locals.name
     image
