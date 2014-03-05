@@ -47,13 +47,19 @@ block meta
 
   //# /* Put a desc of this page everywhere it needs to be */
   - var d = locals.description /* default */
-  - if (page && 'status' in page.metadata)
-    d = page.metadata.status /* if there's a status, use it in preference to site description */
-  - if (page && 'excerpt' in page.metadata)
-    d = page.metadata.blurb /* if there's an excerpt, definitely use that */
+  if (page && 'status' in page.metadata)
+    - d = page.metadata.status /* if there's a social media status, use it in preference to site description */
+  if (page && 'excerpt' in page.metadata)
+    - d = page.metadata.excerpt /* if there's an excerpt, definitely use that */
+  if (page && 'blurb' in page.metadata)
+    - d = page.metadata.blurb /* I used to call excepts blurbs*/
   meta(property="og:description",content=d)
   meta(name="description",content=d)
   meta(itemprop="description",content=d)
 
 
-
+  - var n = locals.name /*default*/ 
+  if (page)
+    - n = page.title
+  meta(property="og:title",content=n)
+  meta(name="name",content=n)
