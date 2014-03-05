@@ -29,4 +29,5 @@ rss(version='2.0',
         author= locals.ownemail
         //- passing locals.url resolves all relative urls to absolute
         description= article.getHtml(locals.url)
-        media:thumbnail(url=article.metadata.thumbnail)
+        if (article.metadata.thumbnail)
+          media:thumbnail(url=article.metadata.thumbnail)

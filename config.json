@@ -18,7 +18,7 @@
     "base":     "https://undoware.ca",
     "ownurl":   "https://undoware.ca",
     "owner":    "Liz Mars",
-    "ownemail":    "liz@undoware.ca",
+    "ownemail":    "Liz Mars <liz@undoware.ca>",
     "name":     "Undoware.ca",
     "cdn":      "https://undoware-cdn.appspot.com",
     "description": "For the net is dark and full of errors.",
