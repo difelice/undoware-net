@@ -2,11 +2,17 @@ doctype xml
 rss(version='2.0',
     xmlns:content='http://purl.org/rss/1.0/modules/content/',
     xmlns:wfw='http://wellformedweb.org/CommentAPI/',
+    xmlns:media='http://search.yahoo.com/mrss/',
     xmlns:dc='http://purl.org/dc/elements/1.1/'
     xmlns:atom='http://www.w3.org/2005/Atom')
   channel
     - var articles = env.helpers.getArticles(contents);
     title= locals.name
+    image
+      url=locals.cdn ++ '/raster/icon-128.png';
+      width=128
+      height=128
+      description=locals.description
     atom:link(href=locals.url + '/feed.xml', rel='self', type='application/rss+xml')
     link= locals.url
     description= locals.description
@@ -23,10 +29,4 @@ rss(version='2.0',
         author= locals.owner
         //- passing locals.url resolves all relative urls to absolute
         description= article.getHtml(locals.url)
-        image
-          url= article.metadata.thumbnail
-          link= permalink
-          if (article.metadata.alt)
-            title= article.metadata.alt
-          else 
-            title= article.title
+        media:thumbnail(url=article.metadata.thumbnail)
