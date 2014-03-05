@@ -1,8 +1,9 @@
-// meta.jade
+// meta.jade. TODO FIXME this is trending spaghettiwards. Break up into interests based on source of pain, e.g. opengraph, google plus, hcard, etc.
 include util
 
 block meta
   meta(charset='utf-8')
+  meta(name="twitter.card",content="summary")
   meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
   meta(name='MobileOptimized',content='320')
   meta(name='HandheldFriendly',content='True')
@@ -21,6 +22,8 @@ block meta
   meta(name="dc.keywords",content="Human Rights, UX, Technology, Politics")
   meta(name="dc.subject",content="Technology Ethics")
   meta(property="og:site_name",content=locals.name)
+  meta(name="twitter:site",content="@Undoware")
+  meta(name="twitter:creator",content="@Undoware")
   meta(name="copyright",content=locals.name)
   meta(property="og:title",content=locals.name)
   meta(name="name",content=locals.name)
@@ -31,6 +34,7 @@ block meta
   -else
     -u = locals.base
   meta(property="og:url",content=u)
+  meta(name="twitter:url",content=u)
   meta(name="dc.source",content=u)
 
 
@@ -42,6 +46,7 @@ block meta
     -i = cdn('/raster/icon-256.png')
 
   meta(property="og:image",content=i)
+  meta(name="twitter:image",content=i)
   meta(itemprop="image",content=i)
 
 
@@ -54,6 +59,7 @@ block meta
   if (page && 'blurb' in page.metadata)
     - d = page.metadata.blurb /* I used to call excepts blurbs*/
   meta(property="og:description",content=d)
+  meta(name="twitter:description",content=d)
   meta(name="description",content=d)
   meta(itemprop="description",content=d)
 
@@ -62,4 +68,7 @@ block meta
   if (page)
     - n = page.title
   meta(property="og:title",content=n)
+  meta(name="twitter:title",content=n)
   meta(name="name",content=n)
+
+  
