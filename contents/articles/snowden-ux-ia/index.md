@@ -1,10 +1,17 @@
 ---
 title: Snowden, Usability, and Institutional Analysis
-author: elizabeth-marston
+author: liz-mars
 date: 2014-01-25
 template: article.jade
 dept: pivot
-blurb: Moving forward sideways.
+blurb: Usability is beside the point; long live upgraded Institutional Analysis!
+thumb: https://undoware-cdn.appspot.com/raster/snowden-thumb.jpg
+alt: A landscape photo of a protest in Germany, where several people are wearing Chelsea Manning and Edward Snowden masks.
+caption: A landscape photo of a protest in Germany, where several people are wearing Chelsea Manning and Edward Snowden masks.
+credit: Mike Herbst (Berlin, Germany) for Wikimedia Commons, CC Attribution Sharealike 2.0 Unported
+credit-url: http://commons.wikimedia.org/wiki/File:Berlin_2013_PRISM_Demo.jpg 
+poster: https://undoware-cdn.appspot.com/raster/snowden-poster.jpg
+cover: https://undoware-cdn.appspot.com/raster/snowden-cover.jpg
  ---
 
 It's been over half a year since my previous post.
