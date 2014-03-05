@@ -15,10 +15,8 @@ block append content
         h4.date= moment(article.date).format('dddd YYYY-MM-DD HH:mm Z')
         h4 from the #{article.metadata.dept} dept.
       if (article.metadata.cover)
-        section.column-group(class=articleClass)
-            section.large-50
-              | !{ typogr(article.intro).typogrify() }
-            figure.large-50
+        section(class=articleClass)
+            figure.push-rght
               a(href=article.url)
                 if (article.metadata.alt)
                   img(src=article.metadata.cover,alt=article.metadata.alt)
@@ -34,6 +32,8 @@ block append content
                         a(href=article.metadata.credit-url)=article.metadata.credit
                       else
                         | !{article.metadata.credit}
+            section
+              | !{ typogr(article.intro).typogrify() }
       else 
         section(class=articleClass)
         | !{ typogr(article.intro).typogrify() }
