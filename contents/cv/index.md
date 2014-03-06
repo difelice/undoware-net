@@ -17,6 +17,10 @@ title: Liz Mars
  - Professional project management experience. 2 years at [University of British Columbia](http://www.ubc.ca) as Web Communications Manager for the [Faculty of Arts](http://www.arts.ubc.ca/).
  - [A passion for user interface and interaction design](https://undoware.ca/) (UX), and [credentials in the field](http://www.cstudies.ubc.ca/a/Course/User-Interface-Design-for-the-Web/IM331/)
  
+Portfolio of Past Work
+----------------------
+ - [undoware.ca/portfolio](https://undoware.ca/portfolio/)
+
 
 Looking For
 -----------
@@ -76,6 +80,7 @@ Soft Skills Strengths Assessment
 Points of Presence
 -------------------
 - [Undoware.ca](https://undoware.ca/) My blog
+- [Undoware.ca](https://undoware.ca/portfolio) My portfolio
 - [Hacker News](https://news.ycombinator.com/threads?id=undoware)
 - [github.com/undoware](http://github.com/undoware)
 - [+1 (778) 375-3355](tel:+17783753355) [(Vancouver, Canada)](http://goo.gl/maps/MvjSL)
