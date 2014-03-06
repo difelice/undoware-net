@@ -6,7 +6,7 @@ title: Liz Mars
 ---
 
 
-#### **[+1&nbsp;(778)&nbsp;709-0109](tel://+17787090109)**
+#### **[+1&nbsp;(778)&nbsp;375-3355](tel://+17783753355)**
 #### **[liz@undoware.ca](mailto: liz@undoware.ca)**
 #### **[Vancouver, Canada](http://goo.gl/maps/CKpCS)**
 
@@ -78,7 +78,7 @@ Points of Presence
 - [Undoware.ca](https://undoware.ca/) My blog
 - [Hacker News](https://news.ycombinator.com/threads?id=undoware)
 - [github.com/undoware](http://github.com/undoware)
-- [+1 (778) 709-0109](tel:+17787090109) [(Vancouver, Canada)](http://goo.gl/maps/MvjSL)
+- [+1 (778) 375-3355](tel:+17783753355) [(Vancouver, Canada)](http://goo.gl/maps/MvjSL)
 - [liz@undoware.ca](mailto:liz@undoware.ca)
 _Canonical URI of this Document: [undoware.ca/cv/](http://undoware.ca/cv/)_
 _Updated Mar 4 2014_
