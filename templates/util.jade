@@ -47,26 +47,26 @@ mixin css(fr)
 
 
 -function png(x) {
--return typath(x,'png');
+-return typath(x,'png',!!locals.cdn);
 -}
 
 -function jpg(x) {
--return typath(x,'jpg');
+-return typath(x,'jpg',!!locals.cdn);
 -}
 
 -function svg(x) {
--return typath(x,'svg');
+-return typath(x,'svg',!!locals.cdn);
 -}
 
 -function woff(x) {
--return typath(x,'woff');
+-return typath(x,'woff',!!locals.cdn);
 -}
 
 -function ttf(x) {
--return typath(x,'ttf');
+-return typath(x,'ttf',!!locals.cdn);
 -}
 
 -function eot(x) {
--return typath(x,'eot');
+-return typath(x,'eot',!!locals.cdn);
 -}
 
