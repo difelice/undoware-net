@@ -9,7 +9,7 @@ html(lang=locals.language.code,itemscope,itemtype="http://schema.org/Article")
     block head
     title
       block title
-      | - !{locals.name}
+      | k- !{locals.name}
   - var bodyClass = (page && 'class' in page.metadata) ? page.metadata.class : 'body';
   body.ink-grid#body(class=bodyClass)
     div#page
