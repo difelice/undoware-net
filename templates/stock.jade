@@ -8,8 +8,8 @@ html(lang=locals.language.code,itemscope,itemtype="http://schema.org/Article")
     include style
     block head
     title
-      block title
-      | k- !{locals.name}
+      if (page)
+        | !{page.title} - !{locals.name}
   - var bodyClass = (page && 'class' in page.metadata) ? page.metadata.class : 'body';
   body.ink-grid#body(class=bodyClass)
     div#page
