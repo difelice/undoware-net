@@ -14,6 +14,7 @@ block content
     h4 from the #{page.metadata.dept} dept.
     if (page.metadata.poster)
       figure.poster
+        a(href=page.metadata.poster)
         if (page.metadata.alt)
           img(src=page.metadata.poster,alt=page.metadata.alt)
         else
