@@ -31,5 +31,13 @@ block content
                 each article, i in articles
                   - var lastA = lastM && (articles.length - 1 == i);
                   li.archive-entry
-                    a(href=article.url, class=(lastA?'last':''))= article.title
+                    if (article.metadata.thumbnail)
+                      a(href=article.url, class=(lastA?'last':''))
+                        if (article.metadata.alt)
+                          img(src=article.metadata.thumbnail,alt=article.metadata.alt,style="width:64px;vertical-align:middle;")
+                        else
+                          img(src=article.metadata.thumbnail,style="width:64px;vertical-align:middle;")
+                        | &nbsp; !{article.title}
+                    else
+                      a(href=article.url, class=(lastA?'last':''))= article.title
 
