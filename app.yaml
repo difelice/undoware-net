@@ -19,3 +19,6 @@ handlers:
 
 - url: /font
   static_dir: font
+
+- url: /logic
+  static_dir: stack

@@ -14,7 +14,7 @@
 
 
 - function js(fr) {
--  return typath(fr,'js');
+-  return typath(fr,'js',!!locals.cdn);
 - }
 
 - function requirejs(fr) {
@@ -31,7 +31,7 @@ mixin requirejs()
 
 
 - function css(fr) {
--  return typath(fr,'css');
+-  return typath(fr,'css',!!locals.cdn);
 - }
 
 mixin css(fr)
