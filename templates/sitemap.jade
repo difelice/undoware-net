@@ -10,3 +10,10 @@ urlset(xmlns="http://sitemaps.org/schemas/sitemap/0.9")
      url
         loc= locals.base + n.href
         changefreq weekly
+   for n in locals.darkmap
+     url
+        loc= locals.base + n.href
+        changefreq weekly
+   for article in env.helpers.getArticles(contents)
+     url
+       loc= locals.base + article.url

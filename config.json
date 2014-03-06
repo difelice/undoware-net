@@ -38,6 +38,21 @@
         }
       }
     ],
+    "darkmap": [
+      {
+        "href": "/portfolio/",
+        "menu": {
+          "name" : "Portfolio",
+          "class": "portfolio"
+        }
+      },{
+        "href": "/cv/",
+        "menu": {
+          "name" : "C.V.",
+          "class": "cv"
+        }
+      }
+    ],
     "loader": {
         "src":  "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min",
         "config": {
