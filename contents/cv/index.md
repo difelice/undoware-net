@@ -3,6 +3,7 @@ author: liz-mars
 date: 2013-07-07
 template: single.jade
 title: Liz Mars
+class: resume
 ---
 
 
