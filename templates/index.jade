@@ -54,8 +54,10 @@ block append content
           a(href=article.url) ⋯
         else
           span.zcommand &nbsp;
-  menu.nav
+  menu.nav.column-group.gutters
     if nextPage
-      a(href=nextPage.url) <i class="icon-4x icon-arrow-left"></i>
+      div.large-50.small-50
+        a(href=nextPage.url) <i class="icon-4x icon-arrow-left"></i>
     if prevPage
-      a(href=prevPage.url) &nbsp;|&nbsp;<i class="icon-4x icon-arrow-right"></i>
+      div.large-50.small-50
+        a(href=prevPage.url) &nbsp;|&nbsp;<i class="icon-4x icon-arrow-right"></i>
