@@ -75,8 +75,7 @@
     "moment": "moment",
     "cheerio": "cheerio",
     "_": "underscore",
-    "typogr": "typogr",
-    "discount": "discount"
+    "typogr": "typogr"
   },
   "jade": {
     "pretty": true
