@@ -41,8 +41,17 @@ mixin css(fr)
 
 
 -function typath(x,typ,use_cdn) {
--var p = '/' + locals.path[typ] + '/' + x + '.' + typ;
--return (use_cdn) ? cdn(p) : p ;
+-var dotary = x.split('.');
+-var has_extension = (dotary.pop() == typ);
+-var is_absolute = /^(http(s?):\/)\/(.*)$/.test(x);
+-var p = ((is_absolute) ? '' : ('/' + locals.path[typ] + '/' )) + x + ((has_extension) ? ''  : '.' + typ);
+-return (use_cdn && !is_absolute) ? cdn(p) : p ;
+-}
+
+-function guesspath(x,use_cdn) { 
+-var dotary = x.split('.');
+-var typ = dotary.pop();
+-return typath(x,typ,use_cdn);
 -}
 
 
@@ -70,3 +79,15 @@ mixin css(fr)
 -return typath(x,'eot',!!locals.cdn);
 -}
 
+-function mp3(x) {
+-return typath(x,'mp3',!!locals.cdn);
+-}
+-function ogg(x) {
+-return typath(x,'ogg',!!locals.cdn);
+-}
+-function mp4(x) {
+-return typath(x,'mp4',!!locals.cdn);
+-}
+-function youtube(x) {
+-throw "Not yet implemented."
+-}

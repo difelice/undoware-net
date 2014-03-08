@@ -29,7 +29,18 @@ block content
                   a(href=page.metadata.credit-url)=page.metadata.credit
                 else
                   | !{page.metadata.credit}
-
+    if (article.metadata.audio)
+      audio(controls,preload="auto")
+        source(src=mp3(article.metadata.audio))
+        source(src=ogg(article.metadata.audio))
+    if (article.metadata.video)
+      video(controls,preload="auto")
+        source(src=mp4(article.metadata.video))
+        source(src=ogg(article.metadata.video))
+    if (article.metadata.youtube)
+      youtube(url=article.metadata.youtube)
+    if (article.metadata.vimeo)
+      vimeo(url=article.metadata.vimeo)
     section.content!= typogr(page.html).typogrify()
     footer
       div.zcommand &nbsp;

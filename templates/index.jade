@@ -19,9 +19,9 @@ block append content
             figure.push-rght
               a(href=article.url)
                 if (article.metadata.alt)
-                  img(src=article.metadata.cover,alt=article.metadata.alt)
+                  img(src=guesspath(article.metadata.cover),alt=article.metadata.alt)
                 else
-                  img(src=article.metadata.cover)
+                  img(src=guesspath(article.metadata.cover))
               if (article.metadata.caption || article.metadata.credit)
                 figcaption
                   if (article.metadata.caption)
@@ -37,6 +37,18 @@ block append content
       else 
         section(class=articleClass)
         | !{ typogr(article.intro).typogrify() }
+      if (article.metadata.audio)
+        audio(controls,preload="auto")
+          source(src=mp3(article.metadata.audio))
+          source(src=ogg(article.metadata.audio))
+      if (article.metadata.video)
+        video(controls,preload="auto")
+          source(src=mp4(article.metadata.video))
+          source(src=ogg(article.metadata.video))
+      if (article.metadata.youtube)
+        youtube(url=article.metadata.youtube)
+      if (article.metadata.vimeo)
+        vimeo(url=article.metadata.vimeo)
       footer
         if article.hasMore
           a(href=article.url) ⋯

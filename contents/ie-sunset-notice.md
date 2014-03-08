@@ -18,7 +18,7 @@ The world has changed a lot in the intervening years, and the web along with it.
 
 These requirements are not compatible with maintaining a 2000s-era site. Yet we do not think it reasonable to target a four-year-old browser at the expense of tablet users, touchscreen computers. Moreover, given that the process takes only a few minutes and reduces your risk of [malware infection](http://en.wikipedia.org/wiki/Malware), it is reasonable for this site to request that you upgrade your browser.
 
-For most people, there is no reason *not* to upgrade. Contemporary browsers all offer improved security and usability. And an upgrade to [Internet Explorer 10](http://en.wikipedia.org/wiki/Internet_Explorer_10) is only a click away in [Windows Update](http://windowsupdate.microsoft.com/).
+For most people, there is no reason *not* to upgrade. Contemporary browsers all offer improved security and usability. And an upgrade to [Internet Explorer 11](http://en.wikipedia.org/wiki/Internet_Explorer_11) is only a click away in [Windows Update](http://windowsupdate.microsoft.com/).
 
 If you are on a shared computer or workplace workstation that does not permit you to upgrade Internet Explorer yourself, you should request an upgrade from your IT department.
 
