@@ -23,9 +23,9 @@ block append content
              | !{piece.headline}
         h4.date= moment(piece['start-date']).format('YYYY-MM-DD')
       section.gallery.text.column-group.gutters
-        div.large-50
+        div.large-50.small-100
           img(src=piece.media,alt=piece.caption)
-        div.large-50
+        div.large-50.small-100
           p
             | !{ typogr(piece.text).typogrify() }
       footer
