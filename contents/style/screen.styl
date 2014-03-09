@@ -115,11 +115,16 @@
     flex-wrap wrap
     justify-content flex-start
     align-items flex-start
-    min-height: ns=256px;
-    min-width: (nw=600px) + ns
+    min-height: 512px;
+    min-width: 800px;
     background-color: transparent
     thc-font()
     margin 0 auto
+    margin: 2em 0 0 0;
+    text-align: justify
+    line-height: 1.4em
+    word-wrap break-word
+    padding-left: 4em;
     a
       color: thc-accent-color
       &:hover
@@ -146,13 +151,6 @@
       li:before
         content: ''
         padding-right: 0.2em
-    margin: 2em 0 0 0;
-    text-align: justify
-    min-width: nw;
-    max-width: xw;
-    line-height: 1.4em
-    word-wrap break-word
-    padding-left: 4em;
     h1, h2, h3, h4
       thc-headline-font()
       color:thc-accent-color;
@@ -175,8 +173,7 @@
       margin: 0.5em;
       text-align: justify;
     article.story
-      max-width: ((xw=800px) + ns=256px)
-      flex-basis  ns
+      flex-basis: 800px
       flex none
       & > section > p:first-child
         text-indent: 0;
