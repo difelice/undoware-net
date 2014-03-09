@@ -6,13 +6,16 @@ block append header
   //command zee-bra, get it? Just some decoration
   div#zebra
   div.column-group
-    div.large-25.push-left
-      h1
-        span.logo#logo UND↺WARE
-      em.slogan
-        a(href='/what/')=locals.description
+    div.logo-block.push-left.large-25.small-25
+      div.chop
+       | &nbsp;
+      div
+        h1
+          span.logo#logo UND↺WARE
+        em.slogan
+          a(href='/what/')=locals.description
 
-    nav.large-75.push-right
+    nav
       ul
         each location in locals.sitemap
           li

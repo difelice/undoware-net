@@ -9,51 +9,62 @@ block append content
   each article in articles
     - var articleClass = ('class' in article.metadata) ? article.metadata.class : 'story'
     article.intro(class=articleClass)
-      header
-        h2
-          a(href=article.url)= article.title
-        h4.date= moment(article.date).format('dddd YYYY-MM-DD HH:mm Z')
-        h4 from the #{article.metadata.dept} dept.
-      if (article.metadata.cover)
-        section.column-group(class=articleClass)
-            figure.push-rght
-              a(href=article.url)
-                if (article.metadata.alt)
-                  img(src=guesspath(article.metadata.cover),alt=article.metadata.alt)
-                else
-                  img(src=guesspath(article.metadata.cover))
-              if (article.metadata.caption || article.metadata.credit)
-                figcaption
-                  if (article.metadata.caption)
-                    h5.caption !{article.metadata.caption}
-                  if (article.metadata.credit)
-                    h6.credit
-                      if(article.metadata.credit-url)
-                        a(href=article.metadata.credit-url)=article.metadata.credit
-                      else
-                        | !{article.metadata.credit}
-            section.push-left
-              | !{ typogr(article.intro).typogrify() }
-      else 
-        section(class=articleClass)
-          | !{ typogr(article.intro).typogrify() }
-      if (article.metadata.audio)
-        audio(controls,preload="auto")
-          source(src=mp3(article.metadata.audio))
-          source(src=ogg(article.metadata.audio))
-      if (article.metadata.video)
-        video(controls,preload="auto")
-          source(src=mp4(article.metadata.video))
-          source(src=ogg(article.metadata.video))
-      if (article.metadata.youtube)
-        youtube(url=article.metadata.youtube)
-      if (article.metadata.vimeo)
-        vimeo(url=article.metadata.vimeo)
-      footer
-        if article.hasMore
-          a(href=article.url) ⋯
-        else
-          span.zcommand &nbsp;
+      if (article.metadata.inline)
+        p.inline
+          if (article.metadata.staturl)
+            a(href=article.metadata.staturl)
+              block inliner
+                i.icon-leaf.blue
+                | &nbsp;!{moment(article.date).format('ddd YYYY-DD-MM HH:mm')}:
+                | &nbsp;!{article.metadata.status}
+          else
+            block inliner
+      else
+        header
+          h2
+            a(href=article.url)= article.title
+          h4.date= moment(article.date).format('dddd YYYY-MM-DD HH:mm Z')
+          h4 from the #{article.metadata.dept} dept.
+        if (article.metadata.cover)
+          section.column-group(class=articleClass)
+              figure.push-rght
+                a(href=article.url)
+                  if (article.metadata.alt)
+                    img(src=guesspath(article.metadata.cover),alt=article.metadata.alt)
+                  else
+                    img(src=guesspath(article.metadata.cover))
+                if (article.metadata.caption || article.metadata.credit)
+                  figcaption
+                    if (article.metadata.caption)
+                      h5.caption !{article.metadata.caption}
+                    if (article.metadata.credit)
+                      h6.credit
+                        if(article.metadata.credit-url)
+                          a(href=article.metadata.credit-url)=article.metadata.credit
+                        else
+                          | !{article.metadata.credit}
+              section.push-left
+                | !{ typogr(article.intro).typogrify() }
+        else 
+          section(class=articleClass)
+            | !{ typogr(article.intro).typogrify() }
+        if (article.metadata.audio)
+          audio(controls,preload="auto")
+            source(src=mp3(article.metadata.audio))
+            source(src=ogg(article.metadata.audio))
+        if (article.metadata.video)
+          video(controls,preload="auto")
+            source(src=mp4(article.metadata.video))
+            source(src=ogg(article.metadata.video))
+        if (article.metadata.youtube)
+          youtube(url=article.metadata.youtube)
+        if (article.metadata.vimeo)
+          vimeo(url=article.metadata.vimeo)
+        footer
+          if article.hasMore
+            a(href=article.url) ⋯
+          else
+            span.zcommand &nbsp;
 
 block append footer
   menu.nav.column-group.gutters

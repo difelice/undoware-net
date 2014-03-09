@@ -14,6 +14,7 @@
   padding-top: 32px
   background-image: url(https://undoware-cdn.appspot.com/vector/panties.svg)
 #zebra
+  display: none
   position: fixed;
   left: -5px;
   top: 0;
@@ -63,8 +64,8 @@
           color: thc-highlight-color
 
     .logo
-      margin-top: 1em
       letter-spacing: 0.1em
+      margin-top: 8px
       text-shadow: 0px 0px 3px #FFF !important
       h1
         a
@@ -233,8 +234,8 @@ body
   &.who
     background-image  url(https://undoware-cdn.appspot.com/raster/me.jpg)
     background-size contain
-    background-position right bottom
     background-repeat no-repeat
+    background-position right bottom
     background-attachment fixed
   &.archive
     background-image  url(https://undoware-cdn.appspot.com/raster/berlin.jpg)
@@ -262,9 +263,35 @@ body
   > * 
     max-width: 256px
 
+.logo-block
+  display:flex
+  flex-direction: row
+  flex-wrap: no-wrap
+  justify-content: flex-start
+  align-items: flex-start
+  .chop
+    display: block
+    background-image url(https://undoware-cdn.appspot.com/vector/logo.svg)
+    background-size contain
+    background-repeat no-repeat
+    width: 64px
+    height: 64px
+  .logotype
+    justify-content: flex-start
+    align-items: flex-start
+    flex-direction: column
+    display: flex
+    
+
 .slogan
   font-size: larger   
-
+.blue
+  color: thc-action-color
+.inline
+  position:relative
+  left: -2em
+  margin: 1em 0 1em 0
+  font-style: italic
 .page-title
   margin-top: 1em !important
   color: #FFFFFF !important
