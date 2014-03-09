@@ -58,8 +58,8 @@ block append content
 block append footer
   menu.nav.column-group.gutters
     if nextPage
-      div.large-50.small-50
+      div.large-50.small-50(style="text-align:center;")
         a(href=nextPage.url) <i class="icon-4x icon-arrow-left"></i>
     if prevPage
-      div.large-50.small-50(style="text-align:right;")
+      div.large-50.small-50(style="text-align:center;")
         a(href=prevPage.url) <i class="icon-4x icon-arrow-right"></i>
