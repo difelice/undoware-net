@@ -36,7 +36,7 @@ block append content
               | !{ typogr(article.intro).typogrify() }
       else 
         section(class=articleClass)
-        | !{ typogr(article.intro).typogrify() }
+          | !{ typogr(article.intro).typogrify() }
       if (article.metadata.audio)
         audio(controls,preload="auto")
           source(src=mp3(article.metadata.audio))
