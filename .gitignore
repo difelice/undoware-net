@@ -6,4 +6,6 @@
 *.bak
 *.orig
 *.diff
+/credentials/
+npm-debug.log
 /node_modules/

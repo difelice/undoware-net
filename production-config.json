@@ -1,0 +1,96 @@
+{
+  "output": "build/undoware/",
+  "locals": {
+    "gplus": "https://plus.google.com/u/1/117975080165825944609",
+    "author": "https://undoware.ca/who/",
+    "path": {
+      "css" : "style",
+      "js"  : "logic",
+      "png" : "raster",
+      "jpg" : "raster",
+      "svg" : "vector",
+      "pdf" : "vector",
+      "woff": "font",
+      "eot" : "font",
+      "ttf" : "font",
+      "mp3" : "encoded",
+      "mp4" : "encoded",
+      "ogg" : "encoded",
+      "mov" : "encoded",
+      "mkv" : "encoded",
+      "avi" : "encoded",
+      "flac" : "encoded"
+    },
+    "base":     "https://undoware.ca",
+    "ownurl":   "https://undoware.ca",
+    "owner":    "Liz Mars",
+    "ownemail":    "liz@undoware.ca (Liz Mars)",
+    "name":     "Undoware.ca",
+    "cdn":      "https://undoware-cdn.appspot.com",
+    "description": "For the net is dark and full of errors.",
+    "language": { "code": "en-CA", "name": "English" },
+    "sitemap": [
+      {
+        "href": "/who/",
+        "menu": {
+          "name" : "Who",
+          "class": "who"
+        }
+      },{
+        "href": "/archive/",
+        "menu": {
+          "name" : "Archive",
+          "class": "archive"
+        }
+      }
+    ],
+    "darkmap": [
+      {
+        "href": "/portfolio/",
+        "menu": {
+          "name" : "Portfolio",
+          "class": "portfolio"
+        }
+      },{
+        "href": "/cv/",
+        "menu": {
+          "name" : "C.V.",
+          "class": "cv"
+        }
+      }
+    ],
+    "loader": {
+        "src":  "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min",
+        "config": {
+          "paths"  : { "ng": "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min" },
+          "deps"   : [ "ng", "site", "logo" ]
+        }
+    },
+    "scale": {
+      "initial":  "0.7",
+      "max":      "0.8",
+      "user":     "1"
+    }
+  },
+  "plugins": [
+      "./plugins/paginator.coffee",
+      "wintersmith-ls",
+      "wintersmith-stylus"
+  ],
+  "require": {
+    "moment": "moment",
+    "cheerio": "cheerio",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 3
+  }
+}
