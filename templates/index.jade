@@ -67,10 +67,12 @@ block append content
             span.zcommand &nbsp;
 
 block append footer
-  menu.nav.column-group.gutters
+  menu.nav
     if nextPage
-      div.large-50.small-50(style="text-align:center;")
-        a(href=nextPage.url) <i class="icon-4x icon-arrow-left"></i>
+      span(style="text-align:center;")
+        a(href=nextPage.url) 
+          i.icon-2x.icon-arrow-left &nbsp;
     if prevPage
-      div.large-50.small-50(style="text-align:center;")
-        a(href=prevPage.url) <i class="icon-4x icon-arrow-right"></i>
+      span(style="text-align:center;")
+        a(href=prevPage.url)
+          i.icon-2x.icon-arrow-right &nbsp;

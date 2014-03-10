@@ -46,14 +46,20 @@
     .area.topbar li
       padding-left: 0
       padding-right: 1em
-  main footer.area
+  footer.area
     display: block
     width: 100%
     margin: 0
     padding:0
     text-align center
-    menu
-      display inline-block
+    menu.nav
+      display block
+      position: fixed
+      min-width: 25%
+      bottom: -4em 
+      color: #FFF
+      z-index 5
+      left: 1em
       padding: 0
       text-indent none
       a

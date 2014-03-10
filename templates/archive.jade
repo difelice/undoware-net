@@ -1,6 +1,8 @@
 
 extends page
 
+block append head
+ title "Archive - Undoware.ca"
 
 block append header
   h2
@@ -27,10 +29,10 @@ block content
               - var articles = yearArticles[month]
               - var lastM = last && (months.length - 1 == i);
               li.month
-                span.month-label(class=(lastM?'last':'')) #{month}
+                h2.month-label(class=(lastM?'last':'')) #{month}
                 each article, i in articles
                   - var lastA = lastM && (articles.length - 1 == i);
-                  li.archive-entry
+                  h3.archive-entry
                     if (article.metadata.thumbnail)
                       a(href=article.url, class=(lastA?'last':''))
                         if (article.metadata.alt)

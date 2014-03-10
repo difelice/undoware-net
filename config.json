@@ -81,7 +81,8 @@
     "moment": "moment",
     "cheerio": "cheerio",
     "_": "underscore",
-    "typogr": "typogr"
+    "typogr": "typogr",
+    "markdown": "markdown"
   },
   "jade": {
     "pretty": true
