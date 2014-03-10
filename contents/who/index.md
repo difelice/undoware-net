@@ -24,5 +24,5 @@ You can check out my [portfolio](/portfolio/), [résumé](/cv/) and my [GitHub](
 
 
 </div>
-<a href="/portfolio/"> <img src="https://undoware-cdn.appspot.com/raster/signature.png" style="max-width: 192px;float:right"> </a>
+<a href="/portfolio/"> <img src="https://undoware-cdn.appspot.com/raster/signature.png" style="max-width: 192px"> </a>
 <link rel="me" href="https://plus.google.com/u/1/117975080165825944609"/>
