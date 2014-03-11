@@ -20,12 +20,13 @@ Liz Mars
 
 <menu>
 <ul>
-<li><a href="/portfolio/"><i class="icon-2x icon-briefcase"></i>&nbsp;Portfolio</a></li>
-<li><a href="/cv/"><i class="icon-2x icon-magic"></i>&nbsp;Résumé</a></li>
-<li><a href="/github/"><i class="icon-2x icon-github-alt"></i>&nbsp;GitHub</a></li>
-<li><a href="https://twitter.com/undoware/"><i class="icon-2x icon-twitter"></i>&nbsp;Twitter</a></li>
-<li><a href="https://plus.google.com/117975080165825944609/"><i class="icon-2x icon-google-plus"></i>&nbsp;Google Plus</a></li>
-<li><a href="https://news.ycombinator.com/user?id=undoware"/><i class="icon-2x icon-beaker"></i>Hacker News</a></li>
+<li><a href="/portfolio/"><i class="icon-2x icon-magic"></i>&nbsp;Portfolio</a></li>
+<li><a href="/cv/"><i class="icon-2x icon-file-text"></i>&nbsp;Résumé</a></li>
+<li><a href="/github/"><i class="icon-github-alt"></i>&nbsp;GitHub</a></li>
+<li><a href="https://twitter.com/undoware/"><i class="icon-twitter"></i>&nbsp;Twitter</a></li>
+<li><a href="https://plus.google.com/117975080165825944609/"><i class="icon-google-plus"></i>&nbsp;Google Plus</a></li>
+<li><a href="https://facebook.com/poppy.runcible"><i class="icon-facebook"></i>&nbsp;&nbsp;&nbsp;Facebook</a></li>
+<li><a href="https://news.ycombinator.com/user?id=undoware"/><strong>Y</strong>&nbsp;Hacker News</a></li>
 </ul>
 
 </menu>
