@@ -1,2 +1,2 @@
 define <[ ng ]> ->
-  angular.module \site <[ logo hr ]>
+  angular.module \site <[ ngTouch logo hr ]>

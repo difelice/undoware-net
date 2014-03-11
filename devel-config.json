@@ -21,7 +21,7 @@
       "avi" : "encoded",
       "flac" : "encoded"
     },
-    "base":     "https://localhost:8080",
+    "base":     "https://undoware.ca",
     "ownurl":   "https://undoware.ca",
     "owner":    "Liz Mars",
     "ownemail":    "liz@undoware.ca (Liz Mars)",
@@ -62,8 +62,9 @@
     "loader": {
         "src":  "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min",
         "config": {
-          "paths"  : { "ng": "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min" },
-          "deps"   : [ "ng", "site", "logo", "hr" ]
+          "paths"  : { "ng":        "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min",
+                       "ng-touch":  "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-touch"},
+          "deps"   : [ "ng", "ng-touch", "site", "logo", "hr" ]
         }
     },
     "scale": {
