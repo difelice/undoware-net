@@ -11,7 +11,7 @@ html(lang=locals.language.code,itemscope,itemtype="http://schema.org/Article")
       - var t = (page) ? page.title + ' - ' + locals.name : locals.name;
       | !{t}
   - var bodyClass = (page && 'class' in page.metadata) ? page.metadata.class : 'body';
-  body.ink-grid#body(class=bodyClass)
+  body.ink-grid#body(class=bodyClass ng-controller="Site")
     div#page
       header.area.header(role='heading')
         block header
