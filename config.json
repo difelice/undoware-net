@@ -63,7 +63,7 @@
         "src":  "https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min",
         "config": {
           "paths"  : { "ng": "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.3/angular.min" },
-          "deps"   : [ "ng", "site", "logo" ]
+          "deps"   : [ "ng", "site", "logo", "hr" ]
         }
     },
     "scale": {

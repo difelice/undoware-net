@@ -72,12 +72,6 @@
       font-size: 8pt
       a
         color: #A0A0A0
-    .zcommand
-      min-height: 1em
-      min-width: 1em
-      background-image: url(https://undoware-cdn.appspot.com/vector/logo-blue.svg)
-      background-repeat: no-repeat
-      background-size: 1em 1em
     nav
       a
         font-weight: bold
@@ -121,11 +115,6 @@
       &:focus
         text-decoration: none;
         text-shadow 0px 0px 4px thc-highlight-color
-    hr
-      width: 10%
-      border-width: 1px
-      border-style: solid
-      border-color thc-action-color
     p a:after, li a:after
       color: thc-action-color
       content: '*'
@@ -161,10 +150,12 @@
       padding: 5px 10px 0 0 ;
       margin: 0.5em;
       text-align: justify;
-    article
+    article.story
       max-width: 800px
       min-width: 450px
-      & > p:first-child
+    article.story
+    article.article
+      & > section p:first-child
         text-indent: 0;
         &:first-letter
           float:left
@@ -185,7 +176,11 @@
     section.archive li:before
       content: '' !important
     section.content
-      min-height: 512px;
+      background-image: url(https://undoware-cdn.appspot.com/vector/logo-blue.svg)
+      background-position: bottom right
+      background-size: 1em 1em
+      background-repeat: no-repeat
+      margin-bottom: 3em
     menu.nav
       text-align center
       font-size: 10pt
@@ -300,6 +295,31 @@ menu.nav
 blockquote
   border: 0
   &:before
-    content: '\E2809C'
   &:after
-    content: '\E2809D'
+    color: thc-action-color
+    font-size: 5em
+    position: relative
+  &:before
+    top: 0.75em
+    left: -0.2em
+    content: '“'
+  &:after
+    content: '”'
+    margin-left: 95%
+    top: -0.1em
+
+.zcommand
+  height: 0.6em
+  width: 0.6em
+  display: inline-block
+  background-image: url(https://undoware-cdn.appspot.com/vector/logo-white.svg)
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+
+div.hr
+  text-align center
+  width 100%
+  color: white
+  content: "* * *"
+  

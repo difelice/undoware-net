@@ -1,2 +1,2 @@
 define <[ ng ]> ->
-  angular.module \site <[ logo ]>
+  angular.module \site <[ logo hr ]>
