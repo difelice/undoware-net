@@ -104,7 +104,6 @@
     background-color: transparent
     thc-font()
     margin: 2em 0 0 0;
-    text-align: justify
     line-height: 1.4em
     word-wrap break-word
     padding-left: 4em;
@@ -155,6 +154,7 @@
       min-width: 450px
     article.story
     article.article
+      text-align: justify
       & > section p:first-child
         text-indent: 0;
         &:first-letter
@@ -171,15 +171,13 @@
           height:.7em; 
           line-height:.85em; 
           float:left; 
-    span.year-label
-      font-size: 32pt
-    span.month-label
-      font-size: 24pt
-    li.archive-entry
+    archive-entry
       margin-left: 2em
       line-height: 0.9em
-    section.archive li:before
-      content: '' !important
+    section.archive
+      min-width: 800px
+      & li:before
+        content: '' !important
     section.content
       background-image: url(https://undoware-cdn.appspot.com/vector/logo-blue.svg)
       background-position: bottom right
