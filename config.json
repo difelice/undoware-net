@@ -64,7 +64,7 @@
         "config": {
           "paths"  : { "ng":        "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min",
                        "ng-touch":  "https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-touch"},
-          "deps"   : [ "ng", "ng-touch", "site", "logo", "hr" ]
+          "deps"   : [ "ng", "site", "logo", "hr" ]
         }
     },
     "scale": {

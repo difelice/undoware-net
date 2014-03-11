@@ -5,6 +5,6 @@ site-controller = ($scope) ->
     rswipe: ->
       console.log "Haro world!"
 
-define <[ ng ]> ->
+define <[ ng ng-touch ]> ->
   angular.module \site <[ ngTouch logo hr ]>
   .controller \Site  [\$scope site-controller]
