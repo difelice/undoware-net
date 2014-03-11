@@ -3,7 +3,7 @@ title: Transgender is a transhumanism is a technology
 author: liz-mars
 date: 2014-03-10
 template: article.jade
-dept: Editorial-edicts
+dept: silence=death
 status: A lot of #tech writers steer clear of #trans issues. #FTS.
 blurb: A lot of technology writers steer clear of trans issues. FTS.
 ---
