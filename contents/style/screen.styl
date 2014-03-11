@@ -158,14 +158,19 @@
       & > section p:first-child
         text-indent: 0;
         &:first-letter
+          thc-headline-font()
+          font-size: 3em
           float:left
-          font-size:3.8em;
           display:block
           margin  -0.4em 0 0 0 
           padding: 0 0.1em 0 0
           color: thc-action-color;
           text-transform: uppercase;
-          
+          margin:11px 0 -5px 0; 
+          padding:0 .1em 0 0; 
+          height:.7em; 
+          line-height:.85em; 
+          float:left; 
     span.year-label
       font-size: 32pt
     span.month-label
@@ -320,6 +325,6 @@ blockquote
 div.hr
   text-align center
   width 100%
+  height: 2em
   color: white
-  content: "* * *"
-  
+  font-size: 1.25em
