@@ -20,7 +20,7 @@ Liz Mars
 
 <menu>
 <ul>
-<li><a href="/portfolio/"><i class="icon-2x icon-magic"></i>&nbsp;Portfolio</a></li>
+<li><a href="/portfolio/"><i class="icon-2x icon-suitcase"></i>&nbsp;Portfolio</a></li>
 <li><a href="/cv/"><i class="icon-2x icon-file-text"></i>&nbsp;Résumé</a></li>
 <li><a href="/github/"><i class="icon-github-alt"></i>&nbsp;GitHub</a></li>
 <li><a href="https://twitter.com/undoware/"><i class="icon-twitter"></i>&nbsp;Twitter</a></li>
@@ -32,7 +32,7 @@ Liz Mars
 </menu>
 
 <p>
-Hi, I'm Liz Mars, the Uncanny Valley Girl. I'm a platypus of sorts, with a background in analytic philosophy, ethics and metaethics, discrete math, formal logic, and of course, Free and Open Source software. I also write verse, music, short stories and non-fiction, and I draw. I also have experience in activism and community organizing.  
+Hi, I'm Liz Mars, the Uncanny Valley Girl. I'm a platypus of sorts, with a background in analytic philosophy, ethics and metaethics, discrete math, formal logic, and of course, Free and Open Source software. I also write verse, music, short stories and non-fiction. I also have experience in activism and community organizing.  
 </p>
 
 </div>
