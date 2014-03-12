@@ -23,7 +23,6 @@ Liz Mars
 <li><a href="/portfolio/"><i class="icon-2x icon-suitcase"></i>&nbsp;Portfolio</a></li>
 <li><a href="/cv/"><i class="icon-2x icon-file-text"></i>&nbsp;Résumé</a></li>
 <li><a href="mailto:liz@undoware.ca"><i class="icon-2x icon-envelope"></i>&nbsp;Email</a></li>
-<li><a href="liz-mars.vcf"><i class="icon-2x icon-pushpin"></i>&nbsp;VCard for Outlook, Android, iPhone, Apple Mail, Gmail, etc.</a></li>
 <li><a href="liz-mars.txt"><i class="icon-2x icon-key"></i>&nbsp;OpenPGP public key (69C4E6D8)</li>
 <li><a href="/github/"><i class="icon-github-alt"></i>&nbsp;GitHub</a></li>
 <li><a href="https://twitter.com/undoware/"><i class="icon-twitter"></i>&nbsp;Twitter</a></li>
