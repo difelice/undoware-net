@@ -28,9 +28,8 @@ block append content
           a(href=piece.home)
             img(src=piece.media,alt=piece.caption)
         div.large-50.small-100
-          p
-            a(href=piece.home)
-              | !{ typogr.typogrify(markdown.markdown.toHTML(piece.text)) }
+          a(href=piece.home)
+            | !{ typogr.typogrify(markdown.markdown.toHTML(piece.text)) }
       footer
         if 'url' in piece
           a(href=piece.url)= view
