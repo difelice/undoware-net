@@ -14,7 +14,8 @@ block append content
   each piece in page.metadata.gallery
     article.gallery(class=piece.anchor)
       header
-        a(id=piece.anchor)
+        a(id=piece.anchor) &nbsp;
+        a(href=piece.home) &nbsp;
           | &nbsp;
         h2
           if 'url' in piece
@@ -28,7 +29,8 @@ block append content
             img(src=piece.media,alt=piece.caption)
         div.large-50.small-100
           p
-            | !{ typogr.typogrify(markdown.markdown.toHTML(piece.text)) }
+            a(href=piece.home)
+              | !{ typogr.typogrify(markdown.markdown.toHTML(piece.text)) }
       footer
         if 'url' in piece
           a(href=piece.url)= view
