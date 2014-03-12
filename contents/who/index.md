@@ -24,7 +24,7 @@ Liz Mars
 <li><a href="/cv/"><i class="icon-2x icon-file-text"></i>&nbsp;Résumé</a></li>
 <li><a href="mailto:liz@undoware.ca"><i class="icon-2x icon-envelope"></i>&nbsp;Email</a></li>
 <li><a href="mailto:liz@undoware.ca"><i class="icon-2x icon-pushpin"></i>&nbsp;Email</a></li>
-<li><a href="http://pgp.mit.edu/pks/lookup?op=get&search=0xA966E4BF2C759DFF"><i class="icon-key"></i>&nbsp;Public Encryption Key (4096R/2C759DFF@pgp.mit.edu)</li>
+<li><a href="http://pgp.mit.edu/pks/lookup?op=get&search=0x3625D3A769C4E6D8"><i class="icon-key"></i>&nbsp;Public Encryption Key (4096R/2C759DFF@pgp.mit.edu)</li>
 <li><a href="/github/"><i class="icon-github-alt"></i>&nbsp;GitHub</a></li>
 <li><a href="https://twitter.com/undoware/"><i class="icon-twitter"></i>&nbsp;Twitter</a></li>
 <li><a href="https://plus.google.com/117975080165825944609/"><i class="icon-google-plus"></i>&nbsp;Google Plus</a></li>
