@@ -8,7 +8,7 @@ status: A lot of #tech writers steer clear of #trans issues. #FTS.
 blurb: A lot of technology writers steer clear of trans issues. FTS.
 ---
 
-My partner might kill me for writing this post, but that's the point. 
+My partner might be upset with me for writing this post, but that's the point. 
 
 I'm in the awkward position of having broadened the focus of my blog to the point where it necessarily includes topics that are difficult for me to address without at least delineating where I'm coming from. As you have probably worked out from my [portfolio](/portfolio/) and [headshot](/who/) is that I am indeed trans, aka transsexual, aka transgender.
 
