@@ -21,4 +21,4 @@ handlers:
   static_dir: font
 
 - url: /logic
-  static_dir: stack
+  static_dir: logic

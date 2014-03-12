@@ -23,8 +23,8 @@ Liz Mars
 <li><a href="/portfolio/"><i class="icon-2x icon-suitcase"></i>&nbsp;Portfolio</a></li>
 <li><a href="/cv/"><i class="icon-2x icon-file-text"></i>&nbsp;Résumé</a></li>
 <li><a href="mailto:liz@undoware.ca"><i class="icon-2x icon-envelope"></i>&nbsp;Email</a></li>
-<li><a href="liz-mars.vcf"><i class="icon-2x icon-pushpin"></i>&nbsp;Vcard</a></li>
-<li><a href="liz-mars.txt"><i class="icon-key"></i>&nbsp;OpenPGP (69C4E6D8)</li>
+<li><a href="liz-mars.vcf"><i class="icon-2x icon-pushpin"></i>&nbsp;VCard (.vcf) for Outlook, Apple Mail, etc.</a></li>
+<li><a href="liz-mars.txt"><i class="icon-2x icon-key"></i>&nbsp;OpenPGP public key (69C4E6D8)</li>
 <li><a href="/github/"><i class="icon-github-alt"></i>&nbsp;GitHub</a></li>
 <li><a href="https://twitter.com/undoware/"><i class="icon-twitter"></i>&nbsp;Twitter</a></li>
 <li><a href="https://plus.google.com/117975080165825944609/"><i class="icon-google-plus"></i>&nbsp;Google Plus</a></li>
@@ -35,7 +35,7 @@ Liz Mars
 </menu>
 
 <p>
-Hi, I'm Liz Mars, the Uncanny Valley Girl. I'm a platypus of sorts, with a background in analytic philosophy, ethics and metaethics, discrete math, formal logic, and of course, Free and Open Source software. I also write verse, music, short stories and non-fiction. I also have experience in activism and community organizing.  
+Hi, I'm Liz Mars, the Uncanny Valley Girl. I'm a platypus of sorts, with a background in analytic philosophy, ethics and metaethics, discrete math, formal logic, and of course, Free and Open Source software. I write code, verse, music, short stories and non-fiction. I also have experience in activism and community organizing.  
 </p>
 
 </div>
