@@ -15,11 +15,9 @@ block append content
     article.gallery(class=piece.anchor)
       header
         a(id=piece.anchor) &nbsp;
-        a(href=piece.home)
-          | &nbsp;
         h2
-          if 'url' in piece
-             a(href=piece.url)= piece.headline
+          if 'home' in piece
+             a(href=piece.home)= piece.headline
           else
              | !{piece.headline}
         h4.date= moment(piece['start-date']).format('YYYY-MM-DD')
