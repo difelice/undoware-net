@@ -22,8 +22,8 @@ Liz Mars
 <ul>
 <li><a href="/portfolio/"><i class="icon-2x icon-suitcase"></i>&nbsp;Portfolio</a></li>
 <li><a href="/cv/"><i class="icon-2x icon-file-text"></i>&nbsp;Résumé</a></li>
-<li><a href="tel:+17787090109"><i class="icon-2x icon-phone"></i>&nbsp;GitHub</a></li>
-<li><a href="mailto:liz@undoware.ca"><i class="icon-2x icon-envelope"></i>&nbsp;GitHub</a></li>
+<li><a href="tel:+17787090109"><i class="icon-2x icon-phone"></i>&nbsp;Voicemail</a></li>
+<li><a href="mailto:liz@undoware.ca"><i class="icon-2x icon-envelope"></i>&nbsp;Email</a></li>
 <li><a href="/github/"><i class="icon-github-alt"></i>&nbsp;GitHub</a></li>
 <li><a href="https://twitter.com/undoware/"><i class="icon-twitter"></i>&nbsp;Twitter</a></li>
 <li><a href="https://plus.google.com/117975080165825944609/"><i class="icon-google-plus"></i>&nbsp;Google Plus</a></li>
