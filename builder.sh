@@ -40,7 +40,7 @@ b=$us/build/$document
 pushd $us
 git commit -am 'autocommit'
 wintersmith build
-rsync -av {.couchapprc,_ddoc,app.webapp} $b/
+rsync -av {.couchapprc,_ddoc,app.*} $b/
 pushd $b
 erica push -f --is-ddoc $dest
 popd
