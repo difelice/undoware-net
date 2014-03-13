@@ -37,6 +37,12 @@
           "class": "who"
         }
       },{
+        "href": "/what/",
+        "menu": {
+          "name" : "What",
+          "class": "what"
+        }
+      },{
         "href": "/archive/",
         "menu": {
           "name" : "Archive",
