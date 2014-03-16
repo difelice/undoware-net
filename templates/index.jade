@@ -30,9 +30,9 @@ block append content
               figure.push-rght
                 a(href=article.url)
                   if (article.metadata.alt)
-                    img(src=guesspath(article.metadata.cover),alt=article.metadata.alt)
+                    img.bevel(src=guesspath(article.metadata.cover),alt=article.metadata.alt)
                   else
-                    img(src=guesspath(article.metadata.cover))
+                    img.bevel(src=guesspath(article.metadata.cover))
                 if (article.metadata.caption || article.metadata.credit)
                   figcaption
                     if (article.metadata.caption)

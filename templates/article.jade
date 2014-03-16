@@ -16,9 +16,9 @@ block content
       figure.poster
         a(href=page.metadata.poster)
           if (page.metadata.alt)
-            img(src=page.metadata.poster,alt=page.metadata.alt)
+            img.bevel(src=page.metadata.poster,alt=page.metadata.alt)
           else
-            img(src=page.metadata.poster)
+            img.bevel(src=page.metadata.poster)
         if (page.metadata.caption || page.metadata.credit)
           figcaption
             if (page.metadata.caption)

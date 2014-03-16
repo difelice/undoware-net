@@ -10,7 +10,7 @@ class: who
 
 <figure class="large-50 medium-100 small-100">
 
-<img src="https://undoware-cdn.appspot.com/raster/headshot.jpg" alt="Headshot of Liz Mars">
+<img src="https://undoware-cdn.appspot.com/raster/headshot.jpg" alt="Headshot of Liz Mars" class="bevel">
 <figcaption>
 Liz Mars
 </figcaption>
