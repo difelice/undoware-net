@@ -8,13 +8,6 @@ class: who
 
 <div class="column-group gutters">
 
-<figure class="large-50 medium-100 small-100">
-
-<img src="https://undoware-cdn.appspot.com/raster/headshot.jpg" alt="Headshot of Liz Mars" class="bevel">
-<figcaption>
-Liz Mars
-</figcaption>
-</figure>
 
 <div class="large-50 medium-100 small-100">
 
