@@ -44,10 +44,12 @@ block append content
                         else
                           | !{article.metadata.credit}
               section.push-left
-                | !{ typogr(article.intro).typogrify() }
+                if (article.intro)
+                  | !{ typogr(article.intro).typogrify() }
         else 
           section(class=articleClass)
-            | !{ typogr(article.intro).typogrify() }
+            if (article.intro)
+              | !{ typogr(article.intro).typogrify() }
         if (article.metadata.audio)
           audio(controls,preload="auto")
             source(src=mp3(article.metadata.audio))
