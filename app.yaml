@@ -22,3 +22,6 @@ handlers:
 
 - url: /logic
   static_dir: logic
+
+- url: /encoded
+  static_dir: logic
