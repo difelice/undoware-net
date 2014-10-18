@@ -24,4 +24,4 @@ handlers:
   static_dir: logic
 
 - url: /encoded
-  static_dir: logic
+  static_dir: encoded
