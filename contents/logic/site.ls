@@ -1,9 +1,5 @@
 site-controller = ($scope) ->
-  $scope <<<
-    lswipe: ->
-      console.log "Hello world!"
-    rswipe: ->
-      console.log "Haro world!"
+  console.log "Site initialized"
 
 define <[ ng ]> ->
   angular.module \site <[ logo hr ]>
