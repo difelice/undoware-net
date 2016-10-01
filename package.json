@@ -16,7 +16,6 @@
     "rsyncwrapper": ">=0.0.x",
     "tumblr": ">=0.2.x",
     "twitter": ">=0.2.x",
-    "wintersmith-stylus": ">=0.4.x",
     "wintersmith-ls":   ">=0.0.5",
     "cheerio":            ">=0.12.x",
     "superagent":         ">=0.15.x",
