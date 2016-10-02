@@ -37,6 +37,6 @@ make
 cd -
 git commit -am 'autocommit'
 wintersmith build
-#rsync -av build/undoware/ dist
+rsync -av build/undoware/ uw:~/site/
 ../google_appengine/appcfg.py update build/undoware --oauth2
 
