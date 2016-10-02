@@ -8,7 +8,7 @@ class: resume
 
 #Liz Mars
 
-#### **[liz@undoware.ca](mailto: liz@undoware.ca)**
+#### **[liz@undoware.net](mailto: liz@undoware.net)**
 #### **[Vancouver, Canada](http://goo.gl/maps/CKpCS)**
 
  - Programmer with full-stack experience designing and developing [data-on-the-wire](http://lanyrd.com/2012/djangocon-us/sxbzb) Javascript mobile apps and web apps with Node.js and Angular.Js. 
@@ -16,11 +16,11 @@ class: resume
  - PhD-track postgraduate '[ABD](http://en.wikipedia.org/wiki/All_but_dissertation)' background in [higher-order logic](http://plato.stanford.edu/entries/logic-higher-order/), [metaethics](http://plato.stanford.edu/entries/metaethics/), and [game theory](http://plato.stanford.edu/entries/game-ethics/).
  - [Postgraduate education in cryptography](http://crypto.cs.mcgill.ca).
  - Professional project management experience. 2 years at [University of British Columbia](http://www.ubc.ca) as Web Communications Manager for the [Faculty of Arts](http://www.arts.ubc.ca/).
- - [A passion for user interface and interaction design](https://undoware.ca/) (UX), and [credentials in the field](http://www.cstudies.ubc.ca/a/Course/User-Interface-Design-for-the-Web/IM331/)
+ - [A passion for user interface and interaction design](https://undoware.net/) (UX), and [credentials in the field](http://www.cstudies.ubc.ca/a/Course/User-Interface-Design-for-the-Web/IM331/)
  
 Portfolio of Past Work
 ----------------------
- - [undoware.ca/portfolio](https://undoware.ca/portfolio/)
+ - [undoware.net/portfolio](https://undoware.net/portfolio/)
 
 
 Looking For
@@ -78,10 +78,10 @@ Soft Skills Strengths Assessment
 
 Points of Presence
 -------------------
-- [Undoware.ca](https://undoware.ca/) My blog
-- [Undoware.ca](https://undoware.ca/portfolio) My portfolio
+- [Undoware.net](https://undoware.net/) My blog
+- [Undoware.net](https://undoware.net/portfolio) My portfolio
 - [Hacker News](https://news.ycombinator.com/threads?id=undoware)
 - [github.com/undoware](http://github.com/undoware)
-- [liz@undoware.ca](mailto:liz@undoware.ca)
-_Canonical URI of this Document: [undoware.ca/cv/](http://undoware.ca/cv/)_
+- [liz@undoware.net](mailto:liz@undoware.net)
+_Canonical URI of this Document: [undoware.net/cv/](http://undoware.net/cv/)_
 _Updated Mar 4 2014_

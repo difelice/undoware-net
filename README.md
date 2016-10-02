@@ -1,7 +1,7 @@
-www-undoware-ca
+undoware-net
 ===============
 
-This is the source for undoware.ca, a UX blog powered by Wintersmith, a FOSS Node.js-based static site generator that uses Stylus, Jade, Coffee and Markdown.
+This is the source for undoware.net, a UX blog powered by Wintersmith, a FOSS Node.js-based static site generator that uses Stylus, Jade, Coffee and Markdown.
 
 Everything is under the MIT license, with two exceptions:
 
