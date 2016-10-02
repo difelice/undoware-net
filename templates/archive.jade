@@ -2,7 +2,7 @@
 extends page
 
 block append head
- title "Archive - Undoware.ca"
+ title "Archive - Undoware.net"
 
 block append header
   h2
@@ -11,7 +11,7 @@ block append header
 //- this logic should be moved to a view at some point
 
 block content
-  - var archive = _.chain(env.helpers.getArticles(contents)).groupBy(function(item) {
+  - var archive = _.chain(env.helpers.getArticles(contents)).filter(function(item) { return !!item; }).groupBy(function(item) {
   -   return item.date.getFullYear()
   - }).value()
   - var map = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
@@ -31,6 +31,7 @@ block content
               li.month
                 h2.month-label(class=(lastM?'last':'')) #{month}
                 each article, i in articles
+                  - if (!article) break;
                   - var lastA = lastM && (articles.length - 1 == i);
                   h3.archive-entry
                     if (article.metadata.thumbnail)

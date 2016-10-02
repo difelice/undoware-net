@@ -1,38 +1,39 @@
 {
   "dependencies": {
-    "moment": ">=2.x",
-    "underscore": ">=1.4.x",
-    "typogr": ">=0.5.x",
-    "livescript": ">=1.2.x",
-    "prelude-ls": ">=1.0.x",
-    "jade": ">=0.7.x",
-    "stylus": ">=0.33.x",
-    "nib": ">=0.9.x",
-    "wintersmith": ">=2.0.x",
-    "wintersmith-perian": ">=0.0.3",
+    "async": ">=0.2.x",
     "bower": ">=0.9.x",
+    "cheerio": ">=0.12.x",
     "commander": ">=2.0.x",
     "googleapis": ">=0.2.x",
+    "jade": ">=0.7.x",
+    "livescript": ">=1.2.x",
+    "moment": ">=2.x",
+    "nib": ">=0.9.x",
+    "optimist": ">=0.6.x",
+    "prelude-ls": ">=1.0.x",
+    "q": ">=0.9.x",
     "rsyncwrapper": ">=0.0.x",
+    "socket.io": ">=0.9.x",
+    "stylus": ">=0.33.x",
+    "superagent": ">=0.15.x",
     "tumblr": ">=0.2.x",
     "twitter": ">=0.2.x",
-    "wintersmith-ls":   ">=0.0.5",
-    "cheerio":            ">=0.12.x",
-    "superagent":         ">=0.15.x",
-    "socket.io":          ">=0.9.x",
-    "async":              ">=0.2.x",
-    "q":                  ">=0.9.x",
-    "optimist":           ">=0.6.x"
+    "typogr": ">=0.5.x",
+    "underscore": ">=1.4.x",
+    "wintersmith": ">=2.0.x",
+    "wintersmith-ls": ">=0.0.5",
+    "wintersmith-pandoc": "^0.2.3",
+    "wintersmith-perian": ">=0.0.3"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/undoware/www-undoware-ca"
+    "url": "https://github.com/liz-mars/undoware"
   },
-  "devDependencies":      {
-    "debug":                  ">=0.7.2",
-    "karma":                  ">=0.10.x",
-    "karma-jasmine":          ">=0.1.x",
-    "sinon":                  ">=1.7.x",
-    "jasmine-node":           ">=1.11.x"
+  "devDependencies": {
+    "debug": ">=0.7.2",
+    "karma": ">=0.10.x",
+    "karma-jasmine": ">=0.1.x",
+    "sinon": ">=1.7.x",
+    "jasmine-node": ">=1.11.x"
   }
 }

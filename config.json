@@ -2,7 +2,7 @@
   "output": "build/undoware/",
   "locals": {
     "gplus": "https://plus.google.com/u/1/117975080165825944609",
-    "author": "https://undoware.ca/who/",
+    "author": "https://undoware.net/who/",
     "path": {
       "css" : "style",
       "js"  : "logic",
@@ -21,11 +21,11 @@
       "avi" : "encoded",
       "flac" : "encoded"
     },
-    "base":     "https://undoware.ca",
-    "ownurl":   "https://undoware.ca",
+    "base":     "https://undoware.net",
+    "ownurl":   "https://undoware.net",
     "owner":    "Liz Mars",
-    "ownemail":    "liz@undoware.ca (Liz Mars)",
-    "name":     "Undoware.ca",
+    "ownemail":    "ms.liz.mars@gmail.com (Liz Mars)",
+    "name":     "Undoware.net",
     "cdn":      "https://undoware-cdn.appspot.com",
     "description": "for the net is dark and full of errors",
     "language": { "code": "en-CA", "name": "English" },
@@ -86,7 +86,8 @@
   "plugins": [
       "./plugins/paginator.coffee",
       "wintersmith-ls",
-      "wintersmith-stylus"
+      "wintersmith-stylus",
+      "wintersmith-pandoc"
   ],
   "require": {
     "moment": "moment",

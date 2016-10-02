@@ -23,6 +23,7 @@ rss(version='2.0',
     generator Wintersmith - https://github.com/jnordberg/wintersmith
     language en
     for article in articles
+      - if (!article) break;
       - var permalink = locals.base + article.url
       item
         title= article.title

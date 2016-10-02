@@ -1,0 +1,3 @@
+[submodule "contents/articles"]
+	path = contents/articles
+	url = git@bitbucket.org:lizmars/articles-uw.git
