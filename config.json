@@ -1,5 +1,5 @@
 {
-  "output": "build/undoware/",
+  "output": "dist/",
   "locals": {
     "gplus": "https://plus.google.com/u/1/117975080165825944609",
     "author": "https://undoware.net/who/",
