@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en-CA" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <!-- logic.jade-->
+    <!-- global vars: ugly, yet effective--><script>
+      require          = {"paths":{"ng":"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min","ng-touch":"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-touch","site":"https://undoware-cdn.appspot.com/logic/site","logo":"https://undoware-cdn.appspot.com/logic/logo","hr":"https://undoware-cdn.appspot.com/logic/hr"},"deps":["ng","site","logo","hr"]};
+      require.baseUrl  = "/logic";
+      require.callback = function(ng) {
+        angular.bootstrap(document.getElementById('body'), ['site']);
+      };
+    </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- meta.jade. TODO FIXME this is trending spaghettiwards. Break up into interests based on source of pain, e.g. opengraph, google plus, hcard, etc.-->
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content=" initial-scale=0.7,maximum-scale=0.8,user-scalable=1">
+    <meta name="web_author" content="Liz Mars">
+    <meta name="language" content="English">
+    <meta name="dc.language" content="en-CA">
+    <meta name="language" content="English">
+    <meta name="dc.language" content="en-CA">
+    <meta name="robots" content="all">
+    <meta name="reply-to" content="liz@undoware.net">
+    <meta property="og:type" content="blog">
+    <meta name="dc.keywords" content="Human Rights, UX, Technology, Politics">
+    <meta name="dc.subject" content="Technology Ethics">
+    <meta property="og:site_name" content="Undoware.net">
+    <meta name="twitter:domain" content="undoware.net">
+    <meta name="twitter:site" content="@Undoware">
+    <meta name="twitter:creator" content="@Undoware">
+    <meta name="copyright" content="Undoware.net">
+    <meta property="og:title" content="Undoware.net">
+    <meta name="name" content="Undoware.net">
+    <!--# /* Generate permalink URL for this page.  */-->
+    <meta property="og:url" content="https://undoware.net">
+    <meta name="twitter:url" content="https://undoware.net">
+    <meta name="dc.source" content="https://undoware.net">
+    <!--# /* Generate the social media image for this page. If one isn't found, use a default. */-->
+    <meta property="og:image" content="https://undoware-cdn.appspot.com/raster/icon-256.png">
+    <meta name="twitter:image:src" content="https://undoware-cdn.appspot.com/raster/icon-256.png">
+    <meta itemprop="image" content="https://undoware-cdn.appspot.com/raster/icon-256.png">
+    <!--# /* Put a desc of this page everywhere it needs to be */-->
+    <meta property="og:description" content="for the net is dark and full of errors">
+    <meta name="twitter:description" content="for the net is dark and full of errors">
+    <meta name="description" content="for the net is dark and full of errors">
+    <meta itemprop="description" content="for the net is dark and full of errors">
+    <meta property="og:title" content="Undoware.net">
+    <meta name="twitter:title" content="Undoware.net">
+    <meta name="name" content="Undoware.net">
+    <link rel="sitemap" href="https://undoware.net/sitemap.xml">
+    <link rel="author" href="https://undoware.net/who/">
+    <link rel="profile" href="http://microformats.org/profile/hcard">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400italic,700,700italic|Source+Sans+Pro:300,300italic,700,7700italic" charset="utf-8">
+    <!-- icon.jade-->
+    <link rel="icon" href="https://undoware-cdn.appspot.com/vector/icon.svg">
+    <link rel="favicon" href="https://undoware-cdn.appspot.com/raster/icon.png">
+    <link rel="image_src" href="https://undoware-cdn.appspot.com/vector/icon.svg">
+    <link rel="apple-touch-icon" href="https://undoware-cdn.appspot.com/vector/icon.svg">
+    <link rel="shortcut icon" type="image/png" sizes="57x57" href="https://undoware-cdn.appspot.com/raster/icon-57.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="https://undoware-cdn.appspot.com/raster/icon-57.png">
+    <link rel="shortcut icon" type="image/png" sizes="72x72" href="https://undoware-cdn.appspot.com/raster/icon-72.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="https://undoware-cdn.appspot.com/raster/icon-72.png">
+    <link rel="shortcut icon" type="image/png" sizes="114x114" href="https://undoware-cdn.appspot.com/raster/icon-114.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="https://undoware-cdn.appspot.com/raster/icon-114.png">
+    <!-- style.jade-->
+    
+        <link href="/style/ink-min.css" rel="stylesheet" type="text/css" charset="utf-8">
+        <link href="/style/main.css" rel="stylesheet" type="text/css" charset="utf-8">
+    <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="for the net is dark and full of errors">
+    <title>Undoware.net
+    </title>
+  </head>
+  <body id="body" ng-controller="Site" class="ink-grid body">
+    <div id="page">
+      <header role="heading" class="area header"> <!--[if IE]><div style='clear: both; padding:0; position:absolute; right:0; z-index:1'><a href="/ie-sunset-notice.html"><img src="/raster/iecountdown.png" border="0" height="83" alt="" /></a></div><![endif]-->
+
+        <!--command zee-bra, get it? Just some decoration-->
+        <div id="zebra"></div>
+        <div class="column-group top-nav">
+          <div class="logo-block push-left large-25 small-25">
+            <div class="chop">
+              <!--todo figure out why angular logo module falls down here--><a href="/"><img src="https://undoware-cdn.appspot.com/vector/logo.svg" alt="logo"></a>
+            </div>
+            <div class="logotype">
+              <h1><span id="logo" class="logo">UND↺WARE</span></h1><em class="slogan"><a href="/what/">for the net is dark and full of errors</a></em>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="/who/">Who</a></li>
+              <li><a href="/what/">What</a></li>
+              <li><a href="/when/">When</a></li>
+              <li><!-- don't forget title attributes, or icon fonts are accessibility nightmare.
+                <Also>these non-breaking spaces were handy for prototyping but are kludgey for production, TODO FIXME --></Also><a href="https://twitter.com/undoware" title="on Twitter"><i class="icon-twitter">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></a><a href="/feed.xml" title="RSS Feed"><i class="icon-rss">&nbsp;&nbsp;</i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main role="main" class="area main">
+        <article class="intro story">
+          <header>
+            <h2><a href="/articles/radical-humanism/">Radical Humanism</a></h2>
+            <h4 class="date">Tuesday 2014-02-11 16:00 -08:00</h4>
+            <h4>from the pivot dept.</h4>
+          </header>
+          <section class="story"><p>As part of the change discussed in my previous post, Undoware – this blog – is now focused on the relationship between technology and the culture, rather than just technology and the user. We are expanding into territory that calls for different tools of<span class="widont">&nbsp;</span>analysis.</p>
+<p>Poems, fiction, art, sketches, and composition are all now fair game. Those of you with an allergy to these will need to find another<span class="widont">&nbsp;</span>blog.</p>
+<p>I will try to showcase not only my own work, but occasionally also the work of others, as well as links to anything interesting seen elsewhere. We will pay especially close attention to cryptography, Open Source, writing, politics, music, and<span class="widont">&nbsp;</span>gender.</p>
+<p>I will also be adding a portfolio of my work specifically, including past failures. I have recently come around to the view that most failures occur because a previous failure was either misunderstood, or the wrong lessons were taken from it, often out of the anxiety and shame that necessarily follow failure. Addressing these emotions also helps avoid future<span class="widont">&nbsp;</span>error.</p>
+
+          </section>
+          <footer><span class="zcommand">&nbsp;</span>
+          </footer>
+        </article>
+        <article class="intro story">
+          <header>
+            <h2><a href="/articles/snowden-ux-ia/">Snowden, Usability, and Institutional Analysis</a></h2>
+            <h4 class="date">Friday 2014-01-24 16:00 -08:00</h4>
+            <h4>from the pivot dept.</h4>
+          </header>
+          <section class="column-group story">
+            <figure class="push-rght"><a href="/articles/snowden-ux-ia/"><img src="https://undoware-cdn.appspot.com/raster/snowden-cover.jpg" alt="A landscape photo of a protest in Germany, where several people are wearing Chelsea Manning and Edward Snowden masks." class="bevel"></a>
+              <figcaption>
+                <h5 class="caption">A landscape photo of a protest in Germany, where several people are wearing Chelsea Manning and Edward Snowden masks.</h5>
+                <h6 class="credit">Mike Herbst (Berlin, Germany) for Wikimedia Commons, CC Attribution Sharealike 2.0 Unported
+                </h6>
+              </figcaption>
+            </figure>
+            <section class="push-left"><p>It’s been over half a year since my previous<span class="widont">&nbsp;</span>post.</p>
+<p>I was going to tell you about the drive crash I had last summer, and how it wiped me out for a few months (never trust your backups, ever!) But the real reason I stopped writing is irrelevance. Let me<span class="widont">&nbsp;</span>explain.</p>
+<p>When I started this blog, I wanted to promote usability advances. But while important, these don’t interest me nearly as much as what I began privately calling ‘socio-usability’, or the study of how usability is already being used to further specific policy goals. I read <em><a href="http://www.amazon.com/The-Dictators-Learning-Curve-Democracy/dp/030747755X">The Dictator’s Learning Curve</a></em>, and independently began learning about <a href="http://en.wikipedia.org/wiki/Institutional_analysis">institutional analysis</a>. Thus I realized that ‘socio-usability’ already had a<span class="widont">&nbsp;</span>name.</p>
+<p>And then Chelsea Manning’s trial happened. And the Snowden <span class="caps">NSA</span> revelations happened, and kept happening, like an enormous tuning fork of horror, ringing out its totalitarian message throughout the newfallen darkness. It took out <a href="https://groklaw.net">groklaw</a>, and I guess, in a much less noble way, myself as well. I stopped writing because I realized my whole chosen topic was beside the<span class="widont">&nbsp;</span>point.</p>
+<p>I realized then that I needed to write about the relationship between social control, convenience, and user interface design. This field, when it does not specifically involve computer user interfaces, is called <em>institutional analysis</em>. Although it is standardly not interested in the works of traditional usability—it has roots in activism rather than captialism—it should be. It and <span class="caps">UX</span> theory have much to teach each other. I want to help with<span class="widont">&nbsp;</span>this.</p>
+<p>I am also lucky enough to be working professionally in the <span class="caps">NSA</span> mitigation field: post-Snowden, my employer (who is, like me, Canadian) requested that I move several key systems in-house. I now make my bread improvising solutions to the massive holes the <span class="caps">NSA</span> has drilled in the network’s security system. This makes me proud, but also vividly aware of the significance of Snowden’s<span class="widont">&nbsp;</span>revelations.</p>
+<p>Originally, this blog was concerned with one thing: The interface between humans and computers. But now we will open the spotlight slightly. We now focus on the <em>relationship</em> between <em>humanity</em> and computers. Call this ‘<span class="caps">HCR</span>’ if you like, but it’s really just institutional analysis, but pointed at the most contemporary manifestation of bureaucracy. This is a much more important conversation to have right now than traditional <span class="caps">HCI</span>. Who gives a crap how easily I can apply one of twenty-six distinct photographic effects to my Instagram snapshots, when it has just been announced that it is the <span class="caps">NSA</span> that is compiling the yearbook? Who wants to be the next <a href="http://en.wikipedia.org/wiki/Maher_Arar">Arar</a>? We know now that the shenanigans begun by that administration continue uninterrupted. ‘Hope’<span class="widont">&nbsp;</span>indeed.</p>
+<p>Going forward, we have one agenda, one single article of faith: the network must be usable <em>by humans</em>. And human beings have human rights. Like privacy. Like personal<span class="widont">&nbsp;</span>security.</p>
+<p>I’m with the leakers–and so are your interests, citizen, no matter what your personal politics might be.<span class="widont">&nbsp;</span>Onward.</p>
+
+            </section>
+          </section>
+          <footer><span class="zcommand">&nbsp;</span>
+          </footer>
+        </article>
+        <article class="intro story">
+          <header>
+            <h2><a href="/articles/avoiding-tragedy-1998/">Avoiding the Tragedy of the Open Source Commons (1997)</a></h2>
+            <h4 class="date">Monday 2013-07-29 23:01 -07:00</h4>
+            <h4>from the naked-baby-photos dept.</h4>
+          </header>
+          <section class="story"><p><a href="http://slashdot.org/features/older/9806121215257.shtml">I wrote an editorial that got published on Slashdot in 1998</a>, the year I left home for university. It was vaguely in reply <a href="http://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar">to something Eric S Raymond</a> wrote. (<span class="caps">IIRC</span>, he<span class="widont">&nbsp;</span>replied!)</p>
+<p>My writing has mercifully improved, but you know what? I spotted something important, way back then: the incentives of Open Source favour endless forking. Fortunately, with the advent of git, forking became much cheaper for a <span class="caps">FOSS</span> project to deal with, as git makes patches easier to upstream. The huge glut of developers that emerged in the early ’00s also alleviated any developer scarcity brought about by ego-incentives. Thus the doom portended did not in fact tend. (Or<span class="widont">&nbsp;</span>whatever.)</p>
+<p>The full text, in all its adolescent glory, after the<span class="widont">&nbsp;</span>jump.</p>
+<hr />
+
+          </section>
+          <footer><a href="/articles/avoiding-tragedy-1998/">⋯</a>
+          </footer>
+        </article>
+      </main>
+      <footer role="complementary" class="area footer">
+        <ul id="vcard" class="vcard">
+          <li class="tel">+1-778-374-3355</li>
+          <li class="org">Undoware</li>
+          <li class="fn"> Elizabeth Marston</li>
+          <li class="url">https://undoware.net/</li>
+          <li class="email">liz@undoware.net</li>
+          <li>
+            <ul class="adr">
+              <li class="locality">Vancouver</li>
+              <li class="region">British Columbia</li>
+              <li class="country-name">Canada</li>
+            </ul>
+          </li>
+        </ul><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38326234-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+        <menu class="nav"><span style="text-align:center;"><a href="/page/4/"> <i class="icon-2x icon-arrow-left">&nbsp;&nbsp;</i></a></span><a href="/"><i class="icon-2x icon-home">&nbsp;&nbsp;</i></a><span style="text-align:center;"><a href="/page/2/"><i class="icon-2x icon-arrow-right">&nbsp;</i></a></span>
+        </menu>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en-CA" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <!-- logic.jade-->
+    <!-- global vars: ugly, yet effective--><script>
+      require          = {"paths":{"ng":"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min","ng-touch":"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-touch","site":"https://undoware-cdn.appspot.com/logic/site","logo":"https://undoware-cdn.appspot.com/logic/logo","hr":"https://undoware-cdn.appspot.com/logic/hr"},"deps":["ng","site","logo","hr"]};
+      require.baseUrl  = "/logic";
+      require.callback = function(ng) {
+        angular.bootstrap(document.getElementById('body'), ['site']);
+      };
+    </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- meta.jade. TODO FIXME this is trending spaghettiwards. Break up into interests based on source of pain, e.g. opengraph, google plus, hcard, etc.-->
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content=" initial-scale=0.7,maximum-scale=0.8,user-scalable=1">
+    <meta name="web_author" content="Liz Mars">
+    <meta name="language" content="English">
+    <meta name="dc.language" content="en-CA">
+    <meta name="language" content="English">
+    <meta name="dc.language" content="en-CA">
+    <meta name="robots" content="all">
+    <meta name="reply-to" content="liz@undoware.net">
+    <meta property="og:type" content="blog">
+    <meta name="dc.keywords" content="Human Rights, UX, Technology, Politics">
+    <meta name="dc.subject" content="Technology Ethics">
+    <meta property="og:site_name" content="Undoware.net">
+    <meta name="twitter:domain" content="undoware.net">
+    <meta name="twitter:site" content="@Undoware">
+    <meta name="twitter:creator" content="@Undoware">
+    <meta name="copyright" content="Undoware.net">
+    <meta property="og:title" content="Undoware.net">
+    <meta name="name" content="Undoware.net">
+    <!--# /* Generate permalink URL for this page.  */-->
+    <meta property="og:url" content="https://undoware.net/portfolio/">
+    <meta name="twitter:url" content="https://undoware.net/portfolio/">
+    <meta name="dc.source" content="https://undoware.net/portfolio/">
+    <!--# /* Generate the social media image for this page. If one isn't found, use a default. */-->
+    <meta property="og:image" content="https://undoware-cdn.appspot.com/raster/icon-256.png">
+    <meta name="twitter:image:src" content="https://undoware-cdn.appspot.com/raster/icon-256.png">
+    <meta itemprop="image" content="https://undoware-cdn.appspot.com/raster/icon-256.png">
+    <!--# /* Put a desc of this page everywhere it needs to be */-->
+    <meta property="og:description" content="for the net is dark and full of errors">
+    <meta name="twitter:description" content="for the net is dark and full of errors">
+    <meta name="description" content="for the net is dark and full of errors">
+    <meta itemprop="description" content="for the net is dark and full of errors">
+    <meta property="og:title" content="Untitled">
+    <meta name="twitter:title" content="Untitled">
+    <meta name="name" content="Untitled">
+    <link rel="sitemap" href="https://undoware.net/sitemap.xml">
+    <link rel="author" href="https://undoware.net/who/">
+    <link rel="profile" href="http://microformats.org/profile/hcard">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400italic,700,700italic|Source+Sans+Pro:300,300italic,700,7700italic" charset="utf-8">
+    <!-- icon.jade-->
+    <link rel="icon" href="https://undoware-cdn.appspot.com/vector/icon.svg">
+    <link rel="favicon" href="https://undoware-cdn.appspot.com/raster/icon.png">
+    <link rel="image_src" href="https://undoware-cdn.appspot.com/vector/icon.svg">
+    <link rel="apple-touch-icon" href="https://undoware-cdn.appspot.com/vector/icon.svg">
+    <link rel="shortcut icon" type="image/png" sizes="57x57" href="https://undoware-cdn.appspot.com/raster/icon-57.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="https://undoware-cdn.appspot.com/raster/icon-57.png">
+    <link rel="shortcut icon" type="image/png" sizes="72x72" href="https://undoware-cdn.appspot.com/raster/icon-72.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="https://undoware-cdn.appspot.com/raster/icon-72.png">
+    <link rel="shortcut icon" type="image/png" sizes="114x114" href="https://undoware-cdn.appspot.com/raster/icon-114.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="https://undoware-cdn.appspot.com/raster/icon-114.png">
+    <!-- style.jade-->
+    
+        <link href="/style/ink-min.css" rel="stylesheet" type="text/css" charset="utf-8">
+        <link href="/style/main.css" rel="stylesheet" type="text/css" charset="utf-8">
+    <title>Untitled - Undoware.net
+    </title>
+  </head>
+  <body id="body" ng-controller="Site" class="ink-grid portfolio">
+    <div id="page">
+      <header role="heading" class="area header"> <!--[if IE]><div style='clear: both; padding:0; position:absolute; right:0; z-index:1'><a href="/ie-sunset-notice.html"><img src="/raster/iecountdown.png" border="0" height="83" alt="" /></a></div><![endif]-->
+
+        <!--command zee-bra, get it? Just some decoration-->
+        <div id="zebra"></div>
+        <div class="column-group top-nav">
+          <div class="logo-block push-left large-25 small-25">
+            <div class="chop">
+              <!--todo figure out why angular logo module falls down here--><a href="/"><img src="https://undoware-cdn.appspot.com/vector/logo.svg" alt="logo"></a>
+            </div>
+            <div class="logotype">
+              <h1><span id="logo" class="logo">UND↺WARE</span></h1><em class="slogan"><a href="/what/">for the net is dark and full of errors</a></em>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="/who/">Who</a></li>
+              <li><a href="/what/">What</a></li>
+              <li><a href="/when/">When</a></li>
+              <li><!-- don't forget title attributes, or icon fonts are accessibility nightmare.
+                <Also>these non-breaking spaces were handy for prototyping but are kludgey for production, TODO FIXME --></Also><a href="https://twitter.com/undoware" title="on Twitter"><i class="icon-twitter">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></a><a href="/feed.xml" title="RSS Feed"><i class="icon-rss">&nbsp;&nbsp;</i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main role="main" class="area main">
+        <h2>Portfolio Index</h2>
+        <p>This is a portfolio my previous work: writing, websites, code, mostly. Read the description to find out what roles I played on the relevant teams.</p>
+        <div class="thumbnails"><a href="#phil101"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/uic.jpg"></a><a href="#rightweb"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/rightweb.png"></a><a href="#arts"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/arts.png"></a><a href="#artswire"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/artswire.png"></a><a href="#femininjas"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/femininjas.png"></a><a href="#persistence"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/persistence.png"></a><a href="#sublime"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/sublime.png"></a><a href="#hi-script"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/hi-script.png"></a><a href="#truedirections"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/truedirections.png"></a><a href="#novatel"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/novatel.png"></a><a href="#vthc"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/vthc.png"></a><a href="#orca"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/orca.png"></a><a href="#modo"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/modo.png"></a><a href="#melady"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/melady.png"></a><a href="#devops"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/devops.png"></a><a href="#undoware"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/undoware.png"></a><a href="#lookup"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/lookup.png"></a><a href="#stock"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/stock.png"></a><a href="#medextra"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/medextra.png"></a><a href="#nucleus"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/nucleus.jpg"></a><a href="#autobill"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/autobill.png"></a><a href="#shameless"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/shameless.png"></a><a href="#send"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/send.png"></a><a href="#wintersmith"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/wintersmith-ls.png"></a><a href="#narcissuss"><img src="https://undoware-cdn.appspot.com/raster/gallery/tiny/narcisuss.jpg"></a>
+        </div>
+        <h2>Portfolio</h2>
+        <article class="gallery phil101">
+          <header><a id="phil101">&nbsp;</a>
+            <h2><a href="http://philosophy.las.uic.edu/">University of Illinois Phil 101 (taught)</a>
+            </h2>
+            <h4 class="date">2007-06-01</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="http://philosophy.las.uic.edu/"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/uic.jpg" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="http://philosophy.las.uic.edu/"><p>I taught Philosophy 100 in the summer of 2007 at the University of Illinois at Chicago. I taught a class of about 40 students without assistance, using <span class="caps">FOSS</span> and public domain learning<span class="widont">&nbsp;</span>materials.</p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery rightweb">
+          <header><a id="rightweb">&nbsp;</a>
+            <h2><a href="http://www.rightweb.irc-online.org/">RightWeb</a>
+            </h2>
+            <h4 class="date">2008-07-01</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="http://www.rightweb.irc-online.org/"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/rightweb.png" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="http://www.rightweb.irc-online.org/"><p>Wrote several articles for an online publication diagramming right wing think tank<span class="widont">&nbsp;</span>relationships.</p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery arts">
+          <header><a id="arts">&nbsp;</a>
+            <h2><a href="http://www.arts.ubc.ca">www.arts.ubc.ca</a>
+            </h2>
+            <h4 class="date">2008-08-01</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="http://www.arts.ubc.ca"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/arts.png" alt="www.arts.ubc.ca" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="http://www.arts.ubc.ca"><p>I conceived, designed and <span class="caps">UX</span>-tested the Faculty of Arts main website (2008-10). This project preciptated my first formal encounter with <span class="caps">UX</span> and sparked my current<span class="widont">&nbsp;</span>obsession. </p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery artswire">
+          <header><a id="artswire">&nbsp;</a>
+            <h2><a href="http://wire.arts.ubc.ca/">ArtsWire</a>
+            </h2>
+            <h4 class="date">2009-01-01</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="http://wire.arts.ubc.ca/"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/artswire.png" alt="ArtsWire website" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="http://wire.arts.ubc.ca/"><p>I conceived, created, edited and wrote a news publication at the Fauclty of Arts at <span class="caps">UBC</span>. Since my responsibilities included managing the web development team (and overseeing about twenty web development projects) I didn&#39;t always get a chance to write, so I oversaw several student staffers who wrote<span class="widont">&nbsp;</span>content.</p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery femininjas">
+          <header><a id="femininjas">&nbsp;</a>
+            <h2><a href="https://undoware-cdn.appspot.com/vector/femininjas.pdf">Femininjas</a>
+            </h2>
+            <h4 class="date">2009-06-15</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="https://undoware-cdn.appspot.com/vector/femininjas.pdf"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/femininjas.png" alt="Femininjas inclusivity pamphlet" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="https://undoware-cdn.appspot.com/vector/femininjas.pdf"><p>Femininjas was an activist group concerned with equality and access for all members of the queer community. We also published several brochures (InDesign) of which this is a<span class="widont">&nbsp;</span>sample.</p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery persistence">
+          <header><a id="persistence">&nbsp;</a>
+            <h2><a href="http://www.arsenalpulp.com/bookinfo.php?index=338">Persistence</a>
+            </h2>
+            <h4 class="date">2011-06-01</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="http://www.arsenalpulp.com/bookinfo.php?index=338"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/persistence.png" alt="Persistence: All Ways Butch and Femme" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="http://www.arsenalpulp.com/bookinfo.php?index=338"><p>Published informal essay in <em>Persistence</em> regarding gender<span class="widont">&nbsp;</span>politics</p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery sublime">
+          <header><a id="sublime">&nbsp;</a>
+            <h2><a href="sublime/">Sublime Conception</a>
+            </h2>
+            <h4 class="date">2011-08-11</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="sublime/"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/sublime.png" alt="sublimeconception.com" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="sublime/"><p>sublimeconception.ca was a brief collaboration between myself and another web<span class="widont">&nbsp;</span>developer.</p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery hi-script">
+          <header><a id="hi-script">&nbsp;</a>
+            <h2><a href="https://github.com/undoware/hi-script">Hi-Script</a>
+            </h2>
+            <h4 class="date">2012-01-08</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="https://github.com/undoware/hi-script"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/hi-script.png" alt="github.com/undoware/hi-script/" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="https://github.com/undoware/hi-script"><p>Hi-Script is a mothballed language project. I may recommence it if I have time. It features some cutting-edge features, and upcycles <span class="caps">HTTP</span> idioms into a Forth-like syntax. I basically read a paper linked to from Lambda the Ultimate (a Programming Language research blog) and spent twelve weeks lost in the most beautiful abstractions. The <span class="caps">BNF</span> is solid and tested (and works with pencil and paper) but the implementation was waiting for generators and yield statements to show up in Node.js. (They are now in the unstable branch, so there is no blocker to resuming this project.) Lately, though, I&#39;ve realized that LiveScript (livescript.net) is the best &#39;little language&#39; for the work I do, so my attentions have gone there<span class="widont">&nbsp;</span>instead.</p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery truedirections">
+          <header><a id="truedirections">&nbsp;</a>
+            <h2><a href="https://undoware-cdn.appspot.com/raster/gallery/full/truedirections.png">truedirections.ca</a>
+            </h2>
+            <h4 class="date">2012-01-11</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="https://undoware-cdn.appspot.com/raster/gallery/full/truedirections.png"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/truedirections.png" alt="truedirections.ca" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="https://undoware-cdn.appspot.com/raster/gallery/full/truedirections.png"><p>A website donated to a theatre troupe. Features Concrete5 (concrete5.org) based <span class="caps">CMS</span>. Design<span class="widont">&nbsp;</span>provided. </p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery novatel">
+          <header><a id="novatel">&nbsp;</a>
+            <h2><a href="novatel.diff">Novatel patch for Linux kernel</a>
+            </h2>
+            <h4 class="date">2012-03-01</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="novatel.diff"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/novatel.png" alt="novatel.diff" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="novatel.diff"><p>This trivial patch was successfully contributed to the linux kernel project. Because when <span class="caps">LTE</span> came to Telus Mobility Canada, it didn&#39;t come to Linux until I patched the kernel to support the Canada-specific <span class="caps">LTE</span> <span class="caps">USB</span> stick provided by<span class="widont">&nbsp;</span>Telus.</p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery vthc">
+          <header><a id="vthc">&nbsp;</a>
+            <h2><a href="https://undoware-cdn.appspot.com/raster/gallery/full/vthc.png">vthc.ca</a>
+            </h2>
+            <h4 class="date">2012-06-01</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="https://undoware-cdn.appspot.com/raster/gallery/full/vthc.png"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/vthc.png" alt="vthc.ca" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="https://undoware-cdn.appspot.com/raster/gallery/full/vthc.png"><p>Website created for a nonexistent activist group meant to supplement access to health care for all members of the queer and trans<span class="widont">&nbsp;</span>communities. </p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery orca">
+          <header><a id="orca">&nbsp;</a>
+            <h2><a href="https://undoware-cdn.appspot.com/raster/gallery/full/orca.png">orcaproductions.ca</a>
+            </h2>
+            <h4 class="date">2012-11-01</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="https://undoware-cdn.appspot.com/raster/gallery/full/orca.png"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/orca.png" alt="orcaproductions.ca" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="https://undoware-cdn.appspot.com/raster/gallery/full/orca.png"><p>Website produced for  Fletcher Designs. Design provided. Features Angular.js and a Concrete5-based <span class="caps">LAMP</span><span class="widont">&nbsp;</span>backend.</p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery modo">
+          <header><a id="modo">&nbsp;</a>
+            <h2><a href="https://undoware-cdn.appspot.com/raster/gallery/small/modo.gif">Modo</a>
+            </h2>
+            <h4 class="date">2012-11-01</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="https://undoware-cdn.appspot.com/raster/gallery/small/modo.gif"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/modo.gif" alt="modo.coop" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="https://undoware-cdn.appspot.com/raster/gallery/small/modo.gif"><p>This failed project was to bring a mobile web app to Modo, Vancouver&#39;s car co-op. However, the project was too ambitious, and we had a comprehensive spec that the client refused to alter. Eventually, we had to fire the client. Which is a shame, because this project was awesome. We created a Sencha Touch based app was years ahead of its time, boasting features that only later became possible with the release of jQuery Mobile (which was then in early alpha.) We also had a full <span class="caps">REST</span> <span class="caps">API</span> and a custom <span class="caps">PHP</span> <span class="caps">API</span> framework to support<span class="widont">&nbsp;</span>it. </p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery melady">
+          <header><a id="melady">&nbsp;</a>
+            <h2><a href="https://undoware-cdn.appspot.com/raster/gallery/full/melady.png">drmeladypreece.com</a>
+            </h2>
+            <h4 class="date">2012-11-01</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="https://undoware-cdn.appspot.com/raster/gallery/full/melady.png"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/melady.png" alt="drmeladypreece.com" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="https://undoware-cdn.appspot.com/raster/gallery/full/melady.png"><p>Website for a local professional. Features an original theme, Angular.js, and a Concrete5-based <span class="caps">CMS</span> backend atop the <span class="caps">LAMP</span><span class="widont">&nbsp;</span>stack. </p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery devops">
+          <header><a id="devops">&nbsp;</a>
+            <h2><a href="https://undoware-cdn.appspot.com/raster/gallery/full/devops.png">DevOps (@MedExtra)</a>
+            </h2>
+            <h4 class="date">2013-01-02</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="https://undoware-cdn.appspot.com/raster/gallery/full/devops.png"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/devops.png" alt="" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="https://undoware-cdn.appspot.com/raster/gallery/full/devops.png"><p>I maintain several instances across a heterogenous environment featuring multiple <span class="caps">UNIX</span> variants, multiple legacy Windows variants (incl. a full <span class="caps">AD</span> Windows Server installation) and a constellation of router and <span class="caps">VPN</span> access devices. This infrastructure features bank-grade security, CouchDB multi-master replication, several web apps (including two bespoke apps) as well as two full-service mail<span class="widont">&nbsp;</span>servers.</p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery undoware">
+          <header><a id="undoware">&nbsp;</a>
+            <h2><a href="https://github.com/undoware/www-undoware-ca">Undoware.net</a>
+            </h2>
+            <h4 class="date">2013-01-05</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="https://github.com/undoware/www-undoware-ca"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/undoware.png" alt="Undoware.net" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="https://github.com/undoware/www-undoware-ca"><p>undoware.net is a personal blog that focuses on the relationship between culture and technology, but in a good<span class="widont">&nbsp;</span>way. </p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery lookup">
+          <header><a id="lookup">&nbsp;</a>
+            <h2><a href="https://undoware-cdn.appspot.com/raster/gallery/full/lookup.png">lookup.app</a>
+            </h2>
+            <h4 class="date">2013-01-11</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="https://undoware-cdn.appspot.com/raster/gallery/full/lookup.png"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/lookup.png" alt="lookup.app" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="https://undoware-cdn.appspot.com/raster/gallery/full/lookup.png"><p>This app provides lookup and storage for inbound messages from<span class="widont">&nbsp;</span>medextra.com</p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery stock">
+          <header><a id="stock">&nbsp;</a>
+            <h2><a href="https://undoware-cdn.appspot.com/raster/gallery/full/stock.png">stock</a>
+            </h2>
+            <h4 class="date">2013-01-12</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="https://undoware-cdn.appspot.com/raster/gallery/full/stock.png"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/stock.png" alt="github.com/undoware/stock/" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="https://undoware-cdn.appspot.com/raster/gallery/full/stock.png"><p>Stock is currently how I make most of my websites. It&#39;s a fusion of several beautiful <span class="caps">FOSS</span> ingredients, including Wintersmith, Stylus, Jade, LiveScript, Node.js, Angular.js, require.js, and<span class="widont">&nbsp;</span>CouchDB.</p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery medextra">
+          <header><a id="medextra">&nbsp;</a>
+            <h2><a href="http://medextra.com">medextra.com</a>
+            </h2>
+            <h4 class="date">2013-02-01</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="http://medextra.com"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/medextra.png" alt="medextra.com" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="http://medextra.com"><p>This is the main website of my current employer. I am responsible for every inch of it. I did the theme, layout, and even took the stock photos on my trusty Canon T3i. The website itself is mobile-ready and features the following technologies: LiveScript, Wintersmith, Stylus, Jade, Node.js, Angular.js,<span class="widont">&nbsp;</span>require.js</p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery nucleus">
+          <header><a id="nucleus">&nbsp;</a>
+            <h2><a href="#nucleus">Nucleus project</a>
+            </h2>
+            <h4 class="date">2013-03-15</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="#nucleus"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/nucleus.jpg" alt="github.com/undoware/nucleus/" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="#nucleus"><p>This is a customized Fedora distribution aimed at high-security remote deployment. Built using Boxgrinder and primarily targeting <span class="caps">AWS</span>, VirtualBox, VMWare and<span class="widont">&nbsp;</span><span class="caps">KVM</span>.</p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery autobill">
+          <header><a id="autobill">&nbsp;</a>
+            <h2><a href="https://github.com/undoware/automatic-william">Automatic William</a>
+            </h2>
+            <h4 class="date">2013-05-15</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="https://github.com/undoware/automatic-william"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/autobill.png" alt="github.com/undoware/automatic-william/" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="https://github.com/undoware/automatic-william"><p>automatic-william.py is a  quick/dirty Python script that takes Google Calendar entries and makes a timesheet<span class="widont">&nbsp;</span>(billable). </p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery shameless">
+          <header><a id="shameless">&nbsp;</a>
+            <h2><a href="https://github.com/undoware/shameless-plugboard">Shameless Plugboard</a>
+            </h2>
+            <h4 class="date">2013-09-04</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="https://github.com/undoware/shameless-plugboard"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/shameless.png" alt="github.com/undoware/shameless-plugboard/" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="https://github.com/undoware/shameless-plugboard"><p>Shameless Plugboard is a quick/dirty Node.js script that pushes a blog article to several outlets. I designed it so I could retain control over my content (serving it via a custom static site) while retaining the benefits of Tumblr, Twitter, Reddit, Facebook and even Hacker News<span class="widont">&nbsp;</span>integration. </p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery send">
+          <header><a id="send">&nbsp;</a>
+            <h2><a href="https://undoware-cdn.appspot.com/raster/gallery/full/send.png">send.app</a>
+            </h2>
+            <h4 class="date">2013-11-15</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="https://undoware-cdn.appspot.com/raster/gallery/full/send.png"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/send.png" alt="send.app" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="https://undoware-cdn.appspot.com/raster/gallery/full/send.png"><p>This app provides email with encrypted attachments (accessed via an autogenerated password texted to email recipient). Integrates with Active Directory via Kerberos. Uses Angular.js, Jade, Stylus, Livescript, Wintersmith, Node.js (implied by the past four entries ;D) and<span class="widont">&nbsp;</span>CouchDB. </p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery wintersmith">
+          <header><a id="wintersmith">&nbsp;</a>
+            <h2><a href="https://github.com/undoware/wintersmith-ls">wintersmith-ls</a>
+            </h2>
+            <h4 class="date">2013-12-17</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="https://github.com/undoware/wintersmith-ls"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/wintersmith-ls.png" alt="github.com/undoware/wintersmith-ls/" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="https://github.com/undoware/wintersmith-ls"><p>I wrote the trivial plugin that allows LiveScript to be used with Wintersmith. (These are two of my favourite Node.js <span class="caps">FOSS</span> projects.) I made a gift of it to the world via npm and an <span class="caps">MIT</span><span class="widont">&nbsp;</span>license.</p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+        <article class="gallery narcissuss">
+          <header><a id="narcissuss">&nbsp;</a>
+            <h2><a href="#narcissus">Narcisuss (pre-alpha)</a>
+            </h2>
+            <h4 class="date">2014-01-01</h4>
+          </header>
+          <section class="gallery text column-group gutters">
+            <div class="large-50 small-100"><a href="#narcissus"><img src="https://undoware-cdn.appspot.com/raster/gallery/small/narcisuss.jpg" alt="" class="bevel"></a></div>
+            <div class="large-50 small-100"><a href="#narcissus"><p>Personal information management system inspired by the Refuge Project. It&#39;s an OpenBSD virtual appliance running CouchDB and a custom Angular.js front-end that uses PouchDB to sync against the browser. This instance is designed to be deployed on a wearable computing platform to provide high security ambient access to all one&#39;s personal information. Think of it as a high-security, post-Snowden alternative to a <span class="caps">PIM</span> web app, with a mesh networking, Internet-of-Things sensibility. Oh, and a lot of<span class="widont">&nbsp;</span>paranoia. </p></a></div>
+          </section>
+          <footer>
+          </footer>
+        </article>
+      </main>
+      <footer role="complementary" class="area footer">
+        <ul id="vcard" class="vcard">
+          <li class="tel">+1-778-374-3355</li>
+          <li class="org">Undoware</li>
+          <li class="fn"> Elizabeth Marston</li>
+          <li class="url">https://undoware.net/</li>
+          <li class="email">liz@undoware.net</li>
+          <li>
+            <ul class="adr">
+              <li class="locality">Vancouver</li>
+              <li class="region">British Columbia</li>
+              <li class="country-name">Canada</li>
+            </ul>
+          </li>
+        </ul><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38326234-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+      </footer>
+    </div>
+  </body>
+</html>

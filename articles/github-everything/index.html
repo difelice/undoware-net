@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-CA" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <!-- logic.jade-->
+    <!-- global vars: ugly, yet effective--><script>
+      require          = {"paths":{"ng":"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min","ng-touch":"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-touch","site":"https://undoware-cdn.appspot.com/logic/site","logo":"https://undoware-cdn.appspot.com/logic/logo","hr":"https://undoware-cdn.appspot.com/logic/hr"},"deps":["ng","site","logo","hr"]};
+      require.baseUrl  = "/logic";
+      require.callback = function(ng) {
+        angular.bootstrap(document.getElementById('body'), ['site']);
+      };
+    </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- meta.jade. TODO FIXME this is trending spaghettiwards. Break up into interests based on source of pain, e.g. opengraph, google plus, hcard, etc.-->
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content=" initial-scale=0.7,maximum-scale=0.8,user-scalable=1">
+    <meta name="web_author" content="Liz Mars">
+    <meta name="language" content="English">
+    <meta name="dc.language" content="en-CA">
+    <meta name="language" content="English">
+    <meta name="dc.language" content="en-CA">
+    <meta name="robots" content="all">
+    <meta name="reply-to" content="liz@undoware.net">
+    <meta property="og:type" content="blog">
+    <meta name="dc.keywords" content="Human Rights, UX, Technology, Politics">
+    <meta name="dc.subject" content="Technology Ethics">
+    <meta property="og:site_name" content="Undoware.net">
+    <meta name="twitter:domain" content="undoware.net">
+    <meta name="twitter:site" content="@Undoware">
+    <meta name="twitter:creator" content="@Undoware">
+    <meta name="copyright" content="Undoware.net">
+    <meta property="og:title" content="Undoware.net">
+    <meta name="name" content="Undoware.net">
+    <!--# /* Generate permalink URL for this page.  */-->
+    <meta property="og:url" content="https://undoware.net/articles/github-everything/">
+    <meta name="twitter:url" content="https://undoware.net/articles/github-everything/">
+    <meta name="dc.source" content="https://undoware.net/articles/github-everything/">
+    <!--# /* Generate the social media image for this page. If one isn't found, use a default. */-->
+    <meta property="og:image" content="https://undoware-cdn.appspot.com/raster/icon-256.png">
+    <meta name="twitter:image:src" content="https://undoware-cdn.appspot.com/raster/icon-256.png">
+    <meta itemprop="image" content="https://undoware-cdn.appspot.com/raster/icon-256.png">
+    <!--# /* Put a desc of this page everywhere it needs to be */-->
+    <meta property="og:description" content="for the net is dark and full of errors">
+    <meta name="twitter:description" content="for the net is dark and full of errors">
+    <meta name="description" content="for the net is dark and full of errors">
+    <meta itemprop="description" content="for the net is dark and full of errors">
+    <meta property="og:title" content="Github Everything">
+    <meta name="twitter:title" content="Github Everything">
+    <meta name="name" content="Github Everything">
+    <link rel="sitemap" href="https://undoware.net/sitemap.xml">
+    <link rel="author" href="https://undoware.net/who/">
+    <link rel="profile" href="http://microformats.org/profile/hcard">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400italic,700,700italic|Source+Sans+Pro:300,300italic,700,7700italic" charset="utf-8">
+    <!-- icon.jade-->
+    <link rel="icon" href="https://undoware-cdn.appspot.com/vector/icon.svg">
+    <link rel="favicon" href="https://undoware-cdn.appspot.com/raster/icon.png">
+    <link rel="image_src" href="https://undoware-cdn.appspot.com/vector/icon.svg">
+    <link rel="apple-touch-icon" href="https://undoware-cdn.appspot.com/vector/icon.svg">
+    <link rel="shortcut icon" type="image/png" sizes="57x57" href="https://undoware-cdn.appspot.com/raster/icon-57.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="https://undoware-cdn.appspot.com/raster/icon-57.png">
+    <link rel="shortcut icon" type="image/png" sizes="72x72" href="https://undoware-cdn.appspot.com/raster/icon-72.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="https://undoware-cdn.appspot.com/raster/icon-72.png">
+    <link rel="shortcut icon" type="image/png" sizes="114x114" href="https://undoware-cdn.appspot.com/raster/icon-114.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="https://undoware-cdn.appspot.com/raster/icon-114.png">
+    <!-- style.jade-->
+    
+        <link href="/style/ink-min.css" rel="stylesheet" type="text/css" charset="utf-8">
+        <link href="/style/main.css" rel="stylesheet" type="text/css" charset="utf-8">
+    <title>Github Everything - Undoware.net
+    </title>
+  </head>
+  <body id="body" ng-controller="Site" class="ink-grid body">
+    <div id="page">
+      <header role="heading" class="area header"> <!--[if IE]><div style='clear: both; padding:0; position:absolute; right:0; z-index:1'><a href="/ie-sunset-notice.html"><img src="/raster/iecountdown.png" border="0" height="83" alt="" /></a></div><![endif]-->
+
+        <!--command zee-bra, get it? Just some decoration-->
+        <div id="zebra"></div>
+        <div class="column-group top-nav">
+          <div class="logo-block push-left large-25 small-25">
+            <div class="chop">
+              <!--todo figure out why angular logo module falls down here--><a href="/"><img src="https://undoware-cdn.appspot.com/vector/logo.svg" alt="logo"></a>
+            </div>
+            <div class="logotype">
+              <h1><span id="logo" class="logo">UND↺WARE</span></h1><em class="slogan"><a href="/what/">for the net is dark and full of errors</a></em>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="/who/">Who</a></li>
+              <li><a href="/what/">What</a></li>
+              <li><a href="/when/">When</a></li>
+              <li><!-- don't forget title attributes, or icon fonts are accessibility nightmare.
+                <Also>these non-breaking spaces were handy for prototyping but are kludgey for production, TODO FIXME --></Also><a href="https://twitter.com/undoware" title="on Twitter"><i class="icon-twitter">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></a><a href="/feed.xml" title="RSS Feed"><i class="icon-rss">&nbsp;&nbsp;</i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main role="main" class="area main">
+        <article class="article">
+          <h3>Github Everything  </h3>
+          <h4 class="date">Monday 2013-07-22 14:00 -07:00</h4>
+          <h4>from the opened-source dept.</h4>
+          <section class="content"><p>This site is now open source, and the content is Creative Commons. It’s all on <a href="https://github.com/undoware/www-undoware-ca/">GitHub.com</a>. Find out why after the<span class="widont">&nbsp;</span>jump.</p>
+<hr />
+<h2 id="why-is-this-important">Why is this<span class="widont">&nbsp;</span>important?</h2>
+<p>Because Open Source and Creative Commons are both important. They are important to me. And they are absolutely crucial to the normal functioning of the modern world, although you’d never know it from the media. The same media that is almost universally hosted on Open Source operating systems, running Open Source frameworks. We are hidden in plain<span class="widont">&nbsp;</span>sight.</p>
+<h2 id="why-the-multiple-licenses">Why the multiple<span class="widont">&nbsp;</span>licenses?</h2>
+<p>I realized I’d be angry if someone ran my articles and profited from them, because I’m writing them for free. So the articles, and the articles alone, are under a license that prohibits commercial reuse without my explicit<span class="widont">&nbsp;</span>permission.</p>
+<p>I also realized that I care somewhat less about visual assets I produce, but I still want the fame, if any, ;), so they are under a <span class="caps">CC</span> license that is very similar to the <span class="caps">MIT</span> license. I didn’t just go with <span class="caps">MIT</span> because I think it’s better to use <span class="caps">CC</span> licenses for content and <span class="caps">FOSS</span> licenses for code – it seemed better to use a screwdriver as a screwdriver, instead of a<span class="widont">&nbsp;</span>hammer.</p>
+<h2 id="foss-contributions"><span class="caps">FOSS</span> contributions</h2>
+<p>I think this is the first time someone has released a blog template for <a href="http://wintersmith.io">Wintersmith</a> that has Disqus and Google Tracking, autogenerated sitemaps, and support for Stylus and <a href="http://livescript.net">LiveScript</a>. The code is imperfect, but if it is of use to you, please, take what you<span class="widont">&nbsp;</span>need.</p>
+<p>I’m also proud to contribute written content to the cause. While technical writing is a lot less glamorous than coding, it is the flux capacitor of Open Source: <em>nothing</em> works without it. Undocumented code is almost as bad as code without a<span class="widont">&nbsp;</span>license.</p>
+</section>
+          <footer><a href="https://twitter.com/share" class="twitter-share-button" data-via="undoware" data-count="none">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<a href="http://www.reddit.com/submit" onclick="window.location = 'http://www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false"> <img src="https://undoware-cdn.appspot.com/raster/spreddit7.gif" style="vertical-align: 7.5%" alt="submit to reddit" border="0" /> </a>
+<!-- Place this tag where you want the +1 button to render. -->
+<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="120"></div>
+
+<!-- Place this tag after the last +1 button tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'undoware'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+  </script>
+
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_CA"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_CA">Creative Commons Attribution-ShareAlike 4.0 License</a>.
+
+          </footer>
+        </article>
+      </main>
+      <footer role="complementary" class="area footer">
+        <ul id="vcard" class="vcard">
+          <li class="tel">+1-778-374-3355</li>
+          <li class="org">Undoware</li>
+          <li class="fn"> Elizabeth Marston</li>
+          <li class="url">https://undoware.net/</li>
+          <li class="email">liz@undoware.net</li>
+          <li>
+            <ul class="adr">
+              <li class="locality">Vancouver</li>
+              <li class="region">British Columbia</li>
+              <li class="country-name">Canada</li>
+            </ul>
+          </li>
+        </ul><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38326234-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+      </footer>
+    </div>
+  </body>
+</html>

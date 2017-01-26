@@ -1,0 +1,5 @@
+#page input,
+#page textarea,
+#page select {
+  min-height: 1.3cm !important;
+}

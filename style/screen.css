@@ -1,0 +1,462 @@
+/* MIT License, (c) 2013 Elizabeth Marston */
+#bra,
+#panties {
+  display: block;
+  background-size: 96px auto;
+  background-repeat: no-repeat;
+  background-position: 64px 0px;
+}
+#bra {
+  padding-top: 48px;
+  background-image: url("https://undoware-cdn.appspot.com/vector/bra.svg");
+}
+#panties {
+  padding-top: 32px;
+  background-image: url("https://undoware-cdn.appspot.com/vector/panties.svg");
+}
+#zebra {
+  display: none;
+  position: fixed;
+  left: -5px;
+  top: 0;
+  min-width: 86px;
+  min-height: 160px;
+  z-index: -1;
+  background-image: url("https://undoware-cdn.appspot.com/vector/zebra.svg");
+  background-repeat: no-repeat;
+  background-size: 86px 160px;
+}
+.area {
+  margin: 30px;
+}
+.area a {
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+.area.header {
+  overflow: hidden;
+  font-size: 16pt;
+  margin: 0;
+  width: 100%;
+}
+.area.header em {
+  margin: 0;
+  display: block;
+  font-size: 12pt;
+  padding: 0;
+}
+.area.header h1,
+.area.header h2,
+.area.header h3,
+.area.header h4,
+.area.header h5 {
+  font-weight: bold;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  text-align: left;
+}
+.area.header h1 {
+  font-size: 21pt;
+  text-transform: uppercase;
+}
+.area.header h2 {
+  font-size: 16pt;
+}
+.area.header h3 {
+  font-size: 14pt;
+}
+.area.header h4 {
+  font-size: 12pt;
+}
+.area.header h5 {
+  font-size: 10pt;
+}
+.area.header h5 {
+  font-size: 9pt;
+}
+.area.header .logo,
+.area.header .slogan {
+  display: block;
+  background-size: 48px auto;
+  background-repeat: no-repeat;
+  background-position: 64px 0px;
+  font-weight: bold;
+}
+.area.header .logo a:hover,
+.area.header .slogan a:hover,
+.area.header .logo a:active,
+.area.header .slogan a:active {
+  color: thc-highlight-color;
+}
+.area.header .logo {
+  letter-spacing: 0.1em;
+  margin-top: 8px;
+}
+.area.header .logo h1 a {
+  color: thc-action-color;
+}
+.area.header .slogan {
+  width: 100%;
+  font-size: 8pt;
+}
+.area.header .slogan a {
+  color: #a0a0a0;
+}
+.area.header nav {
+  text-align: right;
+  font-size: 12pt;
+  text-indent: 0;
+}
+.area.header nav a {
+  font-weight: bold;
+}
+.area.header nav a {
+  color: thc-action-color;
+}
+.area.header nav a:link,
+.area.header nav a:visited {
+  color: thc-action-color;
+  text-shadow: none;
+}
+.area.header nav a:hover,
+.area.header nav a:active,
+.area.header nav a:focus {
+  text-shadow: 0px 0px 3px #000;
+  color: thc-highlight-color;
+}
+.area.header nav li {
+  padding: 1em;
+  display: inline-block;
+}
+.area.header nav li.nav-selected {
+  font-weight: 700;
+}
+.area.header nav li.nav-selected li {
+  font-weight: 500;
+}
+.area.main {
+  min-height: 512px;
+  min-width: 800px;
+  width: 100%;
+  background-color: transparent;
+  margin: 2em 0 0 0;
+  line-height: 1.4em;
+  word-wrap: break-word;
+  padding-left: 4em;
+}
+.area.main a {
+  color: thc-accent-color;
+}
+.area.main a:hover,
+.area.main a:active,
+.area.main a:focus {
+  text-decoration: none;
+  text-shadow: 0px 0px 4px thc-highlight-color;
+}
+.area.main p a:after,
+.area.main li a:after {
+  color: thc-action-color;
+  content: '*';
+}
+.area.main article footer {
+  color: thc-action-color !important;
+  text-align: right;
+}
+.area.main ul {
+  padding-left: 1em;
+  list-style: none;
+}
+.area.main ul li {
+  margin-bottom: 0.7em;
+}
+.area.main ul li:before {
+  content: '';
+  padding-right: 0.2em;
+}
+.area.main h1,
+.area.main h2,
+.area.main h3,
+.area.main h4 {
+  color: thc-accent-color;
+  text-align: left;
+}
+.area.main h1 a,
+.area.main h2 a,
+.area.main h3 a,
+.area.main h4 a {
+  color: thc-accent-color;
+}
+.area.main h1 {
+  font-size: 21pt;
+  color: thc-accent-color;
+}
+.area.main h2 {
+  font-size: 18pt;
+  font-weight: 300 !important;
+  margin: 1em auto;
+}
+.area.main h3 {
+  font-size: 14pt;
+  margin: 0.5em auto;
+}
+.area.main h4 {
+  font-size: 11pt;
+  margin: 0.5em auto;
+  color: #a0a0a0;
+}
+.area.main h5 {
+  font-size: 14pt;
+  font-weight: 300;
+  margin: 1em auto;
+}
+.area.main h6 {
+  font-size: 14pt;
+  font-weight: 300;
+  margin: 1em auto;
+}
+.area.main p {
+  font-size: 16pt;
+  text-indent: 0.5em;
+  padding: 5px 10px 0 0;
+  margin: 0.5em;
+  text-align: justify;
+}
+.area.main article.story {
+  max-width: 800px;
+  min-width: 450px;
+}
+.area.main article.story,
+.area.main article.article {
+  text-align: justify;
+}
+.area.main article.story > section p:first-child,
+.area.main article.article > section p:first-child {
+  text-indent: 0;
+}
+.area.main article.story > section p:first-child:first-letter,
+.area.main article.article > section p:first-child:first-letter {
+  font-size: 3em;
+  float: left;
+  display: block;
+  margin: -0.4em 0 0 0;
+  padding: 0 0.1em 0 0;
+  color: thc-action-color;
+  text-transform: uppercase;
+  margin: 11px 0 -5px 0;
+  padding: 0 0.1em 0 0;
+  height: 0.7em;
+  line-height: 0.85em;
+  float: left;
+}
+.area.main archive-entry {
+  margin-left: 2em;
+  line-height: 0.9em;
+}
+.area.main section.archive {
+  min-width: 800px;
+}
+.area.main section.archive li:before {
+  content: '' !important;
+}
+.area.main section.content {
+  background-image: url("https://undoware-cdn.appspot.com/vector/logo-translucent.svg");
+  background-position: bottom right;
+  background-size: 1em 1em;
+  background-repeat: no-repeat;
+  margin-bottom: 3em;
+}
+.area.main menu.nav {
+  text-align: center;
+  font-size: 10pt;
+}
+.area.main figure {
+  display: block;
+  max-width: 728px;
+  min-width: 128px;
+  margin: 0 auto;
+}
+.area.main figure img {
+  display: block;
+  width: 100%;
+}
+.area.main figcaption {
+  display: block;
+  width: 100%;
+  text-align: right;
+  font-size: 0.5em;
+}
+.area.footer {
+  font-size: 8pt;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+.area.footer h1 {
+  font-size: 14pt;
+}
+.area.footer h2 {
+  font-size: 12pt;
+}
+.area.footer h3 {
+  font-size: 10pt;
+}
+.area.footer h4 {
+  font-size: 8pt;
+}
+.area.footer h5 {
+  font-size: 7pt;
+}
+.area.footer h6 {
+  font-size: 6pt;
+}
+body {
+  background-color: thc-background-color;
+  background-image: url("https://undoware-cdn.appspot.com/raster/bubble-chamber.jpg");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: 100%;
+}
+body.portfolio {
+  background-image: url("https://undoware-cdn.appspot.com/raster/shattered.png");
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+body.who {
+  background-image: url("https://undoware-cdn.appspot.com/raster/me.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-attachment: fixed;
+}
+body.when {
+  background-image: url("https://undoware-cdn.appspot.com/raster/berlin.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+}
+body.resume {
+  background-color: #000;
+  background-image: url("https://undoware-cdn.appspot.com/raster/zwartevilt.png");
+  background-repeat: repeat;
+}
+body.resume header.area.header {
+  display: none !important;
+}
+#storyjs-timeline,
+#timeline-embed {
+  background-color: rgba(0,0,0,0) !important;
+}
+.gallery-thumbnails {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.gallery-thumbnails > * {
+  max-width: 256px;
+}
+.logo-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.logo-block .chop {
+  width: 3em;
+  flex: none;
+  padding: 0;
+  margin: 0;
+}
+.logo-block .chop img {
+  vertical-align: bottom;
+  width: 64px;
+}
+.logo-block .logotype {
+  width: 10em;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  display: flex;
+  flex: none;
+}
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.slogan {
+  font-size: larger;
+}
+.blue {
+  color: thc-action-color;
+}
+.inline {
+  position: relative;
+  left: -2em;
+  margin: 1em 0 1em 0;
+  font-style: italic;
+}
+.page-title {
+  margin-top: 1em !important;
+  color: #fff !important;
+  text-shadow: none !important;
+}
+menu.nav {
+  margin-bottom: 64px;
+  color: thc-action-color;
+}
+menu.nav a {
+  color: inherit;
+}
+blockquote {
+  border: 0;
+}
+blockquote:before,
+blockquote:after {
+  color: thc-action-color;
+  font-size: 5em;
+  position: relative;
+}
+blockquote:before {
+  top: 0.75em;
+  left: -0.2em;
+  content: '“';
+}
+blockquote:after {
+  content: '”';
+  margin-left: 95%;
+  top: -0.1em;
+}
+.zcommand {
+  height: 1em;
+  width: 1em;
+  display: inline-block;
+  background-image: url("https://undoware-cdn.appspot.com/vector/logo-translucent.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+div.hr {
+  text-align: center;
+  width: 100%;
+  height: 2em;
+  color: #fff;
+  font-size: 1.25em;
+}
+.area.footer {
+  min-height: 4em;
+}
+::-moz-selection,
+::selection {
+  color: thc-action-color;
+  background-color: thc-background-color;
+}
+.bevel {
+  border-radius: thc-corner-radius;
+}

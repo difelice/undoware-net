@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-CA" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <!-- logic.jade-->
+    <!-- global vars: ugly, yet effective--><script>
+      require          = {"paths":{"ng":"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min","ng-touch":"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-touch","site":"https://undoware-cdn.appspot.com/logic/site","logo":"https://undoware-cdn.appspot.com/logic/logo","hr":"https://undoware-cdn.appspot.com/logic/hr"},"deps":["ng","site","logo","hr"]};
+      require.baseUrl  = "/logic";
+      require.callback = function(ng) {
+        angular.bootstrap(document.getElementById('body'), ['site']);
+      };
+    </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- meta.jade. TODO FIXME this is trending spaghettiwards. Break up into interests based on source of pain, e.g. opengraph, google plus, hcard, etc.-->
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content=" initial-scale=0.7,maximum-scale=0.8,user-scalable=1">
+    <meta name="web_author" content="Liz Mars">
+    <meta name="language" content="English">
+    <meta name="dc.language" content="en-CA">
+    <meta name="language" content="English">
+    <meta name="dc.language" content="en-CA">
+    <meta name="robots" content="all">
+    <meta name="reply-to" content="liz@undoware.net">
+    <meta property="og:type" content="blog">
+    <meta name="dc.keywords" content="Human Rights, UX, Technology, Politics">
+    <meta name="dc.subject" content="Technology Ethics">
+    <meta property="og:site_name" content="Undoware.net">
+    <meta name="twitter:domain" content="undoware.net">
+    <meta name="twitter:site" content="@Undoware">
+    <meta name="twitter:creator" content="@Undoware">
+    <meta name="copyright" content="Undoware.net">
+    <meta property="og:title" content="Undoware.net">
+    <meta name="name" content="Undoware.net">
+    <!--# /* Generate permalink URL for this page.  */-->
+    <meta property="og:url" content="https://undoware.net/cv/">
+    <meta name="twitter:url" content="https://undoware.net/cv/">
+    <meta name="dc.source" content="https://undoware.net/cv/">
+    <!--# /* Generate the social media image for this page. If one isn't found, use a default. */-->
+    <meta property="og:image" content="https://undoware-cdn.appspot.com/raster/icon-256.png">
+    <meta name="twitter:image:src" content="https://undoware-cdn.appspot.com/raster/icon-256.png">
+    <meta itemprop="image" content="https://undoware-cdn.appspot.com/raster/icon-256.png">
+    <!--# /* Put a desc of this page everywhere it needs to be */-->
+    <meta property="og:description" content="for the net is dark and full of errors">
+    <meta name="twitter:description" content="for the net is dark and full of errors">
+    <meta name="description" content="for the net is dark and full of errors">
+    <meta itemprop="description" content="for the net is dark and full of errors">
+    <meta property="og:title" content="Liz Mars">
+    <meta name="twitter:title" content="Liz Mars">
+    <meta name="name" content="Liz Mars">
+    <link rel="sitemap" href="https://undoware.net/sitemap.xml">
+    <link rel="author" href="https://undoware.net/who/">
+    <link rel="profile" href="http://microformats.org/profile/hcard">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400italic,700,700italic|Source+Sans+Pro:300,300italic,700,7700italic" charset="utf-8">
+    <!-- icon.jade-->
+    <link rel="icon" href="https://undoware-cdn.appspot.com/vector/icon.svg">
+    <link rel="favicon" href="https://undoware-cdn.appspot.com/raster/icon.png">
+    <link rel="image_src" href="https://undoware-cdn.appspot.com/vector/icon.svg">
+    <link rel="apple-touch-icon" href="https://undoware-cdn.appspot.com/vector/icon.svg">
+    <link rel="shortcut icon" type="image/png" sizes="57x57" href="https://undoware-cdn.appspot.com/raster/icon-57.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="https://undoware-cdn.appspot.com/raster/icon-57.png">
+    <link rel="shortcut icon" type="image/png" sizes="72x72" href="https://undoware-cdn.appspot.com/raster/icon-72.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="https://undoware-cdn.appspot.com/raster/icon-72.png">
+    <link rel="shortcut icon" type="image/png" sizes="114x114" href="https://undoware-cdn.appspot.com/raster/icon-114.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="https://undoware-cdn.appspot.com/raster/icon-114.png">
+    <!-- style.jade-->
+    
+        <link href="/style/ink-min.css" rel="stylesheet" type="text/css" charset="utf-8">
+        <link href="/style/main.css" rel="stylesheet" type="text/css" charset="utf-8">
+    <title>Liz Mars - Undoware.net
+    </title>
+  </head>
+  <body id="body" ng-controller="Site" class="ink-grid resume">
+    <div id="page">
+      <header role="heading" class="area header"> <!--[if IE]><div style='clear: both; padding:0; position:absolute; right:0; z-index:1'><a href="/ie-sunset-notice.html"><img src="/raster/iecountdown.png" border="0" height="83" alt="" /></a></div><![endif]-->
+
+        <!--command zee-bra, get it? Just some decoration-->
+        <div id="zebra"></div>
+        <div class="column-group top-nav">
+          <div class="logo-block push-left large-25 small-25">
+            <div class="chop">
+              <!--todo figure out why angular logo module falls down here--><a href="/"><img src="https://undoware-cdn.appspot.com/vector/logo.svg" alt="logo"></a>
+            </div>
+            <div class="logotype">
+              <h1><span id="logo" class="logo">UND↺WARE</span></h1><em class="slogan"><a href="/what/">for the net is dark and full of errors</a></em>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="/who/">Who</a></li>
+              <li><a href="/what/">What</a></li>
+              <li><a href="/when/">When</a></li>
+              <li><!-- don't forget title attributes, or icon fonts are accessibility nightmare.
+                <Also>these non-breaking spaces were handy for prototyping but are kludgey for production, TODO FIXME --></Also><a href="https://twitter.com/undoware" title="on Twitter"><i class="icon-twitter">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></a><a href="/feed.xml" title="RSS Feed"><i class="icon-rss">&nbsp;&nbsp;</i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <h2 class="page-title">Liz Mars
+        </h2>
+      </header>
+      <main role="main" class="area main">
+        <section class="content"><h1 id="liz-mars">Liz Mars</h1>
+<h4 id="lizundoware.net"><strong><script type="text/javascript">
+<!--
+h='&#x75;&#110;&#100;&#x6f;&#x77;&#x61;&#114;&#x65;&#46;&#110;&#x65;&#116;';a='&#64;';n='&#x25;&#50;&#48;&#108;&#x69;&#122;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'&#108;&#x69;&#122;&#64;&#x75;&#110;&#100;&#x6f;&#x77;&#x61;&#114;&#x65;&#46;&#110;&#x65;&#116;'+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#108;&#x69;&#122;&#64;&#x75;&#110;&#100;&#x6f;&#x77;&#x61;&#114;&#x65;&#46;&#110;&#x65;&#116;&#32;&#40;&#x25;&#50;&#48;&#108;&#x69;&#122;&#32;&#x61;&#116;&#32;&#x75;&#110;&#100;&#x6f;&#x77;&#x61;&#114;&#x65;&#32;&#100;&#x6f;&#116;&#32;&#110;&#x65;&#116;&#x29;</noscript></strong></h4>
+<h4 id="vancouver-canada"><strong><a href="http://goo.gl/maps/CKpCS">Vancouver, Canada</a></strong></h4>
+<ul>
+<li>Programmer with full-stack experience designing and developing <a href="http://lanyrd.com/2012/djangocon-us/sxbzb">data-on-the-wire</a> Javascript mobile apps and web apps with Node.js and<span class="widont">&nbsp;</span>Angular.Js.</li>
+<li>Startup experience. Professional writing experience. University teaching<span class="widont">&nbsp;</span>experience.</li>
+<li>PhD-track postgraduate ‘<a href="http://en.wikipedia.org/wiki/All_but_dissertation"><span class="caps">ABD</span></a>’ background in <a href="http://plato.stanford.edu/entries/logic-higher-order/">higher-order logic</a>, <a href="http://plato.stanford.edu/entries/metaethics/">metaethics</a>, and <a href="http://plato.stanford.edu/entries/game-ethics/">game<span class="widont">&nbsp;</span>theory</a>.</li>
+<li><a href="http://crypto.cs.mcgill.ca">Postgraduate education in<span class="widont">&nbsp;</span>cryptography</a>.</li>
+<li>Professional project management experience. 2 years at <a href="http://www.ubc.ca">University of British Columbia</a> as Web Communications Manager for the <a href="http://www.arts.ubc.ca/">Faculty of<span class="widont">&nbsp;</span>Arts</a>.</li>
+<li><a href="https://undoware.net/">A passion for user interface and interaction design</a> (<span class="caps">UX</span>), and <a href="http://www.cstudies.ubc.ca/a/Course/User-Interface-Design-for-the-Web/IM331/">credentials in the<span class="widont">&nbsp;</span>field</a></li>
+</ul>
+<h2 id="portfolio-of-past-work">Portfolio of Past<span class="widont">&nbsp;</span>Work</h2>
+<ul>
+<li><a href="https://undoware.net/portfolio/">undoware.net/portfolio</a></li>
+</ul>
+<h2 id="looking-for">Looking For</h2>
+<ul>
+<li>A chance to kick butt in writing, user interface design, security policy design and enforcement, <span class="caps">UX</span>, and/or software development more generally. (As much as I love the front-end, I have a countervailing affinity for cryptography, compilers, and<span class="widont">&nbsp;</span>databases.)</li>
+</ul>
+<h2 id="history">History</h2>
+<ul>
+<li><strong>(<code>2013-14</code>)</strong> high-security software development and network administration for a medical services company (<a href="http://medextra.com">MedExtra</a>, Montreal). Deployed and currently maintain end-to-end <span class="caps">VPN</span> cryptographic solution, as well as website, several intranet web apps (two custom and written by yours truly), a mail server, <span class="caps">AD</span> integration, and… gosh, there is just too much to mention. The whole thing is implemented as a flock of cloud- and local-<span class="caps">RAID</span>-backed linux instances coupled with a suite of Mikrotik routers and network appliances, along with a legacy Windows Server installation and <span class="caps">XP</span> deployment. Currently moving all in-house services to <span class="caps">FOSS</span> solutions for security, reliability, and increased <span class="caps">IT</span> <span class="caps">ROI</span>. Currently tasked with overseeing the transition away from related platforms (<span class="caps">ACT</span>!) and towards e.g. zurmo.<br />
+</li>
+<li><strong>(<code>~ 2012</code>)</strong> Successfully contributed patches to Linux kernel 3.5.x (Telus <span class="caps">LTE</span> <span class="caps">USB</span> stick support), jQuery 1.7.x (<span class="caps">IE7</span> bugfix), and other Open Source<span class="widont">&nbsp;</span>projects</li>
+<li><strong>(<code>2011-12</code>)</strong> Founder of an unsuccessful (but funded) stealth startup focused on disrupting the online education market. Technologies employed: Sencha Ext4, Sencha Touch, a <span class="caps">JDK</span> stack comprising Restlets, Jetty, Rhino, and Clojure; MongoDB, <span class="caps">AWS</span>, Fedora Linux,<span class="widont">&nbsp;</span>…</li>
+<li><strong>(<code>2010</code>)</strong> Recipient of certificate in user interface design (<span class="caps">UX</span>) from the University of British Columbia. Course covered <span class="caps">IA</span> and <span class="caps">UI</span> development techniques and cutting-edge usability testing<span class="widont">&nbsp;</span>techniques</li>
+<li><strong>(<code>2008-11</code>)</strong> Web Communications Manager for the Faculty of Arts at University of British Columbia. This position comprised not only project management of all departmental and faculty website development projects, but also strategy planning, <span class="caps">UX</span> testing, <span class="caps">IA</span> card sorting, and wireframing. I was even in charge of editing and managing work-study writers, photographers, and videographers. Finally, I was also responsible for building out the on-campus developer community, and to this end organized workshops and seminars for the on-campus professional web developer<span class="widont">&nbsp;</span>community</li>
+<li><strong>(<code>2007</code>)</strong> Sessional Lecturer at University of Illinois at Chicago. Designed and taught a survey course on the history of science, mathematics, and<span class="widont">&nbsp;</span>ethics</li>
+<li><strong>(<code>2006</code>)</strong> Bioethics Research Assistant at the Joint Centre for Bioethics at the University of Toronto. Project: Designing online staff training materials for use in the event of an <span class="caps">H5N1</span> influenza pandemic at Mount Sinai Hospital; documenting emergency triage protocol and Tamiflu/Oseltamivir protocol in a manner accessible to HCWs with a broad range of educational backgrounds under high-stress<span class="widont">&nbsp;</span>conditions</li>
+<li><strong>(<code>2005-8</code>)</strong> PhD-track Postgraduate and Teaching Assistant at University of Illinois at Chicago. Topics of study: higher-order logic, set theory, cryptography, and computability; also, intellectual property and ethics. Graduated with Masters degree and returned to Canada before completing<span class="widont">&nbsp;</span>dissertation</li>
+<li><strong>(<code>2004-5</code>)</strong> Technology <span class="caps">ESL</span> teacher in Kassel, Germany for <span class="caps">BASF</span> group and E.on group executives and <span class="caps">IT</span> professionals (2004-5) Two of my students were C-level executives. Class size varied from one-on-one training (for high-level executives) to several dozen, with a focus on language skills necessary to work with English-speaking technology consultants, as well as basic business<span class="widont">&nbsp;</span>English</li>
+<li><strong>(<code>2004</code>)</strong> Graduated with Honours from McGill University with a Bachelors in Analytic Philosophy (=logic, set theory, cognitive science) and Foundations of Computing (=computability, provability, <span class="caps">OS</span> design, compiler design, automata, cryptography, and linear<span class="widont">&nbsp;</span>programming)</li>
+<li><strong>(<code>2001-2</code>)</strong> Operations and Network Administrator in Montreal (Wirewerks Ltd.) Uniquely responsible for procurement, installation, and disaster planning for all mission-critical databases and networks. Technologies: Red Had Linux; Debian Linux; Windows 2000 Sever; Active Directory; bind, sendmail, Outlook; scheduled <span class="amp">&amp;</span> regularly tested off-site backups; database integration (QuickBooks, Access, <span class="caps">SQL</span>); workflow design and monitoring; forensics and network intrusion detection with <span class="caps">SE</span> Linux; <span class="caps">IP</span>/<span class="caps">SEC</span> <span class="caps">VPN</span> deployment with<span class="widont">&nbsp;</span>OpenBSD)</li>
+<li><strong>(<code>2001-2</code>)</strong> Microcontroller engineering intern in Montreal (Wirewerks Ltd.) Contributed to the development of a <span class="caps">KVM</span> dongle by building a custom embedded Linux distribution and producing microcode for a set of <span class="caps">PIC</span> microcontrollers for the realtime conversion of <span class="caps">PS</span>/2 wire protocol into <span class="caps">VNC</span> packet<span class="widont">&nbsp;</span>payloads</li>
+<li><strong>(<code>2000</code>)</strong> Admitted to McGill<span class="widont">&nbsp;</span>Unversity</li>
+<li><strong>(<code>99-2000</code>)</strong> Freelance web developer affiliated with a local design house in Peterborough,<span class="widont">&nbsp;</span>Ontario</li>
+<li><strong>(<code>1999</code>)</strong> Freelance Linux trainer affiliated with a local certification and training facility in Peterborough,<span class="widont">&nbsp;</span>Ontario</li>
+<li><strong>(<code>1999</code>)</strong> Trent University Student Union <span class="caps">IT</span> consultant (paid<span class="widont">&nbsp;</span>position)</li>
+<li><strong>(<code>1998</code>)</strong> Admitted to the Computer Science BSc program at Trent University, Peterborough,<span class="widont">&nbsp;</span>Ontario</li>
+</ul>
+<h2 id="education">Education</h2>
+<ul>
+<li>3 years postgrad at <a href="http://www.uic.edu"><span class="caps">UIC</span></a> doing analytic philosophy (higher-order logic,<span class="widont">&nbsp;</span>metaethics)</li>
+<li>4 years at <a href="http://www.mcgill.ca">McGill University</a>, culminating in an Honors thesis in analytic philosophy and a minor in computing<span class="widont">&nbsp;</span>theory</li>
+</ul>
+<h2 id="developer-strengths-assessment">Developer Strengths Assessment</h2>
+<ul>
+<li>Lots of <span class="caps">FOSS</span><span class="widont">&nbsp;</span>experience.</li>
+<li>Currently most fluent in: data-on-the-wire web and mobile app design in Javascript/ECMAScript 6, Angular.js; configuration management tools (e.g. Salt, Ansible, Chef,<span class="widont">&nbsp;</span>Puppet)</li>
+<li>Fluent in JavaScript (browser <span class="amp">&amp;</span> Node.js); Coffee Script; C; Python; Haskell; Bash; pretty good with Ruby and Java<span class="widont">&nbsp;</span>too</li>
+<li>Fifteen years of Adobe Illustrator and Photoshop experience, starting in early<span class="widont">&nbsp;</span>adolescence</li>
+<li>I speak Gantt Chart and all other dialects of managerese<span class="widont">&nbsp;</span>:)</li>
+<li>World-class grasp of cryptography and network security; vulnerability assessment; code<span class="widont">&nbsp;</span>auditing</li>
+<li>Formal training in empirical methodologies for software design and usability assessment, including eye tracking, heat maps, and card<span class="widont">&nbsp;</span>sorting</li>
+</ul>
+<h2 id="soft-skills-strengths-assessment">Soft Skills Strengths<span class="widont">&nbsp;</span>Assessment</h2>
+<ul>
+<li>Good at mentoring and being<span class="widont">&nbsp;</span>mentored</li>
+<li>Positive international workplace experience with C-level<span class="widont">&nbsp;</span>execs</li>
+<li>Exceptional, professionally-trained analysis and planning<span class="widont">&nbsp;</span>capabilities</li>
+<li>Excellent communicator, thanks to extensive writing, teaching and public speaking<span class="widont">&nbsp;</span>experience</li>
+<li>Good at receiving criticism,<span class="widont">&nbsp;</span>dammit!</li>
+<li>English is my primary natural language, but I also speak limited French, German, and<span class="widont">&nbsp;</span>Japanese.</li>
+</ul>
+<h2 id="points-of-presence">Points of Presence</h2>
+<ul>
+<li><a href="https://undoware.net/">Undoware.net</a> My blog</li>
+<li><a href="https://undoware.net/portfolio">Undoware.net</a> My portfolio</li>
+<li><a href="https://news.ycombinator.com/threads?id=undoware">Hacker News</a></li>
+<li><a href="http://github.com/undoware">github.com/undoware</a></li>
+<li><script type="text/javascript">
+<!--
+h='&#x75;&#110;&#100;&#x6f;&#x77;&#x61;&#114;&#x65;&#46;&#110;&#x65;&#116;';a='&#64;';n='&#108;&#x69;&#122;';e=n+a+h;
+document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+e+'<\/'+'a'+'>');
+// -->
+</script><noscript>&#108;&#x69;&#122;&#32;&#x61;&#116;&#32;&#x75;&#110;&#100;&#x6f;&#x77;&#x61;&#114;&#x65;&#32;&#100;&#x6f;&#116;&#32;&#110;&#x65;&#116;</noscript> <em>Canonical <span class="caps">URI</span> of this Document: <a href="http://undoware.net/cv/">undoware.net/cv/</a></em> <em>Updated Mar 4<span class="widont">&nbsp;</span>2014</em></li>
+</ul>
+</section>
+      </main>
+      <footer role="complementary" class="area footer">
+        <ul id="vcard" class="vcard">
+          <li class="tel">+1-778-374-3355</li>
+          <li class="org">Undoware</li>
+          <li class="fn"> Elizabeth Marston</li>
+          <li class="url">https://undoware.net/</li>
+          <li class="email">liz@undoware.net</li>
+          <li>
+            <ul class="adr">
+              <li class="locality">Vancouver</li>
+              <li class="region">British Columbia</li>
+              <li class="country-name">Canada</li>
+            </ul>
+          </li>
+        </ul><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38326234-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+      </footer>
+    </div>
+  </body>
+</html>

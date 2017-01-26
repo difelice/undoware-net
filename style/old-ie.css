@@ -1,0 +1,28 @@
+html body #me {
+  position: fixed;
+  width: 244px !important;
+  height: 555px !important;
+  bottom: 0%;
+  right: 0%;
+}
+#page {
+  padding-top: 64px !important;
+  padding-left: 32px !important;
+}
+.logo {
+  display: inline !important;
+  position: static !important;
+  top: 0 !important;
+  left: 0 !important;
+  font-size: 18pt !important;
+}
+ul.nav {
+  display: inline !important;
+  position: static !important;
+  float: right !important;
+  margin-top: -64px !important;
+}
+#zebra {
+  display: none;
+  visibility: hidden;
+}

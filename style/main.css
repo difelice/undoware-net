@@ -1,0 +1,793 @@
+/*
+ * main.styl -> main.css via github://learnboost/stylus (node_modules/stylus/bin/stylus)
+ * reset.styl adapted from html5doctor.com Reset Stylesheet v1.6.1 http://richclarkdesign.com
+ * TODO: make all these .styl files a lot more organized and simple. Cruft buildup!
+ * TODO: make this all less !important
+ */
+/* Load site defaults (colours fonts etc. TODO find new name for this file) */
+/* Load site defaults (colours fonts etc. TODO find new name for this file) */
+#body footer {
+  background: inherit;
+  border: none;
+}
+.story {
+  vertical-align: top;
+}
+line-height 1.3,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+/* Goes with 'vcard.jade'. Stylesheet says to hide the div because, we're only after the metadata. */
+#vcard {
+  display: none !important;
+  visibility: hidden !important;
+}
+/* Load standard CSS, wrapped in a screen media query */
+#bra,
+#panties {
+  display: block;
+  background-size: 96px auto;
+  background-repeat: no-repeat;
+  background-position: 64px 0px;
+}
+#bra {
+  padding-top: 48px;
+  background-image: url("https://undoware-cdn.appspot.com/vector/bra.svg");
+}
+#panties {
+  padding-top: 32px;
+  background-image: url("https://undoware-cdn.appspot.com/vector/panties.svg");
+}
+#zebra {
+  display: none;
+  position: fixed;
+  left: -5px;
+  top: 0;
+  min-width: 86px;
+  min-height: 160px;
+  z-index: -1;
+  background-image: url("https://undoware-cdn.appspot.com/vector/zebra.svg");
+  background-repeat: no-repeat;
+  background-size: 86px 160px;
+}
+.area {
+  margin: 30px;
+}
+.area a {
+  text-decoration: none;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+.area.header {
+  overflow: hidden;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-size: 36pt;
+  font-weight: 400;
+  color: #205590;
+  font-size: 16pt;
+  margin: 0;
+  width: 100%;
+}
+.area.header em {
+  margin: 0;
+  display: block;
+  font-size: 12pt;
+  padding: 0;
+}
+.area.header h1,
+.area.header h2,
+.area.header h3,
+.area.header h4,
+.area.header h5 {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-size: 36pt;
+  font-weight: 400;
+  color: #205590;
+  font-weight: bold;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  text-align: left;
+}
+.area.header h1 {
+  font-size: 21pt;
+  text-transform: uppercase;
+}
+.area.header h2 {
+  font-size: 16pt;
+}
+.area.header h3 {
+  font-size: 14pt;
+}
+.area.header h4 {
+  font-size: 12pt;
+}
+.area.header h5 {
+  font-size: 10pt;
+}
+.area.header h5 {
+  font-size: 9pt;
+}
+.area.header .logo,
+.area.header .slogan {
+  display: block;
+  background-size: 48px auto;
+  background-repeat: no-repeat;
+  background-position: 64px 0px;
+  font-weight: bold;
+}
+.area.header .logo a:hover,
+.area.header .slogan a:hover,
+.area.header .logo a:active,
+.area.header .slogan a:active {
+  color: #f0f0f0;
+}
+.area.header .logo {
+  letter-spacing: 0.1em;
+  margin-top: 8px;
+}
+.area.header .logo h1 a {
+  color: #205590;
+}
+.area.header .slogan {
+  width: 100%;
+  font-size: 8pt;
+}
+.area.header .slogan a {
+  color: #a0a0a0;
+}
+.area.header nav {
+  text-align: right;
+  font-size: 12pt;
+  text-indent: 0;
+}
+.area.header nav a {
+  font-weight: bold;
+}
+.area.header nav a {
+  color: #205590;
+}
+.area.header nav a:link,
+.area.header nav a:visited {
+  color: #205590;
+  text-shadow: none;
+}
+.area.header nav a:hover,
+.area.header nav a:active,
+.area.header nav a:focus {
+  text-shadow: 0px 0px 3px #000;
+  color: #f0f0f0;
+}
+.area.header nav li {
+  padding: 1em;
+  display: inline-block;
+}
+.area.header nav li.nav-selected {
+  font-weight: 700;
+}
+.area.header nav li.nav-selected li {
+  font-weight: 500;
+}
+.area.main {
+  min-height: 512px;
+  min-width: 800px;
+  width: 100%;
+  background-color: transparent;
+  font-family: 'Source Sans Pro', 'Open Sans', Helvetica, serif;
+  color: #d0d0d0;
+  font-size: 16pt;
+  font-weight: 300;
+  margin: 2em 0 0 0;
+  line-height: 1.4em;
+  word-wrap: break-word;
+  padding-left: 4em;
+}
+.area.main a {
+  color: #d0d0d0;
+}
+.area.main a:hover,
+.area.main a:active,
+.area.main a:focus {
+  text-decoration: none;
+  text-shadow: 0px 0px 4px #f0f0f0;
+}
+.area.main p a:after,
+.area.main li a:after {
+  color: #205590;
+  content: '*';
+}
+.area.main article footer {
+  color: #205590 !important;
+  text-align: right;
+}
+.area.main ul {
+  padding-left: 1em;
+  list-style: none;
+}
+.area.main ul li {
+  margin-bottom: 0.7em;
+}
+.area.main ul li:before {
+  content: '';
+  padding-right: 0.2em;
+}
+.area.main h1,
+.area.main h2,
+.area.main h3,
+.area.main h4 {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-size: 36pt;
+  font-weight: 400;
+  color: #205590;
+  color: #d0d0d0;
+  text-align: left;
+}
+.area.main h1 a,
+.area.main h2 a,
+.area.main h3 a,
+.area.main h4 a {
+  color: #d0d0d0;
+}
+.area.main h1 {
+  font-size: 21pt;
+  color: #d0d0d0;
+}
+.area.main h2 {
+  font-size: 18pt;
+  font-weight: 300 !important;
+  margin: 1em auto;
+}
+.area.main h3 {
+  font-size: 14pt;
+  margin: 0.5em auto;
+}
+.area.main h4 {
+  font-size: 11pt;
+  margin: 0.5em auto;
+  color: #a0a0a0;
+}
+.area.main h5 {
+  font-size: 14pt;
+  font-weight: 300;
+  margin: 1em auto;
+}
+.area.main h6 {
+  font-size: 14pt;
+  font-weight: 300;
+  margin: 1em auto;
+}
+.area.main p {
+  font-size: 16pt;
+  text-indent: 0.5em;
+  padding: 5px 10px 0 0;
+  margin: 0.5em;
+  text-align: justify;
+}
+.area.main article.story {
+  max-width: 800px;
+  min-width: 450px;
+}
+.area.main article.story,
+.area.main article.article {
+  text-align: justify;
+}
+.area.main article.story > section p:first-child,
+.area.main article.article > section p:first-child {
+  text-indent: 0;
+}
+.area.main article.story > section p:first-child:first-letter,
+.area.main article.article > section p:first-child:first-letter {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-size: 36pt;
+  font-weight: 400;
+  color: #205590;
+  font-size: 3em;
+  float: left;
+  display: block;
+  margin: -0.4em 0 0 0;
+  padding: 0 0.1em 0 0;
+  color: #205590;
+  text-transform: uppercase;
+  margin: 11px 0 -5px 0;
+  padding: 0 0.1em 0 0;
+  height: 0.7em;
+  line-height: 0.85em;
+  float: left;
+}
+.area.main archive-entry {
+  margin-left: 2em;
+  line-height: 0.9em;
+}
+.area.main section.archive {
+  min-width: 800px;
+}
+.area.main section.archive li:before {
+  content: '' !important;
+}
+.area.main section.content {
+  background-image: url("https://undoware-cdn.appspot.com/vector/logo-translucent.svg");
+  background-position: bottom right;
+  background-size: 1em 1em;
+  background-repeat: no-repeat;
+  margin-bottom: 3em;
+}
+.area.main menu.nav {
+  text-align: center;
+  font-size: 10pt;
+}
+.area.main figure {
+  display: block;
+  max-width: 728px;
+  min-width: 128px;
+  margin: 0 auto;
+}
+.area.main figure img {
+  display: block;
+  width: 100%;
+}
+.area.main figcaption {
+  display: block;
+  width: 100%;
+  text-align: right;
+  font-size: 0.5em;
+}
+.area.footer {
+  font-size: 8pt;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+.area.footer h1 {
+  font-size: 14pt;
+}
+.area.footer h2 {
+  font-size: 12pt;
+}
+.area.footer h3 {
+  font-size: 10pt;
+}
+.area.footer h4 {
+  font-size: 8pt;
+}
+.area.footer h5 {
+  font-size: 7pt;
+}
+.area.footer h6 {
+  font-size: 6pt;
+}
+body {
+  background-color: #130005;
+  background-image: url("https://undoware-cdn.appspot.com/raster/bubble-chamber.jpg");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: 100%;
+}
+body.portfolio {
+  background-image: url("https://undoware-cdn.appspot.com/raster/shattered.png");
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+body.who {
+  background-image: url("https://undoware-cdn.appspot.com/raster/me.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-attachment: fixed;
+}
+body.when {
+  background-image: url("https://undoware-cdn.appspot.com/raster/berlin.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+}
+body.resume {
+  background-color: #000;
+  background-image: url("https://undoware-cdn.appspot.com/raster/zwartevilt.png");
+  background-repeat: repeat;
+}
+body.resume header.area.header {
+  display: none !important;
+}
+#storyjs-timeline,
+#timeline-embed {
+  background-color: rgba(0,0,0,0) !important;
+}
+.gallery-thumbnails {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.gallery-thumbnails > * {
+  max-width: 256px;
+}
+.logo-block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.logo-block .chop {
+  width: 3em;
+  flex: none;
+  padding: 0;
+  margin: 0;
+}
+.logo-block .chop img {
+  vertical-align: bottom;
+  width: 64px;
+}
+.logo-block .logotype {
+  width: 10em;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  display: flex;
+  flex: none;
+}
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.slogan {
+  font-size: larger;
+}
+.blue {
+  color: #205590;
+}
+.inline {
+  position: relative;
+  left: -2em;
+  margin: 1em 0 1em 0;
+  font-style: italic;
+}
+.page-title {
+  margin-top: 1em !important;
+  color: #fff !important;
+  text-shadow: none !important;
+}
+menu.nav {
+  margin-bottom: 64px;
+  color: #205590;
+}
+menu.nav a {
+  color: inherit;
+}
+blockquote {
+  border: 0;
+}
+blockquote:before,
+blockquote:after {
+  color: #205590;
+  font-size: 5em;
+  position: relative;
+}
+blockquote:before {
+  top: 0.75em;
+  left: -0.2em;
+  content: '“';
+}
+blockquote:after {
+  content: '”';
+  margin-left: 95%;
+  top: -0.1em;
+}
+.zcommand {
+  height: 1em;
+  width: 1em;
+  display: inline-block;
+  background-image: url("https://undoware-cdn.appspot.com/vector/logo-translucent.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+div.hr {
+  text-align: center;
+  width: 100%;
+  height: 2em;
+  color: #fff;
+  font-size: 1.25em;
+}
+.area.footer {
+  min-height: 4em;
+}
+::-moz-selection,
+::selection {
+  color: #205590;
+  background-color: #130005;
+}
+.bevel {
+  border-radius: 10px;
+}
+/* Load media query for widescreens */
+/* Load media query for narrow displays (mobile) */
+@media screen and (max-width: 900px) {
+  #page {
+    width: 100%;
+    max-width: 100%;
+    padding: 1em;
+    min-width: 0;
+    margin: 0;
+  }
+  #page .area {
+    max-width: 100%;
+  }
+  #page .area.header {
+    min-width: 0;
+  }
+  #page .area.header nav {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+    text-align: right;
+    background-color: #205590;
+    background-image: svg('logo-black');
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-position: 24px center;
+    font-size: 11pt;
+  }
+  #page .area.header nav a {
+    color: #f0f0f0;
+    text-shadow: 0 0 0 rgba(0,0,0,0);
+  }
+  #page .area.main {
+    position: inherit;
+    min-width: 0;
+    padding: 1em;
+  }
+  #page .area.topbar li {
+    padding-left: 0;
+    padding-right: 1em;
+  }
+  footer.area {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  body.who {
+    background-image: url("https://undoware-cdn.appspot.com/raster/shattered.png") !important;
+  }
+  menu.nav {
+    display: block;
+    position: fixed;
+    min-width: 25%;
+    bottom: -4.25em;
+    padding-top: 10px;
+    color: #fff;
+    z-index: 5;
+    left: 1em;
+    padding: 0;
+    text-indent: none;
+  }
+  menu.nav a {
+    margin-right: 1em;
+  }
+}
+/* Load print stylesheet  */
+@media print {
+  body {
+    background-color: #fff;
+    font: Helvetica, Arial, Verdana, sans-serif;
+    font-size: 11pt;
+  }
+  a {
+    color: #000;
+  }
+  a:hover,
+  a:active,
+  a:link {
+    color: #000;
+  }
+  p,
+  a {
+    font: Helvetica, Arial, Verdana, sans-serif;
+    word-wrap: break-word;
+    text-decoration: none;
+  }
+  a[href^="http://"]:after,
+  a[href^="https://"]:after {
+    vertical-align: top;
+    content: attr(href);
+    font-size: 6pt;
+    font-weight: 300;
+    color: #aaa;
+  }
+  article > footer {
+    display: none;
+  }
+  header.area.header,
+  menu.nav {
+    display: none;
+  }
+  a[href^='#']:after {
+    display: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 900;
+    font: Helvetica, Arial, Verdana, sans-serif;
+  }
+  h1 {
+    font-size: 18pt;
+  }
+  h2 {
+    font-size: 16pt;
+  }
+  h3 {
+    font-size: 14pt;
+  }
+  h4 {
+    font-size: 12pt;
+  }
+  h5 {
+    font-size: 11pt;
+  }
+  h6 {
+    font-size: 10pt;
+  }
+  @page {
+    margin: 1in;
+  }
+}

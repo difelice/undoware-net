@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-CA" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <!-- logic.jade-->
+    <!-- global vars: ugly, yet effective--><script>
+      require          = {"paths":{"ng":"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min","ng-touch":"https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular-touch","site":"https://undoware-cdn.appspot.com/logic/site","logo":"https://undoware-cdn.appspot.com/logic/logo","hr":"https://undoware-cdn.appspot.com/logic/hr"},"deps":["ng","site","logo","hr"]};
+      require.baseUrl  = "/logic";
+      require.callback = function(ng) {
+        angular.bootstrap(document.getElementById('body'), ['site']);
+      };
+    </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- meta.jade. TODO FIXME this is trending spaghettiwards. Break up into interests based on source of pain, e.g. opengraph, google plus, hcard, etc.-->
+    <meta charset="utf-8">
+    <meta name="twitter:card" content="summary">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content=" initial-scale=0.7,maximum-scale=0.8,user-scalable=1">
+    <meta name="web_author" content="Liz Mars">
+    <meta name="language" content="English">
+    <meta name="dc.language" content="en-CA">
+    <meta name="language" content="English">
+    <meta name="dc.language" content="en-CA">
+    <meta name="robots" content="all">
+    <meta name="reply-to" content="liz@undoware.net">
+    <meta property="og:type" content="blog">
+    <meta name="dc.keywords" content="Human Rights, UX, Technology, Politics">
+    <meta name="dc.subject" content="Technology Ethics">
+    <meta property="og:site_name" content="Undoware.net">
+    <meta name="twitter:domain" content="undoware.net">
+    <meta name="twitter:site" content="@Undoware">
+    <meta name="twitter:creator" content="@Undoware">
+    <meta name="copyright" content="Undoware.net">
+    <meta property="og:title" content="Undoware.net">
+    <meta name="name" content="Undoware.net">
+    <!--# /* Generate permalink URL for this page.  */-->
+    <meta property="og:url" content="https://undoware.net">
+    <meta name="twitter:url" content="https://undoware.net">
+    <meta name="dc.source" content="https://undoware.net">
+    <!--# /* Generate the social media image for this page. If one isn't found, use a default. */-->
+    <meta property="og:image" content="https://undoware-cdn.appspot.com/raster/icon-256.png">
+    <meta name="twitter:image:src" content="https://undoware-cdn.appspot.com/raster/icon-256.png">
+    <meta itemprop="image" content="https://undoware-cdn.appspot.com/raster/icon-256.png">
+    <!--# /* Put a desc of this page everywhere it needs to be */-->
+    <meta property="og:description" content="for the net is dark and full of errors">
+    <meta name="twitter:description" content="for the net is dark and full of errors">
+    <meta name="description" content="for the net is dark and full of errors">
+    <meta itemprop="description" content="for the net is dark and full of errors">
+    <meta property="og:title" content="Undoware.net">
+    <meta name="twitter:title" content="Undoware.net">
+    <meta name="name" content="Undoware.net">
+    <link rel="sitemap" href="https://undoware.net/sitemap.xml">
+    <link rel="author" href="https://undoware.net/who/">
+    <link rel="profile" href="http://microformats.org/profile/hcard">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400italic,700,700italic|Source+Sans+Pro:300,300italic,700,7700italic" charset="utf-8">
+    <!-- icon.jade-->
+    <link rel="icon" href="https://undoware-cdn.appspot.com/vector/icon.svg">
+    <link rel="favicon" href="https://undoware-cdn.appspot.com/raster/icon.png">
+    <link rel="image_src" href="https://undoware-cdn.appspot.com/vector/icon.svg">
+    <link rel="apple-touch-icon" href="https://undoware-cdn.appspot.com/vector/icon.svg">
+    <link rel="shortcut icon" type="image/png" sizes="57x57" href="https://undoware-cdn.appspot.com/raster/icon-57.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="https://undoware-cdn.appspot.com/raster/icon-57.png">
+    <link rel="shortcut icon" type="image/png" sizes="72x72" href="https://undoware-cdn.appspot.com/raster/icon-72.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="https://undoware-cdn.appspot.com/raster/icon-72.png">
+    <link rel="shortcut icon" type="image/png" sizes="114x114" href="https://undoware-cdn.appspot.com/raster/icon-114.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="https://undoware-cdn.appspot.com/raster/icon-114.png">
+    <!-- style.jade-->
+    
+        <link href="/style/ink-min.css" rel="stylesheet" type="text/css" charset="utf-8">
+        <link href="/style/main.css" rel="stylesheet" type="text/css" charset="utf-8">
+    <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="for the net is dark and full of errors">
+    <title>Undoware.net
+    </title>
+  </head>
+  <body id="body" ng-controller="Site" class="ink-grid body">
+    <div id="page">
+      <header role="heading" class="area header"> <!--[if IE]><div style='clear: both; padding:0; position:absolute; right:0; z-index:1'><a href="/ie-sunset-notice.html"><img src="/raster/iecountdown.png" border="0" height="83" alt="" /></a></div><![endif]-->
+
+        <!--command zee-bra, get it? Just some decoration-->
+        <div id="zebra"></div>
+        <div class="column-group top-nav">
+          <div class="logo-block push-left large-25 small-25">
+            <div class="chop">
+              <!--todo figure out why angular logo module falls down here--><a href="/"><img src="https://undoware-cdn.appspot.com/vector/logo.svg" alt="logo"></a>
+            </div>
+            <div class="logotype">
+              <h1><span id="logo" class="logo">UND↺WARE</span></h1><em class="slogan"><a href="/what/">for the net is dark and full of errors</a></em>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="/who/">Who</a></li>
+              <li><a href="/what/">What</a></li>
+              <li><a href="/when/">When</a></li>
+              <li><!-- don't forget title attributes, or icon fonts are accessibility nightmare.
+                <Also>these non-breaking spaces were handy for prototyping but are kludgey for production, TODO FIXME --></Also><a href="https://twitter.com/undoware" title="on Twitter"><i class="icon-twitter">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></a><a href="/feed.xml" title="RSS Feed"><i class="icon-rss">&nbsp;&nbsp;</i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main role="main" class="area main">
+        <article class="intro story">
+          <header>
+            <h2><a href="/articles/github-everything/">Github Everything</a></h2>
+            <h4 class="date">Monday 2013-07-22 14:00 -07:00</h4>
+            <h4>from the opened-source dept.</h4>
+          </header>
+          <section class="story"><p>This site is now open source, and the content is Creative Commons. It’s all on <a href="https://github.com/undoware/www-undoware-ca/">GitHub.com</a>. Find out why after the<span class="widont">&nbsp;</span>jump.</p>
+<hr />
+
+          </section>
+          <footer><a href="/articles/github-everything/">⋯</a>
+          </footer>
+        </article>
+        <article class="intro story">
+          <header>
+            <h2><a href="/articles/self-rapt/">Winnowing the Self-rapt</a></h2>
+            <h4 class="date">Friday 2013-07-19 12:16 -07:00</h4>
+            <h4>from the useful-feedback dept.</h4>
+          </header>
+          <section class="story"><p>I applied for a job at a <a href="http://forgeandsmith.com/">local web design firm</a>, and as a sample of my work, I included a brief critique of the site, laquered in several paragraphs of praise. Between the layers of praise, I pointed out that it bore excessive resemblance to the <a href="http://twitter.github.io/bootstrap/">Twitter Cookiecutt<sup>H</sup>H<sup>H</sup>H<sup>H</sup>H<sup>H</sup>H<sup>H</sup>H Bootstrap</a>.</p>
+<p>I got back a helpful tip: “critiquing a companies site design in your first email is not a super great way to leave a good<span class="widont">&nbsp;</span>impression.”</p>
+<p>This makes me happy. Not accepting design feedback is a terrible way of being a developer, or a boss. And it’s the worst way of finding people who will tell the emperor the truth about that the breeze he<span class="widont">&nbsp;</span>feels.</p>
+<p>There is a reason art school begins and ends with critique. As do philosophy, literature, and music. And science. And good work of any<span class="widont">&nbsp;</span>sort.</p>
+<p>Good companies know to hire people that provide good criticism. In fact, I was inspired by the story of 21-year-old designer <a href="http://www.minimallyminimal.com">Andrew Kim</a>, whose <a href="http://www.minimallyminimal.com/2012/7/3/the-next-microsoft.html">vigilante critique of Microsoft’s branding</a> got him <a href="http://www.theverge.com/2013/1/19/3895444/andrew-kim-the-next-microsoft-designer-hired-by-xbox">hired by Microsoft</a>. (And I <em>still</em> can’t believe I just called Microsoft a ‘good’ company. Relative<span class="widont">&nbsp;</span>merits!)</p>
+<p>From now on, <em>every</em> job application includes a brief critique, to weed out the employers who are<span class="widont">&nbsp;</span>self-rapt.</p>
+
+          </section>
+          <footer><span class="zcommand">&nbsp;</span>
+          </footer>
+        </article>
+        <article class="intro story">
+          <header>
+            <h2><a href="/articles/time-travel-alert/">Time Travel Alert!</a></h2>
+            <h4 class="date">Monday 2013-07-15 23:00 -07:00</h4>
+            <h4>from the bigger-on-the-inside dept.</h4>
+          </header>
+          <section class="story"><p>This is a brand new blog, but I’m not. I have over a decade’s worth of scattered writing on several topics, some dating from as early as puberty. Many of them, believe it or not, are usability-related, and I want to share<span class="widont">&nbsp;</span>them.</p>
+<p>Yet, unlike me, some of them have aged<span class="widont">&nbsp;</span>poorly.</p>
+<p>I could either (a) bury them, (b) insert them silently at the beginning of this blog’s timeline, or (c) reblog them in block quotes. But (a) is wasteful and (b) seems vaguely dishonest, so by elimination I pick<span class="widont">&nbsp;</span>(c).</p>
+<p>So the next time you see an article with a headline like ‘The Miracle of Server-Side Includes’, or ‘<span class="caps">AJAX</span>: Could it be the future?’ please do not run outside screaming, “too soon! I’ve come back too soon!” You are right when you need to be – safe here in 2013, a couple of weeks before the tritonium riots on the <em><span class="caps">USSR</span> Mir <span class="caps">III</span></em> low Earth orbital<span class="widont">&nbsp;</span>platform.</p>
+
+          </section>
+          <footer><span class="zcommand">&nbsp;</span>
+          </footer>
+        </article>
+      </main>
+      <footer role="complementary" class="area footer">
+        <ul id="vcard" class="vcard">
+          <li class="tel">+1-778-374-3355</li>
+          <li class="org">Undoware</li>
+          <li class="fn"> Elizabeth Marston</li>
+          <li class="url">https://undoware.net/</li>
+          <li class="email">liz@undoware.net</li>
+          <li>
+            <ul class="adr">
+              <li class="locality">Vancouver</li>
+              <li class="region">British Columbia</li>
+              <li class="country-name">Canada</li>
+            </ul>
+          </li>
+        </ul><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-38326234-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+        <menu class="nav"><span style="text-align:center;"><a href="/page/5/"> <i class="icon-2x icon-arrow-left">&nbsp;&nbsp;</i></a></span><a href="/"><i class="icon-2x icon-home">&nbsp;&nbsp;</i></a><span style="text-align:center;"><a href="/page/3/"><i class="icon-2x icon-arrow-right">&nbsp;</i></a></span>
+        </menu>
+      </footer>
+    </div>
+  </body>
+</html>

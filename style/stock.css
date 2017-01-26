@@ -1,0 +1,66 @@
+/* Stock.styl */
+.tab-group div {
+  overflow: visible !important;
+}
+.hide-all {
+  visibility: hidden !important;
+}
+.show-all {
+  visibility: visible !important;
+}
+@media screen and (min-width: 651px) {
+  body {
+    background-image: url("https://undoware-cdn.appspot.com/raster/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+@media screen and (max-width: 650px) {
+  body > * {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+  }
+  body > *:first-child {
+    border-radius: top 4px;
+    margin-top: 64px;
+  }
+  body > *:last-child {
+    border-radius: bottom 4px;
+  }
+  main {
+    padding: 2em;
+  }
+  .white {
+    background-color: #fff;
+  }
+  .black {
+    background-color: #000;
+    color: #fff;
+  }
+  li.help {
+    display: inline-block;
+    margin-left: auto;
+  }
+  footer.footer {
+    opacity: 0.9;
+  }
+  #text {
+    resize: both;
+    min-height: 128px;
+  }
+  #send.grey {
+    color: #808080;
+    background-color: #aaa;
+  }
+  .alerts {
+    display: block;
+    visibility: hidden;
+  }
+  .alerts > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

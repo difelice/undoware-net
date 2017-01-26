@@ -1,0 +1,408 @@
+<!DOCTYPE HTML>
+				<!--	These establish shorthand used throughout	-->
+							
+									<html lang="en">
+														<head>
+																<title>Sublime Conception - Web Design &amp; Development</title>
+																<!-- need working os detection to not show this under Windows XP (all SP#), which ships with broken
+																	unicode fonts --> 
+																<!--<title>Sublime Conception&#174;&ensp;&#8594;&emsp;Web Design&thinsp;&middot;&thinsp;Development&emsp;</title>-->
+																<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+																<!--	LOAD STYLESHEETS -->
+																		<link rel="stylesheet" type="text/css" href="style/catapult.css" />
+																		<link rel="stylesheet" type="text/css" href="style/colorbox.css" />
+																		
+																		<link rel="stylesheet" type="text/css" href="style/style.css" />
+																		<link rel="stylesheet" type="text/css" href="style/graceful.css" />
+
+																		<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+																		<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+																		<!--	iOS & MOBILE BROWSER SUPPORT -->
+																		
+																		<meta		name="viewport"	content="width=device-width; initial-scale=1;maximum-scale=1"/>
+																		<link rel="apple-touch-icon" href="./media/icons/ios-114.png"/>
+																		<link rel="apple-touch-icon" href="./media/icons/ios-72.png" />
+																		<link rel="apple-touch-icon" href="./media/icons/ios-57.png" />
+																		
+																<!--	LOAD 16x16 FAVICON -->
+																		<link rel="shortcut icon" href="./media/icons/favicon.ico" />
+																		<link rel="shortcut icon" href="./media/icons/favicon.png" />
+	
+																<!--	LOAD JAVASCRIPT -->
+	
+																		<script type="text/javascript" src="./script/jquery.js">				</script>
+																		<script type="text/javascript" src="./script/jquery.ba-hashchange.js">			</script>
+																		<script type="text/javascript" src="./script/jquery-ui.js">			</script>
+																		<script type="text/javascript" src="./script/jquery.easing.js">					</script>
+																		<script type="text/javascript" src="./script/jquery.colorbox.js">					</script>
+																		<script type="text/javascript" src="./script/jquery.animate-enhanced.js">			</script>
+
+																		<script type="text/javascript" src="./script/detectbrowsermobile.js">				</script>
+																		<script type="text/javascript" src="./script/contentHider.js">					</script>
+																		<script type="text/javascript" src="./script/comment.js">							</script>
+																		<script type="text/javascript" src="./script/hashChanger.js">						</script>
+																		<script type="text/javascript" src="./script/skewy.js">						</script>
+																		<!--	Polyfills, Chrome frames, and other brilliant hacks  -->
+	
+	
+																				<!--	we assume a non-IE browser. We also treat IE 10 and above as 'not IE', because they're nearly as good as a real browser. -->
+																						<script type="text/javascript"> IE = 10; </script>
+			
+			
+																				<!-- 	quickly find what our doom is -->
+																						<!--[if gte IE 9]>
+																												<script type="text/javascript"> IE = 9; </script>
+																												<link rel="stylesheet" type="text/css" href="./style/ie-9.css" />																				
+																						<![endif]-->
+				
+																						<!--[if lt IE 9]>
+																												<meta 	http-equiv="Cache-control"	content="no-cache"	/>	
+																												<link rel="stylesheet" type="text/css" href="./style/ie-6,7,8.css" />																						
+																						<![endif]-->
+
+				
+																						<!--[if IE 8]>
+																												<script type="text/javascript"> IE = 8; </script>
+																												<link rel="stylesheet" type="text/css" href="./style/ie-8.css" />
+																												<script type="text/javascript"  src="./script/ie-8.js"></script>
+																						<![endif]-->
+				
+			
+																						<!--[if IE 7]>
+																												<script type="text/javascript"> IE = 7;</script>
+																												<link rel="stylesheet" type="text/css" href="./style/ie-7.css" />
+																												<script type="text/javascript" src="./script/IE8.js"></script>
+
+																						<![endif]-->
+				
+																						<!--[if IE 6]>
+																												<link rel="stylesheet" type="text/css" href="./style/ie-6.css" />
+																												<script type="text/javascript"> IE = 6; </script>
+																												<script type="text/javascript" src="./script/jquery.pngfix.js"> </script> 
+																												<script type="text/javascript"  src="./script/ie-6.js"></script>
+																						<![endif]-->
+				
+																						<!--	earlier versions of IE, and all other browsers that fail capability testing, are signified by IE=-1, and get text-only (accessible!) delivery. --> 
+																						<!--[if lt IE 6]>
+																											<script type="text/javascript"> IE = -1; </script>
+																											<link rel="stylesheet" type="text/css" href="./style/textonly.css" />
+																						<![endif]-->
+																						<!--[if lt IE 9]>
+																												<script type="text/javascript"  src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+																						<![endif]-->
+
+
+	
+																	<!--	This forces IE to provide the most modern, 'edgy' browsing experience possible, or failover to the chromeframe if installed -->
+																			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+															</head>
+
+
+<body id='wrap'>
+	<!--	For Prudence best practice: Limit caching	-->
+	<!-- %
+		document.cacheDuration = 200000;
+		document.cacheKeyPattern = '{an}|{dn}';
+	% -->
+
+
+	<!--	Glass section	-->
+	<div id="glass-background">
+	<header id='glass'>
+
+		<section><nav id='nav'><h2><a 	id='navAbout'		href=#about		>About&nbsp;Us</a	></h2>
+<h2><a	id='navContact'		href=#contact	>Contact</a		></h2>
+<h2><a	id='navPortfolio'	href=#portfolio	>Portfolio</a	></h2>
+<h2><a	id='navStaff'		href=#staff		>Staff</a		></h2>
+</nav>
+			<hgroup>
+				<h1>Sublime Conception</h1>
+				<h2 id='headline'>Sublime Every Time</h2>
+			</hgroup>
+			<div id="logon">&nbsp;</div>
+			<section class="content glassContent" id="glassAbout">
+
+		<p>&emsp;We're a big slice of awesome <span class="unicode">&pi;</span></p>
+		<span id="pie" class="sticker">&nbsp;</span>
+</section>
+
+<section class="content glassContent" id="glassContact">
+
+<p>&emsp;Call us&nbsp;&mdash;&nbsp;we love you <span id="heart" class='unicode'>&#9825;</span></p>
+
+</section>
+
+<section class="content glassContent portfolio" id="glassPortfolio">
+<p>Brag Sheet!!&thinsp;</p>
+<span id="stars" class="sticker">&nbsp;</span>
+
+</section>
+
+<section class="content glassContent" id="glassStaff">
+
+<p>&emsp;&emsp;Up close and personal&#8230;&#8230;</p>
+</section>
+
+		</section>
+
+	</header>
+	</div>
+	<!--	Main body section (3 column)	-->
+	<section id="PostFold">
+
+		<!--	Left drawer	-->
+		<section id='leftContent'>
+			<p></p>
+			<section class="content leftContent" id="leftAbout">
+
+
+														<hgroup>
+																	<h2 class="headline">Why&nbsp;you</h2>
+														</hgroup>
+														
+														<p>Choose us if appearance, usability, and accessibility are as important to you as to your customers. </p>
+														
+														<img src="./media/images/eye.png" class="illustration-left" alt="sexy eye"/>
+														<p><b>Appearance</b> is how a website <i>looks</i>. Are you proud to show it to Mom? </p>
+														<img src="./media/images/heart.png" class="illustration-left" alt="heart"/><p><b>Usability</b> is how a website <i>works</i>. Can Mom use it? Does she <em>love</em> to use it, or is it a pain?</p>
+														<img src="./media/images/access.png" class="illustration-left" alt="a11y symbol"/>
+														<p><b>Accessibility</b> is how <i>inclusive</i> a website is. Can Mom's eyesight handle that font?</p>
+																		
+														<p style="text-align:justify">What makes our conceptions so sublime is that <em>they deliver all three, everywhere.</em> Firefox, Chrome, IE, Opera and Lynx. Mac, Windows, Linux. iPhone, iPad, Blackberry and Android. And plenty of platforms you've never heard of.</p>
+
+</section>
+
+<section class="content leftContent" id="leftContact">
+																	<!--letter-spacing commands included directly in html, because
+																	they change along with the content (i.e. they are specific to the words  in this document) -->
+																	
+																	
+																	<h2 class="headline"
+																		style="letter-spacing: 0.1em !important;">E-mail</h2>
+
+
+																	<address>
+																	us&thinsp;'at'&thinsp;sublimeconception.com					
+																	</address>
+																	
+																	<h2 class="headline"
+																		style="letter-spacing:0.15em !important;">Voice</h2>
+																	
+																	<address>
+																	<a href="tel:+1.778.300.4682">(778)&nbsp;300&ndash;4682</a>
+																	</address>
+																	 <h2 class="headline"
+																	 	 style="letter-spacing:0.25em !important;">Post</h2>
+																	 
+																	 <!-- we are aware of the issue described at  
+																	 http://html5doctor.com/the-address-element/, 						  												 						 but we're using the address element here 	
+																	 anyway, because this _is_ also the 	
+																	 appropriate contact info for this page. -->
+
+																	 <address>
+																	 #2-448 E 56<sup>th</sup> Ave.</br>
+																	 &emsp;&ensp;Vancouver,&nbsp;B.C.</br>
+																	 &emsp;&ensp;V5X&nbsp;1R4, Canada
+																	 </address>
+
+</section>
+
+<section class="content leftContent portfolio" id="leftPortfolio">
+
+	<ul class="gallery-column">
+	<li>
+		<a href="./media/images/trickyvixen-fullscreen.png" rel="prettyPhoto" title="trickyvixen.com (Fall '11)">
+			<img src="./media/images/trickyvixen-thumb.jpg" alt="thumbnail of trickyvixen.com"/>
+		</a>
+	</li>
+	<li>
+		<a href="./media/images/truedirections-fullscreen.png" rel="prettyPhoto"  title="truedirections.com (Summer '11, in collaboration good-design.ca)">
+			<img src="./media/images/truedirections-thumb.jpg" alt="thumbnail of truedirections.com"/>
+		</a>
+	</li>
+	</ul>
+</section>
+
+<section class="content leftContent" id="leftStaff">
+
+<header>
+<hgroup>
+			<h2 class="headline">Alethia&nbsp;Wist</h2>
+			<h3 class="headline">Developer</h3>
+</hgroup>
+</header>
+<p>Alethia has been slogging through code since she was a teenager. Shortly thereafter, a maurauding band of academics kidnapped her, and held 
+	her hostage in an ivory tower. She completed most of a PhD before she escaped.
+
+<p>She speaks Python, JavaScript and PHP. But she prefers English, which is handy for
+finding out what people are actually, you know, paying her to
+code.</p>
+
+<p>Alethia is also a strong usability advocate, and has an almost prurient
+interest in UX testing and other means of
+figuring out what&#39;s going on inside the user&#39;s noggin.</p>
+
+<p>She vigorously denies being a cyborg, but admits to occasionally peeking at robots.txt before loading a website.</p>
+
+<p>Alethia&#39;s favourite beverage is hot cocoa. Her favourite
+drink is also hot cocoa, but with rum.</p>
+
+</section>
+
+		</section>
+
+		<!--	Middle section: Gallery section: 4x6 image grid. Images can take up more than 1 block, but by default, each is 1x1	-->
+		<section id='middleContent'>
+			<p></p>
+			<section class="content middleContent" id="middleAbout">
+
+														<hgroup>
+																	<h2 class="headline">Why&nbsp;&lsquo;conception&rsquo;</h2>
+														</hgroup>
+														<img src="./media/images/flasks.png" class="illustration-left notiny" alt="flasks"/>
+
+														<p><i>Conception</i>: the moment you conceive of a new idea, a new way of looking at things, a new life. It's the moment something new begins.</p>
+
+														<div class="ad-hoc-vertical-spacer">&nbsp;</div>
+														<hgroup>
+																	<h2 class="headline">Why&nbsp;&lsquo;sublime&rsquo;</h2>
+														</hgroup>
+														
+														<img src="./media/images/lime.png" class="illustration-left notiny" alt="lime">
+														<p><i>Sublime</i>: what is startling, breathtaking, perfect. Take the word apart, you find the latin prefix 'sub-' in front of 'lime', a&nbsp;common&nbsp;citrus&nbsp;fruit. </p>
+
+														<p>We're not sure what limes have to do with anything, apart from being a good source of vitamin C, but we're glad we don't have scurvy. So okay then!</p>
+														
+														<p style="text-align:left;text-indent:0;">Make&nbsp;sure&nbsp;your&nbsp;websites&nbsp;don't&nbsp;get&nbsp;scurvy.
+														<br/><strong>Go&nbsp;Sublime&nbsp;Every&nbsp;Time&#8482;.</strong></p>
+
+</section>
+
+<section class="content middleContent" id="middleContact">
+
+<!--TODO add fallback action for non-JS browsers -->
+<form id="contact-form" name="contact-form" method='post' action='/comment/'>
+
+<label for="comment-email" class="visuallyhidden" >Your email address:</label>
+
+<input type="email" name="email" id="email" size="50" 	required	placeholder="your.email@address.com"/>
+
+<label for="comment" class="visuallyhidden">
+Your message for Sublime Conception's team:
+</label>
+
+<textarea name="message" id="message" rows="5" cols="50" placeholder="Your message for Sublime Conception's team" required autocomplete="off">
+</textarea>
+
+
+<label for="submit" class="visuallyhidden">Send message</label>
+
+<input type="submit" class="submit" id="submit" value="Send" title="Send your message to Sublime Conception Inc."/>
+
+</form>
+</section>
+
+<section class="content middleContent portfolio" id="middlePortfolio">
+	<ul class="gallery-column">
+	<li>
+		<a href="./media/images/totsinharmony-fullscreen.png" rel="prettyPhoto"  title="totsinharmony.com (Summer '11)">
+			<img src="./media/images/totsinharmony-thumb.jpg" alt="thumbnail of totsinharmony.com (Summer '11)"/>
+		</a>
+	</li>
+	
+	</ul>
+
+</section>
+
+<section class="content middleContent" id="middleStaff">
+<img src="./media/images/brooke.png" id="brooke" alt="Brooklyn"> 
+<img src="./media/images/alethia.png" id="alethia" alt="Alethia"> 
+
+
+
+</section>
+
+		</section>
+
+		<!--	Right drawer	-->
+		<section id='rightContent'>
+			<p></p>
+			<section class="content rightContent" id="rightAbout">
+														<hgroup>
+																	<h2 class="headline">Why&nbsp;us</h2>
+														</hgroup>
+														
+													<p style='text-align:justify;'>We produce web sites and apps that use snazzy tech on new machines, but work well on old ones, too. That look just as good on a phone as on a widescreen.</p>
+													<img src="./media/images/pointer.png" class="illustration-left" alt="image of pixelated pointer">
+														<p><em>Our promise: if a browser was released in the last ten years, our sites will run on it.</em></p>																												
+														<img src="./media/images/globe.png" class="illustration-left" alt="speech balloon containing globe">
+														<p>We're committed to human diversity, too. We'll help you get a multilingual site up in the languages of your choice. </p>
+											
+														<img src="./media/images/braille.png" class="illustration-left" alt="speech balloon containing braille">
+														<p>And we always make sure our sites aren't just &lsquo;eye sites&rsquo;. A screenreader test is standard.</p>
+														
+														<p style='text-align:justify;'>Once we make sure that your site reaches everyone, we'll help you climb the ranks on Bing and Google, and we'll leave you with a content style guide that makes it simple to keep your site easy to find and easy on the eyes. </p>													
+
+</section>
+
+<section class="content rightContent" id="rightContact">
+
+
+																	<h2 class="headline">Arrange an Appointment</h2>
+																	<p>At Sublime Conception, we use <a href="http://presdo.com/">Presdo</a> to allow our clients to book appointments with us directly. Try it out!</p>
+																	<ul id="calendars">
+																	<li><a href="http://www.presdo.com/brooklyn">Brooklyn Zelenka</a></li>
+																	<li><a href="http://www.presdo.com/alethia" >Alethia Wist</a></li>
+																	</ul>
+																	
+
+</section>
+
+<section class="content rightContent portfolio" id="rightPortfolio">
+	<ul class="gallery-column">
+	<li>
+		<a href="./media/images/vthc-fullscreen.png" rel="prettyPhoto" title="vthc.ca (Summer '11)">
+			<img src="./media/images/vthc-thumb.jpg" alt="thumbnail of vthc.ca"/>
+		</a>
+	</li>	
+	</ul>
+</section>
+
+<section class="content rightContent" id="rightStaff">
+
+<hgroup>
+			<h2 class="headline">Brooklyn&nbsp;Zelenka</h2>
+			<h3 class="headline">Designer</h3>
+</hgroup>
+
+<p>Brooke started as a classical composer, and found her way into design making extra money doing score layouts. Then she discovered an aptitude for computer <del>composition</del> <i>programming</i>. And a web designer was born!</p>
+
+<p>Her fine arts background serves her well in design. Always interested in pushing the limits within a classic aesthetic, she aims to hit that narrow balance of
+technique and inspiration.</p>
+
+<p>User experience is something that Brooke takes very seriously. The web is about <em>communicating a message</em>, and every part of a website contributes to its message: from text and images, to layout and navigation.</p>
+<p>Brooke's favourite beverage is a traditional cappuccino, served with Beethoven's ninth.</p>
+</section>
+
+		</section>
+	</section>
+
+<!-- crazy! IE  treats the whitespace as semantic, and fucks up the layout, when the footer block is formatted properly. 
+		Bloody hell. 
+		TODO: chase down lead devs for IE 6 through 8; shoot.
+~Alethia, Sep 8/11 -->
+<footer id='footer'>
+<div id='copyright'>
+<div id='imgBlock'>
+<a href='http://www.w3.org/TR/html5/'><img src="./media/images/html5.png" /></a>
+<a href='http://sass-lang.com/'><img src="./media/images/sass.png" /></a>
+<a href='http://www.sublimeconception.com/#about'><img src="./media/images/sublimeLogo.png" /></a>
+<a href='http://jashkenas.github.com/coffee-script/''><img src="./media/images/CoffeeScript.png" /></a>
+<a href='http://threecrickets.com/prudence/'><img src="./media/images/prudence.png" /></a>
+</div>
+<p>
+&copy;&nbsp;2011&nbsp;Sublime&nbsp;Conception&nbsp;Inc. All&nbsp;Rights&nbsp;Reserved.
+</p>
+</footer></body></html> 
+

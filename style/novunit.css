@@ -1,0 +1,16 @@
+html #page {
+  padding: 2em;
+}
+html #page ul.nav {
+  padding: 2em;
+  display: inline-block !important;
+  position: static !important;
+}
+html body #me {
+  width: 128px;
+  height: 294.4px;
+  background-size: contain;
+  z-index: inherit;
+  bottom: 0%;
+  right: 0%;
+}
